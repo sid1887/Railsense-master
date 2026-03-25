@@ -1,0 +1,616 @@
+STAGE 0 — Project scaffolding and config (quick sanity)
+
+Goal: Ensure project contains required folders and a central services entry. Create directories and minimal files.
+
+Copilot prompt (Stage 0):
+
+Create the following folders and placeholder files in a Next.js project:
+
+- services/
+  - providers/
+  - trainDataService.ts
+  - orchestrator.ts
+  - trainHistory.ts
+  - haltDetection.ts
+  - trafficAnalyzer.ts
+  - predictionEngine.ts
+  - insightGenerator.ts
+- scripts/
+  - snapshotWorker.ts
+- components/
+  - HeatmapLayer.tsx
+  - TrainSearch.tsx
+  - LiveTrainMap.tsx
+  - HaltStatusCard.tsx
+  - UncertaintyGauge.tsx
+  - TrafficIndicator.tsx
+  - RouteTimeline.tsx
+- pages/api/train/[trainNumber].ts (or app/api equivalent)
+- data/ (create dir)
+
+Each file can be a minimal export stub with jsdoc comments explaining its role. Use TypeScript. Ensure `trainDataService.ts` exports `getLiveTrain(trainNumber)` stub. Add `README.dev.md` describing the next steps.
+
+What Copilot should produce:
+
+Empty TypeScript files with exported stubs, and a short README.dev.md.
+
+Manual check:
+
+ls services providers components scripts pages api data should show files.
+
+STAGE 1 — Provider adapter layer (real data + scraping fallback)
+
+Goal: Implement ITrainProvider interface and 4 providers: railYatriProvider, railYatriScraper, ntesProvider (best-effort), and mockProvider. A provider returns a normalized object: { trainNumber, lat, lng, speed, delay, timestamp }.
+
+Files to add/edit:
+
+services/providers/index.ts
+
+services/providers/railYatriProvider.ts
+
+services/providers/railYatriScraper.ts
+
+services/providers/mockProvider.ts
+
+services/trainDataService.ts (uses providers list in order with caching)
+
+Copilot prompt (Stage 1A - interface + mockProvider):
+
+Create services/providers/index.ts exporting TypeScript types:
+- ProviderResult { trainNumber:string, lat:number, lng:number, speed?:number, delay?:number, timestamp:number }
+- ITrainProvider interface with getLiveTrain(trainNumber): Promise<ProviderResult|null>
+Also create services/providers/mockProvider.ts that reads from public/mockTrainData.json and returns a ProviderResult for a requested trainNumber or picks a random train if not found.
+
+Copilot prompt (Stage 1B - railyatri provider attempt):
+
+Create services/providers/railYatriProvider.ts implementing ITrainProvider. The provider should attempt to call a likely JSON endpoint derived from env RAILYATRI_API_BASE and a path such as `/live-train-status/<trainNumber>` and parse typical JSON keys (train_no, lat, lng, speed, delay, timestamp). The code must:
+- use axios
+- protect with try/catch and return null if fails
+- include helpful console.warn debug messages
+- export railYatriProvider object
+
+Copilot prompt (Stage 1C - railyatri scraper fallback):
+
+Create services/providers/railYatriScraper.ts implementing ITrainProvider. This file should:
+- use axios to fetch the page `https://www.railyatri.in/live-train-status/{trainNumber}`
+- use cheerio to load HTML
+- attempt to find embedded JSON in script tags by searching for `window.__INITIAL_STATE__` or similar global var; if found, parse JSON with regex and extract lat/lng/speed keys
+- fallback to finding meta tags or data attributes (e.g., [data-lat], [data-lng]) or parse `script[type="application/ld+json"]`
+- return ProviderResult or null
+- throttle with a default delay header and set user-agent
+Add thorough comments describing how to adjust selectors if production page changes.
+
+Copilot prompt (Stage 1D - trainDataService orchestration):
+
+Create services/trainDataService.ts. It should:
+- import providers (railYatriProvider, railYatriScraper, mockProvider)
+- export async function getLiveTrain(trainNumber:string): Promise<ProviderResult|null>
+- implement provider order: try railyatriProvider -> railyatriScraper -> mockProvider
+- implement caching with node-cache (TTL from env CACHE_TTL_SECONDS)
+- return ProviderResult or null
+- include retry logic using p-retry or manual try/retry loops for network calls
+- log which provider returned data for debugging
+
+What to test after Stage 1:
+
+node -e "require('./services/trainDataService').getLiveTrain('12728').then(console.log).catch(console.error)"
+(adapt to ts-node or transpile using ts-node if necessary)
+
+Expect either a ProviderResult or null. If null, Copilot may have guessed the wrong selectors — that's fine; mockProvider ensures fallback.
+
+STAGE 2 — Caching, rate-limiting, and retries
+
+Goal: Add node-cache caching and simple rate-limiter for outbound provider calls to avoid hammering sources.
+
+Files to edit:
+
+services/trainDataService.ts (extend)
+
+optionally services/providers/rateLimiter.ts (new) — simple token bucket per domain.
+
+Copilot prompt (Stage 2):
+
+Enhance services/trainDataService.ts:
+- Add NodeCache instance with TTL from env CACHE_TTL_SECONDS
+- If cache hit, return cached ProviderResult
+- If cache miss, call providers in order but ensure per-provider rate limit:
+  - implement a simple in-memory rate limiter: allow max N calls per minute to the same provider (use a Map with timestamps)
+- implement p-retry to retry failed network calls up to 2 times
+- set axios default timeout 8000ms
+- export a function clearCache() to help testing
+
+Test:
+
+Call getLiveTrain repeatedly and confirm logs show cache hits after first call.
+
+STAGE 3 — Persistence & historical dataset (SQLite or JSONL)
+
+Goal: Start collecting historical snapshots for ML and for heatmap intensity. Use SQLite for structured queries or JSONL if simplicity preferred. I recommend SQLite (better-sqlite3).
+
+Files to add/edit:
+
+services/trainHistory.ts — wrapper to log snapshots and query recent points
+
+Add data/history.db via code (auto-create table if missing)
+
+Database schema (suggested):
+
+CREATE TABLE IF NOT EXISTS train_snapshots (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  train_number TEXT,
+  lat REAL,
+  lng REAL,
+  speed REAL,
+  delay REAL,
+  timestamp INTEGER,
+  provider TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_train_ts ON train_snapshots(train_number, timestamp);
+
+Copilot prompt (Stage 3):
+
+Create services/trainHistory.ts that:
+- uses better-sqlite3 to open DB file from env HISTORY_DB
+- creates table train_snapshots with fields (train_number, lat, lng, speed, delay, timestamp, provider)
+- exports functions:
+  - logSnapshot(providerResult, providerName)
+  - getRecentPoints(minutes = 10) => last N minutes of distinct train coords (group by train_number last sample)
+  - getSectionHistory(trainNumber, sectionBounds, minutes) => for local analysis
+Ensure the module is safe to call multiple times by the worker (use connection reuse).
+
+Test:
+
+Call logSnapshot with a dummy ProviderResult; then run getRecentPoints and view results.
+
+STAGE 4 — Snapshot worker (scheduler)
+
+Goal: Create scripts/snapshotWorker.ts that periodically fetches tracked trains and logs snapshots to DB. This creates history for heatmap and ML.
+
+Copilot prompt (Stage 4):
+
+Create scripts/snapshotWorker.ts that:
+- reads TRACKED_TRAINS from env (comma-separated)
+- every INTERVAL_SECONDS (default 30) does:
+  - for each trainNumber call getLiveTrain() from services/trainDataService
+  - if ProviderResult returned, call trainHistory.logSnapshot(result, providerName)
+  - add small delay between provider calls to avoid bursts (sleep 300ms)
+- handle graceful shutdown on SIGINT
+- prints stats every 100 snapshots saved
+
+Run the worker for a short time to populate DB:
+
+node -r ts-node/register scripts/snapshotWorker.ts
+
+(Or compile ts -> js, or use ts-node)
+
+STAGE 5 — Halt detection & traffic analysis improvements
+
+Goal: Make halt detection robust (multi-sample, compare to scheduled station) and traffic detection cluster-based.
+
+Files to edit:
+
+services/haltDetection.ts
+
+services/trafficAnalyzer.ts
+
+services/predictionEngine.ts
+
+Halt detection algorithm:
+
+Pull last N snapshots for a train (from trainHistory)
+
+Conditions for unexpected halt:
+
+average speed in last M samples <= 1 km/h
+
+distance between current coordinate and scheduled nearest station > stationProximityThreshold (e.g., >200m) OR current time != scheduled stop window
+
+stationaryDuration > minStationarySeconds (e.g., 120s)
+
+Return { halted: boolean, haltDurationSec, sectionId, isScheduledStop }
+
+Traffic analyzer algorithm:
+
+For a given coordinate, query trainHistory for all trains in last X minutes (e.g., 10 min)
+
+Compute haversine distances and count trains within radius r (e.g., 5 km)
+
+Return congestionLevel: LOW / MEDIUM / HIGH and list of nearby trains
+
+Copilot prompt (Stage 5):
+
+Implement services/haltDetection.ts:
+- export async function analyzeHalt(trainNumber) that:
+  - queries last 10 snapshots for train via trainHistory
+  - computes if halted using a sliding-window stationary rule
+  - uses station coordinates from static schedule (data.gov.in) to detect scheduled stops (create helper to load routes from JSON if static)
+  - returns a result object { halted, haltDurationSec, nearestStation, isScheduledStop, samples }
+Implement services/trafficAnalyzer.ts:
+- export async function analyzeTraffic(lat,lng,minutesWindow=10) that:
+  - queries trainHistory.getRecentPoints(minutesWindow)
+  - calculates distances to each point via haversine function
+  - returns nearbyTrains array and congestionLevel per heuristics:
+      0-1 -> LOW, 2-4 -> MEDIUM, 5+ -> HIGH
+Implement services/predictionEngine.ts:
+- export function estimateWait(haltResult, trafficResult, weatherFlags)
+- Use a deterministic formula:
+  baseWait = historicalMedianWaitForSection || 10
+  add = trafficFactor + weatherFactor + (haltDuration > baseWait ? 0 : 0)
+- return { minWait, maxWait, method: 'heuristic' }
+
+Test:
+
+Use the snapshot DB entries from Stage 4 and run analyzeHalt() and analyzeTraffic() to see logical outputs.
+
+STAGE 6 — Server API orchestration: /api/train/[trainNumber]
+
+Goal: Create a single backend API route that the frontend calls. It orchestrates providers -> history -> halt detection -> traffic -> prediction -> insight generation. This is the single source of truth for UI.
+
+File to create:
+
+pages/api/train/[trainNumber].ts or app/api/train/[trainNumber]/route.ts for app router
+
+API behavior:
+
+GET /api/train/12728
+
+Steps:
+
+call trainDataService.getLiveTrain(trainNumber)
+
+log snapshot via trainHistory.logSnapshot
+
+call haltDetection.analyzeHalt
+
+call trafficAnalyzer.analyzeTraffic
+
+call predictionEngine.estimateWait
+
+call insightGenerator.generateInsight (text)
+
+return JSON with composed object { providerResult, haltResult, trafficResult, predictionResult, insight, historicalSamples }
+
+Copilot prompt (Stage 6):
+
+Create API route /api/train/[trainNumber] that performs orchestration:
+- validate trainNumber
+- call trainDataService.getLiveTrain
+- log snapshot with trainHistory
+- call haltDetection.analyzeHalt and trafficAnalyzer.analyzeTraffic
+- call predictionEngine.estimateWait and insightGenerator.generateInsight
+- return structured JSON
+- include caching header and set response caching TTL
+- handle errors gracefully and return mockProvider data if necessary
+
+Test:
+
+curl http://localhost:3000/api/train/12728 should return JSON with fields described.
+
+STAGE 7 — Frontend integration: Train search page + status page
+
+Goal: Build/upgrade the frontend pages to call the /api/train/[trainNumber] route, display the live map, cards, and uncertainty gauge, and toggle demo scenarios.
+
+Files to edit/add:
+
+app/page.tsx or pages/index.tsx — home + search
+
+app/train/[trainNumber]/page.tsx or pages/train/[trainNumber].tsx — status page
+
+components/LiveTrainMap.tsx — integrate HeatmapLayer + Marker cluster + flyTo animation
+
+components/HaltStatusCard.tsx — display halt/prediction/insight
+
+components/UncertaintyGauge.tsx — animated ring using Framer Motion
+
+components/HeatmapLayer.tsx — Leaflet heatmap wrapper (see earlier snippet)
+
+Copilot prompt (Stage 7A - API fetcher hook):
+
+Create hooks/useTrainInsight.ts that:
+- accepts trainNumber, pollingInterval
+- calls /api/train/{trainNumber} initially and then polls every pollingInterval seconds
+- uses SWR or a simple setInterval
+- returns { data, error, loading, refresh } and auto-updates
+
+Copilot prompt (Stage 7B - LiveTrainMap):
+
+Update components/LiveTrainMap.tsx to:
+- accept props { points: ProviderResult[], trackPolyline?: LatLng[], selectedTrain? }
+- render Leaflet map, tileLayer (OpenStreetMap base + OpenRailwayMap overlay)
+- add HeatmapLayer component that takes `[lat, lng, intensity]` points (use leaflet.heat)
+- add MarkerCluster to show clustered trains with counts
+- when selectedTrain changes, call map.flyTo([lat,lng], { duration:1.2 })
+- provide callback on marker click to open train status card
+
+Copilot prompt (Stage 7C - HaltStatusCard + UI polish):
+
+Create a visually appealing component components/HaltStatusCard.tsx:
+- props: { insight, prediction, haltResult, trafficResult, providerResult }
+- use Tailwind + Framer Motion for entrance animations
+- show:
+  - top: train name+number
+  - center: UncertaintyGauge (animated)
+  - below: halt duration, expected window, congestion badges (LOW/MEDIUM/HIGH)
+  - bottom: two action buttons: "Notify me" (register local notification) and "Open news"
+- include small accessible icons from heroicons
+
+Test UI:
+
+Start dev server: npm run dev
+
+Open http://localhost:3000/ and search a train number from TRACKED_TRAINS
+
+Map should fly to location, cards populate, gauge animates.
+
+STAGE 8 — Heatmap and visual analytics
+
+Goal: Create and integrate heatmap of historical halts and congestion zones.
+
+Files to edit/add:
+
+components/HeatmapLayer.tsx (if not final)
+
+pages/heatmap.tsx or a toggle on the main map
+
+Heatmap data source:
+
+Call /api/heatmap that queries trainHistory.getRecentPoints(minutes=720) and returns [lat,lng,intensity]. Intensity can be computed by counting number of halts in that cell in the time window.
+
+Copilot prompt (Stage 8):
+
+Create API route /api/heatmap that:
+- uses trainHistory.getRecentPoints(minutes=720)
+- groups points into grid cells (e.g., 0.01 degrees) and computes intensity
+- returns an array of [lat, lng, intensity]
+Create frontend HeatmapLayer.tsx wrapper for leaflet.heat to display these points
+Add a toggle on the main page to show/hide heatmap and a slider to change the time window
+
+Test:
+
+Load the heatmap and verify clusters appear in areas where snapshotWorker logged stops.
+
+STAGE 9 — News/context fetcher (lightweight)
+
+Goal: Surface recent relevant news headlines to provide corroborative context for unusual halts.
+
+Files to add:
+
+services/newsService.ts
+
+pages/api/news.ts (server-side route that scrapes Google News RSS or uses NewsAPI)
+
+Copilot prompt (Stage 9):
+
+Create services/newsService.ts that:
+- given keywords and optional lat/lng/time window, queries Google News RSS (constructed query)
+- parse RSS with a lightweight parser (rss-parser) or fetch and use cheerio to parse headlines
+- filter headlines by time published (last 6 hours) and by keywords like "rail", "train", "block", "strike", "derailment"
+- return a trimmed list of {title, source, link, pubDate}
+Create /api/news?query=... that uses newsService and returns JSON
+
+Frontend integration:
+
+Add a "News" button on HaltStatusCard that fetches /api/news?query=rail+{region} and shows small list with “unverified” badge.
+
+STAGE 10 — Demo scenarios & UI toggles (presentation polish)
+
+Goal: Provide quick toggles for judges to see different scenarios: Normal, Traffic Hold, Long Unusual Halt. Build scenario runner that switches frontend between live mode and simulated scenarios.
+
+Files to add/edit:
+
+components/DemoScenarioControls.tsx
+
+services/demoScenarios.ts (mock data presets)
+
+Copilot prompt (Stage 10):
+
+Create components/DemoScenarioControls.tsx with buttons: Normal Run, Traffic Hold, Long Halt
+- On clicking a scenario, it sets a demoMode flag in local storage and forces the use of demoScenarios from services/demoScenarios.ts
+- demoScenarios should expose sample ProviderResult sets and corresponding historical points
+- The frontend useTrainInsight hook should accept demoMode param and prefer demoScenarios when enabled
+
+Demo script for presentation:
+
+Add package.json script: "demo": "cross-env DEMO_MODE=1 next start"
+(or run the worker logging demo snapshots)
+
+STAGE 11 — Notifications / safety advisory & UX touches
+
+Goal: Add UI that recommends "Do not step out" or "Safe to step out" based on uncertainty index and predicted wait window. Add a "notify me" local notification or email (simple).
+
+Decision logic examples:
+
+If Uncertainty == HIGH or haltDuration < 5m or predicted maxWait > 20m → show "Recommend: Stay onboard"
+
+If Uncertainty == LOW and predicted window > 10–30m → show "Okay to step out briefly. Expected return time: X".
+
+Copilot prompt (Stage 11):
+
+Update HaltStatusCard.tsx to compute safetyAdvice based on prediction and haltResult:
+- show prominent admonition box (red/orange) if unsafe, green if safe
+- Add a "Notify Me" button that saves the train ID to localStorage and sets up client-side polling to call /api/train/{id} every 30s; when state changes to resumed, show browser notification (Notification API) and toast
+- If Notification permission is not granted, show instructions to enable it or fallback to email mock (display message)
+STAGE 12 — UI polishing: Tailwind + Framer Motion exact hints
+
+Goal: Make UI look contest-ready with animations, spacing, and hues.
+
+Design tokens:
+
+/* use in tailwind.config.js: extend colors */
+colors:
+  'bg-deep': '#0b1220'
+  'accent-blue': '#00c2ff'
+  'muted': '#98a0aa'
+  'warn': '#ffb020'
+  'danger': '#ff4d4f'
+
+Animation hints:
+
+Card entrance: motion.div initial={{ opacity:0, y:12 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.35 }}
+
+Gauge ring: use SVG circle stroke-dashoffset and animate via motion to target value.
+
+Map marker pulse: use CSS animation scale + opacity animated class (pulsing circle behind marker).
+
+Copilot prompt (Stage 12):
+
+Refactor CSS/Tailwind usage in HaltStatusCard and UncertaintyGauge to use the theme above and add Framer Motion entrance animation and gauge animation. Provide accessible ARIA labels for all indicators.
+STAGE 13 — Logging, error handling & monitoring
+
+Goal: Add robust try/catch, log to console + file in logs/ for demo debugging.
+
+Files:
+
+services/logger.ts (small wrapper to append file logs)
+
+Use logger in trainDataService, trainHistory, and snapshotWorker.
+
+Copilot prompt (Stage 13):
+
+Create services/logger.ts to both console.log and append to logs/app.log with timestamp. Replace console.log warnings in core services with logger calls.
+STAGE 14 — Test plan & sanity checks
+
+Manual test checklist (run after completing stages):
+
+Start dev server:
+
+npm run dev
+
+Start snapshot worker (in separate terminal):
+
+node -r ts-node/register scripts/snapshotWorker.ts
+
+Open http://localhost:3000 — search sample train number from TRACKED_TRAINS.
+
+Confirm:
+
+Map centers on train
+
+Card shows halt/prediction/uncertainty
+
+Heatmap toggles show meaningful points after 5–10 minutes of worker running
+
+Demo scenarios toggle changes UI
+
+News button fetches and shows headlines
+
+Clicking "Notify me" triggers browser notification when train resumes (simulate resume in demo)
+
+Check DB data/history.db using sqlite3 to confirm snapshots written:
+
+sqlite3 data/history.db "select count(*) from train_snapshots;"
+
+Check logs in logs/app.log for provider errors and caching messages.
+
+STAGE 15 — Deployment & presentation packaging
+
+Options:
+
+Deploy only frontend to Vercel; use a small backend (snapshot worker + DB) on a cheap VM / Render / Fly / Railway.
+
+For hackathon demo, local laptop + ngrok works best. Expose your dev server via ngrok http 3000 so judges can access live demo.
+
+Copilot prompt (Stage 15):
+
+Create a README section for deploying locally with ngrok:
+- start app `npm run dev`
+- start worker `node -r ts-node/register scripts/snapshotWorker.ts`
+- then `ngrok http 3000`
+- copy the public URL for presentation.
+Also create a script `npm run demo` that sets DEMO_MODE=1 and runs both server and worker in parallel (use `concurrently` package if needed).
+STAGE 16 — Future ML pipeline (Phase 2) stub for Copilot
+
+Goal: Provide a code stub that reads SQLite, creates a CSV, and trains a LightGBM/XGBoost model for halt_duration predicting. Export trained model to joblib/onnx or simple JSON mapping.
+
+Copilot prompt (Stage 16):
+
+Create a scripts/train_model.py that:
+- reads data/history.db train_snapshots table
+- aggregates per-halt records (start timestamp to resume timestamp) to compute halt_duration
+- extracts features: section hash, hour_of_day, day_of_week, nearbyTrainCountAvg, weatherFlags
+- trains an XGBoost regressor to predict halt_duration
+- saves model to models/xgb_model.bin
+- provide a minimal Flask microservice services/mlPredictor.js (Node) or app to load model and expose /predict
+STAGE 17 — PR & commit guidance (what to commit after each stage)
+
+After each stage, commit with message indicating scope. Example sequence:
+
+git add . && git commit -m "chore: add providers interface & mock provider stub"
+
+git commit -m "feat: railYatri provider and scraper fallback"
+
+git commit -m "feat: caching and retry logic for provider layer"
+
+git commit -m "feat: add snapshot worker and sqlite logger"
+
+git commit -m "feat: create API orchestration /api/train/[trainNumber]"
+
+git commit -m "feat: frontend integration, map + halt card + gauge"
+
+git commit -m "chore: add heatmap + demo scenarios + UI polish"
+
+Create branches per major features (e.g., feature/providers, feature/history, feature/ui).
+
+COPILOT PROMPTS COMBINED (for copy/paste sequence)
+
+Use the following block prompts for Copilot — feed them one by one. Each prompt asks Copilot to generate a complete file or module.
+
+Create services/providers/index.ts (types + interface)
+
+Create services/providers/mockProvider.ts (reads public/mockTrainData.json)
+
+Create services/providers/railYatriProvider.ts (axios based attempt at JSON endpoint)
+
+Create services/providers/railYatriScraper.ts (cheerio fallback parsing window.INITIAL_STATE)
+
+Create services/trainDataService.ts (provider orchestration, caching, rate limiting, p-retry)
+
+Create services/trainHistory.ts (sqlite wrapper with logSnapshot and getRecentPoints)
+
+Create scripts/snapshotWorker.ts (poll TRACKED_TRAINS and logSnapshot)
+
+Create services/haltDetection.ts (sliding window multi-sample detection)
+
+Create services/trafficAnalyzer.ts (nearbyTrains count and congestionLevel)
+
+Create services/predictionEngine.ts (heuristic estimateWait)
+
+Create services/insightGenerator.ts (turns results into human language)
+
+Create pages/api/train/[trainNumber].ts (or app route) orchestration endpoint
+
+Create hooks/useTrainInsight.ts (polling hook)
+
+Create components/LiveTrainMap.tsx (map with heatmap and clusters)
+
+Create components/HeatmapLayer.tsx (leaflet.heat wrapper)
+
+Create components/HaltStatusCard.tsx (UI card with Framer Motion)
+
+Create components/UncertaintyGauge.tsx (animated SVG gauge)
+
+Create services/newsService.ts and pages/api/news.ts
+
+Create components/DemoScenarioControls.tsx and services/demoScenarios.ts
+
+Create services/logger.ts and wire to core modules
+
+Create scripts/train_model.py stub for ML pipeline
+
+Add npm scripts to package.json: "start", "dev", "worker", "demo", "train-model"
+
+Each prompt should instruct Copilot to include detailed comments, TypeScript types, environment variable usage, error handling, and test instructions.
+
+FINAL NOTES & tips for best success with Copilot
+
+One file at a time: Copilot produces better output when asked to create a single file/component with clear requirements and example inputs/outputs.
+
+Provide sample JSON: For the scraper prompt, paste a small sample of the HTML or JSON you obtained from RailYatri into Copilot so it can craft accurate parsing code. If you don’t have HTML, Copilot can create a robust regex-based extractor; still expect manual tuning.
+
+Run tests often: After generating each file, run it and fix small runtime errors — Copilot may create small TypeScript typos or import paths.
+
+Lock UI style: Provide Copilot a Tailwind color palette and a sample component to copy style from; that keeps design consistent.
+
+Fallback to mock: Ensure mockProvider always exists and is first-load tested so the app works with zero network access.
+
+Respect scraping rules: throttle and cache; do not hammer public sites.

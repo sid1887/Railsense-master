@@ -1,0 +1,1345 @@
+{
+  "trains": {
+    "12015": {
+      "trainNumber": "12015",
+      "trainName": "Shatabdi Express (Ahmedabad)",
+      "source": "Ahmedabad Junction (ADI)",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Ahmedabad Junction (ADI)",
+          "code": "ADI",
+          "arrivalTime": "--",
+          "departureTime": "06:00"
+        },
+        {
+          "station": "Vadodara Junction",
+          "code": "VJ",
+          "arrivalTime": "06:00",
+          "departureTime": "06:00"
+        },
+        {
+          "station": "Indore Junction",
+          "code": "IJ",
+          "arrivalTime": "06:00",
+          "departureTime": "06:00"
+        },
+        {
+          "station": "Ujjain Junction",
+          "code": "UJ",
+          "arrivalTime": "06:00",
+          "departureTime": "06:00"
+        },
+        {
+          "station": "Bina Junction",
+          "code": "BJ",
+          "arrivalTime": "06:00",
+          "departureTime": "06:00"
+        },
+        {
+          "station": "Gwalior Junction",
+          "code": "GJ",
+          "arrivalTime": "06:00",
+          "departureTime": "06:00"
+        },
+        {
+          "station": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "arrivalTime": "06:00",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:05:46.496Z",
+      "lastVerified": "2026-03-15T13:05:46.496Z"
+    },
+    "12622": {
+      "trainNumber": "12622",
+      "trainName": "Tamil Nadu Express",
+      "source": "Chennai Central (MAS)",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Chennai Central (MAS)",
+          "code": "MAS",
+          "arrivalTime": "--",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Tirupati",
+          "code": "T",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Nellore",
+          "code": "N",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Visakhapatnam Junction",
+          "code": "VJ",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Rayagada",
+          "code": "R",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Guwahati Junction",
+          "code": "GJ",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Nagpur Junction",
+          "code": "NJ",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Itarsi Junction",
+          "code": "IJ",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Bhopal Junction",
+          "code": "BJ",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "Gwalior Junction",
+          "code": "GJ",
+          "arrivalTime": "20:10",
+          "departureTime": "20:10"
+        },
+        {
+          "station": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "arrivalTime": "20:10",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:03:50.769Z",
+      "lastVerified": "2026-03-15T13:03:50.769Z"
+    },
+    "12955": {
+      "trainNumber": "12955",
+      "trainName": "Somnath Express",
+      "source": "Mumbai Central (MMCT)",
+      "destination": "Nagpur Junction (NG)",
+      "route": [
+        {
+          "station": "Mumbai Central (MMCT)",
+          "code": "MMCT",
+          "arrivalTime": "--",
+          "departureTime": "18:40"
+        },
+        {
+          "station": "Dadar Junction",
+          "code": "DJ",
+          "arrivalTime": "18:40",
+          "departureTime": "18:40"
+        },
+        {
+          "station": "Thane Junction",
+          "code": "TJ",
+          "arrivalTime": "18:40",
+          "departureTime": "18:40"
+        },
+        {
+          "station": "Nashik Road",
+          "code": "NR",
+          "arrivalTime": "18:40",
+          "departureTime": "18:40"
+        },
+        {
+          "station": "Aurangabad",
+          "code": "A",
+          "arrivalTime": "18:40",
+          "departureTime": "18:40"
+        },
+        {
+          "station": "Akola Junction",
+          "code": "AJ",
+          "arrivalTime": "18:40",
+          "departureTime": "18:40"
+        },
+        {
+          "station": "Nagpur Junction (NG)",
+          "code": "NG",
+          "arrivalTime": "18:40",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:03:41.791Z",
+      "lastVerified": "2026-03-15T13:03:41.791Z"
+    },
+    "13123": {
+      "trainNumber": "13123",
+      "trainName": "Shatabdi Express",
+      "source": "New Delhi (NDLS)",
+      "destination": "Jaipur Junction (JP)",
+      "route": [
+        {
+          "station": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "arrivalTime": "--",
+          "departureTime": "06:15"
+        },
+        {
+          "station": "Gurgaon",
+          "code": "G",
+          "arrivalTime": "06:15",
+          "departureTime": "06:15"
+        },
+        {
+          "station": "Mathura Junction",
+          "code": "MJ",
+          "arrivalTime": "06:15",
+          "departureTime": "06:15"
+        },
+        {
+          "station": "Agra Cantt",
+          "code": "AC",
+          "arrivalTime": "06:15",
+          "departureTime": "06:15"
+        },
+        {
+          "station": "Jaipur Junction (JP)",
+          "code": "JP",
+          "arrivalTime": "06:15",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:51:48.044Z",
+      "lastVerified": "2026-03-15T13:51:48.044Z"
+    },
+    "14645": {
+      "trainNumber": "14645",
+      "trainName": "Hussain Sagar Express",
+      "source": "Secunderabad Junction (SC)",
+      "destination": "Bengaluru City Junction (SBC)",
+      "route": [
+        {
+          "station": "Secunderabad Junction (SC)",
+          "code": "SC",
+          "arrivalTime": "--",
+          "departureTime": "14:00"
+        },
+        {
+          "station": "Tandur",
+          "code": "T",
+          "arrivalTime": "14:00",
+          "departureTime": "14:00"
+        },
+        {
+          "station": "Kurnool City",
+          "code": "KC",
+          "arrivalTime": "14:00",
+          "departureTime": "14:00"
+        },
+        {
+          "station": "Guntakal Junction",
+          "code": "GJ",
+          "arrivalTime": "14:00",
+          "departureTime": "14:00"
+        },
+        {
+          "station": "Dhone Junction",
+          "code": "DJ",
+          "arrivalTime": "14:00",
+          "departureTime": "14:00"
+        },
+        {
+          "station": "Tandippa",
+          "code": "T",
+          "arrivalTime": "14:00",
+          "departureTime": "14:00"
+        },
+        {
+          "station": "Bangalore City Junction (SBC)",
+          "code": "SBC",
+          "arrivalTime": "14:00",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:12:46.704Z",
+      "lastVerified": "2026-03-15T13:12:46.704Z"
+    },
+    "16731": {
+      "trainNumber": "16731",
+      "trainName": "Visakhapatnam Express",
+      "source": "Secunderabad Junction (SC)",
+      "destination": "Visakhapatnam Junction (VSKP)",
+      "route": [
+        {
+          "station": "Secunderabad Junction (SC)",
+          "code": "SC",
+          "arrivalTime": "--",
+          "departureTime": "07:30"
+        },
+        {
+          "station": "Karimnagar Junction",
+          "code": "KJ",
+          "arrivalTime": "07:30",
+          "departureTime": "07:30"
+        },
+        {
+          "station": "Peddapalli Junction",
+          "code": "PJ",
+          "arrivalTime": "07:30",
+          "departureTime": "07:30"
+        },
+        {
+          "station": "Ramagundam Junction",
+          "code": "RJ",
+          "arrivalTime": "07:30",
+          "departureTime": "07:30"
+        },
+        {
+          "station": "Vikarabad",
+          "code": "V",
+          "arrivalTime": "07:30",
+          "departureTime": "07:30"
+        },
+        {
+          "station": "Visakhapatnam Junction (VSKP)",
+          "code": "VSKP",
+          "arrivalTime": "07:30",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:13:57.909Z",
+      "lastVerified": "2026-03-15T13:13:57.910Z"
+    },
+    "18111": {
+      "trainNumber": "18111",
+      "trainName": "Ranchi Express",
+      "source": "Howrah Junction (HWH)",
+      "destination": "Ranchi Junction (RNC)",
+      "route": [
+        {
+          "station": "Howrah Junction (HWH)",
+          "code": "HWH",
+          "arrivalTime": "--",
+          "departureTime": "08:00"
+        },
+        {
+          "station": "Asansol Junction",
+          "code": "AJ",
+          "arrivalTime": "08:00",
+          "departureTime": "08:00"
+        },
+        {
+          "station": "Dhanbad Junction",
+          "code": "DJ",
+          "arrivalTime": "08:00",
+          "departureTime": "08:00"
+        },
+        {
+          "station": "Parasnath Junction",
+          "code": "PJ",
+          "arrivalTime": "08:00",
+          "departureTime": "08:00"
+        },
+        {
+          "station": "Ranchi Junction (RNC)",
+          "code": "RNC",
+          "arrivalTime": "08:00",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:14:09.283Z",
+      "lastVerified": "2026-03-15T13:14:09.283Z"
+    },
+    "20059": {
+      "trainNumber": "20059",
+      "trainName": "Indore Express",
+      "source": "Mumbai Central (MMCT)",
+      "destination": "Indore Junction (INDB)",
+      "route": [
+        {
+          "station": "Mumbai Central (MMCT)",
+          "code": "MMCT",
+          "arrivalTime": "--",
+          "departureTime": "22:00"
+        },
+        {
+          "station": "Dadar Junction",
+          "code": "DJ",
+          "arrivalTime": "22:00",
+          "departureTime": "22:00"
+        },
+        {
+          "station": "Thane Junction",
+          "code": "TJ",
+          "arrivalTime": "22:00",
+          "departureTime": "22:00"
+        },
+        {
+          "station": "Nashik Road",
+          "code": "NR",
+          "arrivalTime": "22:00",
+          "departureTime": "22:00"
+        },
+        {
+          "station": "Vadodara Junction",
+          "code": "VJ",
+          "arrivalTime": "22:00",
+          "departureTime": "22:00"
+        },
+        {
+          "station": "Ujjain Junction",
+          "code": "UJ",
+          "arrivalTime": "22:00",
+          "departureTime": "22:00"
+        },
+        {
+          "station": "Indore Junction (INDB)",
+          "code": "INDB",
+          "arrivalTime": "22:00",
+          "departureTime": "--"
+        }
+      ],
+      "addedAt": "2026-03-15T13:18:13.776Z",
+      "lastVerified": "2026-03-15T13:18:13.776Z"
+    },
+    "12002": {
+      "trainNumber": "12002",
+      "trainName": "Bhagirath Express",
+      "source": "LocalCatalog",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:48:53.732121",
+      "lastVerified": "2026-03-15T19:48:53.732121"
+    },
+    "12005": {
+      "trainNumber": "12005",
+      "trainName": "Shatabdi Express",
+      "source": "LocalCatalog",
+      "destination": "Bhopal Junction (BPL)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Bhopal Junction",
+          "code": "BPL",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:48:56.422634",
+      "lastVerified": "2026-03-15T19:48:56.422634"
+    },
+    "12031": {
+      "trainNumber": "12031",
+      "trainName": "Rajdhani Express",
+      "source": "LocalCatalog",
+      "destination": "Kolkata (KOAA)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Kolkata",
+          "code": "KOAA",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:00.491898",
+      "lastVerified": "2026-03-15T19:49:00.491898"
+    },
+    "12049": {
+      "trainNumber": "12049",
+      "trainName": "Shatabdi Express",
+      "source": "LocalCatalog",
+      "destination": "Chandigarh (CDG)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Chandigarh",
+          "code": "CDG",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:02.410646",
+      "lastVerified": "2026-03-15T19:49:02.410646"
+    },
+    "12137": {
+      "trainNumber": "12137",
+      "trainName": "Punjab Mail",
+      "source": "LocalCatalog",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Firozpur Junction",
+          "code": "FZR",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:03.852080",
+      "lastVerified": "2026-03-15T19:49:03.852080"
+    },
+    "12141": {
+      "trainNumber": "12141",
+      "trainName": "Amar Nath Express",
+      "source": "LocalCatalog",
+      "destination": "Jammu Tawi (JAT)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Jammu Tawi",
+          "code": "JAT",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:05.418323",
+      "lastVerified": "2026-03-15T19:49:05.418323"
+    },
+    "12231": {
+      "trainNumber": "12231",
+      "trainName": "Rajdhani Express",
+      "source": "LocalCatalog",
+      "destination": "Kolkata (KOAA)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Kolkata",
+          "code": "KOAA",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:06.977524",
+      "lastVerified": "2026-03-15T19:49:06.977524"
+    },
+    "12273": {
+      "trainNumber": "12273",
+      "trainName": "Jnaneswari Express",
+      "source": "LocalCatalog",
+      "destination": "Kolkata (KOAA)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Kolkata",
+          "code": "KOAA",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:08.432454",
+      "lastVerified": "2026-03-15T19:49:08.432454"
+    },
+    "12301": {
+      "trainNumber": "12301",
+      "trainName": "Howrah Mail",
+      "source": "LocalCatalog",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:09.937351",
+      "lastVerified": "2026-03-15T19:49:09.937351"
+    },
+    "12311": {
+      "trainNumber": "12311",
+      "trainName": "Rajendra Nagar Express",
+      "source": "LocalCatalog",
+      "destination": "Patna Junction (PTNR)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Patna Junction",
+          "code": "PTNR",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:11.888389",
+      "lastVerified": "2026-03-15T19:49:11.888389"
+    },
+    "12421": {
+      "trainNumber": "12421",
+      "trainName": "Trivandrum Rajdhani Express",
+      "source": "LocalCatalog",
+      "destination": "Thiruvananthapuram (TVM)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Thiruvananthapuram",
+          "code": "TVM",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:13.198899",
+      "lastVerified": "2026-03-15T19:49:13.198899"
+    },
+    "12556": {
+      "trainNumber": "12556",
+      "trainName": "Godan Express",
+      "source": "LocalCatalog",
+      "destination": "Varanasi Junction (BSB)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Varanasi Junction",
+          "code": "BSB",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:14.523095",
+      "lastVerified": "2026-03-15T19:49:14.523095"
+    },
+    "12625": {
+      "trainNumber": "12625",
+      "trainName": "Tamil Nadu Express",
+      "source": "LocalCatalog",
+      "destination": "Chennai Central (MAS)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Chennai Central",
+          "code": "MAS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:15.751655",
+      "lastVerified": "2026-03-15T19:49:15.751655"
+    },
+    "12655": {
+      "trainNumber": "12655",
+      "trainName": "Navjeevan Express",
+      "source": "LocalCatalog",
+      "destination": "Chhapra Junction (CPR)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Chhapra Junction",
+          "code": "CPR",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:17.232386",
+      "lastVerified": "2026-03-15T19:49:17.232386"
+    },
+    "12659": {
+      "trainNumber": "12659",
+      "trainName": "Bengal Nagpur Express",
+      "source": "LocalCatalog",
+      "destination": "Nagpur Junction (NGP)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Nagpur Junction",
+          "code": "NGP",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:18.722403",
+      "lastVerified": "2026-03-15T19:49:18.722403"
+    },
+    "12706": {
+      "trainNumber": "12706",
+      "trainName": "Garib Rath Express",
+      "source": "LocalCatalog",
+      "destination": "Panipat Junction (PNP)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Panipat Junction",
+          "code": "PNP",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:20.412368",
+      "lastVerified": "2026-03-15T19:49:20.412368"
+    },
+    "12723": {
+      "trainNumber": "12723",
+      "trainName": "Telangana Express",
+      "source": "LocalCatalog",
+      "destination": "Secunderabad Junction (SC)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Secunderabad Junction",
+          "code": "SC",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:22.097082",
+      "lastVerified": "2026-03-15T19:49:22.097082"
+    },
+    "12777": {
+      "trainNumber": "12777",
+      "trainName": "Shri Shakti Express",
+      "source": "LocalCatalog",
+      "destination": "Indore Junction (INDB)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Indore Junction",
+          "code": "INDB",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:26.891823",
+      "lastVerified": "2026-03-15T19:49:26.891823"
+    },
+    "12789": {
+      "trainNumber": "12789",
+      "trainName": "Gondwana Express",
+      "source": "LocalCatalog",
+      "destination": "Raipur Junction (R)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Raipur Junction",
+          "code": "R",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:28.880886",
+      "lastVerified": "2026-03-15T19:49:28.880886"
+    },
+    "12809": {
+      "trainNumber": "12809",
+      "trainName": "Howrah Express",
+      "source": "LocalCatalog",
+      "destination": "Benaras Junction (BSB)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Benaras Junction",
+          "code": "BSB",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:30.407297",
+      "lastVerified": "2026-03-15T19:49:30.407297"
+    },
+    "12811": {
+      "trainNumber": "12811",
+      "trainName": "Howrah Express",
+      "source": "LocalCatalog",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:33.022536",
+      "lastVerified": "2026-03-15T19:49:33.022536"
+    },
+    "12911": {
+      "trainNumber": "12911",
+      "trainName": "Gitanjali Express",
+      "source": "LocalCatalog",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:34.808483",
+      "lastVerified": "2026-03-15T19:49:34.808483"
+    },
+    "13005": {
+      "trainNumber": "13005",
+      "trainName": "Howrah Mail",
+      "source": "LocalCatalog",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:36.617374",
+      "lastVerified": "2026-03-15T19:49:36.617374"
+    },
+    "13145": {
+      "trainNumber": "13145",
+      "trainName": "Sambha Express",
+      "source": "LocalCatalog",
+      "destination": "Gaya Junction (GAYA)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Gaya Junction",
+          "code": "GAYA",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:38.422000",
+      "lastVerified": "2026-03-15T19:49:38.422000"
+    },
+    "13345": {
+      "trainNumber": "13345",
+      "trainName": "Southerner Express",
+      "source": "LocalCatalog",
+      "destination": "Virudunagar Junction (VRU)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Virudunagar Junction",
+          "code": "VRU",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:39.976861",
+      "lastVerified": "2026-03-15T19:49:39.976861"
+    },
+    "15906": {
+      "trainNumber": "15906",
+      "trainName": "Avadh Assam Express",
+      "source": "LocalCatalog",
+      "destination": "Lucknow Junction (LKO)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Lucknow Junction",
+          "code": "LKO",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:41.526678",
+      "lastVerified": "2026-03-15T19:49:41.526678"
+    },
+    "16093": {
+      "trainNumber": "16093",
+      "trainName": "Lucknow Mail",
+      "source": "LocalCatalog",
+      "destination": "Howrah (HWH)",
+      "route": [
+        {
+          "station": "Lucknow Junction",
+          "code": "LKO",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:43.490987",
+      "lastVerified": "2026-03-15T19:49:43.490987"
+    },
+    "16504": {
+      "trainNumber": "16504",
+      "trainName": "Uttam Express",
+      "source": "LocalCatalog",
+      "destination": "Lucknow Junction (LKO)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Lucknow Junction",
+          "code": "LKO",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:45.250627",
+      "lastVerified": "2026-03-15T19:49:45.250627"
+    },
+    "17310": {
+      "trainNumber": "17310",
+      "trainName": "Ekta Express",
+      "source": "LocalCatalog",
+      "destination": "Indore Junction (INDB)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Indore Junction",
+          "code": "INDB",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:46.940334",
+      "lastVerified": "2026-03-15T19:49:46.940334"
+    },
+    "19005": {
+      "trainNumber": "19005",
+      "trainName": "Koraput Express",
+      "source": "LocalCatalog",
+      "destination": "Koraput Station (KORU)",
+      "route": [
+        {
+          "station": "Howrah",
+          "code": "HWH",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Koraput Station",
+          "code": "KORU",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:48.606714",
+      "lastVerified": "2026-03-15T19:49:48.606714"
+    },
+    "22101": {
+      "trainNumber": "22101",
+      "trainName": "Rajiv Gandhi Shatabdi",
+      "source": "LocalCatalog",
+      "destination": "Lucknow Junction (LKO)",
+      "route": [
+        {
+          "station": "New Delhi",
+          "code": "NDLS",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Intermediate Station",
+          "code": "INT",
+          "arrival": "08:00",
+          "departure": "08:15"
+        },
+        {
+          "station": "Lucknow Junction",
+          "code": "LKO",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ],
+      "status": "unknown",
+      "dataSource": "mock",
+      "addedAt": "2026-03-15T19:49:50.166108",
+      "lastVerified": "2026-03-15T19:49:50.166108"
+    }
+  },
+  "lastUpdated": "2026-03-15T13:51:48.044Z"
+}

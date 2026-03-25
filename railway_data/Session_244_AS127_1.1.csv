@@ -1,0 +1,19 @@
+Sr.No,Zonal Railway,Trains Trips Delayed - August,Trains Trips Delayed - September,Trains Trips Delayed - October,Trains Trips Delayed - November,Trains Trips Delayed - December (1 to 15),Trains Trips Delayed - Total,Trains Trips Delayed - Avg per day,Train Trips Cancelled - August,Train Trips Cancelled - September,Train Trips Cancelled - October,Train Trips Cancelled - November,Train Trips Cancelled - December (1 to 15),Train Trips Cancelled - Total,Train Trips Cancelled - Avg per day,Trains trips reached Right Time or Before Time - August,Trains trips reached Right Time or Before Time - September,Trains trips reached Right Time or Before Time - October,Trains trips reached Right Time or Before Time - November,Trains trips reached Right Time or Before Time - December (1 to 15),Trains trips reached Right Time or Before Time - Total,Trains trips reached Right Time or Before Time - Avg per day
+1,Central,554,1017,899,920,512,3902,28,94,148,17,88,55,402,3,3522,3030,3380,3094,1412,14438,105
+2,East Coast,265,443,424,371,203,1706,12,80,58,53,79,54,324,2,1372,1216,1298,1249,600,5735,42
+3,East Central,965,1403,1730,1625,725,6448,47,114,97,29,53,122,415,3,2086,1630,1572,1512,747,7547,55
+4,Eastern,593,788,893,900,393,3567,26,238,237,93,45,49,662,5,2258,1979,2142,2049,1036,9464,69
+5,Konkan,21,37,30,28,29,145,1,4,0,0,0,1,5,0,229,210,226,227,100,992,7
+6,North Central,262,370,413,596,245,1886,14,14,65,34,39,65,217,2,1108,905,904,669,346,3932,29
+7,North Eastern,553,819,897,1142,474,3885,28,26,39,22,11,33,131,1,1660,1295,1282,924,556,5717,42
+8,Northeast Frontier,190,243,408,328,126,1295,9,540,664,229,92,26,1551,11,1213,999,1313,1355,676,5556,41
+9,Northern,2200,3517,3781,5828,2269,17595,128,601,509,192,251,439,1992,15,6450,4837,5320,2831,1733,21171,155
+10,North Western,340,532,620,789,412,2693,20,135,118,48,22,33,356,3,1956,1689,1754,1550,713,7662,56
+11,South Central,186,378,283,342,193,1382,10,19,9,0,4,5,37,0,3316,3044,3291,3152,1547,14350,105
+12,South East Central,100,217,205,237,120,879,6,21,14,27,15,7,84,1,659,534,546,506,250,2495,18
+13,South Eastern,299,489,501,478,245,2012,15,44,52,40,91,31,258,2,2080,1803,1913,1804,922,8522,62
+14,Southern,665,1254,1214,1575,836,5544,40,69,46,34,38,34,221,2,5245,4470,4711,4169,1996,20591,150
+15,South Western,236,393,346,428,269,1672,12,21,25,3,4,0,53,0,2422,2186,2314,2174,1034,10130,74
+16,West Central,190,311,225,390,182,1298,9,3,5,14,16,17,55,0,1151,1020,1103,886,463,4623,34
+17,Western,360,621,793,911,553,3238,24,102,35,13,25,18,193,1,3327,3021,2994,2734,1247,13323,97
+Total,Total,7979,12832,13662,16888,7786,59147,432,2125,2121,848,873,990,6957,51,40054,33868,36063,30885,15378,156248,1140

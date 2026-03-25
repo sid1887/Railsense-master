@@ -1,0 +1,184 @@
+/**
+ * Admin Endpoint: /api/admin/providers/status
+ * Monitor health, success rates, and latency of all data providers
+ * Essential for diagnosing data quality issues during demo
+ */
+
+'use server';
+
+import { NextRequest, NextResponse } from 'next/server';
+import { ntesProvider } from '@/services/providers/ntesProvider';
+import { railyatriProvider } from '@/services/providers/railyatriProvider';
+import Database from 'better-sqlite3';
+import path from 'path';
+
+const dbPath = path.join(process.cwd(), 'data', 'history.db');
+let db: Database.Database | null = null;
+
+function getDB(): Database.Database {
+  if (!db) {
+    db = new Database(dbPath);
+  }
+  return db;
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    const now = Date.now();
+    const uptime1h = now - 3600000;
+    const uptime24h = now - 86400000;
+
+    // Get provider stats
+    const providers = [
+      {
+        name: 'NTES',
+        provider: ntesProvider,
+      },
+      {
+        name: 'RailYatri',
+        provider: railyatriProvider,
+      },
+    ];
+
+    const providerStats = providers.map(({ name, provider }) => {
+      const successRate = provider.stats.successCount + provider.stats.failureCount > 0
+        ? provider.stats.successCount / (provider.stats.successCount + provider.stats.failureCount)
+        : 0;
+
+      return {
+        name,
+        enabled: provider.enabled,
+        rateLimit: provider.rateLimit,
+        stats: {
+          successCount: provider.stats.successCount,
+          failureCount: provider.stats.failureCount,
+          successRate: Math.round(successRate * 100) / 100,
+          avgLatencyMs: Math.round(provider.stats.avgLatencyMs),
+          lastError: provider.stats.lastError,
+          lastSuccessTime: provider.stats.lastSuccessTime
+            ? new Date(provider.stats.lastSuccessTime).toISOString()
+            : null,
+        },
+      };
+    });
+
+    // Get collector health
+    const collectorStats = getCollectorHealth(getDB());
+
+    // Get data quality metrics
+    const dataQuality = getDataQualityMetrics(getDB());
+
+    const response = {
+      timestamp: new Date().toISOString(),
+      uptime: {
+        last_1h_ms: 3600000,
+        last_24h_ms: 86400000,
+      },
+      providers: providerStats,
+      collector: collectorStats,
+      dataQuality,
+      recommendations: generateRecommendations(providerStats, collectorStats),
+    };
+
+    return NextResponse.json(response);
+  } catch (error: any) {
+    console.error(`[Admin API] Error:`, error);
+    return NextResponse.json(
+      { error: error.message || 'Failed to fetch admin stats' },
+      { status: 500 }
+    );
+  }
+}
+
+/**
+ * Get collector worker health
+ */
+function getCollectorHealth(db: Database.Database): any {
+  try {
+    const stmt =
+      db.prepare(`SELECT COUNT(*) as total, MAX(timestamp) as latest
+      FROM train_snapshots`);
+    const result = stmt.get() as { total?: number; latest?: number } | undefined;
+
+    const total = result?.total || 0;
+    const latest = result?.latest || 0;
+    const ageSeconds = Math.floor((Date.now() - latest) / 1000);
+
+    return {
+      collector_running: ageSeconds < 120, // assume dead if no update in 2 mins
+      total_snapshots: total,
+      last_snapshot_age_sec: ageSeconds,
+      last_snapshot_time: new Date(latest).toISOString(),
+    };
+  } catch (e) {
+    console.warn(`[Admin] Collector health query failed:`, e);
+    return {
+      error: 'Could not query collector health',
+    };
+  }
+}
+
+/**
+ * Get data quality metrics across all tracked trains
+ */
+function getDataQualityMetrics(db: Database.Database): any {
+  try {
+    const stmt = db.prepare(`
+      SELECT
+        COUNT(DISTINCT train_number) as unique_trains,
+        COUNT(*) as total_samples,
+        AVG(CAST(speed as FLOAT)) as avg_speed,
+        AVG(CAST(delay as FLOAT)) as avg_delay,
+        COUNT(DISTINCT source) as unique_sources
+      FROM train_snapshots
+      WHERE timestamp >= ?
+    `);
+
+    const last24h = Date.now() - 86400000;
+    const result = stmt.get(last24h) as any;
+
+    return {
+      unique_trains: result?.unique_trains || 0,
+      total_samples_24h: result?.total_samples || 0,
+      avg_speed: Math.round((result?.avg_speed || 0) * 10) / 10,
+      avg_delay_min: Math.round((result?.avg_delay || 0) * 10) / 10,
+      unique_sources: result?.unique_sources || 0,
+    };
+  } catch (e) {
+    console.warn(`[Admin] Data quality metrics failed:`, e);
+    return { error: 'Could not query data quality metrics' };
+  }
+}
+
+/**
+ * Generate actionable recommendations based on health
+ */
+function generateRecommendations(providerStats: any[], collectorStats: any): string[] {
+  const recommendations: string[] = [];
+
+  // Check provider health
+  for (const provider of providerStats) {
+    if (provider.stats.successRate < 0.5) {
+      recommendations.push(`⚠️ ${provider.name} has low success rate (${Math.round(provider.stats.successRate * 100)}%)`);
+    }
+    if (provider.stats.lastError) {
+      recommendations.push(`❌ ${provider.name} last error: ${provider.stats.lastError}`);
+    }
+  }
+
+  // Check collector health
+  if (collectorStats.collector_running === false) {
+    recommendations.push('❌ Collector worker may be dead (no snapshots in 2+ minutes)');
+  }
+  if (collectorStats.last_snapshot_age_sec > 60) {
+    recommendations.push(
+      `⚠️ Snapshots are stale (${collectorStats.last_snapshot_age_sec}s old)`
+    );
+  }
+
+  if (recommendations.length === 0) {
+    recommendations.push('✅ All systems operational');
+  }
+
+  return recommendations;
+}

@@ -1,0 +1,240 @@
+{
+  "trains": [
+    {
+      "trainNumber": "12702",
+      "trainName": "Kazipet-Warangal Express",
+      "source": "Kazipet Junction",
+      "destination": "Warangal Station",
+      "currentLocation": {
+        "latitude": 17.3850,
+        "longitude": 78.5230,
+        "timestamp": 1699564800000
+      },
+      "speed": 0,
+      "delay": 18,
+      "scheduledStations": [
+        {
+          "name": "Kazipet Junction",
+          "scheduledArrival": "14:00",
+          "estimatedArrival": "14:05",
+          "scheduledDeparture": "14:10",
+          "estimatedDeparture": "14:28",
+          "latitude": 17.4121,
+          "longitude": 78.4580,
+          "isHalted": false
+        },
+        {
+          "name": "Secunderabad Station",
+          "scheduledArrival": "14:45",
+          "estimatedArrival": "15:03",
+          "scheduledDeparture": "14:55",
+          "estimatedDeparture": "15:13",
+          "latitude": 17.3629,
+          "longitude": 78.5041,
+          "isHalted": false
+        },
+        {
+          "name": "Warangal Station",
+          "scheduledArrival": "16:30",
+          "estimatedArrival": "16:48",
+          "scheduledDeparture": "16:40",
+          "estimatedDeparture": "16:58",
+          "latitude": 17.9689,
+          "longitude": 79.5941,
+          "isHalted": false
+        }
+      ],
+      "currentStationIndex": 1
+    },
+    {
+      "trainNumber": "17015",
+      "trainName": "Hyderabad-Vijayawada Passenger",
+      "source": "Hyderabad Deccan",
+      "destination": "Vijayawada Junction",
+      "currentLocation": {
+        "latitude": 17.2403,
+        "longitude": 78.6271,
+        "timestamp": 1699564800000
+      },
+      "speed": 45,
+      "delay": 5,
+      "scheduledStations": [
+        {
+          "name": "Hyderabad Deccan",
+          "scheduledArrival": "13:30",
+          "estimatedArrival": "13:35",
+          "scheduledDeparture": "13:45",
+          "estimatedDeparture": "13:50",
+          "latitude": 17.3850,
+          "longitude": 78.4471,
+          "isHalted": false
+        },
+        {
+          "name": "Parli Vaijnath",
+          "scheduledArrival": "15:15",
+          "estimatedArrival": "15:20",
+          "scheduledDeparture": "15:30",
+          "estimatedDeparture": "15:35",
+          "latitude": 17.7206,
+          "longitude": 78.9747,
+          "isHalted": false
+        },
+        {
+          "name": "Vijayawada Junction",
+          "scheduledArrival": "18:00",
+          "estimatedArrival": "18:05",
+          "scheduledDeparture": "18:10",
+          "estimatedDeparture": "18:15",
+          "latitude": 16.5062,
+          "longitude": 80.6480,
+          "isHalted": false
+        }
+      ],
+      "currentStationIndex": 1
+    },
+    {
+      "trainNumber": "11039",
+      "trainName": "Coromandel Express",
+      "source": "Howrah Junction",
+      "destination": "Chennai Central",
+      "currentLocation": {
+        "latitude": 16.9124,
+        "longitude": 82.2440,
+        "timestamp": 1699564800000
+      },
+      "speed": 62,
+      "delay": 12,
+      "scheduledStations": [
+        {
+          "name": "Howrah Junction",
+          "scheduledArrival": "06:00",
+          "estimatedArrival": "06:00",
+          "scheduledDeparture": "06:15",
+          "estimatedDeparture": "06:15",
+          "latitude": 22.5958,
+          "longitude": 88.3027,
+          "isHalted": false
+        },
+        {
+          "name": "Visakhapatnam Station",
+          "scheduledArrival": "14:30",
+          "estimatedArrival": "14:42",
+          "scheduledDeparture": "14:50",
+          "estimatedDeparture": "15:02",
+          "latitude": 17.6869,
+          "longitude": 83.2197,
+          "isHalted": false
+        },
+        {
+          "name": "Nellore Station",
+          "scheduledArrival": "18:30",
+          "estimatedArrival": "18:42",
+          "scheduledDeparture": "18:45",
+          "estimatedDeparture": "18:57",
+          "latitude": 14.4426,
+          "longitude": 79.9864,
+          "isHalted": false
+        },
+        {
+          "name": "Chennai Central",
+          "scheduledArrival": "23:55",
+          "estimatedArrival": "00:07",
+          "scheduledDeparture": "23:55",
+          "estimatedDeparture": "00:07",
+          "latitude": 13.0827,
+          "longitude": 80.2707,
+          "isHalted": false
+        }
+      ],
+      "currentStationIndex": 2
+    },
+    {
+      "trainNumber": "12728",
+      "trainName": "Godavari Express",
+      "source": "Parli Vaijnath",
+      "destination": "Raichur Junction",
+      "currentLocation": {
+        "latitude": 17.6500,
+        "longitude": 79.1200,
+        "timestamp": 1699564800000
+      },
+      "speed": 55,
+      "delay": 5,
+      "status": "Delayed",
+      "scheduledStations": [
+        {
+          "name": "Parli Vaijnath",
+          "scheduledArrival": "10:00",
+          "estimatedArrival": "10:05",
+          "scheduledDeparture": "10:10",
+          "estimatedDeparture": "10:15",
+          "latitude": 17.7206,
+          "longitude": 78.9747,
+          "isHalted": false
+        },
+        {
+          "name": "Raichur Junction",
+          "scheduledArrival": "15:30",
+          "estimatedArrival": "15:35",
+          "scheduledDeparture": "15:40",
+          "estimatedDeparture": "15:45",
+          "latitude": 15.2167,
+          "longitude": 77.3667,
+          "isHalted": false
+        }
+      ],
+      "currentStationIndex": 0
+    },
+    {
+      "trainNumber": "12955",
+      "trainName": "Somnath Express",
+      "source": "Mumbai Central",
+      "destination": "Nagpur Junction",
+      "currentLocation": {
+        "latitude": 19.8500,
+        "longitude": 75.6200,
+        "timestamp": 1699564800000
+      },
+      "speed": 58,
+      "delay": 0,
+      "status": "On Time",
+      "scheduledStations": [
+        {
+          "name": "Mumbai Central",
+          "scheduledArrival": "08:00",
+          "estimatedArrival": "08:00",
+          "scheduledDeparture": "08:10",
+          "estimatedDeparture": "08:10",
+          "latitude": 18.9675,
+          "longitude": 72.8194,
+          "isHalted": false
+        },
+        {
+          "name": "Nagpur Junction",
+          "scheduledArrival": "18:00",
+          "estimatedArrival": "18:00",
+          "scheduledDeparture": "18:10",
+          "estimatedDeparture": "18:10",
+          "latitude": 21.1458,
+          "longitude": 79.0882,
+          "isHalted": false
+        }
+      ],
+      "currentStationIndex": 0
+    }
+  ],
+  "defaultWeather": {
+    "temperature": 28,
+    "condition": "Partly Cloudy",
+    "visibility": 10,
+    "windSpeed": 15,
+    "precipitation": false,
+    "code": "02d"
+  },
+  "congestionFactors": {
+    "lowTrafficWait": 5,
+    "mediumTrafficWait": 12,
+    "highTrafficWait": 20,
+    "weatherFactor": 2
+  }
+}

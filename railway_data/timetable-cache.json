@@ -1,0 +1,582 @@
+{
+  "trains": {
+    "12015": {
+      "trainNumber": "12015",
+      "trainName": "Shatabdi Express (Ahmedabad)",
+      "source": "Ahmedabad Junction (ADI)",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Ahmedabad Junction (ADI)",
+          "arrival": "--",
+          "departure": "06:00"
+        },
+        {
+          "station": "Vadodara Junction",
+          "arrival": "06:00",
+          "departure": "06:00"
+        },
+        {
+          "station": "Indore Junction",
+          "arrival": "06:00",
+          "departure": "06:00"
+        },
+        {
+          "station": "Ujjain Junction",
+          "arrival": "06:00",
+          "departure": "06:00"
+        },
+        {
+          "station": "Bina Junction",
+          "arrival": "06:00",
+          "departure": "06:00"
+        },
+        {
+          "station": "Gwalior Junction",
+          "arrival": "06:00",
+          "departure": "06:00"
+        },
+        {
+          "station": "New Delhi (NDLS)",
+          "arrival": "06:00",
+          "departure": "--"
+        }
+      ]
+    },
+    "12622": {
+      "trainNumber": "12622",
+      "trainName": "Tamil Nadu Express",
+      "source": "Chennai Central (MAS)",
+      "destination": "New Delhi (NDLS)",
+      "route": [
+        {
+          "station": "Chennai Central (MAS)",
+          "arrival": "--",
+          "departure": "20:10"
+        },
+        {
+          "station": "Tirupati",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Nellore",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Visakhapatnam Junction",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Rayagada",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Guwahati Junction",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Nagpur Junction",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Itarsi Junction",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Bhopal Junction",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "Gwalior Junction",
+          "arrival": "20:10",
+          "departure": "20:10"
+        },
+        {
+          "station": "New Delhi (NDLS)",
+          "arrival": "20:10",
+          "departure": "--"
+        }
+      ]
+    },
+    "12955": {
+      "trainNumber": "12955",
+      "trainName": "Somnath Express",
+      "source": "Mumbai Central (MMCT)",
+      "destination": "Nagpur Junction (NG)",
+      "route": [
+        {
+          "station": "Mumbai Central (MMCT)",
+          "arrival": "--",
+          "departure": "18:40"
+        },
+        {
+          "station": "Dadar Junction",
+          "arrival": "18:40",
+          "departure": "18:40"
+        },
+        {
+          "station": "Thane Junction",
+          "arrival": "18:40",
+          "departure": "18:40"
+        },
+        {
+          "station": "Nashik Road",
+          "arrival": "18:40",
+          "departure": "18:40"
+        },
+        {
+          "station": "Aurangabad",
+          "arrival": "18:40",
+          "departure": "18:40"
+        },
+        {
+          "station": "Akola Junction",
+          "arrival": "18:40",
+          "departure": "18:40"
+        },
+        {
+          "station": "Nagpur Junction (NG)",
+          "arrival": "18:40",
+          "departure": "--"
+        }
+      ]
+    },
+    "13123": {
+      "trainNumber": "13123",
+      "trainName": "Shatabdi Express",
+      "source": "New Delhi (NDLS)",
+      "destination": "Jaipur Junction (JP)",
+      "route": [
+        {
+          "station": "New Delhi (NDLS)",
+          "arrival": "--",
+          "departure": "06:15"
+        },
+        {
+          "station": "Gurgaon",
+          "arrival": "06:15",
+          "departure": "06:15"
+        },
+        {
+          "station": "Mathura Junction",
+          "arrival": "06:15",
+          "departure": "06:15"
+        },
+        {
+          "station": "Agra Cantt",
+          "arrival": "06:15",
+          "departure": "06:15"
+        },
+        {
+          "station": "Jaipur Junction (JP)",
+          "arrival": "06:15",
+          "departure": "--"
+        }
+      ]
+    },
+    "13345": {
+      "trainNumber": "13345",
+      "trainName": "Dakshin Express",
+      "source": "New Delhi (NDLS)",
+      "destination": "Bangalore City Junction (SBC)",
+      "route": [
+        {
+          "station": "New Delhi (NDLS)",
+          "arrival": "--",
+          "departure": "09:00"
+        },
+        {
+          "station": "Gwalior Junction",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Bhopal Junction",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Itarsi Junction",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Nagpur Junction",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Secunderabad Junction",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Bangalore City Junction (SBC)",
+          "arrival": "09:00",
+          "departure": "--"
+        }
+      ]
+    },
+    "14645": {
+      "trainNumber": "14645",
+      "trainName": "Hussain Sagar Express",
+      "source": "Secunderabad Junction (SC)",
+      "destination": "Bengaluru City Junction (SBC)",
+      "route": [
+        {
+          "station": "Secunderabad Junction (SC)",
+          "arrival": "--",
+          "departure": "14:00"
+        },
+        {
+          "station": "Tandur",
+          "arrival": "14:00",
+          "departure": "14:00"
+        },
+        {
+          "station": "Kurnool City",
+          "arrival": "14:00",
+          "departure": "14:00"
+        },
+        {
+          "station": "Guntakal Junction",
+          "arrival": "14:00",
+          "departure": "14:00"
+        },
+        {
+          "station": "Dhone Junction",
+          "arrival": "14:00",
+          "departure": "14:00"
+        },
+        {
+          "station": "Tandippa",
+          "arrival": "14:00",
+          "departure": "14:00"
+        },
+        {
+          "station": "Bangalore City Junction (SBC)",
+          "arrival": "14:00",
+          "departure": "--"
+        }
+      ]
+    },
+    "14805": {
+      "trainNumber": "14805",
+      "trainName": "Pune Express",
+      "source": "Mumbai Central (MMCT)",
+      "destination": "Pune Junction (PUNE)",
+      "route": [
+        {
+          "station": "Mumbai Central (MMCT)",
+          "arrival": "--",
+          "departure": "17:00"
+        },
+        {
+          "station": "Dadar Junction",
+          "arrival": "17:00",
+          "departure": "17:00"
+        },
+        {
+          "station": "Thane Junction",
+          "arrival": "17:00",
+          "departure": "17:00"
+        },
+        {
+          "station": "Kasara Junction",
+          "arrival": "17:00",
+          "departure": "17:00"
+        },
+        {
+          "station": "Pune Junction (PUNE)",
+          "arrival": "17:00",
+          "departure": "--"
+        }
+      ]
+    },
+    "15906": {
+      "trainNumber": "15906",
+      "trainName": "Brahmaputra Express",
+      "source": "Howrah Junction (HWH)",
+      "destination": "Guwahati Junction (GHY)",
+      "route": [
+        {
+          "station": "Howrah Junction (HWH)",
+          "arrival": "--",
+          "departure": "19:40"
+        },
+        {
+          "station": "Asansol Junction",
+          "arrival": "19:40",
+          "departure": "19:40"
+        },
+        {
+          "station": "Dhanbad Junction",
+          "arrival": "19:40",
+          "departure": "19:40"
+        },
+        {
+          "station": "Parasnath Junction",
+          "arrival": "19:40",
+          "departure": "19:40"
+        },
+        {
+          "station": "Gaya Junction",
+          "arrival": "19:40",
+          "departure": "19:40"
+        },
+        {
+          "station": "Darbhanga",
+          "arrival": "19:40",
+          "departure": "19:40"
+        },
+        {
+          "station": "Muzaffarpur Junction",
+          "arrival": "19:40",
+          "departure": "19:40"
+        },
+        {
+          "station": "Guwahati Junction (GHY)",
+          "arrival": "19:40",
+          "departure": "--"
+        }
+      ]
+    },
+    "16587": {
+      "trainNumber": "16587",
+      "trainName": "Mysore Express",
+      "source": "Bangalore City Junction (SBC)",
+      "destination": "Mysore Junction (MYS)",
+      "route": [
+        {
+          "station": "Bangalore City Junction (SBC)",
+          "arrival": "--",
+          "departure": "09:00"
+        },
+        {
+          "station": "Krishnarajapuram",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Whitefield Junction",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Bannerghatta West",
+          "arrival": "09:00",
+          "departure": "09:00"
+        },
+        {
+          "station": "Mysore Junction (MYS)",
+          "arrival": "09:00",
+          "departure": "--"
+        }
+      ]
+    },
+    "16731": {
+      "trainNumber": "16731",
+      "trainName": "Visakhapatnam Express",
+      "source": "Secunderabad Junction (SC)",
+      "destination": "Visakhapatnam Junction (VSKP)",
+      "route": [
+        {
+          "station": "Secunderabad Junction (SC)",
+          "arrival": "--",
+          "departure": "07:30"
+        },
+        {
+          "station": "Karimnagar Junction",
+          "arrival": "07:30",
+          "departure": "07:30"
+        },
+        {
+          "station": "Peddapalli Junction",
+          "arrival": "07:30",
+          "departure": "07:30"
+        },
+        {
+          "station": "Ramagundam Junction",
+          "arrival": "07:30",
+          "departure": "07:30"
+        },
+        {
+          "station": "Vikarabad",
+          "arrival": "07:30",
+          "departure": "07:30"
+        },
+        {
+          "station": "Visakhapatnam Junction (VSKP)",
+          "arrival": "07:30",
+          "departure": "--"
+        }
+      ]
+    },
+    "18111": {
+      "trainNumber": "18111",
+      "trainName": "Ranchi Express",
+      "source": "Howrah Junction (HWH)",
+      "destination": "Ranchi Junction (RNC)",
+      "route": [
+        {
+          "station": "Howrah Junction (HWH)",
+          "arrival": "--",
+          "departure": "08:00"
+        },
+        {
+          "station": "Asansol Junction",
+          "arrival": "08:00",
+          "departure": "08:00"
+        },
+        {
+          "station": "Dhanbad Junction",
+          "arrival": "08:00",
+          "departure": "08:00"
+        },
+        {
+          "station": "Parasnath Junction",
+          "arrival": "08:00",
+          "departure": "08:00"
+        },
+        {
+          "station": "Ranchi Junction (RNC)",
+          "arrival": "08:00",
+          "departure": "--"
+        }
+      ]
+    },
+    "20059": {
+      "trainNumber": "20059",
+      "trainName": "Indore Express",
+      "source": "Mumbai Central (MMCT)",
+      "destination": "Indore Junction (INDB)",
+      "route": [
+        {
+          "station": "Mumbai Central (MMCT)",
+          "arrival": "--",
+          "departure": "22:00"
+        },
+        {
+          "station": "Dadar Junction",
+          "arrival": "22:00",
+          "departure": "22:00"
+        },
+        {
+          "station": "Thane Junction",
+          "arrival": "22:00",
+          "departure": "22:00"
+        },
+        {
+          "station": "Nashik Road",
+          "arrival": "22:00",
+          "departure": "22:00"
+        },
+        {
+          "station": "Vadodara Junction",
+          "arrival": "22:00",
+          "departure": "22:00"
+        },
+        {
+          "station": "Ujjain Junction",
+          "arrival": "22:00",
+          "departure": "22:00"
+        },
+        {
+          "station": "Indore Junction (INDB)",
+          "arrival": "22:00",
+          "departure": "--"
+        }
+      ]
+    }
+  },
+  "stations": [
+    "Agra Cantt",
+    "Ahmedabad Junction (ADI)",
+    "Akola Junction",
+    "Asansol Junction",
+    "Aurangabad",
+    "Bangalore City Junction (SBC)",
+    "Bannerghatta West",
+    "Bengaluru City Junction (SBC)",
+    "Bhopal Junction",
+    "Bina Junction",
+    "Chennai Central (MAS)",
+    "Dadar Junction",
+    "Darbhanga",
+    "Dhanbad Junction",
+    "Dhone Junction",
+    "Gaya Junction",
+    "Guntakal Junction",
+    "Gurgaon",
+    "Guwahati Junction",
+    "Guwahati Junction (GHY)",
+    "Gwalior Junction",
+    "Howrah Junction (HWH)",
+    "Indore Junction",
+    "Indore Junction (INDB)",
+    "Itarsi Junction",
+    "Jaipur Junction (JP)",
+    "Karimnagar Junction",
+    "Kasara Junction",
+    "Krishnarajapuram",
+    "Kurnool City",
+    "Mathura Junction",
+    "Mumbai Central (MMCT)",
+    "Muzaffarpur Junction",
+    "Mysore Junction (MYS)",
+    "Nagpur Junction",
+    "Nagpur Junction (NG)",
+    "Nashik Road",
+    "Nellore",
+    "New Delhi (NDLS)",
+    "Parasnath Junction",
+    "Peddapalli Junction",
+    "Pune Junction (PUNE)",
+    "Ramagundam Junction",
+    "Ranchi Junction (RNC)",
+    "Rayagada",
+    "Secunderabad Junction",
+    "Secunderabad Junction (SC)",
+    "Tandippa",
+    "Tandur",
+    "Thane Junction",
+    "Tirupati",
+    "Ujjain Junction",
+    "Vadodara Junction",
+    "Vikarabad",
+    "Visakhapatnam Junction",
+    "Visakhapatnam Junction (VSKP)",
+    "Whitefield Junction"
+  ],
+  "sourcePages": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,2550",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,305",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,554",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,388",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,262",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,265",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,1260",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,2469",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,1289",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,3147",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,3067",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,2101",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,1411",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,1763"
+  ],
+  "fetchedAt": "2026-03-15T09:27:16.108Z"
+}

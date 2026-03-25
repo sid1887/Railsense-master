@@ -1,0 +1,30 @@
+{
+  "trains": {
+    "12955": {
+      "trainNumber": "12955",
+      "trainName": "Somnath Express",
+      "source": "Mumbai Central (MMCT)",
+      "sourceCode": "MMCT",
+      "destination": "Nagpur Junction (NG)",
+      "destinationCode": "NG",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": []
+    },
+    "13345": {
+      "trainNumber": "13345",
+      "trainName": "Dakshin Express",
+      "source": "New Delhi (NDLS)",
+      "sourceCode": "NDLS",
+      "destination": "Bangalore City Junction (SBC)",
+      "destinationCode": "SBC",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": []
+    }
+  },
+  "stations": {},
+  "fetchedAt": "2026-03-25T15:40:35.518Z"
+}

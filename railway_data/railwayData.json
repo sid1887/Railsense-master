@@ -1,0 +1,1348 @@
+{
+  "trains": {
+    "12015": {
+      "trainNumber": "12015",
+      "trainName": "Shatabdi Express (Ahmedabad)",
+      "source": "Ahmedabad Junction (ADI)",
+      "sourceCode": "ADI",
+      "destination": "New Delhi (NDLS)",
+      "destinationCode": "NDLS",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Ahmedabad Junction (ADI)",
+          "code": "ADI",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "--",
+          "departureTime": "06:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Vadodara Junction",
+          "code": "VAD",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "06:00",
+          "departureTime": "06:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Indore Junction",
+          "code": "IND",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "06:00",
+          "departureTime": "06:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Ujjain Junction",
+          "code": "UJJ",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "06:00",
+          "departureTime": "06:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Bina Junction",
+          "code": "BIN",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "06:00",
+          "departureTime": "06:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Gwalior Junction",
+          "code": "GWA",
+          "latitude": 26.2077,
+          "longitude": 78.1773,
+          "arrivalTime": "06:00",
+          "departureTime": "06:00",
+          "distance": 525.8406146417481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "latitude": 28.6431,
+          "longitude": 77.2197,
+          "arrivalTime": "06:00",
+          "departureTime": "--",
+          "distance": 788.8803717400964,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "12622": {
+      "trainNumber": "12622",
+      "trainName": "Tamil Nadu Express",
+      "source": "Chennai Central (MAS)",
+      "sourceCode": "MAS",
+      "destination": "New Delhi (NDLS)",
+      "destinationCode": "NDLS",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Chennai Central (MAS)",
+          "code": "MAS",
+          "latitude": 13.0827,
+          "longitude": 80.2707,
+          "arrivalTime": "--",
+          "departureTime": "20:10",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Tirupati",
+          "code": "TIR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Nellore",
+          "code": "NEL",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Visakhapatnam Junction",
+          "code": "VIS",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Rayagada",
+          "code": "RAY",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Guwahati Junction",
+          "code": "GUW",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Nagpur Junction",
+          "code": "NAG",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Itarsi Junction",
+          "code": "ITA",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1117.7582362613543,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Bhopal Junction",
+          "code": "BHO",
+          "latitude": 23.1815,
+          "longitude": 77.4104,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1162.7674794027896,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Gwalior Junction",
+          "code": "GWA",
+          "latitude": 26.2077,
+          "longitude": 78.1773,
+          "arrivalTime": "20:10",
+          "departureTime": "20:10",
+          "distance": 1475.7080841202696,
+          "haltageDuration": 0
+        },
+        {
+          "name": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "latitude": 28.6431,
+          "longitude": 77.2197,
+          "arrivalTime": "20:10",
+          "departureTime": "--",
+          "distance": 1758.785524941274,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "12955": {
+      "trainNumber": "12955",
+      "trainName": "Somnath Express",
+      "source": "Mumbai Central (MMCT)",
+      "sourceCode": "MMCT",
+      "destination": "Nagpur Junction (NG)",
+      "destinationCode": "NG",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Mumbai Central (MMCT)",
+          "code": "MMCT",
+          "latitude": 18.9676,
+          "longitude": 72.8194,
+          "arrivalTime": "--",
+          "departureTime": "18:40",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Dadar Junction",
+          "code": "DAD",
+          "latitude": 19.0176,
+          "longitude": 72.8275,
+          "arrivalTime": "18:40",
+          "departureTime": "18:40",
+          "distance": 5.624596072544643,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Thane Junction",
+          "code": "THA",
+          "latitude": 19.2183,
+          "longitude": 72.9781,
+          "arrivalTime": "18:40",
+          "departureTime": "18:40",
+          "distance": 32.483647590584276,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Nashik Road",
+          "code": "NAS",
+          "latitude": 19.9108,
+          "longitude": 73.7306,
+          "arrivalTime": "18:40",
+          "departureTime": "18:40",
+          "distance": 141.87377057953066,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Aurangabad",
+          "code": "AUR",
+          "latitude": 19.8762,
+          "longitude": 75.3433,
+          "arrivalTime": "18:40",
+          "departureTime": "18:40",
+          "distance": 283.2966111562547,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Akola Junction",
+          "code": "AKO",
+          "latitude": 20.7257,
+          "longitude": 77.0198,
+          "arrivalTime": "18:40",
+          "departureTime": "18:40",
+          "distance": 480.82184720675343,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Nagpur Junction (NG)",
+          "code": "NG",
+          "latitude": 21.1458,
+          "longitude": 79.0882,
+          "arrivalTime": "18:40",
+          "departureTime": "--",
+          "distance": 698.056964462585,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "13123": {
+      "trainNumber": "13123",
+      "trainName": "Shatabdi Express",
+      "source": "New Delhi (NDLS)",
+      "sourceCode": "NDLS",
+      "destination": "Jaipur Junction (JP)",
+      "destinationCode": "JP",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "latitude": 28.6431,
+          "longitude": 77.2197,
+          "arrivalTime": "--",
+          "departureTime": "06:15",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Gurgaon",
+          "code": "GUR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "06:15",
+          "departureTime": "06:15",
+          "distance": 788.8803717400964,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Mathura Junction",
+          "code": "MAT",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "06:15",
+          "departureTime": "06:15",
+          "distance": 788.8803717400964,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Agra Cantt",
+          "code": "AGR",
+          "latitude": 27.1594,
+          "longitude": 78.0068,
+          "arrivalTime": "06:15",
+          "departureTime": "06:15",
+          "distance": 182.2097427153082,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Jaipur Junction (JP)",
+          "code": "JP",
+          "latitude": 26.9124,
+          "longitude": 75.7873,
+          "arrivalTime": "06:15",
+          "departureTime": "--",
+          "distance": 238.5180105324878,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "13345": {
+      "trainNumber": "13345",
+      "trainName": "Dakshin Express",
+      "source": "New Delhi (NDLS)",
+      "sourceCode": "NDLS",
+      "destination": "Bangalore City Junction (SBC)",
+      "destinationCode": "SBC",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "New Delhi (NDLS)",
+          "code": "NDLS",
+          "latitude": 28.6431,
+          "longitude": 77.2197,
+          "arrivalTime": "--",
+          "departureTime": "09:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Gwalior Junction",
+          "code": "GWA",
+          "latitude": 26.2077,
+          "longitude": 78.1773,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 286.8189685602844,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Bhopal Junction",
+          "code": "BHO",
+          "latitude": 23.1815,
+          "longitude": 77.4104,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 607.6012551176192,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Itarsi Junction",
+          "code": "ITA",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 788.8803717400964,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Nagpur Junction",
+          "code": "NAG",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 788.8803717400964,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Secunderabad Junction",
+          "code": "SEC",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 788.8803717400964,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Bangalore City Junction (SBC)",
+          "code": "SBC",
+          "latitude": 12.9716,
+          "longitude": 77.5946,
+          "arrivalTime": "09:00",
+          "departureTime": "--",
+          "distance": 1743.0230419530717,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "14645": {
+      "trainNumber": "14645",
+      "trainName": "Hussain Sagar Express",
+      "source": "Secunderabad Junction (SC)",
+      "sourceCode": "SC",
+      "destination": "Bengaluru City Junction (SBC)",
+      "destinationCode": "SBC",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Secunderabad Junction (SC)",
+          "code": "SC",
+          "latitude": 17.37,
+          "longitude": 78.5007,
+          "arrivalTime": "--",
+          "departureTime": "14:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Tandur",
+          "code": "TAN",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "14:00",
+          "departureTime": "14:00",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Kurnool City",
+          "code": "KUR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "14:00",
+          "departureTime": "14:00",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Guntakal Junction",
+          "code": "GUN",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "14:00",
+          "departureTime": "14:00",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Dhone Junction",
+          "code": "DHO",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "14:00",
+          "departureTime": "14:00",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Tandippa",
+          "code": "TAN",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "14:00",
+          "departureTime": "14:00",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Bangalore City Junction (SBC)",
+          "code": "SBC",
+          "latitude": 12.9716,
+          "longitude": 77.5946,
+          "arrivalTime": "14:00",
+          "departureTime": "--",
+          "distance": 498.64760036126546,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "14805": {
+      "trainNumber": "14805",
+      "trainName": "Pune Express",
+      "source": "Mumbai Central (MMCT)",
+      "sourceCode": "MMCT",
+      "destination": "Pune Junction (PUNE)",
+      "destinationCode": "PUNE",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Mumbai Central (MMCT)",
+          "code": "MMCT",
+          "latitude": 18.9676,
+          "longitude": 72.8194,
+          "arrivalTime": "--",
+          "departureTime": "17:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Dadar Junction",
+          "code": "DAD",
+          "latitude": 19.0176,
+          "longitude": 72.8275,
+          "arrivalTime": "17:00",
+          "departureTime": "17:00",
+          "distance": 5.624596072544643,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Thane Junction",
+          "code": "THA",
+          "latitude": 19.2183,
+          "longitude": 72.9781,
+          "arrivalTime": "17:00",
+          "departureTime": "17:00",
+          "distance": 32.483647590584276,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Kasara Junction",
+          "code": "KAS",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "17:00",
+          "departureTime": "17:00",
+          "distance": 1052.9598565363226,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Pune Junction (PUNE)",
+          "code": "PUNE",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "17:00",
+          "departureTime": "--",
+          "distance": 1052.9598565363226,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "15906": {
+      "trainNumber": "15906",
+      "trainName": "Brahmaputra Express",
+      "source": "Howrah Junction (HWH)",
+      "sourceCode": "HWH",
+      "destination": "Guwahati Junction (GHY)",
+      "destinationCode": "GHY",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Howrah Junction (HWH)",
+          "code": "HWH",
+          "latitude": 22.5958,
+          "longitude": 88.2636,
+          "arrivalTime": "--",
+          "departureTime": "19:40",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Asansol Junction",
+          "code": "ASA",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "19:40",
+          "departureTime": "19:40",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Dhanbad Junction",
+          "code": "DHA",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "19:40",
+          "departureTime": "19:40",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Parasnath Junction",
+          "code": "PAR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "19:40",
+          "departureTime": "19:40",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Gaya Junction",
+          "code": "GAY",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "19:40",
+          "departureTime": "19:40",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Darbhanga",
+          "code": "DAR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "19:40",
+          "departureTime": "19:40",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Muzaffarpur Junction",
+          "code": "MUZ",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "19:40",
+          "departureTime": "19:40",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Guwahati Junction (GHY)",
+          "code": "GHY",
+          "latitude": 26.1445,
+          "longitude": 91.7362,
+          "arrivalTime": "19:40",
+          "departureTime": "--",
+          "distance": 528.5366732524052,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "16587": {
+      "trainNumber": "16587",
+      "trainName": "Mysore Express",
+      "source": "Bangalore City Junction (SBC)",
+      "sourceCode": "SBC",
+      "destination": "Mysore Junction (MYS)",
+      "destinationCode": "MYS",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Bangalore City Junction (SBC)",
+          "code": "SBC",
+          "latitude": 12.9716,
+          "longitude": 77.5946,
+          "arrivalTime": "--",
+          "departureTime": "09:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Krishnarajapuram",
+          "code": "KRI",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 1208.2240369235685,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Whitefield Junction",
+          "code": "WHI",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 1208.2240369235685,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Bannerghatta West",
+          "code": "BAN",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "09:00",
+          "distance": 1208.2240369235685,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Mysore Junction (MYS)",
+          "code": "MYS",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "09:00",
+          "departureTime": "--",
+          "distance": 1208.2240369235685,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "16731": {
+      "trainNumber": "16731",
+      "trainName": "Visakhapatnam Express",
+      "source": "Secunderabad Junction (SC)",
+      "sourceCode": "SC",
+      "destination": "Visakhapatnam Junction (VSKP)",
+      "destinationCode": "VSKP",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Secunderabad Junction (SC)",
+          "code": "SC",
+          "latitude": 17.37,
+          "longitude": 78.5007,
+          "arrivalTime": "--",
+          "departureTime": "07:30",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Karimnagar Junction",
+          "code": "KAR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "07:30",
+          "departureTime": "07:30",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Peddapalli Junction",
+          "code": "PED",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "07:30",
+          "departureTime": "07:30",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Ramagundam Junction",
+          "code": "RAM",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "07:30",
+          "departureTime": "07:30",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Vikarabad",
+          "code": "VIK",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "07:30",
+          "departureTime": "07:30",
+          "distance": 724.6589709339328,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Visakhapatnam Junction (VSKP)",
+          "code": "VSKP",
+          "latitude": 17.6869,
+          "longitude": 83.2167,
+          "arrivalTime": "07:30",
+          "departureTime": "--",
+          "distance": 501.27273490147854,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "18111": {
+      "trainNumber": "18111",
+      "trainName": "Ranchi Express",
+      "source": "Howrah Junction (HWH)",
+      "sourceCode": "HWH",
+      "destination": "Ranchi Junction (RNC)",
+      "destinationCode": "RNC",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Howrah Junction (HWH)",
+          "code": "HWH",
+          "latitude": 22.5958,
+          "longitude": 88.2636,
+          "arrivalTime": "--",
+          "departureTime": "08:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Asansol Junction",
+          "code": "ASA",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "08:00",
+          "departureTime": "08:00",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Dhanbad Junction",
+          "code": "DHA",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "08:00",
+          "departureTime": "08:00",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Parasnath Junction",
+          "code": "PAR",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "08:00",
+          "departureTime": "08:00",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Ranchi Junction (RNC)",
+          "code": "RNC",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "08:00",
+          "departureTime": "--",
+          "distance": 643.5908289991481,
+          "haltageDuration": 0
+        }
+      ]
+    },
+    "20059": {
+      "trainNumber": "20059",
+      "trainName": "Indore Express",
+      "source": "Mumbai Central (MMCT)",
+      "sourceCode": "MMCT",
+      "destination": "Indore Junction (INDB)",
+      "destinationCode": "INDB",
+      "type": "Express",
+      "class": "All Classes",
+      "frequency": "Daily",
+      "route": [
+        {
+          "name": "Mumbai Central (MMCT)",
+          "code": "MMCT",
+          "latitude": 18.9676,
+          "longitude": 72.8194,
+          "arrivalTime": "--",
+          "departureTime": "22:00",
+          "distance": 0,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Dadar Junction",
+          "code": "DAD",
+          "latitude": 19.0176,
+          "longitude": 72.8275,
+          "arrivalTime": "22:00",
+          "departureTime": "22:00",
+          "distance": 5.624596072544643,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Thane Junction",
+          "code": "THA",
+          "latitude": 19.2183,
+          "longitude": 72.9781,
+          "arrivalTime": "22:00",
+          "departureTime": "22:00",
+          "distance": 32.483647590584276,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Nashik Road",
+          "code": "NAS",
+          "latitude": 19.9108,
+          "longitude": 73.7306,
+          "arrivalTime": "22:00",
+          "departureTime": "22:00",
+          "distance": 141.87377057953066,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Vadodara Junction",
+          "code": "VAD",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "22:00",
+          "departureTime": "22:00",
+          "distance": 1052.9598565363226,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Ujjain Junction",
+          "code": "UJJ",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "22:00",
+          "departureTime": "22:00",
+          "distance": 1052.9598565363226,
+          "haltageDuration": 0
+        },
+        {
+          "name": "Indore Junction (INDB)",
+          "code": "INDB",
+          "latitude": 23,
+          "longitude": 82,
+          "arrivalTime": "22:00",
+          "departureTime": "--",
+          "distance": 1052.9598565363226,
+          "haltageDuration": 0
+        }
+      ]
+    }
+  },
+  "stations": {
+    "ADI": {
+      "name": "Ahmedabad Junction (ADI)",
+      "code": "ADI",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "VAD": {
+      "name": "Vadodara Junction",
+      "code": "VAD",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "IND": {
+      "name": "Indore Junction",
+      "code": "IND",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "UJJ": {
+      "name": "Ujjain Junction",
+      "code": "UJJ",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "BIN": {
+      "name": "Bina Junction",
+      "code": "BIN",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "GWA": {
+      "name": "Gwalior Junction",
+      "code": "GWA",
+      "latitude": 26.2077,
+      "longitude": 78.1773,
+      "zone": "India"
+    },
+    "NDLS": {
+      "name": "New Delhi (NDLS)",
+      "code": "NDLS",
+      "latitude": 28.6431,
+      "longitude": 77.2197,
+      "zone": "India"
+    },
+    "MAS": {
+      "name": "Chennai Central (MAS)",
+      "code": "MAS",
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "zone": "India"
+    },
+    "TIR": {
+      "name": "Tirupati",
+      "code": "TIR",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "NEL": {
+      "name": "Nellore",
+      "code": "NEL",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "VIS": {
+      "name": "Visakhapatnam Junction",
+      "code": "VIS",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "RAY": {
+      "name": "Rayagada",
+      "code": "RAY",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "GUW": {
+      "name": "Guwahati Junction",
+      "code": "GUW",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "NAG": {
+      "name": "Nagpur Junction",
+      "code": "NAG",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "ITA": {
+      "name": "Itarsi Junction",
+      "code": "ITA",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "BHO": {
+      "name": "Bhopal Junction",
+      "code": "BHO",
+      "latitude": 23.1815,
+      "longitude": 77.4104,
+      "zone": "India"
+    },
+    "MMCT": {
+      "name": "Mumbai Central (MMCT)",
+      "code": "MMCT",
+      "latitude": 18.9676,
+      "longitude": 72.8194,
+      "zone": "India"
+    },
+    "DAD": {
+      "name": "Dadar Junction",
+      "code": "DAD",
+      "latitude": 19.0176,
+      "longitude": 72.8275,
+      "zone": "India"
+    },
+    "THA": {
+      "name": "Thane Junction",
+      "code": "THA",
+      "latitude": 19.2183,
+      "longitude": 72.9781,
+      "zone": "India"
+    },
+    "NAS": {
+      "name": "Nashik Road",
+      "code": "NAS",
+      "latitude": 19.9108,
+      "longitude": 73.7306,
+      "zone": "India"
+    },
+    "AUR": {
+      "name": "Aurangabad",
+      "code": "AUR",
+      "latitude": 19.8762,
+      "longitude": 75.3433,
+      "zone": "India"
+    },
+    "AKO": {
+      "name": "Akola Junction",
+      "code": "AKO",
+      "latitude": 20.7257,
+      "longitude": 77.0198,
+      "zone": "India"
+    },
+    "NG": {
+      "name": "Nagpur Junction (NG)",
+      "code": "NG",
+      "latitude": 21.1458,
+      "longitude": 79.0882,
+      "zone": "India"
+    },
+    "GUR": {
+      "name": "Gurgaon",
+      "code": "GUR",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "MAT": {
+      "name": "Mathura Junction",
+      "code": "MAT",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "AGR": {
+      "name": "Agra Cantt",
+      "code": "AGR",
+      "latitude": 27.1594,
+      "longitude": 78.0068,
+      "zone": "India"
+    },
+    "JP": {
+      "name": "Jaipur Junction (JP)",
+      "code": "JP",
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "zone": "India"
+    },
+    "SEC": {
+      "name": "Secunderabad Junction",
+      "code": "SEC",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "SBC": {
+      "name": "Bangalore City Junction (SBC)",
+      "code": "SBC",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "zone": "India"
+    },
+    "SC": {
+      "name": "Secunderabad Junction (SC)",
+      "code": "SC",
+      "latitude": 17.37,
+      "longitude": 78.5007,
+      "zone": "India"
+    },
+    "TAN": {
+      "name": "Tandur",
+      "code": "TAN",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "KUR": {
+      "name": "Kurnool City",
+      "code": "KUR",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "GUN": {
+      "name": "Guntakal Junction",
+      "code": "GUN",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "DHO": {
+      "name": "Dhone Junction",
+      "code": "DHO",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "KAS": {
+      "name": "Kasara Junction",
+      "code": "KAS",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "PUNE": {
+      "name": "Pune Junction (PUNE)",
+      "code": "PUNE",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "HWH": {
+      "name": "Howrah Junction (HWH)",
+      "code": "HWH",
+      "latitude": 22.5958,
+      "longitude": 88.2636,
+      "zone": "India"
+    },
+    "ASA": {
+      "name": "Asansol Junction",
+      "code": "ASA",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "DHA": {
+      "name": "Dhanbad Junction",
+      "code": "DHA",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "PAR": {
+      "name": "Parasnath Junction",
+      "code": "PAR",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "GAY": {
+      "name": "Gaya Junction",
+      "code": "GAY",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "DAR": {
+      "name": "Darbhanga",
+      "code": "DAR",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "MUZ": {
+      "name": "Muzaffarpur Junction",
+      "code": "MUZ",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "GHY": {
+      "name": "Guwahati Junction (GHY)",
+      "code": "GHY",
+      "latitude": 26.1445,
+      "longitude": 91.7362,
+      "zone": "India"
+    },
+    "KRI": {
+      "name": "Krishnarajapuram",
+      "code": "KRI",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "WHI": {
+      "name": "Whitefield Junction",
+      "code": "WHI",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "BAN": {
+      "name": "Bannerghatta West",
+      "code": "BAN",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "MYS": {
+      "name": "Mysore Junction (MYS)",
+      "code": "MYS",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "KAR": {
+      "name": "Karimnagar Junction",
+      "code": "KAR",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "PED": {
+      "name": "Peddapalli Junction",
+      "code": "PED",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "RAM": {
+      "name": "Ramagundam Junction",
+      "code": "RAM",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "VIK": {
+      "name": "Vikarabad",
+      "code": "VIK",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "VSKP": {
+      "name": "Visakhapatnam Junction (VSKP)",
+      "code": "VSKP",
+      "latitude": 17.6869,
+      "longitude": 83.2167,
+      "zone": "India"
+    },
+    "RNC": {
+      "name": "Ranchi Junction (RNC)",
+      "code": "RNC",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    },
+    "INDB": {
+      "name": "Indore Junction (INDB)",
+      "code": "INDB",
+      "latitude": 23,
+      "longitude": 82,
+      "zone": "India"
+    }
+  },
+  "fetchedAt": "2026-03-15T14:20:26.698Z"
+}

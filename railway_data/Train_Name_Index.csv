@@ -1,0 +1,1563 @@
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+AC Double Decker Exp.,12583/12584,Lucknow Jn.,Anand Vihar (T),25,Ajmer Exp,18009/8010,Santragachi,Ajmer,"34,41,72",
+AC Double Decker Exp.,12931/12932,Mumbai Central,Ahmedabad,11,Ajmer Exp,18207/18208,Durg,Ajmer,"81,72",
+AC Double Decker Exp.,12985/12986,Delhi Sarai Rohilla,Jaipur,23,Ajmer Exp,18213/18214,Durg,Ajmer,"72,81",
+AC Double Decker Exp.,22625/22626,MGR Chennai,KSR Bengaluru,20,Ajmer Exp,20823/20824,Puri,Ajmer,"23,34,78",
+,,Central,,,Ajmer Exp,19611/19612,Amritsar,Ajmer,80,
+AC Double Decker Exp.,22707/22708,Visakhapatnam,Tirupati,7,Ajmer Exp,19613/19614,Amritsar,Ajmer,80,
+AC Exp,12429/12430,Lucknow,New Delhi,25,Ajmer Exp,12995/12996,Bandra (T),Ajmer,23,
+AC Exp,12519/12520,Lokmanya Tilak (T),Agartala,"18,24",Akal Takht Exp,12317/12318,Kolkata,Amritsar,12,
+AC Exp,12551/12552,Kamakhya,SMVT Bengaluru,"29,20,87",Akola Exp,17639/17640,Kacheguda,Akola,"53,53A",
+AC Exp,12773/12774,Shalimar,Secunderabad,30,Ala Hazrat Exp,14311/14312,Bareilly,Bhuj,"11,23,55",
+AC Exp,12775/12776,Lingampalli,Kakinada Town,30,Ala Hazrat Exp,14321/14322,Bareilly,Bhuj,"11,23,55",
+AC Exp,12783/12784,Visakhapatnam,Secunderabad,30,Alapuzha Exp,13351/13352,Dhanbad,Alapuzha,"40,86",
+AC Exp,12857/12858,Howrah,Digha,87,Alappuzha Exp,16307/16308,Kannur,Alappuzha,"85,85A",
+AC Exp,14805/14806,Yesvantpur,Barmer,"19,23,31",Alappuzha Exp,22639/22640,MGR Chennai,Alappuzha,86,
+AC Exp,16561/16562,Yesvantpur,Thiruvanthapuram,86,,,Central,,,
+,,,North,,Amarkantak Exp,12853/12854,Durg,Bhopal,43,
+AC Exp,22117/22118,Pune,Amravati,44,Amarnath Exp,12587/12588,Gorakhpur,Jammu Tawi,13,
+AC Exp,22121/22122,Lokmanya Tilak (T),Lucknow,35,Amarnath Exp,15653/15654,Guwahati,Jammu Tawi,"13,64",
+AC Exp,22123/22124,Aini,Pune,5,Ambikapur Exp.,18241/18242,Durg,Ambikapur,81,
+AC Exp,22207/22208,MGR Chennai,Thiruvananthapuram,86,Ambikapur Exp.,18755/18756,Shahdol,Ambikapur,81,
+,,Central,Central,,Ambikapur Exp,11265/11266,Jabalpur,Ambikapur,"43,81",
+AC Exp,22401/22402,Delhi Sarai Rohilla,Martyr Captain,16,Ambikapur SF Exp.,22407/22408,Ambikapur,Nizamuddin,32,
+,,,Tushar Mahajan,,Amrapur Aravali Exp.,14701/14702,Bandra (T),Sri Ganganagar,"11,23,77",
+AC Exp,22475/22476,Hisar,Coimbatore,"59,23,26",Amravathi Exp,17225/17226,Narsapur,SSS Hubballi,49,
+AC Exp,22807/22808,Santragachi,MGR Chennai,7,Amravathi Exp,18047/18048,Shalimar,Vasco-de-Gama,"7,49",
+,,,Central,,Amravati Exp,12111/12112,Chhatrapati Shivaji,Amravati,"5,5A",
+AC Exp,22863/22864,Howrah,SMVT Bengaluru,29,,,Maharaj (T),,,
+AC Exp,22903/22904,Bandra (T),Bhuj,11,Amravati Exp,12159/12160,Jabalpur,Amravati,"17,5",
+AC Exp,22115/22116,Lokmanya Tilak (T),KarmaIi,26,Amravati Exp,12765/12766,Tirupati,Amravati,"52,53,53A",
+AC Exp,22125/22126,Nagpur,Amritsar,"8,15",Amravati Exp,11405/11406,Pune,Amravati,44,
+AC Exp,12171/12172,Lokmanya Tilak (T),Haridwar,"2,75",,,,,,
+,,,,,Amrit Bharat Exp,11015/11016,Lokmanya Tilak(T),Saharsa,"24,24A",
+Adilabad Exp,17409/17410,Hazur Sahib Nanded,Adilabad,53,,,,,,
+,,,,,Amrit Bharat Exp,13433/13434,Malda Town,SMVT Bengaluru,"29, 29A",
+Agartala Exp,15625/15626,Deoghar,Agartala,"18,83",,,,,,
+,,,,,Amrit Bharat Exp,13435/13436,Malda Town,Gomtinagar,"18,22,67",
+Ahilyanagari Exp,22645/22646,Indore,Thiruvanthapuram,"8,86",,,,,,
+,,,North,,Amrit Bharat Exp,13697/13698,Gaya,Delhi,"1,1A, 9",
+Ahimsa Exp,22185/22186,Ahmedabad,Pune,"31,31A",Amrit Bharat Exp,14047/14048,Delhi,Sitamarhi,"22,22A",
+Ahmedabad Exp,11049/11050,Chhatrapati Shahu,Ahmedabad,"19,19A,31,31A",Amrit Bharat Exp,14627/14628,Chheharta,Saharsa,"12,22,64,90",
+,,Maharaj (T),,,Amrit Bharat Exp,15133/15134,Anand Vihar (T),Chapra,"22,22A",
+Ahmedabad Exp,12833/12834,Howrah,Ahmedabad,"34,34A",Amrit Bharat Exp,15293/15294,Muzaffarpur,Cherapalli,"17,17A,64",
+Ahmedabad Exp,12843/12844,Puri,Ahmedabad,"34A,46",Amrit Bharat Exp,15557/15558,Darbhanga,Anand Vihar (T),22,
+Ahmedabad Exp,22689/22690,Yesvantpur,Ahmedabad,31A,Amrit Bharat Exp,15561/15562,Darbhanga,Gomtinagar,"22,64",
+Ahmedabad Exp,20861/20862,Puri,Ahmedabad,"34,34A,46,78",Amrit Bharat Exp,15567/15568,Bapudham Motihari,Anand Vihar,"22, 64",
+Ahmedabad Exp,19035/19036,Vadodara,Vatva,11,Amrit Bharat Exp,19623/19624,Madar Jn,Darbhanga,"22,22A,23,23A,33",
+Ahmedabad Exp,19223/19224,Jammu Tawi,Sabarmati,"23,45",Amritha Exp,16343/16344,Thiruvananthapuram,Rameswaram,86,
+Ahmedabad Exp,19401/19402,Lucknow,Sabarmati,23,Amrit Bharat Exp,16601/16602,Erode,Jogbani,"17,86,90",
+Ahmedabad Exp,20939/20940,Sultanpur,Sabarmati,"23,25A",Amrit Bharat Exp,19021/19022,Udhna,Brahmapur,34,
+Ahmedabad Exp,19409/19410,Gorakhpur,Sabarmati,"79,23,82",Amrit Bharat Exp,22361/22362,Rajender Nagar,New Delhi,"1,1A",
+Ahmedabad Exp,19413/19414,Kolkata,Ahmedabad,"3,23,43,43A,73A,54A",Amritsar Exp,11057/11058,Chhatrapati Shivaji,Amritsar,"2,2A,4,15",
+Ahmedabad Exp,19415/19416,Shri Mata Vaishno,Sabarmati,"23,23A,80",,,Maharaj (T),,,
+,,Devi Katra,,,Amritsar Exp,12421/12422,Hazur Sahib,Amritsar,"9,15,39,53",
+Ahmedabad Exp,20919/20920,MGR Chennai,Ekta Nagar,"3,10",,,Nanded,,,
+,,Central,,,Amritsar Exp,12483/12484,Thiruvanthapuram,Amritsar,"3,3A,26,26A,15",
+Ahmedabad Exp,19421/19422,Patna,Ahmedabad,"3,32",,,North,,,
+Ahmedabad Exp,19943,Udaipur City,Ahmedabad,77,Amritsar Exp,14505/14506,Nangal Dam,Amritsar,15,
+Ahmedabad Exp,22967/22968,Ahmedabad,Prayagraj,"24,46",Amritsar Exp,14615/14616,Lalkuan,Amritsar,"12,55",
+Aianta Exp,17063/17064,Manmad,kacheguda,53,Amrapalli Exp,15707/15708,Katihar,Amritsar,"15,22",
+Ajmer Exp,18213/18214,Durg,Ajmer,"72,81",Amritsar Exp,15933/15934,New Tinsukia,Amritsar,"13,66,66A",
+Ajmer Exp,12987/12988,Sealdah,Ajmer,"23,65",Amritsar Exp,19325/19326,Indore,Amritsar,4,
+Ajmer Exp,12989/12990,Dadar,Ajmer,"11,23,23A",Amritsar Exp,19611,Ajmer,Amritsar,80,
+Ajmer Exp,15237/15238,Darbhanga,Ajmer,"13,79,64",Amritsar Exp,19613,Ajmer,Amritsar,"12,82",
+Ajmer Exp,15715/15716,Kishanganj,Ajmer,"18,18A,23,25,25A",Amritsar Exp,22445/22446,Kanpur Central,Amritsar,12,
+Ajmer Exp,16209/16210,Mysuru,Ajmer,"11,19,19A,23,23A",Amritsar Mail,13005/13006,Howrah,Amritsar,12,TAG-26
+,,,,,27,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Anand Vihar T Exp,12443/12444,Haldia,Anand Vihar T,"1,87",Azad Hind Exp,12129/12130,Pune,Howrah,"5,44"
+,Anand Vihar T Exp,22857/22858,Santragachi,Anand Vihar T,32,Azamgarh Exp,13137/13138,Kolkata,Azamgarh,37A
+,Anand Vihar T Exp,13429/13430,Malda Town,Anand Vihar T,"18,18A,93,67,25A",Azimabad Exp,12947/12948,Ahmedabad,Rajgir,"1,3"
+,Anand Vihar T Exp.,14151/14152,Kanpur Central,Anand Vihar T,"25,25A",Badampahar Exp,18049/18050,Badampahar,Shalimar,5
+,Anand Vihar T Exp.,15025/15026,Mau,Anand Vihar T,"25,25A",Bagh Exp,13019/13020,Howrah,Kathgodam,"22,37"
+,Anand Vihar T Exp.,15057/15058,Gorakhpur,Anand Vihar T,22,Bagmati Exp,12577/12578,Darbhanga,Mysuru,"17,20,90"
+,Anand Vihar T Exp.,15621/15622,Kamakhya,Anand Vihar T,"13A,18A,74A",Baidyanathdham Exp.,18449/18450,Puri,Patna,32
+,Anand Vihar T Exp.,22433/22434,Ghazipur City,Anand Vihar T,22,Baijnath Paprola Passr.,52465/52466,Pathankot,Baijnath Paprola,96
+,Anand Vihar T Exp.,22409/22410,Gaya,Anand Vihar T,1A,Baijnath Paprola Passr.,52463,Pathankot,Baijnath Paprola,96
+,Anand Vihar T Exp.,22805/22806,Bhubaneswar,Anand Vihar T,"41A,78A",Baijnath Paprola Passr.,52467/52468,Pathankot,Baijnath Paprola,96
+,Anand Vihar T Exp.,18427/18428,Anand Vihar T,Puri,32,Baijnath Paprola Passr.,52469/52470,Pathankot,Baijnath Paprola,96
+,Anandpur Sahib Exp.,12325/12326,Nangal Dam,Kolkata,12,Baiyyappanahalli Exp,18111/18112,Tata Nagar,Yesvantpur,"40,71A"
+,Ananthapuri Exp,20635/20636,Chennai Egmore,Kollam,21,Ballia Exp,13105/13106,Sealdah,Ballia,37A
+,Ananya Exp,12315/12316,Kolkata,Udaipur City,"23,54,65",Ballia New Delhi SF,22581/22582,Ballia,New Delhi,25
+,Andaman Exp,16031/16032,MGR Chennai,Shri Mata Vaishno,"8,16",Balurghat Exp,13063/13064,Howrah,Balurghat,14
+,,,Central,Devi Katra,,Balurghat Exp,13189/13190,Sealdah,Balurghat,14
+,Andhra Pradesh,20805/20806,New Delhi,Visakhapatnam,42,Balurghat Exp,13431/13432,Nabadwip Dham,Balurghat,14
+,AC Exp.,,,,,Balurghat Exp,15463/15464,New Jalpaiguri,Balurghat,14A
+,Andhra Pradesh,12707/12708,Tirupati,H. Nizamuddin,"9,71",Banaras Exp,12581/12582,New Delhi,Banaras,25A
+,Sampark Kranti Exp.,,,,,Banaras Exp,15103/15104,Gorakhpur,Banaras,63
+,Anga Exp,12253/12254,SMVT Bengaluru,Bhagalpur,"29,36",Banaras Exp,22535/22536,Rameshwaram,Banaras,"17A,21A"
+,Antyodaya Exp,15551/15552,Darbhanga,Banaras City,22,Banaras Exp,22131/22132,Pune,Banaras,"6,44"
+,Antyodaya Exp,16355/16356,Thiruvanthapuram,Mangaluru,26,Banaras Exp,12165/12166,Lokmanya Tilak (T),Gorakhpur,"6,63"
+,,,North,,,Banaras Exp,13345/13346,Singrauli,Varanasi,25
+,Antyodaya Exp,22551/22552,Darbhanga,Jalandhar City,"13,64",Banaras Exp,24203/24204,Lucknow,Varanasi,25A
+,Antyodaya Exp,22841/22842,Santragachi,Tambaram,7,Banaras Exp,15107/15108,Lucknow,Banaras,12A
+,Antyodaya Exp,22877/22878,Howrah,Ernakulam Jn,"29,86",Banaras Exp,15119/15120,Dehradun,Banaras,12A
+,Antyodaya Exp,22921/22922,Bandra (T),Gorakhour,"3,82",Banaras Exp,22687,Mysuru,Varanasi,19A
+,Antyodaya Exp,12597/12598,Gorakhpur,Chhatrapati Shivaji,35,Banaras Exp,17323/17324,SSS Hubballi,Banaras,"19,6,9"
+,,,,Maharaj (T),,,,,,
+,,,,,,Banaras Exp,18523/18524,Visakhapatnam,Banaras,"41,78"
+,Antyodaya Exp,22583/22584,Chhapra,Lokmanya Tilak (T),"22,35",,,,,
+,,,,,,Banaras Exp,18611/18612,Ranchi,Banaras,41
+,Antyodaya Exp,15267/15268,Raxaul,Lokmanya Tilak (T),"6,22,64",,,,,
+,,,,,,Banaras Exp,22969/22970,Okha,Varanasi,"3A,33,34,65"
+,Antyodaya Exp,22553/22554,Raxaul,Lokmanya Tilak (T),"6,90",,,,,
+,,,,,,Banaras Exp,16367/16368,Kanyakumari,Banaras,"8,21"
+,Antyodaya Exp,15559/15560,Darbhanga,Ahmedabad,"6,22,33",,,,,
+,,,,,,Banaras Memu Exp,13553/13554,Asansol,Banaras,1
+,Anuvrat Exp,22631/22632,Bikaner,Madurai,"3,8,21,28",,,,,
+,,,,,,Bandra (T) Exp,22195/22196,Virangana Laxmibai,Bandra (T),4
+,Ara Exp,18639/18640,Ranchi,Ara,36,,,,,
+,,,,,,Bandra (T) Exp,12936/12937,Surat,Bandra (T),11A
+,Arakkonam Exp,16085/16086,Jolarpettai,Arakkonam,20A,,,,,
+,,,,,,Bandra (T) Exp,12971/12972,Bhavnagar,Bandra (T),11A
+,Aranyak Exp,12885/12886,Shalimar,Bhojudih,87,,,,,
+,,,,,,Bandra (T) Exp,12979/12980,Jaipur,Bandra (T),3
+,Archana Exp,12355/12356,Rajendra Nagar,Jammu Tawi,12,,,,,
+,,,,,,Bandra (T) Exp,12996/12995,Ajmer,Bandra (T),"3,54"
+,Aronai Exp,12507/12508,Thiruvananthapuram,Silchar,"83,86,29",,,,,
+,,,,,,Bandra (T) Exp,20921/20922,Lucknow,Bandra (T),"3,79"
+,Arsikere Exp,16214,SSS Hubballi,Arsikere,19,,,,,
+,,,,,,Bandra (T) Exp,20942,Ghazipur City,Bandra (T),"3,22A"
+,Arunachal Exp,22411/22412,Anand Vihar (T),Naharlagun,"18,62",,,,,
+,,,,,,Bandra (T) Exp,22975/22976,Ramnagar,Bandra (T),"3A,82"
+,Asansol Exp,12361/12362,Chhatrapati Shivaji,Asansol,"1, 6",,,,,
+,,,Maharaj (T),,,Bandra (T) Exp,22443/22444,Kanpur Central,Bandra (T),"3,82"
+,Asansol Exp,13505/13506,Digha,Asansol,87,Bandra (T) Exp,22451/22452,Chandigarh,Bandra (T),"11A,27A,23"
+,Asansol Exp,13507/13508,Gorakhour,Asansol,37,Bandra (T) Exp,22473/22474,Bikaner,Bandra (T),"11,23"
+,Asansol Exp,13509/13510,Gonda,Asansol,37,Bandra (T) Exp,22915/22916,Hisar,Bandra (T),"11,23,59"
+,Asansol Exp,13511/13512,Tatanagar,Asansol,87A,Bandra (T) Exp,22917/22918,Haridwar,Bandra (T),"3,75"
+,Asansol Exp,13514,Hatia,Asansol,36,Bandra (T) Exp,22931/22932,Jaisalmer,Bandra (T),"11,23"
+,Ashokapuram Exp,20624,KSR Bengaluru,Ashokapuram,20,Bandra (T) Exp,22933/22934,Jaipur,Bandra (T),3A
+,Ashokapuram Exp,16551,MGR Chennai Central,Ashokapuram,20,Bandra (T) Exp,22935/22936,Palitana,Bandra (T),"11A,76"
+,Ashokapuram Exp,12785,Kacheguda,Ashokapuram,52,Bandra (T) Exp,22949/22950,Delhi Sarai Rohilla,Bandra (T),"11,23"
+,Asansol Exp,13545/13546,Gaya,Asansol,1,Bandra (T) Exp,22951/22952,Gandhidham,Bandra (T),11
+,Asansol Exp,22329/22330,Haldia,Asansol,87,Bandra (T) Exp,22965/22966,Bhagat Ki Kothi,Bandra (T),"11A,23"
+,Asansol Exp,13514/13513,Hatia,Asansol,36,Bandra (T) Exp,22963/22964,Bhavnagar,Bandra (T),11A
+,Ashram Exp,12915/12916,Sabarmati,Delhi,23,Bandra (T) Exp,22989/22990,Mahuva,Bandra (T),11A
+,August Kranti,12953/12954,Mumbai Central,H. Nizamuddin,3,Bandra (T) Exp,22992/22991,Veravel,Bandra (T),11A
+,Rajdhani Exp.,,,,,Bangarapet Exp,16521/16522,KSR Bengaluru,Bangarapet,20A
+,Aurangabad Exp.,17621/17622,Tirupati,Chhatrapati,"10A,53",Bapudham Motihari Exp.,14111/14112,Muzaffarpur,Prayagraj,"63, 64"
+,,,,SambhaJi Nagar,,Bapudham Motihari Exp.,19269/19270,Porbandar,Muzaffarpur,"11,22,23,64"
+,Aurangabad Exp,17619/17620,Huzur Saheb,Chhatrapati,53A,Barak-Brahmaputra Exp.,15641/15642,Silchar,New Tinsukia,"66,83"
+,,,Nanded,SambhaJi Nagar,,Barauni Exp,15203/15204,Lucknow,Barauni,22
+,Avadh Assam Exp,15909/15910,Dibrugarh,Lalgarh,"18,22,39,66",Barauni Exp,15231/15232,Gondia,Barauni,"5A,81"
+TAG-26,Avadh Exp,19037/19038,Bandra (T),Barauni,"3,22,64",Barddhaman Memu Exp,13503/13504,Hatia,Barddhaman,73
+,Avantika Exp,12961/12962,Mumbai Central,Indore,3,Bareilly Exp,14307/14308,Prayagraj Sangam,Bareilly,25A
+,Ayodhya Cantt Exp,14205/14206,Delhi,Ayodhya Cantt,25,,,,,
+,,,,,28,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Bareilly Exp,14313/14314,Lokmanya Tilak,Bareilly,"2A,55",Bhopal Exp.,18235/18236,Bilaspur,Bhopal,43A,
+Bareilly Exp,14315/14316,New Delhi,Bareilly,55,Bhriqu Exp,22427/22428,Ballia,Anand Vihar (T),22,
+Bareilly Exp,14319/14320,Indore,Bareilly,"2A,4,55A",Bhubaneswar Exp,20854/20853,MGR Chennai,Bhubaneswar,7A,
+Baripada Exp,12891/12892*,Puri,Bangriposi,32,,,Central,,,
+Baripada Exp,18007/18008,Shalimar,Bhanjpur,87,Bhubaneswar Exp,12845/12846,SMVT Bengaluru,Bhubaneswar,"20A,29A",
+Barmer Exp,12323/12324,Howrah,Barmer,"1,59",Bhubaneswar Exp,12879/12880,Lokmanya ,Bhubaneswar,"5A,78",
+Barmer Exp,14805/14806,Yesvantpur,Barmer,"23,19,31",,,Tilak (T),,,
+Barmer Exp,14887/14888,Haridwar,Barmer,45,Bhubaneswar Exp,20851/20852,Puducherry,Bhubaneswar,"7A,21A",
+Barmer Exp,15631/15632,Guwahati,Barmer,"18,28",Bhubaneswar Exp,20849/20850,Rameshwaram,Bhubaneswar,"7A,21A",
+Basava Exp,17307/17308,Mysuru,Bagalkot,"10,20",Bhubaneswar Exp,22805/22806,Anand Vihar (T),Bhubaneswar,"78,41",
+Belagavi Exp,20653,KSR Bengaluru,Belagavi,19,Bhubaneswar Exp,22871/22872,Tirupati,Bhubaneswar,7,
+Belagavi Exp,17301/17302,Mysuru,Belagavi,19A,Bhubaneswar Exp,22879/22880,Tirupati,Bhubaneswar,7A,
+Bengaluru Exp,16519/16520,Jolarpettai,KSR Bengaluru,20,Bhubaneswar Exp,22881/22882,Pune,Bhubaneswar,"10,30A",
+Bengaluru Exp,16525/16526,Kanniyakumari,KSR Bengaluru,86A,Bhuj Exp,11091/11092,Pune,Bhuj,"3,1A",
+Bengaluru Exp,22305/22306,Jasidih,SMVT Bengaluru,"1,40",Bhuj Exp,12959/12960,Dadar,Bhuj,11A,
+Bengaluru Exp,17235/17236,Nagercoil,SMVT Bengaluru,69,Bhuj Exp,22829/22830,Shalimar,Bhuj,"11,4,32",
+Bengaluru Exp,22501/22502,New Tinsukia,SMVT Bengaluru,"20,29,66A,74A",Bidar Exp,22143/22144,Chhatrapati Shivaji,Bidar,53,
+,,,,,,,Maharaj (T),,,
+Bengaluru Exp,22617/22618,Tirupati,SMVT Bengaluru,20,,,,,,
+,,,,,Bidar Exp,16571/16572,Yesvantpur,Bidar,60,
+Bengaluru Mail,12657/12658,Chennai Central,SMVT Bengaluru,20,,,,,,
+,,,,,Bihar Sampark Kranti Exp.,12565/12566,Darbhanga,New Delhi,22,
+Bengaluru Cantt Exp,12845/12846,Bhubaneswar,Bengaluru Cantt,"20,29",,,,,,
+,,,,,Bikaner Exp,12455/12456,Delhi Sarai Rohilla,Bikaner,39,
+Bengaluru Cantt Exp,18637/18638,Hatia,SMVT Bengaluru,"20,40",,,,,,
+,,,,,Bikaner Exp,12457/12458,Delhi Sarai Rohilla,Bikaner,59,
+Bengaluru Exp,20654,Belagavi,Bengaluru,19,,,,,,
+,,,,,Bikaner Exp,15633/15634,Bikaner,Guwahati,"23, 28",
+Bengaluru Exp,12509/12510,Guwahati,SMVT Bengaluru,29,,,,,,
+,,,,,Sri Ganganagar-Dadar,12489/12490,Dadar,Sri Ganganagar,"11,23A,39",
+Bengaluru Exp,12683/12684,Ernakulam Jn,KSR Bengaluru,86A,,,,,,
+,,,,,Exp,,,,,
+Bengaluru Exp,12835/12836,Hatia,SMVT Bengaluru,"20,40",,,,,,
+,,,,,Bikaner Exp,16587/16588,Yesvantpur,Bikaner,"19,23,31",
+Bengaluru Exp,12863/12864,Howrah,SMVT Bengaluru,29,,,,,,
+,,,,,Bikaner Exp,20845/20846,Bilaspur,Bikaner,"3A,28,42A",
+Bengaluru Exp,16315/16316,Thiruvanthapuram,KSR Bengaluru,86A,,,,,,
+,,North,,,Bikaner Exp,22473/22474,Bandra (T),Bikaner,"11,23",
+Bengaluru SF Exp,20685/20686,Gandhidham,KSR Bengaluru,"11A,19",Bilaspur Exp,12849/12850,Pune,Bilaspur,"5A,44",
+Bengaluru SF Exp,20693/20694,Jodhour,KSR Bengaluru,"11A,19,23",Bilaspur Exp,12851/12852,MGR Chennai,Bilaspur,"8A,42",
+,,,,,,,Central,,,
+Bengaluru Exp,16521/16522,Bangarapet,KSR Bengaluru,20,,,,,,
+,,,,,Bilaspur Exp,17481/17482,Tirupati,Bilaspur,"7A,42A",
+Bengaluru Exp,16533/16534,Jodhpur,KSR Bengaluru,"11A,19,23,60",,,,,,
+,,,,,Bilaspur Exp,18235/18236,Bhopal,Bilaspur,43,
+Bengaluru Exp,16593/16594,Hazur Sahib,KSR Bengaluru,60,,,,,,
+,,,,,Bilaspur Exp,20843/20844,Bhagat Ki Kothi,Bilaspur,"3,28,42",
+,,Nanded,,,,,,,,
+,,,,,Bilaspur Exp,20845/20846,Bikaner,Bilaspur,"3,28,42",
+Bengaluru Exp,16512,Kannur,KSR Bengaluru,"19,20",,,,,,
+,,,,,Bilaspur Exp,22619/22620,Tirunelveli,Bilaspur,"8,42,86",
+Berhampore Court Exp.,13117/13118,Kolkata,Lalgola,14,,,,,,
+,,,,,Bilaspur Exp,22815/22816,Ernakulam Jn,Bilaspur,"86A,8A,42",
+Betwa Exp,18203/18204,Durg,Kanpur Central,81,,,,,,
+,,,,,Bilaspur-Buxar Exp,22843/22844,Buxar,Bilaspur,"36,5",
+Bhagalpur Exp,12335/12336,Lokmanya Tilak (T),Bhagalpur,24,,,,,,
+,,,,,Bilaspur Exp,22939/22940,Okha,Bilaspur,34,
+Bhagalpur Exp,15097/15098,Jammu Tawi,Bhagalpur,13A,,,,,,
+,,,,,Bilaspur Exp,18257/18258,Chirimiri,Bilaspur,32A,
+Bhagalpur Exp,22947/22948,Surat,Bhagalpur,24,,,,,,
+,,,,,Bilaspur Exp,18247/18248,Rewa,Bilaspur,81,
+Bhagat Ki Kothi Exp.,11089/11090,Pune,Bhagat Ki Kothi,"23A,31A",,,,,,
+,,,,,Black Diamond Exp.,22387/22388,Howrah,Dhanbad,37,
+Jaisalmer Exp,20491/20492,Jaisalmer,Sabaramati,23A,,,,,,
+,,,,,Bodinayakkanur Exp.,20601/20602,Chennai Central,Bodinayakkanur,86,
+Bhagat Ki Kothi Exp.,15623/15624,Kamakhya,Bhagat Ki Kothi,"59,18A",,,,,,
+,,,,,Brahmaputra Mail,15658/15657,Kamakhya,Delhi,"1,18",
+Bhagat Ki Kothi Exp.,22673/22674,Mannargudi,Bhagat Ki Kothi,"3,8,21,28",,,,,,
+,,,,,Brindavan Exp,12639/12640,MGR Chennai,KSR Bengaluru,20,
+Bhagat Ki Kothi Exp.,18573/18574,Visakhapatnam,Bhagat Ki Kothi,"28,42,72,81",,,,,,
+,,,,,,,Central,,,
+Bhagirathi Exp,13103/13104,Sealdah,Lalgola,14,,,,,,
+,,,,,Budhpurnima Exp,14223/14224,Rajgir,Banaras,67,
+Jammu Tawi Exp,14803/14804,Jodhpur,Jammu Tawi,51,,,,,,
+,,,,,Bundelkhand Exp,11107/11108,Gwalior,Banaras,47,
+Bhavnagar Exp,12971/12972,Bandra (T),Bhavnagar,11,,,,,,
+,,,,,Buxar Exp,18183/18184,Tatanagar,Buxar,"36,36A",
+Bhavnagar Exp,12755/12756,Kakinada Town,Bhavnagar,"10,10A,11,30",,,,,,
+,,,,,Capital Exp,13247/13248,Kamakhya,Ara,"18,74",
+Bhavnagar Exp,22963/22964,Bandra (T),Bhavnagar,11,,,,,,
+,,,,,Capital Exp,13245/13246,New Jalpaiguri,Ara,18,
+Bhavnagar Exp,19259/19260,Thiruvanthapuram,Bhavnagar,"26A,76",,,,,,
+,,,,,Chalukya Exp,11021/11022,Dadar,Tirunelveli,"19,69",
+,,North,,,,,,,,
+,,,,,Chamarajanagar Exp,16219/16220,Tirupati,Chamarajanagar,20,
+Bhayagnagar Exp,17233/17234,Secunderabad,Sirpur,9,,,,,,
+,,,,,Chambal Exp,12175/12176,Howrah,Gwalior,65,
+,,,Kaghazanager,,,,,,,
+,,,,,Chambal Exp,12177/12178,Howrah,Mathura,65,
+,,,Bhayagnagar Exp,,,,,,,
+,,,,,Chambal Exp,20975/20976,Howrah,Agra Cantt,65,
+Bhilad Exp,22929/22930,Vadodara,Dahanuroad,11A,,,,,,
+,,,,,Champaran Humsafar,15705/15706,Katihar,Delhi,"22,38,64,90",
+Bhind Exp,21125/21126,Ratlam,Bhind,33,Exp,,,,,
+Bhopal Exp,12155/12156,Rani Kamlapti,H. Nizamuddin,2,Champaran Satyagrah,14009/14010,Anand Vihar,Bapudham ,"22,64",
+,,(Bhopal),,,Exp,,,Motihari,,
+Bhopal Exp,12183/12184,MBDD Partapgarh,Bhopal,35,Chamundi Exp,16215/16216,Mysuru,KSR Bengaluru,20,
+Bhopal Exp,12593/12594,Lucknow,Bhopal,35,Chandigarh Exp,12231/12232,Lucknow,Chandigarh,88,
+Bhopal Exp,13025/13026,Howrah,Bhopal,73,Chandigarh Exp,15063/15064,Ramnagar,Chandigarh,"13,55A",
+Bhopal Exp,19711/19712,Jaipur,Bhopal,"23A,43A,54A",Chandigarh Exp,22355/22356,Patliputra,Chandigarh,88,
+Bhopal Exp,14813/14814,Jodhpur,Bhopal,28,,,,,,
+Bhopal Exp,22165/22166,Singrauli,Bhopal,73,,,,,,TAG-26
+* Will be renumbered as 18401/18402 w.e.f. 01-02-2026.,,,,,,,,,,
+,,,,,29,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Chandigarh Exp,14613/14614,Firozour,Sahibzada Ajeet,15A,Coimbatore Exp,22615/22616,Tirupati,Coimbatore,70
+,,,,Singh Nagar,,Coonoor Passenger,56139,Udagamandalam,Coonoor,97
+,,,,(Mohali),,Coonoor Passenger,56140,Udagamandalam,Coonoor,97
+,Chandigarh Exp,14887/14888,Rishikesh,Barmer,45,Coonoor Passenger,56142,Udagamandalam,Coonoor,97
+,Chandigarh Exp,15011/15012,Lucknow,Chandigarh,88,Corbett Park Link Exp.,25013/25014,Delhi,Ramnagar,55
+,Chandigarh Exp,15903/15904,Dibrugarh,Chandigarh,"13,66A,88",Coromandel Exp,12841/12842,Howrah,MGR Chennai,7
+,Chandigarh Exp,22451/22452,Bandra (T),Chandigarh,"11,23A,27",,,,Central,
+,Chandigarh Exp,20493/20494,Madurai,Chandigarh,"86,69,8A,27",Dadar Exp,11005/11006,Puducherry,Dadar,"19,20,21"
+,Chandigarh Exp,20989/20990,Udaipur City,Chandigarh,"23, 27, 54, 80",Dadar Exp,11021/11022,Tirunelveli,Dadar,"19,69"
+,Charminar Exp,12759/12760,Tambaram,Hyderabad,71,Dadar Exp,12959/12960,Bhuj,Dadar,11
+,Chattisgarh Sampark,12823/12824,Durg,H. Nizamuddin,"32,81",Dadar Exp,12989/12990,Ajmer,Dadar,"11A,23"
+,Kranti Exp,,,,,Dadar Exp,22147/22148,Sai Nagar shirdi,Dadar,53A
+,Chauri Chaura Exp,15003/15004,Kanpur Anwarganj,Gorakhpur,63,Dadar Exp,22629/22630,Tirunelveli,Dadar,"26A,69A"
+,Chemmozhi Exp,16615/16616,Mannaraudi,Coimbatore,69,Dahod Exp,12929/12930,Valsad,Dahod,3A
+,Chenaaloattu Exp.,17651/17652,Kacheguda,Chenaaloattu Jn,71A,Dakshin Exp,12721/12722,Visakhapatnam,H. Nizamuddin,"9,42"
+,Chennai Egmore Exp.,22153/22154,Salem,Chennai Egmore,21A,Danapur Exp,12351/12352,Howrah,Danapur,1A
+,Chennai Egmore Exp.,22157/22158,Chhatrapati Shivaji,Chennai Egmore,10,Danapur Exp,19064,Udhana,Danapur,24
+,,,Maharaj (T),,,Darbhanga Exp,11033/11034,Pune,Darbhanga,"6,22,44"
+,Chennai Exp.,12389/12390,Gaya,MGR Chennai,17,Darbhanga Exp,11061/11062,Lokmanya Tilak (T),Darbhanga,"6,22"
+,,,,Central,,,,,,
+,,,,,,Darbhanga Exp,15233/15234,Kolkota,Darbhanga,37A
+,Chennai Egmore Exp.,12633/12634,Kanniyakumari,Chennai Egmore,21A,,,,,
+,,,,,,Darbhanga Exp,15235/15236,Howrah,Darbhanga,37A
+,Chennai Egmore Exp.,12667/12668,Nagercoil,Chennai Egmore,21A,,,,,
+,,,,,,Darbhanga Exp,15237/15238,Ajmer,Darbhanga,"13,79,64"
+,Chennai Egmore Exp.,15929/15930,New Tinsukia,Tambaram,"29,66A",,,,,
+,,,,,,Darbhanga Exp,17007/17008,Secundrabad,Darbhanga,"9,36,37,42"
+,Chennai Egmore Exp.,20635/20636,Kollam,Chennai Egmore,21A,,,,,
+,,,,,,Darjeeling Mail,12343/12344,Sealdah,Haldibari,14
+,Chennai Egmore Exp.,20605/20606,Tiruchendur,Chennai Egmore,21A,,,,,
+,,,,,,Darjeeling Passenger,52541,New Jalpaiguri,Darjeeling,95
+,Chennai Egmore Exp.,16127/16128,Guruvavur,Chennai Egmore,"21A,85A",,,,,
+,,,,,,Darjeeling Passenger,52545,Kurseong,Darjeeling,95
+,Chennai Egmore Exp.,22675/22676,Tiruchchirappalli,Chennai Egmore,21A,,,,,
+,,,,,,Darshan Exp,12493/12494,H. Nizamuddin,Miraj,4
+,Chennai Egmore Exp.,16159/16160,Mangaluru Central,Tambaram,"21A,86A",,,,,
+,,,,,,Dayodaya Exp,12181/12182,Jabalpur,Ajmer,72
+,Chennai Egmore Exp.,22623/22624,Madurai,Chennai Egmore,21A,,,,,
+,,,,,,Deccan Exp,11007/11008,Chhatrapati Shivaji,Pune,19
+,Chennai Egmore Exp.,22661/22662,Rameshwaram,Chennai Egmore,21A,,,Maharaj (T),,
+,Chennai Egmore Exp.,22663/22664,Jodhpur,Chennai Egmore,"23,46",Deccan Queen Exp,12123/12124,Chhatrapati Shivaji,Pune,19
+,Chennai Egmore Exp.,20625/20626,Bhagat ki Kothi,Chennai Egmore,"21, 23, 46",,,Maharaj (T),,
+,Cheran Exp,12673/12674,MGR Chennai,Coimbatore,86,Deekshabhoomi Exp.,11045/11046,Chhatrapati Shahu,Dhanbad,"17,44,53"
+,,,Central,,,,,Maharaj (T),,
+,Chetak Exp,20473/20474,Delhi Sarai Rohilla,Udaipur City,"23,54",Dehradun Exp,20493/20494,Madurai,Chandigarh,"8,27,69,75,86"
+,Chhapra Exp,15053/15054,Gomti Nagar,Chhapra,33,Dehradun Exp,14119/14120,Kathaodam,Dehradun,"13,55"
+,Chhapra Exp,15109/15110,Mathura,Chhapra,22,Dehradun Exp,15119/15120,Banaras,Dehradun,12
+,Chhapra Exp,15113/15114,Gomti Nagar,Chhapra Kacheri,82,Dehradun Exp,15001/15002,Muzaffarpur,Dehradun,"13,64A"
+,Chhattisgarh Exp,18237/18238,Bilaspur,Amritsar,"15,42",Dehradun Exp,15005/15006,Gorakhpur,Dehradun,13
+,Chhatrapati Shahu ,22156,Chhatrapati Shahu ,Kalaburagi,10,Dehradun Exp,22659/22660,Thiruvanthapuram,Yog Nagari,"3A,26A,75"
+,Maharaj (T) Exp,,Maharaj (T),,,,,North,Rishikesh,
+,Chhatrapati Shahu,11049,Ahmedabad,Chhatrapati Shahu,"19,31",Delhi Exp,22429/22430,Pathankot,Delhi,15A
+,Maharaj (T),,,Maharaj (T),,Delhi Exp,14205/14206,Ayodhya Cantt,Delhi,25A
+,Chhatrapati Shahu,11403,Nagpur,Chhatrapati Shahu,44A,Delhi Exp,14207/14208,Partapgarh,Delhi,25A
+,Maharaj (T),,,Maharaj (T),,Delhi Exp,14521/14522,Ambala Cantt.,Delhi,15A
+,Chhatrapati Shahu,12148,H. Nizamuddin,Chhatrapati Shahu,"9,19",Delhi Exp,14682,Jalandhar,Delhi,16A
+,Maharaj (T),,,Maharaj (T),,Delhi Exp,14731/14732,Bhatinda,Delhi,39
+,Chirimiri Exp,18257/18258,Bilaspur,Chirimiri,32,Delhi Exp,22403/22404,Puducherry,New Delhi,8A
+,Chikkamagaluru Exp.,16240,Yesvantpur,Chikkamagaluru,19,Delhi Exp,14545/14546,Saharanpur,Delhi,84
+,Chikkamagaluru Exp.,17423,Tirupati,Chikkamagaluru,"19,70",Delhi Sarai Rohilla Exp.,12455/12456,Bikaner,Delhi Sarai Rohilla,39A
+,Chitrakoot Dham Karvi,14109/14110,Kanpur Central,Chitrakoot Dham,57,Delhi Sarai Rohilla Exp.,12457/12458,Bikaner,Delhi Sarai Rohilla,59
+,Exp.,,,Karvi,,Delhi Sarai Rohilla Exp.,14713,Sikar,Delhi Sarai Rohilla,59A
+,Chitrakoot Exp,15205/15206,Lucknow,Jabalpur,57,Delhi Sarai Rohilla Exp.,20937/20938,Porbandar,Delhi Sarai Rohilla,"11A,23A"
+,Chopan Exp,18613/18614,Ranchi,Chopan,41,Delhi Sarai Rohilla Exp.,20913/20914,Rajkot,Delhi Sarai Rohilla,"11A,23A"
+,Chopan Exp,18631/18632,Ranchi,Chopan,41,Delhi Sarai Rohilla Exp.,22481/22482,Jodhpur,Delhi Sarai Rohilla,59
+,Circar Exp,17643/17644,Pondicherry,Kakinada Port,7,Delhi Sarai Rohilla Exp.,22949/22950,Bandra (T),Delhi Sarai Rohilla,"11,23"
+,Coalfield Exp,12339/12340,Howrah,Dhanbad,37,Delhi Sarai Rohilla Exp.,19337/19338,Indore,Delhi Sarai Rohilla,"23,23A,54,54A"
+,Coimbatore,12515/12516,Silchar,Coimbatore,"83,29,86",Deoghar Exp,15625/15626,Agartala,Deoghar,"18,83"
+,Coimbatore Exp,11013/11014,Lokmanya Tilak (T),Coimbatore,"10,86",Devairi Exp,17057/17058,Chhatrapati Shivaji,Secunderabad,53
+,Coimbatore Exp,12681/12682,MGR Chennai,Coimbatore,86,,,Maharaj (T),,
+,,,Central,,,Dhanbad Exp,13331/13332,Patna,Dhanbad,36A
+,Coimbatore Exp,12969/12970,Jaipur,Coimbatore,"3,8,86",Dhanbad Exp,13351/13352,Alappuzha,Dhanbad,"40A,86A"
+,Coimbatore Exp,22475/22476,Hisar,Coimbatore,"23,59,26",Dharmabad Exp,17687/17688,Manmad,Dharmabad,53
+TAG-26,Coimbatore Exp,22667/22668,Nagercoil,Coimbatore,69,Dharmavaram Exp,17215/17216,Viiayawada,Dharmavaram,49
+,Coimbatore Exp,16613/16614,Rajkot,Coimbatore,31,Dharti Aaba Exp,22837/22838,Hatia,Ernakulam Jn,40
+,Coimbatore Exp,16617/16618,Rameshwaram,Coimbatore,"69A,21",,,,,
+,,,,,30,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Dhauladhar Exp,14035/14036,Delhi Sarai Rohilla,Pathankot,16,Ernakulam Exp,10215/10216,Madgaon,Ernakulam Jn,26,
+Dhauli Exp,12821/12822,Howrah,Puri,7,Ernakulam Exp,12683/12684,Ernakulam Jn,SMVT Bengaluru,86,
+Dhule Exp,11011/11012,CSMT,Dhule,"2,2A",Ernakulam Exp,16187/16188,Karaikal,Ernakulam Jn,86,
+Diaha Exp,22873/22874,Visakhapatnam,Digha,7A,Ernakulam Exp,16337/16338,Okha,Ernakulam Jn,26,
+Dibrugarh Exp,15903/15904,Chandigarh,Dibrugarh,"13,13A,66,88",Ernakulam Exp,22669/22670,Patna,Ernakulam Jn,"17,86",
+Dibrugarh Exp,15927/15928,Rangiya,New Tinsukia Exp.,66,Ernakulam Exp,18189/18190,Tatanagar Junction,Ernakulam Jn,40,
+Dibrugarh Exp,15929/15930,Tambaram,New Tinsukia Exp.,"29A,66",Ernakulam Exp,22643/22644,Patna,Ernakulam Jn,"86,29",
+Dibrugarh Exp,15933/15934,Amritsar,New Tinsukia Exp.,"13A,66",Ernakulam Exp,22815/22816,Bilaspur,Ernakulam Jn,"42A,8,86",
+Dibrugarh Exp,15967/15968,Rangiya,Dibrugarh,66,Etarsi Exp,12273/12274,Howrah,New Delhi,1,
+Digha Exp,12580,Puri,Digha,74,Falaknuma Exp,12703/12704,Howrah,Secunderabad,30,
+Digha Exp,13417/13418,Malda Town,Digha,"14A,87A",Farakka Exp,15733/15734,Balurghat,Bhatinda,"1,25,39",
+Digha Exp,13505/13506,Asansol,Digha,87A,Farakka Exp,15743/15744,Balurghat,Bhatinda,"1,25,39",
+DimaPur Exp,15665/15666,Guwahati,Mariani,66,Farrukhabad Exp,15039/15040,Kasaani,Farrukhabad,82,
+Dimapur Exp,15669/15670,Guwahati,Dibrugarh Town,66,Farrukhabad Exp,15042,Kasaani,Farrukhabad,82,
+Donyi Polo Exp,15617/15618,Guwahati,Dullabchera,62,Firozpur Exp,14601/14602,Hanumangarh,Firozpur,39,
+Doon Exp,13009/13010,Howrah,Yog Nagari,12,Firozpur Exp,14613/14614,Sahibzada Ajeet,Firozpur,15,
+,,,Rishikesh,,,,Singh Nagar,,,
+Dumka Exp,18619/18620,Ranchi,Godda,36,,,(Mohali),,,
+Dumka Exp,13334/13333,Patna,Dumka,1,Firozpur-Nanded Exp,14621/14622,H.S. Nanded,Firozpur,"4,53",
+Durg Exp,12549/12550,Martyr Captain,Durg,"16A,32A,81",Flying Rani Exp,12921/12922,Mumbai Central,Surat,11,
+,,Tushar Mahajan,,,Hospet Exp,11139/11140,Chhatrapati Shivaji,Hospet,19,
+Durg Exp,18201/18202,Nautanwa,Durg,81,,,Maharaj (T),,,
+Durg Exp,18205/18206,Nautanwa,Durg,"38,81",Galta Dham Pooja Exp,12413/12414,Jammu Tawi,Ajmer,"16A,23",
+Durg Exp,18207/18208,Ajmer,Durg,"72,81",Ganadevta Exp,13017/13018,Howrah,Azimganj,14,
+Durg Exp,18213/18214,Ajmer,Durg,"72,81A",Gandhidham Exp,12993/12994,Puri,Gandhidham,"34A,78A",
+Durg Exp,20847/20848,Martyr Captain,Durg,"4A,32A,81A",Gandhidham Exp,19335/19336,Indore,Gandhidham,"3,11",
+,,Tushar Mahajan,,,Gandhidham Exp,15667/15668,Kamakhya,Gandhidham,"3,11,18A,33A",
+Durg Exp,18425/18426,Puri,Durg,"34,34A,78",Gandhidham Exp,16335/16336,Nagercoil,Gandhidham,26A,
+Durg Exp/Passr.,18241/18242,Ambikapur,Durg,81,Gandhidham Exp,18501/18502,Visakhapatnam,Gandhidham,"8A,34A",
+Durgiana Exp,12357/12358,Kolkata,Amritsar,12,Gandhidham Exp,19151,Palanpur,Gandhidham,11,
+Duronto Exp,12213/12214,Yehsvantpur,Delhi Sarai Rohilla,9,Gandhidham Exp,22973/22974,Puri,Gandhidham,"34,34A",
+Duronto Exp,12219/12220,Lokmanya Tilak (T),Secunderabad,10,Gandhidham Exp,22483/22484,Bhagat ki Kothi,Gandhidham,"11,23",
+Duronto Exp,12221/12222,Pune,Howrah,5,Gandhidham Exp,22951/22952,Bandra (T),Gandhidham,11,
+Duronto Exp,12223/12224,Lokmanya Tilak (T),Ernakulam Jn,26,Gondia Exp,15231/15232,Barauni,Gondia,"81,5",
+Duronto Exp,12227/12228,Mumbai Central,Indore,3,Ganga Damodar Exp.,13329/13330,Dhanbad,Patna,36,
+Duronto Exp,12239/12240,Mumbai Central,Hisar,"3,77",Ganga Gomti Exp,14215/14216,Prayagraj Sangam,Lucknow,25,
+Duronto Exp,12245/12246,Howrah,SMVT Bengaluru,29,Ganga Kaveri Exp,12669/12670,MGR Chennai,Chhapra,17,
+Duronto Exp,12259/12260,Sealdah,Bikaner,"1,59",,,Central,,,
+Duronto Exp,12261/12262,Chhatrapati Shivaji,Howrah,5,Ganga Sutlej Exp,13307/13308,Dhanbad,Firozpur,12,
+,,Maharaj (T),,,Gangasagar Exp,13185/13186,Sealdah,Jaynagar,37,
+Duronto Exp,12263/12264,Pune,H. Nizamuddin,4,Garbha Exp,12937/12938,Gandhidham,Howrah,"3,11,65",
+Duronto Exp,12265/12266,Delhi Sarai Rohilla,Jammu Tawi,16,Garib Nawaz Exp,15715/15716,Kishanganj,Ajmer,"18,23,25",
+Duronto Exp,12267/12268,Mumbai Central,HAPA,11,Garib Nawaz Exp,16531/16532,Ajmer,KSR Bengaluru,"11,19,23,60",
+Duronto Exp,12269/12270,MGR Chennai,H. Nizamuddin,8,Garib Nawaz Exp,18631/18632,Ranchi,Chopan,41,
+,,Central,,,Garib Rath Exp,12113/12114,Pune,Nagpur,44,
+Duronto Exp,12273/12274,Howrah,New Delhi,1,Garib Rath Exp,12187/12188,Jabalpur,Chhatrapati Shivaji,6,
+Duronto Exp,12281/12282,Bhubaneswar,New Delhi,32,,,,Maharaj (T),,
+Duronto Exp,12283/12284,Ernakulam Jn,H. Nizamuddin,"3,26",Garib Rath Exp,12201/12202,Lokmanya Tilak (T),Thiruvanthapuram,26,
+Duronto Exp,12285/12286,Secunderabad,H. Nizamuddin,9,,,,North,,
+Duronto Exp,12289/12290,Chhatrapati Shivaji,Nagpur,5,Garib Rath Exp,12203/12204,Saharsa,Amritsar,"13,15",
+,,Maharaj (T),,,Garib Rath Exp,12207/12208,Kathaodam,Jammu Tawi,"12,55",
+Duronto Exp,12293/12294,Lokmanya ,Prayagraj,6,Garib Rath Exp,12209/12210,Kanpur Central,Kathaodam,"22,55",
+,,Tilak (T),,,Garib Rath Exp,12211/12212,Muzaffarpur,Anand Vihar (T),"22,64",
+Duronto Exp,12297/12298,Ahmedabad,Pune,31,Garib Rath Exp,12215/12216,Delhi Sarai Rohilla,Bandra (T),"23,11",
+Duronto Exp,22201/22202,Sealdah,Puri,7,Garib Rath Exp,12257/12258,Yesvantpur,Thiruvanthapuram,86,
+Duronto Exp,22203/22204,Visakhapatnam,Secunderabad,30,,,,North,,
+Duronto Exp,22209/22210,Mumbai Central,H. Nizamuddin,3,Garib Rath Exp,13127/13128,Kolkata,Ara,"1, 1A",
+Duronto Exp,22213/22214,Shalimar,Patna,"1,12",Garib Rath Exp,12517/12518,Kolkata,Guwahati,14,
+Dwarka Exp,15635/15636,Okha,Guwahati,"3,11,18",Garib Rath Exp,12535/12536,Lucknow Jn.,Raipur,81,
+East Coast Exp,18045/18046,Shalimar,Charlapalli,30,Garib Rath Exp,12435/12436,Jaynagar,Anand Vihar (T),"1,90",
+Ekatmata Exp,14259/14260,Lucknow,Gaya,12,Garib Rath Exp,12611/12612,MGR Chennai,H. Nizamuddin,8,
+,,,,,,,Central,,,
+Ekatmata Exp,14261/14262,Lucknow,Gaya,12,,,,,,
+,,,,,Garib Rath Exp,12735/12736,Secunderabad,Yesvantpur,9,
+Ekta Exp,14795/14796,Bhiwani,Kalka,27,,,,,,
+,,,,,Garib Rath Exp,12739/12740,VisakhaPatnam,Secunderabad,30,
+Ernad Exp,16605/16606,Mangaluru Central,Thiruvananthapuram,85,,,,,,
+,,,,,Garib Rath Exp,12831/12832,Dhanbad,Bhubaneswar,78,
+Ernakulam Exp,22655/22656,H. Nizamuddin,Ernakulam Jn,"3,26",,,,,,
+,,,,,Garib Rath Exp,12877/12878,Ranchi,New Delhi,41,TAG-26
+,,,,,31,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table
+Name,No,Station,Station,No.,Name,No,Station,Station,No.
+Garib Rath Exp,12881/12882,Shalimar,Puri,7,Gujarat Queen Exp,19033/19034,Valsad,Ahmedabad,11
+Garib Rath Exp,12909/12910,Bandra (T),H. Nizamuddin,3,Gujarat Sampark,22953/22954,Mumbai Central,Ahmedabad,11
+Garib Rath Exp,12983/12984,Ajmer,Chandigarh,"23,27,80",Gujarat Shatabdi Exp.,12009/12010,Mumbai Central,Ahmedabad,11
+Garib Rath Exp,22405/22406,Anand Vihar (T),Bhagalpur Jn.,1,Gurudev Exp,12659/12660,Nagercoil,Shalimar,"86,29"
+Garib Rath Exp,22409/22410,Gaya,Anand Vihar (T),1,Guruvavur Exp,16127/16128,Chennai Egmore,Guruvavur,"21,85"
+Garib Rath Exp,22883/22884,Puri,Yesvantpur,"7,49",Guwahati Exp,12509/12510,SMVT Bengaluru,Guwahati,29
+Gatiman Exp,12049/12050,H. Nizamuddin,Virangana,2,Guwahati Exp,12513/12514,Secunderabad,Silchar,29
+,,,Lakshmibai Jhansi,,Guwahati Exp,15631/15632,Barmer,Guwahati,"18,28"
+Gautami Exp,12737/12738,Kakinada Port,Lingampalli,30,Guwahati Exp,15639/1564,Puri,Guwahati,29
+Gaya Exp,12389/12390,MGR Chennai,Gaya,17,Guwahati Exp,15647/15648,Lokmanya Tilak (T),Guwahati,"18,24"
+,,Central,,,Guwahati Exp,15665/15666,Guwahati,Mariani,66
+Gaya Exp,13023/13024,Howrah,Gaya,1,Guwahati Exp,15669/15670,Guwahati,Dibrugarh Town,66
+Gaya Memu Exp,13545/13546,Asansol,Gaya,1,Guwahati Exp,19305/19306,Indore,Guwahati,"18,35,74"
+Gaya Exp,15619/15620,Kamakhya,Gaya,93,Guwahati Exp,15611/15612,Rangiya,Silchar,83
+Ghazipur City Exp,13121/13122,Kolkata,Ghazipur City,"1,22",Gwalior Exp,22547/22548,Sabarmati,Gwalior,"2,23"
+Ghazipur City Exp,19041,Bandra (T),Ghazipur City,"3,22",Gwalior Exp,11125,Indore,Gwalior,33
+Ghazipur City Exp,14611/14612,Shri Vaishno Devi,Ghazipur City,12,Gwalior Mail,11123/11124,Barauni,Gwalior,33
+,,Mata,,,,,,,
+,,,,,H.S. Nanded Exp.,12421/12422,Amritsar,Hazur Sahib,"9,15,39,53"
+Gitanjali Exp,12859/12860,Chhatrapati Shivaji,Howrah,5,,,,,
+,,,,,,,,Nanded,
+,,Maharaj (T),,,,,,,
+,,,,,H.S. Nanded-Hadapsar,17629/17630,Hazur Sahib,Hadapsar*,"44,53"
+Goa Exp,12779/12780,Vasco-de-Gama,H. Nizamuddin,"9,19",,,,,
+,,,,,Exp.,,Nanded,,
+Goa Sampark Kranti Exp.,12449/12450,Madgaon,Chandigarh,"3,26,27",,,,,
+,,,,,H.S. Nanded Exp.,12439/12440,Sri Ganganagar,Hazur Sahib,"9,39,53"
+Godaan Exp,11055/11056,Lokmanya Tilak (T),Gorakhpur,"6,63",,,,Nanded,
+Godaan Exp,11059/11060,Lokmanya Tilak (T),Chhapra,"6,22,63",H.S. Nanded Exp.,12439/12440,Pune,Hazur Sahib,"44,53"
+Godavari Exp,12727/12728,Visakhapatnam,Hyderabad,30,,,,Nanded,
+Godda Exp,13319/13320,Ranchi,Dumka,36,H.S. Nanded Exp.,12768,Santragachi,Hazur Sahib,"5,53"
+Godda Exp,14049/14050,Godda,Delhi,1,,,,Nanded,
+Godda Exp,18603/18604,Ranchi,Godda,36,H.S. Nanded Exp.,16594,Bengaluru City,Hazur Sahib,60
+Godda Exp,22312/22311,Lokmanya Tilak (T),Godda,24,,,,Nanded,
+Godda Exp,19603/19604,Daurai,Godda,"23,41,41,67",H.S. Nanded Exp.,17409,Adilabad,Hazur Sahib,53
+Golconda Exp,17201/17202,Guntur,Secunderabad,71,,,,Nanded,
+Golden Temple Mail,12903/12904,Bandra (T),Amritsar,"3,4,15",H.S. Nanded Exp.,17613,Panvel,Hazur Sahib,44
+Golgumbaz Exp,16535/16536,Mysuru,Pandharpur,19,,,,Nanded,
+Gomateshwara Exp,16575/16576,Yesvantpur,Mangaluru Junction,19,H.S. Nanded Exp.,17620,Chhatrapati,Hazur Sahib,52
+Gomti Exp,12419/12420,Lucknow,New Delhi,25,,,SambhaJi Nagar,Nanded,
+Gomti Nagar Exp,15089/15090,Gomti Nagar,Godda,18,H.S. Nanded Exp.,17624,Sri Ganganagar,Hazur Sahib,"39,23,34,53"
+Gorakhpur ,15009/15010,Gorakhpur,Izzatnagar,38,,,,Nanded,
+Izzatnagar Exp,,,,,H.S. Nanded Exp.,22710,Amb Andaura,Hazur Sahib,"2A,27,53"
+Gondwana Exp,12409/12410,Raigarh,H. Nizamuddin,42,,,,Nanded,
+Gondwana Exp,22181/22182,Jabalpur,H. Nizamuddin,56,Habibganj Exp,12153,Lokmanya Tilak (T),Rani Kamalapati,2
+Gorakhdham Exp,12555/12556,Gorakhpur,Bathinda Junction,"22,39",Haldia Exp,12444,Anand Vihar (T),Haldia,"1,87"
+Gorakhpur Exp,11079/11080,Lokmanya Tilak (T),Gorakhpur,"35,38",Haldia Exp,22330,Asansol,Haldia,87
+Gorakhpur Exp,11081/11082,Lokmanya Tilak (T),Gorakhpur,"6,63",Hampi Exp,16591/16592,SSS Hubballi,Mysuru,60
+Gorakhpur Exp,12589/12590,Secunderabad,Gorakhpur,"9,17,35",Hanumanaarh Exp,14601,Firozpur,Hanumangarh,39
+Gorakhpur Exp,12591/12592,Yesvantpur,Gorakhpur,"9,17,35",Hapa Exp,12476,Shri Mata Vaishno,Hapa,"3,11,16"
+Gorakhpur Exp,13507/13508,Asansol,Gorakhpur,37,,,Devi Katra,,
+Gorakhpur Exp,15005/15006,Dehradun,Gorakhpur,13,Hapa Exp,19060,Jamnagar/Surat,Hapa,11
+Gorakhpur Exp,15021/15022,Shalimar,Gorakhpur,"63,32",Hapa Exp,22907,Madgaon,Hapa,26
+Gorakhpur Exp,15023/15024,Yesvantpur,Gorakhpur,"9,35,52",Hapa Exp,22940,Bilaspur,Hapa,34
+Gorakhpur Exp,15029/15030,Pune,Gorakhpur,"35,44",Haridwar Exp,12171,Lokmanya Tilak (T),Haridwar,"2A,75"
+Gorakhpur Exp,15045/15046,Okha,Gorakhpur,"11,33",Haridwar Exp,19019/19020,Bandra (T),Haridwar,"3A,75"
+Gorakhpur Exp,15049/15050,Kolkata,Gorakhpur,"37,63",Haridwar Exp,12911,Valsad,Haridwar,"3A,75"
+Gorakhpur Exp,15051/15052,Kolkata,Gorakhpur,"37,64",Haridwar Exp,14115,Prayagraj Junction,Dr. Ambedkar,88
+Gorakhpur Exp,15057/15058,Anand Vihar (T),Gorakhpur,22,,,,Nagar,
+Gorakhpur Exp,15064,Lokmanya Tilak (T),Gorakhpur,"38,35",Haridwar Exp,14606,Jammu Tawi,Haridwar,12
+Gorakhpur Exp,15065/15066,Panvel,Gorakhpur,"38,35",Haridwar Exp,15034,Ram Nagar,Haridwar,"13,55"
+Gorakhpur Exp,15067/15068,Bandra (T),Gorakhpur,"38,35,24",Haridwar Exp,22917,Bandra (T),Haridwar,"3,75"
+GorakhPur Exp,15103/15104,Manduadih,Gorakhpur,63,Haridwar Exp,14888,Barmer,Haridwar,45
+Gorakhpur Exp,19409/19410,Sabarmati,Gorakhpur,"23,79,82",Haridwar Exp,14717,Bikaner,Haridwar,"16,25,39"
+Gorakhpur Exp,22423/22424,Amritsar,Gorakhpur,13,Harihar Exp,14523/14524,Barauni,Ambala Cantt,"22,88"
+Gorakhpur Exp,18629/18630,Ranchi,Gorakhpur,"36,37",Haripriya Exp,17415/17416,Tirupati,Sri Chhatraoati,"19,49"
+Gour Exp,13153/13154,Sealdah,Malda Town,14,,,,Shahu Maharaj (T),
+Grand Trunk Exp,12615/12616,MGR Chennai,New Delhi,8,Haryana Exp,14085/14086,Tilak Bridge,Sirsa,39
+TAG-26,,Central,,,Hasdeo Exp,18249/18250,Korba,Raipur,42
+Gujarat Mail,12901/12902,Mumbai Central,Ahmedabad,11,Hasdeo Exp,18251/18252,Korba,Raipur,42
+,,,,32,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Hassan Exp,11311,Solapur,Hassan,19A,SSS Hubballi Exp,12778,Thiruvanthapuram,SSS Hubballi,"86A,19A",
+Hatev Bazar Exp,13163/13164,Sealdah,Saharsa,14,,,North,,,
+Hatey Bazar Exp,13169/13170,Sealdah,Saharasa,14,SSS Hubballi Exp,17318,Lokmanya T ilak,SSS Hubballi,19,
+Hatia Exp,12811,Lokmanya Tilak (T),Hatia,5A,SSS Hubballi Exp,17320,Hyderabad,SSS Hubballi,"10A,19",
+Hatia Exp,12836,SMVT Bengaluru,Hatia,"20A,40",SSS Hubballi Exp,22698,MGR Chennai,SSS Hubballi,"19A,20",
+Hatia Exp,13303,Dhanbad,Hatia,36A,,,Central,,,
+Hatia Memu Exp,13503,Barddhaman,Hatia,73,SSS Hubballi Exp,17324,Banaras,SSS Hubballi,"6,9,19",
+Hatia Exp,13513,Asansol,Hatia,36A,SSS Hubballi Exp,20655,Yesvantpur,SSS Hubballi,19A,
+Hatia Exp,18623,Islampur,Hatia,"36A,90",Humsafar Exp,13423/13424,Ajmer,Bhagalpur,"24,72",
+Hatia Exp,18625,Purnea Court,Hatia,36A,Humsafar Exp,13115/13116,Sealdah,Jalpaiguri Road,"14, 14A",
+Hatia Exp,18638,SMVT Bengaluru,Hatia,"20A,40A",Humsafar Exp,22141/22142,Pune,Nagpur,5,
+Hatia Exp,18621,Patna,Hatia,36A,Humsafar Exp,12235/12236,Ananad Vihar (T),Madhupur,1,
+Hatia Exp,18633,Pune,Hatia,"5A,44",Humsafar Exp,12349/12350,Godda,New Delhi,1,
+Hazar Duari Exp,13113/13114,Kolkata,Lalaola,14,Humsafar Exp,12503/12504,SMVT Bengaluru,Agartala,"83,29",
+Hemkunt Exp,14609/14610,Rishikesh,Shri Mata Vaishno,12,Humsafar Exp,12571/12572,Gorakhpur,Anand Vihar (T),22,
+,,,Devi Katra,,Humsafar Exp,12595/12596,Gorakhpur,Anand Vihar (T),22,
+Himachal Exp,14053/14054,Delhi,Daulatpur Chowk,16,Humsafar Exp,12751/12752,H.S. Nanded,Jammu Tawi,"4,53",
+Himairi Exp,12331/12332,Howrah,Jammu Tawi,12,Humsafar Exp,16319/16320,Thiruvanthapuram,SMVT Bengaluru,86,
+HimSagar Exp,16317/16318,Kanniyakumari,Shri Mata Vaishno,"16,86",,,North,,,
+,,,Devi Katra,,Humsafar Exp,19669/19670,Udaipur,Patliputra,"3,54,79",
+Hirakhand Exp,18447/18448,Bhubaneswar,Jagdalpur,40,Humsafar Exp,20889/20890,Howrah,Tirupati,29,
+Hirakud Exp,20808/20807,Visakhapatnam,Amritsar,"15,30,32,78",Humsafar Exp,22139/22140,Pune,Ajni,5,
+Hisar Exp,22737/22738,Secundrabad,Hisar,"23A,46,59",Humsafar Exp,22169/22170,RKMP,Santragachi,"5,43",
+Hisar Exp,22476,Coimbatore,Hisar,"23A,26,59",Humsafar Exp,22171/22172,Rani Kamalapati,Pune,9,
+Hisar Exp,22915,Bandra (T),Hisar,"11,23,59",Humsafar Exp,22317/22318,Sealdah,Jammu Tawi,12,
+Hool Exp,22321/22322,Howrah,Siuri,92,Humsafar Exp,22353/22354,Patna,SMVT Bengaluru,17,
+Hoshiarour Exp,14012,Delhi,Hoshiarpur,16,Humsafar Exp,22497/22498,Sri Ganganagar,T iruchchirappalli,"11,19,45,69",
+Howrah Exp,12308/22308,Jodhpur/Bikaner,Howrah,"23A,65",Humsafar Exp,22705/22706,Tirupati,Jammu Tawi,"9,16,71",
+Howrah Exp,12323/12324,Barmer,Howrah,1,Humsafar Exp,22833/22834,Bhubaneswar,SMVT Bengaluru,"7,20",
+Howrah Exp,12348,Rampurhat,Howrah,14A,Humsafar Exp,22867/22868,Durg,H. Nizamuddin,"32,81",
+Howrah Exp,12352,Rajendra Nagar (T),Howrah,1,Humsafar Exp,22887/22888,Howrah,SMVT Bengaluru,29,
+Howrah Exp,12354,Lalkuan,Howrah,"12,55",Humsafar Exp,22913/22914,Bandra (T),Saharsa,"22,24",
+Howrah Exp,12371/12372,Bikaner,Howrah,"12A,25,59",Humsafar Exp,22919/22920,MGR Chennai,Ahmedabad,"10,31",
+Howrah Exp,12664,Tiruchchirappalli,Howrah,"21A,29A",,,Central,,,
+Howrah Exp,12666,Kanniyakumari,Howrah,"21A,29A",Humsafar Exp,20821/20822,Santraaanchi,Pune,5,
+Howrah Exp,12840,Chennai,Howrah,7,Humsafar Exp,20481/20482,Bhagat Ki Kothi,Tiruchchirappalli,"8,28",
+Howrah Exp,12833,Ahmedabad,Howrah,34,Humsafar Exp,20827/20828,Jabalpur,Santraaanchi,"5,43",
+Howrah Exp,12838,Puri,Howrah,7A,Humsafar Exp,22437/22438,Prayagraj,Anand Vihar (T),1,
+Howrah Exp,12864,SMVT Bengaluru,Howrah,29A,Humsafar Exp,20915/20916,Indore,Lingampalli,"3,10",
+Howrah Exp,12868,Puducherry,Howrah,"7A,21A",Humsafar Exp,20917/20918,Indore,Puri,"5,8,78",
+Howrah Exp,12869,Chhatrapati Shivaji,Howrah,5A,Humsafar Exp,20923/20924,Gandhidham,Tirunelveli,26,
+,,Maharaj (T),,,Humsafar Exp,20497/20498,Rameshwaram,Firozpur,"8,21,54,77",
+Howrah Exp,13024,Gaya,Howrah,1,Humsafar Exp,12275/12276,Prayagraj,New Delhi,1,
+Howrah Exp,13026,Bhopal,Howrah,73,Humsafar Exp,22923/22924,Bandra (T),Jamnagar,11,
+Howrah Exp,13030,Mokameh Junction,Howrah,1,Hundri Exp,17027/17028,Hyderabad,Kurnool City,52,
+Howrah Exp,13032,Jayanagar,Howrah,37,Hussain Sagar Exp,12701/12702,Chhatrapati Shivaji,Hyderabad,10,
+Howrah Exp,13034,Katihar,Howrah,14A,,,Maharaj (T),,,
+Howrah Exp,13044,Raxaul,Howrah,37,Hutatma Exp,12157/12158,Pune,SolaPur,10,
+Howrah Exp,13052,Siliguri,Howrah,92,Hvderabad Exp,17255,Narsapur,Lingampalli,30,
+Howrah Exp,13064,Balurghat,Howrah,14A,Hyderabad Exp,12603,MGR Chennai,Charallpalli,71,
+Howrah Exp,13072,Jamalpur,Howrah,1,,,Central,,,
+Howrah Exp,15236,Darbhanga,Howrah,37A,Hyderabad Exp,12719,Jaipur,Hyderabad,"9,54,53",
+Howrah Exp,15712,Katihar,Howrah,14A,Hyderabad Exp,17004,Sri Chhatrapathi,Hyderabad,"71,49,19",
+Howrah Exp,18006,Jagdalpur,Howrah,"5A,40A",,,Shahu Maharaj (T),,,
+Howrah Exp,22818,Mysuru,Howrah,"7A,20A",Hyderabad Exp,17006,Raxaul,Hyderabad,"9,42A,3,6A,37",
+Howrah Exp,22831/22832,Yeshwantpur,Howrah,"49,7A",Hyderabad Exp,17013,Hadapsar,Hyderabad,53,
+Howrah Exp,22864,SMVT Bengaluru,Howrah,20,Hyderabad Exp,17019,Hisar,Hyderabad,"9,54,53,77",
+Howrah Exp,22893,Sai Nagar Shirdi,Howrah,5A,Hyderabad Exp,17022,Vasco-da- Gama,Hyderabad,53,
+Howrah Link Exp,22905,Okha,Howrah,34,Hyderabad Exp,17029,Vijaypura,Hyderabad,10,
+Howrah Mail,12809,Chhatrapati Shivaji,Howrah,5A,Hyderabad Exp,22732,Chhatrapati Shivaji,Hyderabad,10,
+,,Maharaj (T),,,,,Maharaj (T),,,
+SSS Hubballi Exp,17314,MGR Chennai,SSS Hubballi,"60,71",Indore Exp,11126,Gwalior,Indore,33A,
+,,Central,,,Indore Exp,22192,Jabalpur,Indore,43,
+SSS Hubballi Exp,20658,H.Nizamuddin,SSS Hubballi,"9,19",Indore Exp,12416,New Delhi,Indore,3,
+SSS Hubballi Exp,16213,Arsikere,SSS Hubballi,19A,Indore Exp,12924,Nagpur,Indore,8A,TAG-26
+,,,,,33,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Indore Exp,12974,Jaipur,Indore,3,Intercity Exp,15815/15816,Guwahati,Dekaraaon,62
+,Indore Exp,14318,Dehradun,Indore,"4A,75A",Intercity Exp,15817/15818,Shokhuvi,Naharlagun,62
+,Indore Exp,14320,Bareilly,Indore,"2,4A,55A",Intercity Exp,16205/16206,Talguppa,Mysuru,19
+,Indore Exp,14801,Jodhpur,Indore,"23,23A",Intercity Exp,16305/16306,Ernakulam,Kannur,85
+,Indore Exp,19302,Yesvantpur,Indore,"52,53,8",Intercity Exp,17009/17010,Bidar,Hyderabad,53
+,Indore Exp,19306,Kamkhya,Dr. Ambedkar,"18,35,74A",Intercity Exp,17011/17012,Hyderabad,Sirpur Khagaznagar,9
+,,,,Nagar,Intercity Exp,19119/19120,Gandhi Nagar,Somnath,"11,76",
+,Indore Exp,19308,Una Himachal,Indore,"4A,15A",,Capital,,,
+,Indore Exp,19311,Pune,Indore,"3A,91",Intercity Exp,19323/19324,Dr. Ambedkar,Bhopal,43
+,Indore Exp,19314,Rajendra Nagar,Indore,35,,Nagar,,,
+,Indore Exp,19322,Rajendra Nagar,Indore,35,Intercity Exp,19735/19736,Jaipur,Sikar,77
+,Indore Exp,19326,Amritsar,Indore,4A,Intercity Exp,20651/20652,KSR Bengaluru,Talguppa,19
+,Indore Exp,20931,Thiruvanthapuram,Indore,"3A,26A",Intercity Exp,22329/22330,Haldia,Asansol,87
+,,,North,,Intercity Exp,22983/22981,Indore,Kota,72,
+,Indore Exp,19335,Gandhidham,Indore,"11A,3A",Intercity Exp,22187/22188,Rani Kamalapati,Jabalpur,43
+,Indore Exp,21126,Bhind,Ratlam,33A,Intercity Exp,22441/22442,Kanpur Central,Chitrakoot Dham,1
+,Indore Exp,22942,JammuTawi,Indore,"3,16A",,,Karvi,,
+,Indore Exp,22943,Daund,Indore,"3A,31A",Intercity Exp,22617/22618,SMVT Bengaluru,Tirupati,20
+,,,,,,,,Thiruvananthapuram,,
+,Intercity Exp,11701/11702,Jabalpur,Raipur,58,Intercity Exp,22627/22628,Tiruchchirappalli,21,
+,Intercity Exp,14679/14680,Delhi,Amritsar,15,Intercity Exp,22819/22820,Bhubaneswar New,Visakhapatnam,30
+,Intercity Exp,14681/14682,Delhi,Jalandhar,16,Intercity Exp,22839/22840,Rourkela,Bhubaneswar,78
+,Intercity Exp,11109/11110,Veerangana,Lucknow,35,Intercity Exp,22891/22892,Howrah,Ranchi,87
+,,,Laxmibai,,Intercity Link Exp,23225/23226,Saharsa,Danapur,90,
+,Intercity Exp,22189/22190,Jabalpur,Rewa,43,Jabalpur Exp,11266,Ambikapur,Jabalpur,"43A,81"
+,Intercity Exp,22485/22486,New Delhi,Firozpur,"15,16",Jabalpur Exp,11450,Shri Mata Vaishno,Jabalpur,"16A,56"
+,Intercity Exp,12893/12894,Purunakatak,Bhubaneswar,"40A,78",,Devi Katra,,,
+,Intercity Exp,12119/12120,Amravati,Ajni,5,Jabalpur Exp,11463,Somnath,Jabalpur,"33,34,43,76"
+,Intercity Exp,12127/12128,Chhatrapati Shivaji,Pune,19,Jabalpur Exp,11465,Somnath,Jabalpur,"33,34,43,76"
+,,,Maharaj (T),,Jabalpur Exp,12159,Amravati,Jabalpur,"5A,17A",
+,Intercity Exp,12179/12180,Lucknow,Agra Fort,33,Jabalpur Exp,12191,H. Nizamuddin,Jabalpur,56
+,Intercity Exp,12195/12196,Agra Fort,Ajmer,23,JabalPur Exp,12193,Yesvantpur,Jabalpur,"9A,17A,52A"
+,Intercity Exp,12197/12198,Bhopal,Gwalior,4,Jabalpur Exp,15717,Manduadih,Jabalpur,6A
+,Intercity Exp,12363/12364,Kolkata,Haldibari,14,Jabalpur Exp,22182,H. Nizamuddin,Jabalpur,56
+,Intercity Exp,12383/12384,Sealdah,Asansol,37,Jabalpur Exp,22191,Indore,Jabalpur,43
+,Intercity Exp,12411/12412,Chandigarh,Amristar,15,Jagdalpur Exp,18005,Howrah,Jagdalpur,"5,40"
+,Intercity Exp,12679/12680,MGR Chennai,Coimbatore,86,Jagdalpur Exp,18107,Rourkela,Jagdalpur,40
+,,,Central,,Jaipur Exp,22175,Nagpur,Jaipur,"8A,72",
+,Intercity Exp,12705/12706,Guntur,Secunderabad,71,Jaipur Exp,19712,Bhopal,Jaipur,"43,54"
+,Intercity Exp,12795/12796,Vijayawada,Lingampalli,30,Jaipur Exp,12939,Pune,Jaipur,"31,31A"
+,Intercity Exp,12827/12828,Howrah,Purulia,87,Jaipur Exp,12955,Mumbai Central,Jaipur,3A
+,Intercity Exp,12885/12886,Shalimar,Bhojudih,87,Jaipur Exp,12967,MGR Chennai,Jaipur,"3A,8A"
+,Intercity Exp,13235/13236,Sahibganj,Danapur,93,,Central,,,
+,Intercity Exp,13243/13244,Patna,Dehri On Sone,48,Jaipur Exp,129693,Coimbatore,Jaipur,"3A,8A,86A"
+,Intercity Exp,13249/13250,Patna,Bhabhua Road,24,Jaipur Exp,12973,Indore,Jaipur,3A
+,Intercity Exp,13303/13304,Dhanbad,Ranchi,36,Jaipur Exp,12975,Mysuru,Jaipur,"3A,9A,52"
+,Intercity Exp,13305/13306,Dhanbad,Gaya,1,Jaipur Exp,12979,Bandra (T),Jaipur,3A
+,Intercity Exp,13345/13346,Singrauli,Banaras,25,Jaipur Exp,12991,Udaipur City,Jaipur,54
+,Intercity Exp,13401/13402,Bhagalpur,Danapur,93,Jaipur Exp,17020,Hyderabad,Hisar,"9,54,53,77"
+,Intercity Exp,13409/13410,Malda Town,Kiul,93,Jaipur Exp,19573,Okha,Jaipur,"11,23"
+,Intercity Exp,13503/13504,Sealdah,Asansol,37,Jaipur Exp,19712,Bhopal,Jaipur,"23,43,54"
+,Intercity Exp,24203/24204,Varanasi,Lucknow,25,Jaipur Exp,19714,Kacheguda,Jaipur,"3,8,53"
+,Intercity Exp,14213/14214,Varanasi,Bahraich,81,Jaipur Exp,19716,Lucknow,Jaipur,79
+,Intercity Exp,14315/14316,Bareilly,New Delhi,55,Jaipur Exp,20667,Yeshwantpur,Jaipur,"19, 54"
+,Intercity Exp,14525/14526,Ambala Cantt.,Sri GangaNagar,45,Jaipur Exp,22933,Bandra (T),Jaipur,3
+,Intercity Exp,14605,Haridwar,Jammu Tawi,12,Jaipur Exp,19807,Kota,Sirsa,3
+,Intercity Exp,14815/14816,Sri Ganganagar,Rishikesh,45,Jaipur Exp,12720,Hyderabad,Jaipur,"9A,53A,54A"
+,Intercity Exp,15105/15106,Chhapra,Nautanwa,38,Bikaner Exp,12371,Howrah,Bikaner,"12,25A,59"
+,Intercity Exp,15105/15106,Chhapra,Nautanwa,22,Jaisalmer Exp,14704,Lalgarh,Jaisalmer,59
+,Intercity Exp,15111/15112,Chhapra,Banaras City,"63,37",Jaisalmer Exp,22931,Bandra (T),Jaisalmer,"11,23A"
+,Intercity Exp,15201/15202,Patliputra,Bagha,64,Jallianwallahbagh Exp.,12379/12380,Sealdah,Amritsar,"1,15"
+,Intercity Exp,15549/15550,Jaynagar,Patna,90,Jallianwallahbagh Exp.,18103/18104,Tatanagar,Amritsar,"12,41"
+,Intercity Exp,15603/15604,Guwahati,Ledo,66,JamalPur Exp,13071,Howrah,JamalPur,1A
+,Intercity Exp,15613/15614,Guwahati,Markonaselek,62,Jammu Mail,20433/,Subedarganj,Shri Mata Vaishno,16
+TAG-26,Intercity Exp,15719/15720,Katihar,Siliguri,93,20434,,Devi Katra,,
+,Intercity Exp,15765/15766,Siliauriin,Dhubri,74,Jammu Tawi Exp,12469,Kanpur Central,Jammu Tawi,12
+,,,,,34,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Jammu Tawi Exp,12549,Durg,Martyr Captain,"81,32,16",Jharkhand Sampark,12825/12826,Ranchi,Anand Vihar (T),41,
+,,,Tushar Mahajan,,Kranti Exp,,,,,
+Jammu Tawi Exp,13151,Kolkata,Jammu Tawi,12,Jharkhand Swarna,12817/12818,Hatia,Anand Vihar (T),41,
+Jammu Tawi Exp,14609,Haridwar,Jammu Tawi,12,Jayanti Exp,,,,,
+Jammu Tawi Exp,15097,Bhagalpur,Jammu Tawi,13,Jharkhand Swarna,12873/1287,Hatia,Anand Vihar (T),41,
+Jammu Tawi Exp,18101,Tatanagar,Jammu Tawi,41,Jayanti Exp,,,,,
+Jammu Tawi Exp,20847,Durg,Jammu Tawi,"4,32,81",Jhelum Exp,11077/11078,Pune,Jammu Tawi,"4,16",
+Jammu Tawi Exp,19223,Gandhi Nagar,Jammu Tawi,"23A,45",Jnaneswari Exp,12101/12102,Lokmanya Tilak (T),Shalimar,5,
+,,Capital,,,Jodhpur Exp,16534,Bengaluru,Jodhpur,"11,19A,23A,60",
+Jammu Tawi Exp,14803,Jodhpur,Jammu Tawi,51,Jodhpur Exp,12307,Howrah,Jodhpur,"23,65",
+Jamnagar Exp,12478,Shri Mata Vaishno,Jamnagar,"3A,16A",Jodhpur Exp,14802,Indore,Jodhpur,54,
+,,Devi Katra,,,Jodhpur Exp,20813,Puri,Jodhpur,"3A,5,23,42A,78A",
+Jamnagar Exp,19060,Surat,Jamnagar,11,Jodhpur Exp,22482,Delhi Sarai Rohilla,Jodhpur,59,
+Jamnagar Exp,19577,Tirunelveli,Jamnagar,26,Jodhpur Exp,22663,Chennai Egmore,Jodhpur,"23A,46",
+Jangipur Road Memu,13177,Sealdah,Jangipur Road,14,Jodhpur SF Exp,20694,Bengaluru,Jodhpur,"11,19A,23A",
+Exp,,,,,Jodhpur Hadapsar Exp,20495/20496,Hadapsar,Jodhpur,"23, 31",
+Jan Nayak Exp,15211/15212,Darbhanga,Amritsar,"13,22,64",Jogbani Exp,13159,Kolkata,Jogbani,14,
+Jansadharan Exp,22423/22424,Gorakhpur,Amritsar,13,Joginder Nagar Passr.,52471,Pathankot,Joginder Nagar,96,
+Jan Sadharan Exp,13257/13258,Danapur,Anand Vihar (T),1,Joginder Nagar Passr.,52473,Pathankot,Joginder Nagar,96,
+Jan Sadharan Exp,14603/14604,Narpatganj,Amritsar,13,Jolarpet Exp,16085,Arakkonam,Jolarpet,20,
+Jan Sadharan Exp,15269/15270,Muzaffarpur,Ahmedabad,"22,23,33",Jolarpet Exp,16520,KSR Bengaluru,Jolarpet,20A,
+Jan Sadharan Exp,15271/15272,Howrah,Muzaffarpur,37,Joyride,52591/52590,Ghum,Darjeeling,95,
+Jan Sadharan Exp,15529/15530,Saharsa,Anand Vihar (T),"13,64,22",Joyride,52594,Ghum,Darjeeling,95,
+Jan Sadharan Exp,15531/15532,Saharsa,Amritsar,13,Joyride,52596,Ghum,Darjeeling,95,
+Jan Sewa Exp,13419/13420,Bhagalpur,Muzaffarpur,50,Joyride,52597/52598,Ghum,Darjeeling,95,
+Jan Sewa Exp,14617/14618,Purnea Court,Amritsar,"13,22",Joyride,52599,Ghum,Darjeeling,95,
+Jan Shatabdi Exp,12021/12022,Howrah,BarabiI,87,Jwalamukhi Road Passr.,52461,Pathankot,Jwalamukhi Road,96,
+Jan Shatabdi Exp,12023/12024,Howrah,Patna,1,Kacheguda Exp,12786,Ashokapuram,Kacheguda,52,
+Jan Shatabdi Exp,12053/12054,Haridwar,Amritsar,12,Kacheguda Exp,16354,Nagercoil,Kacheguda,"52,70",
+Jan Shatabdi Exp,12055/12056,New Delhi,Dehradun,75,Kacheguda Exp,17604,Yelhanka,Kacheguda,52,
+Jan Shatabdi Exp,12057/12058,New Delhi,Daulatpur Chowk,27,Kacheguda Exp,12790,Murudeshwar,Kacheguda,"86A,71",
+Jan Shatabdi Exp,12059/12060,Kota,H. Nizamuddin,3,Kacheguda Exp,22716,Madurai,Kacheguda,"52,70",
+Jan Shatabdi Exp,12061/12062,Rani Kamalapati,Madan Mahal,43,Kacheguda Exp,17640,Akola,Kacheguda,53A,
+Jan Shatabdi Exp,12065/12066,Ajmer,Delhi Sarai Rohilla,23,Kacheguda Exp,17651,Chengalpattu,Kacheguda,71,
+Jan Shatabdi Exp,12067/12068,Guwahati,Jorhat Town,66,Kacheguda Exp,17652/17653,Puducherry,Kacheguda,71,
+Jan Shatabdi Exp,12069/12070,Raigarh,Gondia,5,Kacheguda Exp,17605/17606,Bhagat Ki Kothi,Kacheguda,"2, 23, 53, 54",
+Jan Shatabdi Exp,12071/12072,Dadar,Hingoli Deccan,53,Kaifiat Exp,12225/12226,Azamgarh,Delhi,25,
+Jan Shatabdi Exp,12073/12074,Howrah,Bhubaneswar,7,Kakinada Exp,17222,Lokmanya Tilak (T),Kakinada,"10,30A",
+Jan Shatabdi Exp,12075/12076,Kozhikode,T hiruvananthapuram,85,Kakinada Town Exp.,12756,Bhavnagar,Kakinada Town,"10,11A,30A,76",
+Jan Shatabdi Exp,12077/12078,MGR Chennai,Viiayawada,71,Kakinada Town Exp.,17205,Sri Sai Nagar Shirdi,Kakinada Town,"30,53",
+,,Central,,,Kalindi Exp,14117/14118,Prayagraj,Bhiwani,"25,39",
+Jan Shatabdi Exp,12080/12079,SSS Hubballi,KSR Bengaluru,19,Kalka Exp,14504,Shri Mata Vaishno,Kalka,"2A,16A,27",
+Jan Shatabdi Exp,12081/12082,Kannur,Thiruvananthapuram,85,,,Devi Katra,,,
+Jan Shatabdi Exp,12083/12084,Mayiladuturai,Coimbatore,69,Kalka Exp,22455,Sai Nagar Shirdi,Kalka,"16A,27",
+Jan Shatabdi Exp,12089/12090,KSR Bengaluru,Shivamogga Town,19,Kalka Exp,52456,Shimla,Kalka,94,
+Jan Shatabdi Exp,12091/12092,Kathgodam,Dehradun,"13,53",Kalka Exp,52458,Shimla,Kalka,94,
+Jan Shatabdi Exp,12097/12098,Agartala,Khongsong,83,Kalka Mail,52454,Shimla,Kalka,94,
+Jan Shatabdi Exp,12365/12366,Patna,Ranchi,36,Kamakhya Exp,15619,Gaya,Kamakhya,93,
+Jan Shatabdi Exp,15125/15126,Madhuadih,Patna,17,Kamakhya Exp,15622,Anand Vihar (T),Kamakhya,"13,18,74",
+Janhit Exp,13205/13206,Patliputra,Purnea Court,90,Kamakhya Exp,15623,Bhagat Ki Kothi,Kamakhya,"18,59",
+Janki Exp,15283/15284,Katihar,Jaynagar,90,Kamakhya Exp,15643,Puri,Kamakhya,"14,74",
+Janmabhoomi Exp,12805/12806,Visakhapatnam,Lingampalli,"7,71",Kamakhya Exp,15656,Shri Mata Vaishno,Kamakhya,"13A,64",
+Janmabhoomi Exp,19107/19108,Bhavnagar,Martyr Captain,"11,45",,,Devi Katra,,,
+,,,Tushar Mahajan,,Kamakhya Exp,15661,Ranchi,Kamakhya,"73,29A,74",
+Jasidih Exp,12375,Tambaram,Jasidih,40,Kamakhya Exp,15667,Gandhidham,Kamakhya,"3A,11A,18,33",
+Jasidih Exp,17321,Vaso-D-Gamma,Jasidih,36,Kamayani Exp,11071/11072,Lokmanya Tilak (T),Ballia,6,
+Jasidih Exp,22305,SMVT Bengaluru,Jasidih,"1,40",Kamlaganga Exp,15527/15528,Jayanagar,Patna,90,
+Jaynagar Exp,13031,Howrah,Jaynagar,37,Kamrup Exp,15959/15960,Howrah,Dibrugarh,"14,66",
+Jaynagar-Ara Exp,13225/13226,Jaynagar,Ara,90,Kamrup Exp,15961/15962,Howrah,Dibrugarh,"14,66",
+Jaynagar Exp,13135,Kolkata,Jaynagar,37,Kanchan Kanya Exp.,13149/13150,Sealdah,Alipurduar Jn.,"14,74",
+Jaynagar Exp,18105,Rourkela,Jaynagar,"36,37",Kanchenjunga Exp.,13173/13174,Sealdah,Sabroom,"14,83",
+Jaynagar Exp,18419,Puri,Jaynagar,"32,37A",Kanchenjunga Exp.,13175/13176,Sealdah,Silchar,"14,83",
+Jaynagar Exp,18119/18120,Tatanagar,Jaynagar,"37,37A",Kandari Exp,22897/22898,Howrah,Digha,87,
+Jhansi Exp,22196,Bandra (T),Virangana Laxmibai,4,Kanniyakumari Exp.,12633,Chennai Egmore,Kanniyakumari,21,
+,,,,,Kanniyakumari Exp.,12665,Howrah,Kanniyakumari,"21,29",TAG-26
+,,,,,35,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Kanniyakumari Exp,12689,Nagercoil,MGR Chennai,"69,86",Kochuveli Exp,22647,Korba,Thiruvanthapuram,"8,42,86"
+,,,,Central,,,,North,,
+,Kanniyakumari Exp.,16526,KSR Bengaluru,Kanniyakumari,86,Thiruvanthapuram,12484,Amritsar,Thiruvanthapuram,"3,26,15A"
+,Kanniyakumari Exp.,16861,Puducherry,Kanniyakumari,21,North Exp,,North,,
+,Kanniyakumari Exp.,22621,Rameshwaram,Kanniyakumari,21,Thiruvanthapuram,12777,SSS Hubballi,Thiruvanthapuram,"19,86"
+,Kannur Exp,16307,Alappuzha,Kannur,85,North Exp,,North,,
+,Kannur Exp,16313,Ernakulam Jn,Kannur,85,Thiruvanthapuram,16311,Sri GangaNagar,Thiruvanthapuram,"39,23,26"
+,Kannur Exp,16527,Yesvantpur,Kannur,86,North Exp,,North,,
+,Kannur Exp,16511,KSR Bengaluru,Kannur,"19,20",Thiruvanthapuram,16315,Mysuru,Thiruvanthapuram,86
+,Kanpur Exp,12470,Jammu Tawi,Kanpur Central,12A,North Exp,,North,,
+,Kanpur Exp,14101,Prayagraj Sangam,Kanpur Central,1A,Thiruvanthapuram,19260,Bhavnagar,Thiruvanthapuram,"26,76"
+,,,,,North Exp,,,North,,
+,Kanpur Exp,14109,Chitrakootdham,Kanpur Central,57,,,,,
+,,,Karvi,,Thiruvanthapuram,20910,Porbandar,Thiruvanthapuram,"11A,26",
+,,,,,North Exp,,,North,,
+,Kanpur Exp,14123,Maa Belha Devi,Kanpur Central,25A,,,,,
+,,,Dham Pratapgarh,,Thiruvanthapuram,20932,Indore,Thiruvanthapuram,"3,26",
+,,,,,North Exp,,,North,,
+,Kanpur Exp,14152,Anand Vihar (T),Kanpur Central,25,,,,,
+,,,,,Thiruvanthapuram,22113,Lokmanya Tilak (T),Thiruvanthapuram,26,
+,Kanpur Exp,15038,Kasganj,Kanpur Anwarganj,82,,,,,
+,,,,,North Exp,,,North,,
+,Kanpur Exp,22444,Bandra (T),Kanpur Central,"3A,82",,,,,
+,,,,,Thiruvanthapuram,22660,Yog Nagari,Thiruvanthapuram,"3,26,75A",
+,Kanpur Exp,22446,Amritsar,Kanpur Central,12,,,,,
+,,,,,North Exp,,Rishikesh,North,,
+,Kaghaz Nagar Exp,12757/12758,Secunderabad,Sirpur Kaghaz,9,,,,,
+,,,,,Kolkata Exp,12320,Gawalior,Kolkata,65,
+,,,,Nagar,,,,,,
+,,,,,Kolkata Exp,12326,Nangaldam,Kolkata,12A,
+,Karaikal Exp,11017,Lokmanya Tilak (T),Karaikal,"10,21",,,,,
+,,,,,Kolkata Exp,13118,Lalgola,Kolkata,14A,
+,Karaikal Exp,16175,Chennai Egmore,Karaikal,21,,,,,
+,Karaikal Exp,16188,Ernakulam Jn,Karaikal,86A,Kolkata Exp,13122,Ghazipur City,Kolkata,"1,22"
+,Karaikal Exp,16529/16530,SMVT Bengaluru,Karaikal,69,Kolkata Exp,13126,Sairang,Kolkata,"83A,14A"
+,Karatagi Exp,16545/16546,Yesvantpur,Sindhanur,60,Kolkata Exp,13136,Jaynagar,Kolkata,37
+,Karimnagar Exp,12761,Tirupati,Karimnagar,71,Kolkata Exp,13138,Azamgarh,Kolkata,37
+,Karmabhoomi Exp,12407/12408,New Jalpaiguri,Amritsar,13,Kolkata Exp,13152,Jammu Tawi,Kolkata,12A
+,Karmabhoomi Exp,12545/12546,Raxaul,Lokmanya Tilak (T),"24,90",Kolkata Exp,13160,Jogbani,Kolkata,14A
+,Karmabhoomi Exp,22511/22512,Kamakhya,Lokmanya Tilak (T),"5,14,74",Kolkata Exp,13166,Sitamarhi,Kolkata,37
+,Karnataka Sampark,12627/12628,KSR Bengaluru,New Delhi,9,Kolkata Exp,13168,Agra,Kolkata,"12A,65"
+,Karnataka Sampark,12629/12630,Yesvantpur,H. Nizamuddin,"9,19",Kolkata Exp,15050,Gorakhpur,Kolkata,"37,63"
+,Karnataka Sampark,12649/12650,Yesvantpur,H. Nizamuddin,"9,52",Kolkata Exp,15052,Gorakhpur,Kolkata,"37,64"
+,Karnavati Exp,12933/12934,Mumbai Central,Ahmedabad,11,Kolkata Exp,15234,Darbhanga,Kolkata,37A
+,Karwar Exp,16515,Yesvantpur,Karwar,26A,Kolkata Exp,19413,Ahmedabad,Kolkata,"43,73,54"
+,Kasgani Exp,15037,Kanpur Anwarganj,Kasganj,82,Kolkata Exp,19608,Madar,Kolkata,"73,72"
+,Kasgani Exp,15041,Farrukhabad,Kasganj,82,,,,,
+,,,,,Kollam Exp,16101,Channai Egmore,Kollam,21,
+,Kasganj Exp,15039,Farrukhabad,Kasganj,82,,,,,
+,,,,,Kollam Exp,18567,Visakhapatnam,Kollam,"29,86",
+,Kashi Exp,15017/15018,Lokmanya Tilak (T),Gorakhpur,"6,63",,,,,
+,,,,,Konark Exp,11019/11020,Chhatrapati Shivaji,Bhubaneswar New,"10,30",
+,Kashi Tamil Sangam,16367/16368,Kanniyakumari,Banaras,69,,,,,
+,,,,,,,Maharaj (T),,,
+,Kashi Vishwanath Exp.,15127/15128,Banaras,New Delhi,25,,,,,
+,,,,,Konau Exp,12647/12648,Coimbatore,H. Nizamuddin,"9,52,86",
+,Kathgodam Exp,14120,Dehradun,Kathgodam,"13A,55",,,,,
+,,,,,Kondaveedu Exp,17211/17212,Machilipatnam,Yesvantpur,49,
+,Kathgodam Exp,15043,Lucknow,Kathgodam,22A,,,,,
+,,,,,Konkan Kanya Exp,20111/20112,Chhatrapati Shivaji,Madaaon,26,
+,Katihar Exp,13033,Howrah,Katihar,14,,,,,
+,,,,,,,Maharaj (T),,,
+,Katihar Exp,15708,Amritsar,Katihar,"15A,22",,,,,
+,,,,,Koraput Exp,18512,Visakhapatnam,Koraput,40A,
+,Katihar Exp,15711,Howrah,Katihar,14,,,,,
+,,,,,Korba Exp,18518,VisakhaPatnam,Korba,42A,
+,Katra Exp,15655,Kamakhya,Shri Mata Vaishno,"13,18,64",,,,,
+,,,,,Korba Exp,18239/18240,NSCB Itwarri,Korba,"5,42",
+,,,,Devi Katra,,,,,,
+,,,,,Korba Exp,22648,Thiruvanthapuram,Korba,"8A,42,86A",
+,Katra Exp,28181,Tatanagar,Katihar,37,,,,,
+,,,,,,,North,,,
+,Kaveri Exp,16022/16021,Ashokapuram,MGR Chennai,20,,,,,
+,,,,,Kota Exp,13237,Patna,Kota,79,
+,,,,Central,,,,,,
+,,,,,Kota Exp,13239,Patna,Kota,79,
+,Kavi Guru Exp,12949/12950,Porbandar,Santragachi,"34,87",,,,,
+,,,,,Kota Exp,19804,Sri Mata,Kota,"3,16A",
+,Kavi Guru Exp,13015/13016,Howrah,Jamalpur,14,,,,,
+,,,,,,,Vaishnodevi Katra,,,
+,Kavi Guru Exp,13027/13028,Howrah,Azimgarh,14,,,,,
+,,,,,Kota Exp,20986,Martyr Captain,Kota,"3,16A",
+,Kavi Guru Exp,19615/19616,Udaipur City,Kamakhya,"13A,13,54,79",,Tushar Mahajan,,,
+,Kaziranga Exp,13181/13182,Kolkatta,Silghat Town,"14,74",Kota Exp,22982,Sri Ganga Nagar,Kota,28
+,Kerala Exp,12625/12626,Thiruvananthapuram,New Delhi,"8,86",Kota Exp,19808,Sirsa,Kota,3
+,Kerala Samoark Kranti,12217/12218,Thiruvanthapuram,Chandigarh,"3,26,27",Ernakulam Exp,22149/22150,Pune,Ernakulam Jn,"26,91"
+,Exp.,,North,,Kotdwara Exp,14090/14089,Kotdwara,Anand Vihar (T),75,
+,Khajuraho Exp,19666,Udaipur City,Khajuraho,"23A,54A,79,54",Kovai Exp,12675/12676,MGR Chennai,Coimbatore,86
+,Khandesh Exp,19003/19004,Bandra (T),Bhusawal,24,,Central,,,
+,Kharagpur Exp,22876,Purulia,Kharagpur,87A,Koyna Exp,11029/11030,Chhatrapati Shivaji,Chhatrapati Shahu,19
+TAG-26,Kharagpur Exp,22604,Villupuram,Kharagpur,7A,,Maharaj (T),Maharaj (T),,
+,Kishanganj Exp,15716,Ajmer,Kishanganj,"18,23A,25",Krishak Exp,15007/15008,Banaras City,Lucknow Jn.,"22,63"
+,,,,,36,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Krishna Exp,17405/17406,Tirupati,Adilabad,71,lntercity Exp,18011/18012,Howrah,Chakradharpur,87,
+Kriya Yoga Exp,18615/18616,Howrah,Hatia,87,lntercity Exp,18013/18014,Adra,Bokaro Steel City,87,
+Kulik Exp,13053/13054,Howrah,Radhikapur,14,lntercity Exp,18019/18020,Jhargram,Dhanbad,87,
+Kumbha Exp,12369/12370,Howrah,Dehradoon,12,lntercity Exp,18021/18022,Kharagpur,Khurda Road,29,
+Kurseona Passenger,52588,Darjeeling,Kurseona,95,lntercity Exp,18023/18024,Kharagpur,NSCB Gomoh,87,
+Kushinagar Exp,22537/22538,Lokmanya Tilak (T),Gorakhpur,35,lntercity Exp,18027/18028,Kharagpur,Asansol,87,
+Kutch Exp,22955/22956,Bandra (T),Bhuj,11,lntercity Exp,18033/18034,Howrah,Ghatsila,87,
+Kuvempu Exp,16221/16222,Mysuru,Talguppa,19,lntercity Exp,18035/18036,Kharagpur,Hatia,87,
+Kushtagi Exp,17327/17328,SSS Hubballi,Kushtagi,49,lntercity Exp,18037/18038,Kharagpur,Jajpur Keonjhar,29,
+Lachit Exp,15613/15614,Guwahati,Murkona Selek,62,lntercity Exp,18043/18044,Howrah,Bhadrak,29,
+Lalaola Exp,13117,Kolkata,Lalaola,14,lntercity Exp,18085/18086,Kharagpur,Ranchi,87,
+Lalbagh Exp,12607/12608,MGR Chennai,KSR Bengaluru,20,lntercity Exp,18105/18106,Telengana,Itwari,5,
+,,Central,,,lntercity Exp,18113/18114,Tatanagar,Bilaspur,5,
+Lalgarh Exp,14703,Jaisalmer,Lalgarh,59,lntercity Exp,18115/18116,NSCB Gomoh,Chakradharpur,87,
+Lalkuan Exp,12353,Howrah,Lalkuan,"12,55",lntercity Exp,18125/18126,Rourkela,Puri,32,
+Lalkuan Exp,14616,Amritsar,Lalkuan,12.55,lntercity Exp,18175/18176,Hatia,Jharsuguda,78,
+Lalkuan Exp,15016/15015,Lalkuan,Amritsar,"12,55",lntercity Exp,18403/18404,Rourkela,BarbiI,32,
+Lalmati Exp,12865/12866,Howrah,Purulia,87,lntercity Exp,18627/18628,Howrah,Ranchi Junction,87,
+Lashkar Exp,12161/12162,Lokmanya Tilak (T),Agra Cantt.,2,lntercity Exp,19035/19036,Vadodara,Ahmedabad,11,
+Latur Exp,22107/22108,Chhatrapati Shivaji,Latur,53,lntercity Exp,22471/22472,Bikaner,Delhi Sarai Rohilla,59,
+,,Maharaj (T),,,lntercity Exp,22609/22610,Mangaluru Central,Coimbatore,86,
+Leelan Exp,12467/12468,Jaipur,Jaisalmer,"59,28",lntercity Link Exp,25201/25202,Hajipur,Narkatiaganj,64,
+Lichchavi Exp,14005/14006,Sitamarhi,Anand Vihar (T),"22,63",Janta Exp,13201/13202,Rajgir,Lokmanya Tilak (T),24A,
+Exp,11903/11904,Virangna,Etawah,33,Latur Exp,16583,Yesvantpur,Latur,60,
+,,Lakshmibai,,,Lohit Exp,15651/5652,Guwahati,Jammu Tawi,13,
+Exp,12861/12862,Visakhapatnam,H. Nizamuddin,"30,30A",Lokmanya Tilak (T) Exp.,12164,Chennai Egmore,Lokmanya Tilak (T),10A,
+Exp,14113/14114,Subedarganj,Dehradun,68,Lokmanya Tilak (T) Exp.,11014,Coimbatore,Lokmanya Tilak (T),"10A,86A",
+Exp,16185/16186,Chennai Egmore,Velankanni,21,Lokmanya Tilak (T) Exp.,11018,Karaikal,Lokmanya Tilak,"21A,10A",
+Exp,17241/17242,Narasapur,Visakhapatnam,30,,,,(T),,
+Exp,18189/18190,Tatanagar,Ernakulam Jn,40,Lokmanya Tilak (T) Exp.,22102,Madurai,Lokmanya Tilak (T),"21A,70",
+Exp,18437/18438,Bhubaneswar,Junagarh,40,Lokmanya Tilak (T) Exp.,11054,Azamaarh,Lokmanya Tilak (T),"6A,63",
+Exp,18309/18310,Sambalpur,Jammu Tawi,41,Lokmanya Tilak (T) Exp.,11062,Jaynagar,Lokmanya Tilak (T),"6A,22A",
+Exp,19579/19580,Bhavnagar,Delhi Sarai Rohilla,"11,23",Lokmanya Tilak (T) Exp.,22179,MGR Chennai,Lokmanya Tilak (T),10A,
+Exp,22307/22308,Howrah,Bikaner,"23,65",,,Central,,,
+Exp,23225/23226,Saharsa,Danapur,90,Lokmanya Tilak (T) Exp.,11076,Bidar,Lokmanya Tilak (T),53A,
+Exp,23347/23348,Rajendra Nagar,Garwa Road,48,Lokmanya Tilak (T) Exp.,11080,Gorakhpur,Lokmanya Tilak (T),"38,39",
+Exp,25035/25036,Delhi,Ramnagar,"55,55A",Lokmanya Tilak (T) Exp.,11082,Gorakhpur,Lokmanya Tilak (T),"6A,63A",
+Exp,28181/28182,Tatanagar,Katihar,37,Lokmanya Tilak (T) Exp.,12108,Sitapur,Lokmanya Tilak (T),35,
+Exp,29655/29656,Indore,Jaipur,"43,54",Lokmanya Tilak (T) Exp.,12142,Patliputra,Lokmanya Tilak (T),24A,
+Exp,19307/19308,Indore,Una Himachal,"4,15",Lokmanya Tilak (T) Exp.,12144,Sultanpur,Lokmanya Tilak (T),35,
+Exp,19411/19412,Gandhinagar,Daulatpur Chowk,"23,27,80",Lokmanya Tilak (T) Exp.,12146,Puri,Lokmanya Tilak (T),"5,78",
+,,Capital,,,Lokmanya Tilak (T) Exp.,12154,Rani Kamalapati,Lokmanya Tilak (T),2,
+lndrayani Exp,22105/22106,Chhatrapati Shivaji,Pune,19,Lokmanya Tilak (T) Exp.,12166,Banaras,Lokmanya Tilak (T),6A,
+,,Maharaj (T),,,Lokmanya Tilak (T) Exp.,12172,Haridwar,Lokmanya Tilak (T),"2,75A",
+Intercity Exp,13233/13234,Danapur,Koderma,67,Lokmanya Tilak (T) Exp.,12335,Bhagalpur,Lokmanya Tilak (T),24A,
+lntercity Exp,11651/11652,Jabalpur,Singrauli,73,Lokmanya Tilak (T) Exp.,12812,Hatia,Lokmanya Tilak (T),5,
+lntercity Exp,12169/12170,Pune,Solapur,10,Lokmanya Tilak (T) Exp.,12880,Bhubaneswar,Lokmanya Tilak (T),"5,78A",
+lntercity Exp,12481/12482,Delhi,Sri Ganganagar,39,Lokmanya Tilak (T) Exp.,14314,Bareilly,Lokmanya Tilak (T),"2,55",
+lntercity Exp,15031/15032,Gorakhpur,Lucknow,22,Lokmanya Tilak (T) Exp.,15946,Dibrugarh,Lokmanya Tilak (T),"18A,24A,66",
+lntercity Exp,16377/16378,KSR Bengaluru,Ernakulam Jn,86,Lokmanya Tilak (T) Exp.,15648,Guwahati,Lokmanya Tilak (T),"18A,24A",
+lntercity Exp,12855/12856,Bilaspur,NSCB Itwari,5,Lokmanya Tilak (T) Exp.,17221,Kakinada,Lokmanya Tilak (T),"10,30",
+lntercity Exp,13011/13012,Howrah,Malda Town,14,Lokmanya Tilak (T) Exp.,17317,SSS Hubballi,Lokmanya Tilak (T),19A,
+,,,,,Lokmanya Tilak (T) Exp.,18030,Shalimar,Lokmanya Tilak (T),5,
+lntercity Exp,13427/13428,Howrah,Sahibganj,37,,,,,,
+,,,,,Lokmanya Tilak (T) Exp.,18519,Visakhapatnam,Lokmanya Tilak (T),"10A,30",
+lntercity Exp,13465/13466,Howrah,Malda Town,14,,,,,,
+,,,,,Lokmanya Tilak (T) Exp.,18609,Ranchi,Lokmanya Tilak (T),"6,41",
+lntercity Exp,22329/22330,Haldia,Asansol,87,,,,,,
+,,,,,Lokmanya Tilak (T) Exp.,22114,Thiruvanthapuram,Lokmanya Tilak (T),26A,
+lntercity Exp,14209/14210,Lucknow,Prayagraj Sangam,25,,,,,,
+,,,,,,,North,,,
+lntercity Exp,14211/14212,Agra Cantt.,New Delhi,2,,,,,,
+,,,,,Lokmanya Tilak (T) Exp.,22130,Prayagraj,Lokmanya Tilak (T),"2,6A,47",
+lntercity Exp,15059/15060,Anand Vihar (T),Lalkuan,55,,,,,,
+,,,,,Lokmanya Tilak (T) Exp.,22847,VisakhaPatnam,Lokmanya Tilak (T),"5,42",
+lntercity Exp,15069/15070,Gorakhpur,Badshahnagar,38,,,,,,
+,,,,,Lokmanya Tilak (T) Exp.,22357/22358,Gaya,Lokmanya Tilak (T),"5,5A",
+lntercity Exp,15713/15714,Katihar,Patna,90,Lokmanya Tilak (T) Exp.,22865,Puri,Lokmanya Tilak (T),"5,78A",
+lntercity Exp,15767/15768,Siliguri,Alipurduar Jn.,74,Lokmanya Tilak (T) Exp.,15181/15182,Lokmanya Tilak (T),Mau,"6,63",
+lntercity Exp,15769/15770,Alipurduar,Lumding,"14A,66",LTT- MAO Exp.,11099/11100,Lokmanya Tilak (T),Madaoan,26,
+lntercity Exp,16341/16342,Guruvavur,Thiruvananthapuram,85,LTT-Godda Exp,22312/22311,Lokmanya Tilak (T),Godda,24,
+lntercity Exp,18003/18004,Howrah,Adra,87,LTT-BPG Exp,22109/22110,Lokmanya Tilak (T),Balhurshah,"5,8",
+lntercity Exp,18007/18008,Shalimar,Bhanjpur,87,Loknayak Exp,15115/15116,Chhapra,Delhi,22,TAG-26
+,,,,,37,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Lokshakti Exp,22927/22928,Bandra (T),Ahmedabad,11,Mangala Lakshadweep,12617/12618,Ernakulam Jn,H. Nizamuddin,"2,26"
+,lslampur Exp,18624,Hatia,lslampur,"36,89",Exp.,,,,
+,lspat Exp,12871/12872,Howrah,Titlagarh,5,Mandore Exp,22995/22996,Delhi,Jodhpur,23
+,lspat Exp,22861/22862,Howrah,Kantabaji,5,Mandovi Exp,10103/10104,Chhatrapati Shivaji,Madgaon,26
+,Lucknow Exp,11407,Pune,Lucknow,"44,35",,Maharaj (T),,,
+,Lucknow Exp,12103,Pune,Lucknow,35A,Mangaluru Exp,12133,Chhatrapati Shivaji,Mangaluru Jn.,26
+,Lucknow Exp,12107,Lokmanya Tilak (T),Sitapur,35A,,Maharaj (T),,,
+,Lucknow Exp,12183,Bhopal,Maa Belha Devi,35A,Mangaluru Exp,12685,MGR Chennai,Mangaluru Central,86
+,,,,Dham Pratapgarh,,,Central,,,
+,Lucknow Exp,12232,Chandigarh,Lucknow,88,Mangaluru Exp,16159,Chennai Egmore,Mangaluru Central,"21,86"
+,Lucknow Exp,15033,Patliputra,Lucknow,22A,Mangaluru Exp,16347,Thiruvananthapuram,Mangaluru Central,85
+,Lucknow Exp,12539,Yesvantpur,Lucknow,"17,25",Mangaluru Exp,16565,Yesvantpur,Mangaluru Central,86
+,Lucknow Exp,12594,Bhopal,Lucknow,35A,Mangaluru Exp,16575,Yesvantpur,Mangaluru Central,20
+,Lucknow Exp,15107/15108,Banaras,Lucknow,12,Mangaluru Exp,16585,SMVT Bengaluru,Murudeswer,19
+,Lucknow Exp,15012,Chandigarh,Lucknow,88,Mangaluru Exp,16855,Puducherry,Mangaluru Central,"21A,86"
+,Lucknow Exp,15044,Kathaodam,Lucknow,22,Mangaluru Exp,16857,Puducherry,Mangaluru Central,86
+,Lucknow Exp,15071,Mau,Lucknow,"25A,52A",Mangaluru Exp,12789,Kacheguda,Mangaluru Central,"2A,26,71A,86"
+,Lucknow Exp,15113,Chhapra,Lucknow,82,Mangaluru Mail,12601,MGR Chennai,Mangaluru Central,86
+,Lucknow Exp,15203,Barauni,Lucknow,22A,,Central,,,
+,Lucknow Exp,16093,MGR Chennai,Lucknow,17A,Mangaluru Exp,16539,Yesvatnpur,Mangaluru Jn,19
+,,,Central,,,Mangaluru-Vijayapura,17377/17378,Vijayapura,Mangaluru Central,19
+,Lucknow Exp,20921,Bandra (T),Lucknow,"3A,79",Exp,,,,
+,Lucknow Exp,19401,Ahmedabad,Lucknow,"23A,79",Mankapur Exp,14125,Prayagraj Sangam,Mankapur,"25A,81"
+,Lucknow Exp,19715,Jaipur,Gomti Nagar,79,Manmad Exp,12117,Lokmanya Tilak (T),Manmad,53
+,Lucknow Exp,22683,Yesvantpur,Lucknow,"17A,25A,52A",Manmad Exp,17688,Dharmabad,Manmad,53A
+,Machilipatnam Exp,12750,Bidar,Machilipatnam,30A,Mannai Exp,16179/16180,Chennai Egmore,Mannaraudi,21
+,Machilipatnam Exp,17212,Yesvantpur,Machilipatnam,49,Mannaraudi Exp,22673,Bhagat Ki Kothi,Mannaraudi,"3,8,21,23"
+,MachiliPatnam Exp,17401,Tirupati,Machilipatnam/,7,,,,,
+,,,,,,Mannaraudi Exp,17407,Tirupati,Mannaraudi,21
+,,,,Narasapur,,,,,,
+,,,,,,Manuauru Exp,17026,Secunderabad,Manuauru,30A
+,Madgaon Exp,22908,Hapa,Madgaon,26,,,,,
+,,,,,,Marathwada Samprak K.,12753/12754,H.S. Nanded1,H. Nizamudin,"4,53"
+,Madar Exp,19607,Kolkata,Madar,"73,72",,,,,
+,,,,,,Marudhar Exp,14853/14854,Banaras,Jodhpur,79
+,Madhya Pradesh,12121/12122,Jabalpur,H. Nizamuddin,56,,,,,
+,,,,,,Marudhar Exp,14863/14864,Banaras,Jodhpur,79
+,Sampark Kranti Exp.,,,,,,,,,
+,,,,,,Marudhar Exp,14865/14866,Banaras,Jodhpur,79
+,Mahima Gosain,20831/20832,Sambalpur,Shalimar,"7,78",,,,,
+,,,,,,Marusagar Exp,12977/12978,Ernakulam Jn,Ajmer,"23,3,26"
+,Madurai Exp,22101,Lokmanya Tilak (T),Madurai,"21,70",,,,,
+,,,,,,Matsvaaandha Exp,12619/12620,Lokmanya Tilak (T),Mangaluru Central,26
+,Madurai Exp,20494,Chandigarh,Madurai,"8,69,86A",,,,,
+,Madurai Exp,22715,Kacheguda,Madurai,"52,70",Mau Exp,15072,Lucknow,Mau,25
+,Madurai Exp,22623,Chennai Egmore,Madurai,21,Mau Exp,15026,Anand Vihar (T),Mau,25
+,Magadh Exp,20801/20802,lslampur,New Delhi,"1,89",Maurya Exp,15027/15028,Sambalpur,Gorakhpur,"36,37,78"
+,Mahabodhi Exp,12397/12398,Gaya,New Delhi,1,Maveli Exp,16603/16604,Mangaluru Central,Thiruvananthapuram,85
+,Mahakoshal Exp,12189/12190,Jabalpur,H. Nizamuddin,56,Mayiladuturai Exp,16232,Mysuru,Cuddalore Port,69
+,Mahalaxmi Exp,17411/17412,Chhatrapati Shivaji,Chhatrapati Shahu,19,Mayiladuturai Exp,16834,Tiruchchirappalli,Mayiladuturai,69
+,,,Maharaj (T),Maharaj (T),,Maurakshi Exp,13045/13046,Howrah,Deoghar,36
+,Mahamana Exp,19319/19320,Indore,Veeraval,"17,33",Mettupalayam,56137,Udagamandalam,Mettupalayam,97
+,Mahamana Exp,19333/19334,Indore,Bikaner,"54,59",Passenger,,,,
+,Mahamana Exp,20905/20906,Vadodara,Rewa,"6,34",Mewar Exp,12963/12964,H. Nizamuddin,Udaipur City,3
+,Mahamana Exp,22163/22164,Bhopal,Khajuraho,2,MGR Chennai Central,12163,Lokmanya Tilak (T),MGR Chennai,10
+,Mahamana Exp,22417/22418,New Delhi,Varanasi,25,Exp,,Central,,
+,Mahanagari Exp,22177/22178,Chhatrapati Shivaji,Banaras,6,MGR Chennai Central,22180,Lokmanya Tilak (T),MGR Chennai,10
+,,,Maharaj (T),,,Exp,,Central,,
+,Maharashtra Exp,11039/11040,Chhatrapati Shahu,Gondia,44,MGR Chennai Central,22652,Palakkad,MGR Chennai,"69,86"
+,,,Maharaj (T),,,Exp,,Central,,
+,Maharashtra Sampark,12907/12908,Bandra (T),H. Nizamuddin,3,MGR Chennai Central,12291,Yesvantpur,MGR Chennai,20A
+,Kranti Exp,,,,,Exp,,Central,,
+,Mahuva Exp,12945/12946,Surat,Mahuva,11,MGR Chennai Central,12604,Hyderabad,MGR Chennai,71A
+,Mahuva Exp,22989,Bandra (T),Mahuva,11,Exp,,Central,,
+,Mahuva Exp,22993,Bandra (T),Mahuva,11,MGR Chennai Central,16552,Mysuru,MGR Chennai,20A
+,Malabar Exp,16629/16630,Thiruvananthapuram,Mangaluru Central,85,Exp,,Central,,
+,Malani Exp,20487/20488,Barmer,Delhi Sarai Rohilla,23,MGR Chennai Central,12682,Coimbatore,MGR Chennai,86A
+,Malda Town Exp,13416,Patna,Malda Town,93,Exp,,Central,,
+,Malda Town Exp,13417,Digha,Malda Town,"14,87",MGR Chennai Central,12686,Mangaluru Central,MGR Chennai,86A
+,Malda Town Exp,13426,Surat,Malda Town,"34,73",Exp,,Central,,
+,Malda Town Exp,13430,Anand Vihar,Malda Town,"18,93,67,25",MGR Chennai Central,12690,Nagercoil,MGR Chennai,"69,86A"
+,Malda Town Exp,14004,New Delhi,Malda Town,18,Exp,,Central,,
+,Malgudi Exp,20623/20624,KSR Bengaluru,Ashokapuram,20,MGR Chennai Central,12692,Shivmogga Town,MGR Chennai,20A
+TAG-26,Malwa Exp,12919/12920,Dr. Amedkar Nagar,Sri Mata Vaishno,"4,16",Exp,,Central,,
+,,,,Devi Katra,,MGR Chennai Central,12696,Thiruvanthapuram,MGR Chennai,86A
+,,,,,,Exp,North,Central,,
+,,,,,38,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+MGR Chennai Central,12698,Thiruvananthapuram,MGR Chennai,86A,Mumbai CSMT Exp,12361,Asansol,Chhatrapati Shivaji,"6A,1A",
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,20853,Bhubaneswar,MGR Chennai,7,Mumbai CSMT Exp,12870,Howrah,Chhatrapati Shivaji,5,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,12839,Howrah,MGR Chennai,7,Mumbai CSMT Exp,22108,Latur,Chhatrapati Shivaji,53A,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,17313,SSS Hubballi,MGR Chennai,"60,71",Mumbai CSMT Exp,22144,Bidar,Chhatrapati Shivaji,11,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,12851,Bilaspur,MGR Chennai,"8,42A",Mumbai CSMT Exp,16332,Thiruvananthapuram,Chhatrapati Shivaji,70,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,12968,Jaipur,MGR Chennai,"3,8",Mumbai CSMT Exp,16340,Nagercoil,Chhatrapati Shivaji,70,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,16004,Nagarsol,MGR Chennai,"53A,71A",Mumbai CSMT Exp,16352,Nagercoil,Chhatrapati Shivaji,"21A,70",
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,16054,Tirupati,MGR Chennai,20A,Mumbai CSMT Exp,16382,Kanniyakumari,Chhatrapati Shivaji,"10A,70",
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,16094,Lucknow,MGR Chennai,17,Mumbai CSMT Exp,22731,Hyderabad,Chhatrapati Shivaji,10A,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,16204,Tirupati,MGR Chennai,20A,Mumbai Mail,22158,MGR Chennai,Chhatrapati Shivaji,10A,
+Exp,,,Central,,,,Central,Maharaj (T),,
+MGR Chennai Central,20680,SSS Hubballi,MGR Chennai,"19,20A",Mumbai Mail,12321,Howrah,Chhatrapati Shivaji,"1,6",
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,20920,Ektanagar,MGR Chennai,"31,10",Mumbai Mail,12810,Howrah,Chhatrapati Shivaji,5,
+Exp,,,Central,,,,,Maharaj (T),,
+MGR Chennai Central,22602,Sai Nagar Shirdi,MGR Chennai,"10A,20",Mussoorie Exp,14341/14342,Delhi,Dehradun,75,
+Exp,,,Central,,Muzaffarpur Exp,11061,Lokmanya Tilak (T),Muzaffarpur,"6,22",
+MGR Chennai Central,22612,New Jalpaiguri,MGR Chennai,29,Muzaffarpur Exp,15002,Dehradun,Muzaffarpur,"13A,64",
+Exp,,,Central,,Muzaffarpur Exp,15216,Narkatiaganj,Muzaffarpur,64,
+MGR Chennai Central,22640,Alappuzha,MGR Chennai,86A,Muzaffarpur Exp,15227,SMVT Bengaluru,Muzaffarpur,"20A,22A,29A",
+Exp,,,Central,,Muzaffarpur Exp,19053,Surat,Muzaffarpur,"3A,33",
+MGR Chennai Central,22652,Palakkad,MGR Chennai,"69,86A",Muzaffarpur-Hadapsar,15589/15590,Muzaffarpur,Hadapsar,"6,6A,22",
+Exp,,,Central,,Exp,,,,,
+MGR Chennai Central,22681,Mysuru,MGR Chennai,20A,Mysuru Exp,22136,Renigunta,Mysuru,20,
+Exp,,,Central,,Mysuru Exp,12976,Jaipur,Mysuru,"3,9,52",
+MGR Chennai Central,22697,Hubballii,MGR Chennai,"19,20A",Mysuru Exp,16207,Yeshvantpur,Mysuru,19,
+Exp,,,Central,,,,,,,
+,,,,,Mysuru Exp,16209,Ajmer,Mysuru,"11A,19,23",
+MGR Chennai Central,22801,Visakhapatnam,MGR Chennai,7,,,,,,
+,,,,,Mysuru Exp,16218,Sai Nagar Shirdi,Mysuru,"19A,60,20,10",
+Exp,,,Central,,,,,,,
+,,,,,Mysuru Exp,16226,Shivamogga Town,Mysuru,19,
+MGR Chennai Central,22825,Shalimar,MGR Chennai,7,,,,,,
+,,,,,Mysuru Exp,22688,Varanasi,Mysuru,19A,
+Exp,,,Central,,,,,,,
+,,,,,Mysuru Exp,16231,Cuddalore Port,Mysuru,69A,
+MGR Chennai Central,22859,Puri,MGR Chennai,7,,,,,,
+,,,,,Mysuru Exp,17302,Belagavi,Mysuru,19,
+Exp,,,Central,,,,,,,
+,,,,,Mysuru Exp,22682,MGR Chennai,Mysuru,20,
+MGR Chennai Central,22869,Visakhapatnam,MGR Chennai,"7,7A",,,,,,
+,,,,,,,Central,,,
+Exp,,,Central,,,,,,,
+,,,,,Mysuru Exp,22817,Howrah,Mysuru,"7,20",
+MGR Chennai Central,22159,Chhatrapati Shivaji,MGR Chennai,10,,,,,,
+,,,,,Nabadwipdham Exp.,13422,Malda Town,Nabadwipdham,14A,
+Mail,,Maharaj (T),Central,,,,,,,
+,,,,,Nabadwipdham Exp.,13432,Balurghat,Nabadwipdham,14,
+MGR Chennai Central,12602,Mangaluru Central,MGR Chennai,86A,,,,,,
+Mail,,,Central,,Nagaon Exp.,15629/15630,Tambaram,Silghat Town,"29,74",
+MGR Chennai Central,12839,Howrah,MGR Chennai,7,Nagarsol Exp,16003,MGR Chennai,Nagarsol,"7,53",
+Mail,,,Central,,,,Central,,,
+Millennium Exp,12645/12646,Ernakulam Jn,H. Nizamuddin,"8,86",Nagarsol Exp,12787,Narsapur,Nagarsol,"30,53A",
+Chhatrapati Shahu,22155,Kalaburagi,Chhatrapati Shahu,10A,Namo Bharat ,94801/94802,Ahmedabad,Bhuj,11,
+Maharaj (T) Exp,,,Maharaj (T),,Rapid Rail,,,,,
+Mithila Exp,13021/13022,Howrah,Raxaul,"37,64",Namo Bharat Rapid,94803/94804,Danapur,Jaynagar,90,
+Mithilanchal Exp,13155/13156,Kolkata,Darbhanga,37,Rail,,,,,
+Mokamah Exp,13029,Howrah,Mokamah,1,Nagarsol Exp,17231,Narsapur,Nagarsol,"30,53A",
+Mour Dhwaj Exp,14691/14692,Barauni,Jammu Tawi,13,Nanded Exp,20809,Sambalpur,Hazur Sahib,"30,40",
+,,,,,,,,Nanded,,
+Mumbai Central Exp.,12928,Vadodara,Mumbai Central,11A,,,,,,
+Mumbai Central Exp.,12956,Jaipur,Mumbai Central,3,Nagercoil Exp,12667,Chennai Egmore,Nagercoil,21,
+Mumbai Central Exp.,22452,Chandigarh,Mumbai Central,"11A,23A,27A",Nagercoil Exp,12689,MGR Chennai,Nagercoil,"69,86",
+,,,,,,,Central,,,
+Mumbai CSMT Exp,22160,MGR Chennai,Chhatrapati Shivaji,10A,,,,,,
+,,,,,Nagercoil Exp,16335,Gandhidham,Nagercoil,26,
+,,Central,Maharaj (T),,,,,,,
+,,,,,Nagercoil Exp,16339,Chhatrapati Shivaji,Nagercoil,70,
+Mumbai CSMT Exp,11140,Hospete,Chhatrapati Shivaji,19A,,,,,,
+,,,,,,,Maharaj (T),,,
+,,,Maharaj (T),,,,,,,
+,,,,,Nagercoil Exp,16351,Chhatrapati Shivaji,Nagercoil,"21,70",
+Mumbai CSMT Exp,12112,Amravati,Chhatrapati Shivaji,5,,,,,,
+,,,,,,,Maharaj (T),,,
+,,,Maharaj (T),,,,,,,
+,,,,,Nagercoil Exp,16353,Kacheguda,Nagercoil,70,
+Mumbai CSMT Exp,12134,Mangaluru Jn.,Chhatrapati Shivaji,26A,,,,,,
+,,,,,Kanyakumari Exp,16381,Pune,Kanniyakumari,"10,70",
+,,,Maharaj (T),,,,,,,TAG-26
+,,,,,39,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Nagercoil Exp,17235,SMVT Bengaluru,Nagercoil,69,Okha Exp,19251,Somnath,Okha,76
+,Nagercoil Exp,22657,Tambaram,Nagercoil,21,Okha Exp,19574,Jaipur,Okha,"11,23"
+,Nagercoil Exp,22668,Coimbatore,Nagercoil,69,Okha Exp,19576,Nathdwara,Okha,"11,54"
+,Nagpur Exp,11404,Chhatrapati Shahu,Nagpur,44,Okha Exp,22970,Banaras,Okha,"3,33A,34A,65"
+,,,Maharaj (T),,,Okha Link Exp,22906,Howrah,Okha,34A
+,Nagpur Exp,12135,Pune,Nagpur,44,Padatik Exp,12377/12378,Sealdah,New Alipurduar,14
+,Nagpur Exp,12771,Secunderabad,Raipur,9,Padmavati Exp,12763/12764,Tirupati,Secunderabad,71
+,Nagpur Exp,12923,Indore,Nagpur,"2A,8",Padmavati Exp,14207/14208,Maa Belha Devi,Delhi,25
+,Nagpur Exp/Passr.,18239,Gevra Road,Nagpur,"5,42",,,Dham Pratapgarh,,
+,Naharlagun Exp,15907,Tinsukhia,Naharlagan,61,Paharia Exp,15721/12722,Digha,New Jalpaiauri,14
+,Nainital Exp,15307/15308,Bareilly,Aishbaah,61,Palace Queen Humsafar,19667/19668,Udaipur,Mysuru,"3,19,54"
+,Nanda Devi Exp,12401/12402,Dehradun,Kota,"3,75",Palamau Exp,13347,Barkakana,Patna,48
+,Nandankanan Exp,12815/12816,Puri,Anand Vihar (T),32,Palani Exp,22651,MGR Chennai,Palani,"69,86"
+,Nandigram Exp,11001/11002,Chhatrapati Shivaji,Balharshah,53,,,Central,,
+,,,Maharaj (T),,,Palanpur Exp,19152,Gandhidham,Palanpur,11A
+,Nangaldam Exp,12325,Kolkata,Nangaldam,12,Palaruvi Exp,16791/16792,Tuticorin,Palakkad,86
+,Nangaldam Exp,14505,Amritsar,Nangaldam,15A,Palitana Exp,22935,Bandra (T),Palitana,"11,76"
+,Nangaldam Exp,22709,Huzur Sahib,Una Himachal,"2,27A,53",Pallavan Exp,12605/12606,Chennai Egmore,Karaikudi,21
+,,,Nanded,,,Palnadu Exp,12747/12748,Guntur,Vikarabad,30
+,Naravanadri Exp,12733/12734,Tirupati,Lingampalli,71,Pamani Exp,17407/17408,Tirupati,Mannaraudi,21
+,Narkatiaganj Exp,15215,Muzaffarpur,Narkatiaganj,64A,Panchavati Exp,12109/12110,Chhatrapati Shivaji,Manmad Jn,53
+,Narmada Exp/Passr.,18233/18234,Indore,Bilaspur,43,,,Maharaj (T),,
+,Narsapur Exp,12788,Nagarsol,Narsapur,"30A,53",Panchganga Exp,16595/16596,KSR Bengaluru,Karwar,26
+,Narsapur Exp,17232,Nagarsol,Narsapur,"30A,53",Pandharpur Exp,16541,Yesvantpur,Pandharpur,19A
+,Narsapur Exp,17256,Hvderabad,Narsapur,30A,Pandivan Exp,12637/12638,Chennai Egmore,Madurai,21
+,Nathdwara Exp,19575,Okha,Nathdwara,"11A,54A",Panvel Exp,17614,Hazur Sahib,Panvel,44A
+,Nauchandi Exp,14141/14142,Prayagraj Sangam,Saharanpur,88,,,Nanded,,
+,Nautanwa Exp,18201,Durg,Nautanwa,38.81,Paradeep Exp,18414,Puri,Paradeep,32
+,Nautanwa Exp,18205,Durg,Nautanwa,"38,81",Paradeep Exp,22810,Vishakapatnam,ParadeeP,30A
+,Naviivan Exp,12655/12656,Ahmedabad,MGR Chennai,46,Paradeep Exp,22813,Santragachi,Paradeep,32A
+,,,,Central,,Parasnath Exp,12941/12942,Ahmedabad,Asansol,"3,33,65"
+,Neelanchal Exp,12875/12876,Puri,Anand Vihar (T),32,Parasuram Exp,16649/16650,Mangaluru Central,Kanniyakumari,85
+,Netaji Exp,12311/12312,Howrah,Kalka,1,Paschim Exp,12925/12926,Bandra (T),Amritsar,"3,15"
+,Nellai Exp,12631/12632,Chennai Egmore,Tirunelveli,21,Patalkot Exp,20424/20423,Seoni,Firozpur Cantt,2
+,Netravati Exp,16345/16346,Lokmanya Tilak (T),Thiruvananthapuram,26,Pathankot Exp,22429/22430,Delhi,Pathankot (via ASR),15
+,New Cooch Behar Exp.,13147,Sealdah,New Coochbehar,14,Patliputra Exp,12141,Lokmanya Tilak (T),Patliputra,24
+,New Delhi Exp,12427,Rewa,New Delhi,"1A,6A",Patliputra Exp,12530,Lucknow,Patliputra,22
+,New Delhi Exp,14003,Malda Town,New Delhi,18A,Patliputra Exp,22355/22356,Chandigarh,Patliputra,88
+,New Delhi Exp,14315,Bareilly,New Delhi,55,Patna Exp,12741,Vasco-de-Gama,Patna,"24,26"
+,New Delhi Exp,14324,Rohtak,New Delhi,16,Patna Exp,12791,Secunderabad,Danapur,17A
+,New Delhi Exp,22403,Puducherry,New Delhi,"8A,78A",Patna Exp,13238,Kota,Patna,79
+,New Delhi Exp,12415,Indore,New Delhi,3A,Patna Exp,13240,Kota,Patna,79
+,Lucknow Mail,12229/12230,Lucknow,New Delhi,25A,Patna Exp,13331,Dhanbad,Patna,36
+,New Jalpaiguri Exp.,19601,Udaipur City,New Jalpaiguri,"18,23A,54",Patna Exp,13415,Malda Town,Patna,93
+,New Jalpaiguri Exp.,22611,MGR Chennai,New Jalpaiauri,29A,Patna Exp,22669,Ernakulam Jn,Patna,"17A,86A"
+,,,Central,,,Patna Exp,17610,Purna,Patna,"17A,24,53"
+,New Jalpaiguri Passr.,52540,Darjeeling,New Jalpaiauri,95,Patna Exp,18622,Hatia,Patna,36
+,Dibrugarh Exp,13282,Rajendra Nagar,Dibrugarh,"18,66A,74A",Patna Exp,19049,Bandra (T),Patna,24
+,Dibrugarh Exp,15945/15946,Lokmanya Tilak (T),Dibrugarh,"18,24,66",Patna Exp,19421,Ahmedabad,Patna,"3A,32A"
+,New Tinsukia Exp,22501/22502,SMVT Bengaluru,New Tinsukia,"20A,29A,66,7,4",Patna Exp,22643,Ernakulam Jn,Patna,"29A,86A"
+,,,Central,,,Pearl City Exp,12693/12694,Chennai Egmore,Tuticorin,21
+,Nilqiri Exp,12671/12672,MGR Chennai,Mettupalayam,86,Penchvalley Exp,19343/19344,Indore,Nainpur,8A
+,,,Central,,,Pinakini Exp,12711/12712,Vijayawada,MGR Chennai,71
+,Nizamuddin Exp,22167,Singrauli,H.Nizamuddin,"73,56",,,,Central,
+,Nizamuddin Exp,12147,Chhatrapati Shahu,H. Nizamuddin,"9A,19A",Poorbiya Exp,15279/15280,Saharsa,Anand Vihar (T),22
+,,,Maharaj (T),,,Poorna Exp,11097/11098,Pune,Ernakulam Jn,"19,26"
+,Nizamuddin Exp,12643,Thiruvananthapuram,H. Nizamuddin,"8A,86A",Poorva Exp,12303/12304,Howrah (via Patna),New Delhi,1
+,Nizamuddin Exp,22181,Jabalpur,H. Nizamuddin,56,Poorva Exp,12381/12382,Howrah (via Gaya),New Delhi,1
+,Nizamuddin Exp,22633,Thiruvananthapuram,H. Nizamuddin,"26A,3A",Poorvanchal Exp,15047/15048,Kolkata,Gorakhpur,37
+,Nizamuddin Exp,22653,Thiruvananthapuram,H. Nizamuddin,26,Poorvottar SamPark,22450,Guwahati,New Delhi,18
+,Nizamuddin Exp,22655,Ernakulam Jn,H. Nizamuddin,26,Kranti Exp,,,,
+,Nizamuddin Exp,12192,Jabalpur,H. Nizamuddin,56,Porbandar Exp,12906,Shalimar,Porbandar,34A
+,Nizamuddin Exp,20657,SSS Hubballi,H. Nizamuddin,"9,19",Porbandar Exp,20909,Thiruvananthapuram,Porbandar,"11,26A,76"
+,North East Exp,12505/12506,Kamakhya,Anand Vihar (T),"1,18",Porbandar Exp,20938,Delhi Sarai Rohila,Porbandar,"2,3,11"
+,Odisha Samoark Kranti,12819/12820,Bhubaneswar,Anand Vihar (T),32,Porbandar Exp,19270,Muzaffarpur,Porbandar,"11,22A,23,64A"
+,Okha Exp,15045,Gorakhpur,Okha,"11,33A",Porbandar Exp,19571,Rajkot,Porbandar,11
+TAG-26,Okha Exp,16338,Ernakulam Jn,Okha,26A,Pothigai Exp,12661/12662,Chennai Egmore,Sengottai,21
+,Okha Exp,16733,Rameshwaram,Okha,"70,71,53A,31A,11",,,,,
+,,,,,40,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Pragati Exp,12125/12126,Chhatrapati Shivaji,Pune,19,Puri Exp,22860,MGR Chennai,Puri,7,
+,,Maharaj (T),,,,,Central,,,
+Prasanti Exp,18463/18464,Bhubaneswar,KSR Bengaluru,"7,49",Puri Exp,22865,Lokmanya Tilak (T),Puri,"5A,30,78",
+Pratap Exp,12495/12496,Bikaner,Kolkata,"23,65",Puri Exp,22884,Yesvantpur,Puri,"49,7",
+Pratapgarh Exp,12183,Bhopal,Maa Belha Devi,35A,Puri Exp,22909,Valsad,Puri,"3A,43,78A",
+,,,Dham Pratapgarh,,Puri Exp,22973,Gandhidham,Puri,"34,78",
+Pratham Swatantrata,14124,Kanpur Central,Maa Belha Devi,25,Purna Exp,17609,Patna,Purna,"17,24A,53A",
+,,,Dham Pratapgarh,,Purnagiri Jan Shatabdi,12035/12036,Tanakpur,Delhi,55,
+Prayag Exp,14102,Kanpur Central,Prayagraj Sangam,1,Exp,,,,,
+Prayag Exp,14308,Bareilly,Prayagraj Sangam,25,Purulia Exp,22606,Tirunelveli,Purulia,"7A,87",
+Prayagraj Exp,12417/12418,Prayagraj,New Delhi,1,Purushottam Exp,12801/12802,Puri,Anand Vihar (T),32,
+Prerana Exp,22138/22137,Rajkot,Nagpur,34,Pushpak Exp,12533/12534,Gomti Nagar,Chhatrapati Shivaji,35,
+Prayagraj Exp,12403/12404,Lalgarh,Prayagraj,"1, 1A, 80",,,,Maharaj (T),,
+Prayagraj Exp,14126,Mankapur,Prayagraj Sangam,"25,81A",Rae Bareli Exp,14201,Jaunpur,Rae Bareli,25A,
+Prayagraj Exp,22403/22404,Lalgarh,Prayagraj,"1,80",Rajgir Exp,13254,Howrah,Rajgir,"37,67",
+Prayagraj Exp,22968,Prayagraj,Ahmedabad20506,"24A,46A",Rajasthan Humsafar,22985/22986,Udaipur,Delhi Sarai Rohilla,"23,54",
+Puducherry Exp,12867,Howrah,Puducherry,"7,21",Exp,,,,,
+Puducherry Exp,20851,Bhubaneswar,Puducherry,"7,21",Raipur Exp,12771/12772,Secunderabad,Raipur,5,
+Puducherry Exp,16573,Yesvantpur,Puducherry,69,Rajya Rani Exp,15818/15817,Silahat,Dhubri,"66,74",
+Puducherry Exp,16856,Mangaluru Central,Puducherry,"21,22,86A",Rajya Rani Exp,16349/16350,Thiruvanthapuram,Nilambur Road,86,
+Puducherry Exp,16858,Mangaluru Central,Puducherry,86,,,North,,,
+Puducherry Exp,16862,Kanniyakumari,Puducherry,21,Rajya Rani Exp,18117/18118,Rourkela,Gunupur,78,
+Puducherry Exp,22404,New Delhi,Puducherry,8,Rajya Rani Exp,17612/17611,CSMT,Nanded,24,
+Puducherry Exp,11005/11006,Dadar,Puducherry,"19,20,21",Rajya Rani Exp,22161/22162,Damoh,Bhopal,43,
+Pune Barhni Exp,11037/11038,Pune,Barhni,"6,63",Rajya Rani Exp,22453/22454,Meerut City,Lucknow,88,
+Pune Exp,11025,Bhusawal,Pune,91,Rajya Rani Exp,22901/22902,Bandra (T),Udaipur City,"3,54",
+Pune Exp,11034,Darbhanga,Pune,"6A,22A,44A",Rajasthan Sampark,12463/12464,Delhi Sarai Rohilla,Jodhpur,23,
+Pune Exp,11087,Veraval,Pune,"31,76",Kranti Exp,,,,,
+Pune Exp,11089,Bhagat Ki Kothi,Pune,"23,31",Rajdhani Exp,12301/12302,Howrah,New Delhi,1,
+Pune Exp,11091,Bhuj,Pune,31,Rajdhani Exp,12305/12306,Howrah,New Delhi,1,
+Pune Exp,22194,Gwalior,Daund,4A,Rajdhani Exp,12309/12310,Rajendra Nagar,New Delhi,1,
+Pune Exp,11408,Lucknow,Pune,"35A,44A",Rajdhani Exp,12313/12314,Sealdah,New Delhi,1,
+Pune Exp,12104,Lucknow,Pune,35,Rajdhani Exp,12423/12424,Dibrugarh Town,New Delhi,"66,18",
+Pune Exp,12136,Nagpur,Pune,44A,Rajdhani Exp,12425/12426,New Delhi,Jammu Tawi,16,
+Pune Exp,12849,Bilaspur,Pune,"5,44A",Rajdhani Exp,12431/12432,Thiruvananthapuram,H. Nizamuddin,"3,26",
+Pune Exp,12940,Jaipur,Pune,3,Rajdhani Exp,12433/12434,MGR Chennai,H. Nizamuddin,8,
+Pune Exp,15029,Gorakhpur,Pune,"35,44A",,,Central,,,
+Pune Exp,17014,Hyderabad,Hadapsar,53A,Rajdhani Exp,12437/12438,Secunderabad,H. Nizamuddin,9,
+Pune Exp,19312,Indore,Pune,"3,91",Rajdhani Exp,12441/12442,Bilaspur,New Delhi,42,
+Pune Exp,22132,Banaras,Pune,"6A,22A,44",Rajdhani Exp,12453/12454,Ranchi,New Delhi,41,
+Pune Exp,22149,Eranakulam,Pune,"91,26A",Rajdhani Exp,12951/12952,Mumbai Central,New Delhi,3,
+Pune Exp,18634,Hatia,Pune,"5A,44",Rajdhani Exp,20407/20408,Ranchi,New Delhi,41,
+Pune Exp,22882,Bhubaneswar,Pune,"10A,30",Tejas Rajdhani Exp,20501/20502,Agartala,Anand Vihar,"18,83",
+Pune Exp,22944,Indore,Pune,"3,31",Rajdhani Exp,20503/20504,Dibrugarh,New Delhi,"66,18",
+Pune Exp,16382,Kanniyakumari,Pune,"10,70",Rajdhani Exp,20505/20506,Dibrugarh,New Delhi,"66,18",
+Puniab Mail,12137/12138,Chhatrapati Shivaji,Firozpur,"2,4,39",Rajdhani Exp,20507/20508,Sairang,Anand Vihar (T),"18,18A,83,83A",
+,,Maharaj (T),,,Rajdhani Exp,20839/20840,Ranchi,New Delhi,41,
+Puri Exp,12145,Lokmanya Tilak (T),Puri,"5A,78",Rajdhani Exp,22221/22222,Chhatrapati Shivaji,H. Nizamuddin,1,
+Puri Exp,12579,Digha,Puri,7,,,Maharaj (T),,,
+Puri Exp,12837,Howrah,Puri,7,Rajdhani Exp,22413/22414,H. Nizamuddin,Madaaon,"3,26",
+Puri Exp,12844,Ahmedabad,Puri,"34,46",Rajdhani Exp,22691/22692,KSR Bengaluru,H. Nizamuddin,9,
+Puri Exp,12887,Shalimar,Puri,7,Rajdhani Exp,22811/22812,Bhubaneswar,New Delhi,32,
+Puri Exp,12895,Shalimar,Puri,7,Rajdhani Exp,20817/20818,Bhubaneswar,New Delhi,"32,78",
+Puri Exp,12994,Gandhidham,Puri,"34,78",Rajdhani Exp,22823/22824,Bhubaneswar,New Delhi,32,
+Puri Exp,14709,Bikaner,Puri,"3,27,278",Rajendranagar Exp.,13281,Dibrugarh,Rajendra Nagar,"18A,66,74",
+Puri Exp,15640,Kamakhya,Puri,29,Rajendranagar Exp.,19313,Indore,Rajendra Nagar,35A,
+Puri Exp,15644,Kamakhya,Puri,"29,74A",Rajendranagar Exp.,19321,Indore,Rajendra Nagar,35A,
+Puri Exp,17480,Tirupati,Puri,7A,Rajendranagar Exp.,13241,Banka,Rajendra Nagar,24,
+Puri Exp,18303,Sambalpur,Puri,78,Rajkot Exp,16614,Coimbatore,Rajkot,31,
+Puri Exp,18406,Ahmedabad,Puri,"78,34,46",Rajkot Exp,22718,Secunderabad,Rajkot,31,
+Puri Exp,20585,Sai Nagar Shirdi,Puri,"34,44",Rajkot Exp,20914,Delhi Sarai Rohilla,Rajkot,"11,23",
+Puri Exp,18413,Paradeep,Puri,32A,Rajkot Exp,22938,Rewa,Rajkot,"6A,34A",
+Puri Exp,18415,BarbiI,Puri,32A,Rajya Rani Exp,15417/15418,Alipurduar,Silghat Town,74,
+Puri Exp,18420,Jaynagar,Puri,"32A,37",Rajya Rani Exp,15509/15510,Lalitgram,Patna,90,
+Puri Exp,18426,Durg,Puri,"78,34",Rajya Rani Exp,15503/15504,Saharsa,Patna,90,
+Puri Exp,20814,Jodhpur,Puri,"3,5A,23A,42,78",Rajya Rani Exp,20659/20660,Mysuru,KSR Bengaluru,20,
+Puri Exp,22835,Shalimar,Puri,7,Rameshwaram Exp,22536,Banaras,Rameshwaram,"17,21",
+,,,,,Rameshwaram Exp,16751,Chennai Egmore,Rameshwaram,21,TAG-26
+,,,,,41,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Rameshwaram Exp,16618,Coimbatore,Rameshwaram,"69,21",Sachkhand Exp,12715/12716,Hazur Sahib Nanded,Amritsar,"15,53"
+,Rameshwaram Exp,22661,Chennai Egmore,Rameshwaram,21,Sadhbhavana Exp,14007/14008,Raxaul,Anand Vihar (T),"22,25"
+,Rameshwaram Exp,16733,Okha,Rameshwaram,"11A,31,53,70,71A",Sadhbhavana Exp,14013/14014,Sultanpur,Anand Vihar (T),25
+,Rameshwaram Exp,16103/16104,Tambaram,Rameshwaram,21,Sadhbhavana Exp,14015/14016,Raxaul,Anand Vihar (T),"22,25,64"
+,Rameshwaram Exp,16779,Tirupati,Rameshwaram,21,Sadhbhavana Exp,14017/14018,Raxaul,Anand Vihar (T),"22,25"
+,Rameshwaram Exp,20849,Bhubaneswar,Rameshwaram,"7,21",Sainik Exp,19701/19702,Jaipur,Delhi Cantt.,59
+,Rameshwaram Exp,22622,Kanniyakumari,Rameshwaram,21A,Saharanpur Exp,14545,Delhi,Saharanpur,84
+,Ramnagar Exp,12528,Chandigarh,Ramnagar,"13A,55",Saharsa-SMVT,22351/22352,Saharsa,SMVT Bengaluru,"17,20"
+,Ramnagar Exp,15055,Agra Fort,Ramnagar,82,Bengaluru Exp,,,,
+,Ramnagar Exp,22975,Bandra (T),Ramnagar,"3,82",Sarvat Da Bhala,22479/22480,New Delhi,Lohian Khas Jn.,16
+,Rampurhat Exp,12347,Howrah,Rampurhat,14,Sai Nagar Shirdi Exp.,22894,Howrah,Sai Nagar Shirdi,5
+,Rampurhat Exp,13187,Sealdah,Rampurhat,"14,14A",Sai Nagar Shirdi Exp.,16217,Mysuru,Sai Nagar Shirdi,"60,19,20A,10"
+,Ranakpur Exp,14707/14708,Hanumangarh,Dadar,"11A,23,45",Sai Nagar Shirdi Exp.,12131/12132,Dadar,Sai Nagar Shirdi,53
+,Ranchi Exp,13319,Godda,Ranchi,36A,Sai Nagar Shirdi Exp.,22147/22148,Dadar,Sai Nagar Shirdi,53
+,Ranchi Exp,15662,Kamakhya,Ranchi,"29,73,74A",,,,,
+,,,,,Sai Nagar Shirdi Exp.,17002,Secunderabad,Sai Nagar Shirdi,"30,53A",
+,Ranchi Exp,18612,Banaras,Ranchi,41A,,,,,
+,,,,,Sai Nagar Shirdi Exp.,17206,Kakinada Town,Sai Nagar Shirdi,"30,53A",
+,Ranchi Exp,18604,Godda,Ranchi,,,,,,
+,,,,,Sai Nagar Shirdi Exp.,17208,Vijayawada,Sai Nagar Shirdi,53A,
+,Ranchi Exp,18614,Chopan,Ranchi,41A,,,,,
+,,,,,Sai Nagar Shirdi Exp.,20857,Puri,Sai Nagar Shirdi,"34A,44A",
+,Ranchi Exp,18620,Dumka,Ranchi,36A,,,,,
+,,,,,Sai Nagar Shirdi Exp.,17418,Tirupati,Sai Nagar Shiridi,"53,10A",
+,Ranchi Exp,18630,Gorakhpur,Ranchi,"36A,37A",,,,,
+,,,,,Sai Nagar Shirdi EXp.,18503/18504,Visakhapatnam,Sai Nagar Shirdi,"30,53A",
+,Ranchi Exp,18632,Chopan,Ranchi,41,,,,,
+,,,,,Sai Nagar Shirdi Exp.,22456,Kalka,Sai Nagar Shirdi,"2,27",
+,Ranchi Exp,18636,Sasaram,Ranchi,41,,,,,
+,,,,,Sai Nagar Shirdi Exp.,22601,MGR Chennai Central,Sai Nagar Shirdi,"10A,20",
+,Ranchi Exp,18639,Ara,Ranchi,36,,,,,
+,,,,,Sairang Exp,13125,Kolkata,Sairang,14,
+,Ranchi Exp,22891,Howrah,Ranchi,87,,,,,
+,,,,,Sake! Exp,22183/22184,Lokmanya Tilak (T),Ayodhya Cantt,6,
+,Ranichannamma Exp,16589/16590,KSR Bengaluru,Sangli,19,,,,,
+,,,,,Salasar Exp,22421/22422,Delhi Sarai Rohilla,Bhagat Ki Kothi,59,
+,Rangiya Exp,15968,Ledo,Rangiya,66A,,,,,
+,Ranikhet Exp,15013/15014,Jaisalmer,Kathaodam,"55,23",Salem Exp,22153,Chennai Egmore,Salem,21
+,Ranthambhore Exp.,12465/12466,Indore,JodhPur,23,Salem Exp,16211,Yesvantpur,Salem,69
+,RaptiSagar Exp,12521/12522,Barauni,Ernakulam Jn,"8,17,35,37,86",Samarsata Exp,12151/12152,Lokmanya Tilak (T),Shalimar,"5,87"
+,Raptisaqar Exp,12511/12512,Gorakhpur,Thiruvanthapuram,"8,17,35,86",Samata Exp,12807/12808,Visakhapatnam,H. Nizamuddin,42
+,,,,North,Sambalpur Exp,18302,Rayagada,Sambalpur,40A,
+,Ratlam Exp,19328,Udaipur,Ratlam,54,Sambalpur Exp,18304,Puri,Sambalpur,78A
+,Ratnachal Exp,12717/12718,Visakhapatnam,Vijayawada,7,Sambalpur Exp,18312,Banaras,Visakhapatnam,"41A,78"
+,Ravi Exp,14633/14634,Amritsar,Pathankot,51,Sambalpur Exp,22803,Shalimar,Sambalpur,"7,78A"
+,Raxaul Exp,17005,Hvderabad,Raxaul,"9,36,37,42",Sambaleswari Exp,18005/18006,Howrah,Jagdalpur,"5,40"
+,Raxaul Exp,13043,Howrah,Raxaul,37,Sampark Kranti Exp.,12917/12918,Ahmedabad,H. Nizamuddin,3
+,Raxaul Exp,15201,Hajipur,Raxaul,64,Sampark Kranti Exp.,22685/22686,Yesvantpur,Chandigarh,"9,19,27"
+,Rayalaseema Exp,12793/12794,Tirupati,Nizamabad,71,Sampark Kranti Exp.,12651/12652,Madurai,H. Nizamuddin,"8,21"
+,Rayaqada Exp,18301,Sambalpur,Rayagada,40,Sampark Kranti Exp.,12447/12448,Manikpur,H. Nizamuddin,56
+,Rayaqada Exp,17243,Vijayawada,Rayagada,40,Sampoorna Kranti Exp.,12393/12394,Rajendra Nagar,New Delhi,1
+,Renigunta Exp,22135,Mysuru,Renigunta,"10,53",Sanaamitra Exp,12295/12296,SMVT Bengaluru,Danapur,"17,20"
+,Renigunta Exp,17621,Chhatrapati,Tirupati,"10,53",Sanctuary Exp,15319/15320,Paliakalan,Aishbagh,61
+,,,SambhaJi Nagar,,,,,,,
+,,,,,Sandra T Exp,19019,Haridwar,Bandra (T),"3,75A",
+,Repalle Exp,17625,Kacheguda,Repalle,71A,,,,,
+,,,,,Sangam Exp,14163/14164,Subedarganj,Meerut City,68,
+,Rewa Exp,11704,Dr. Ambedkar,Rewa,43,,,,,
+,,,,,Sangram Exp,22197/22198,Kolkata,Virangna Laxmibai,"35,1A",
+,,,Nagar,,,,,,,
+,,,,,Sant Kabir Dham Exp.,20104/20103,Gorakhpur,Lokmanya Tilak (T),35,
+,Rewa Exp,12428,New Delhi,Rewa,"1,6",,,,,
+,,,,,Santragachi Exp,12767,Hazur Sahib,Santragachi,"5A,53",
+,Rewa Exp,22937,Rajkot,Rewa,"6,34",,,,,
+,,,,,,,Nanded,,,
+,Rewa Exp,18247,Bilaspur,Rewa,"43,81",,,,,
+,,,,,Santragachi Exp,18010,Ajmer,Santragachi,"34,41,72",
+,Rewa Exp,20151/20152,Hadapsar,Rewa,"44, 58",,,,,
+,,,,,Santragachi Exp,22856,Tirupati,Santragachi,7A,
+,Rewanchal Exp,12185/12186,Rewa (via Bina),Rani Kamalapati,43,,,,,
+,,,,,Santragachi Exp,22858,Anand Vihar (T),Santragachi,32A,
+,Rishikesh Exp,14815,Sri GangaNagar,Rishikesh,45,,,,,
+,,,,,Sapt Kranti Exp,12557/12558,Muzaffarpur,Anand Vihar (T),"22,64",
+,Rock Fort Exp,12653/12654,Chennai Egmore,Tiruchchirappalli,21,,,,,
+,,,,,Sapthaqiri Exp,16057/16058,MGR Chennai,Tirupati,20,
+,Rohilkhand Exp,15309/15310,Aishbagh,lzaat Nagar,61,,,,,
+,,,,,,,Central,,,
+,Rohtak Exp,14323,New Delhi,Rohtak,16,,,,,
+,,,,,Saraiqhat Exp,12345/12346,Howrah,Guwahati,14,
+,Rourkela Exp,18106,Jaynagar,Rourkela,"37,36A",,,,,
+,,,,,Sarnath Exp,15159/15160,Chhapra,Durg,81,
+,Rourkela Exp,18108,Jadalpur,Rourkela,40A,,,,,
+,,,,,Sarvodaya Exp,12473/12474,Ahmedabad,Shri Mata Vaishno,"3,11,16",
+,Rourkela Exp,18051/18052,Badampahar,Rourkela,5,,,,,
+,,,,,,,,Devi Katra,,
+,Runicha Exp,14087/14088,Delhi,Jaisalmer,23,,,,,
+,,,,,Saryu Exp.,14233/14234,Prayagraj Sangam,Mankapur,"25,81",
+,Rupashi Banala,12883/12884,Santragachi/,Purulia,87,,,,,
+,,,,,Saryu Yamuna Exp.,14649/14650,JayaNagar,Amritsar,"15,22,25",
+,Exp,,Howrah,,,,,,,
+,,,,,Sasaram Exp,18635,Ranchi,Sasaram,41,
+,Sabari Exp,20630/20629,Tiruvananthapuram,Secunderabad,"71,86",,,,,
+,,,,,Sasaram Exp,22410,Anand Vihar (T),Sasaram,1,
+,Sabarmati Exp,19165/19166,Ahmedabad,Darbhanga,"22,33",,,,,
+,,,,,Satavahana Exp,12713/12714,Vijayawada,Secunderabad,71,
+,Sabarmati Exp,22547/22548,Gwalior,Sabarmati,"2,23",,,,,
+,,,,,Satvaaraha Exp,15273/15274,Raxaul,Anand Vihar (T),"22,64",
+,Sabarmati Exp,12547/12548,Agra Cantt,Sabarmati,"23,23A",,,,,
+,,,,,Saurashtra Exp,19215/19216,Mumbai Central,Porbandar,11,
+TAG-26,Sabarmati Exp,19167/19168,Ahmedabad,Varanasi City,33,,,,,
+,,,,,Saurashtra Janata Exp.,19217/19218,Bandra (T),Jamnagar,11,
+,Sabarmati Exp,20491,Jaisalmer,Sabarmati,23,,,,,
+,,,,,Saurashtra Mail/Exp.,22945/22946,Mumbai Central,Okha/Veraval,11,
+,,,,,42,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Sayaji Nagari Exp,19115/19116,Bandra (T),Bhuj,11,Shatabdi Exp,12027/12028,MGR Chennai,KSR Bengaluru,20,
+Sealdah Exp,12988,Ajmer,Sealdah,"23A,65",,,Central,,,
+Sealdah Exp,13106,Ballia,Sealdah,37,Shatabdi Exp,12029/12032,New Delhi,Amritsar,15,
+Sealdah Memu Exp,13178,Jangipur Road,Sealdah,14,Shatabdi Exp,12033/12034,New Delhi,Kanpur Central,1,
+Sealdah Memu Exp,13180,Siuri,Sealdah,92,Shatabdi Exp,12039/12040,New Delhi,Kathaodam,55,
+Secunderabad Exp.,12514,Silchar,Secunderabad,29,Shatabdi Exp,12041/12042,Howrah,New Jalpaiguri,14,
+Secunderabad Exp.,12589,Gorakhpur,Secunderabad,"9,17,35",Shatabdi Exp,12045/12046,New Delhi,Chandigarh,27,
+Secunderabad Exp.,12705,Guntur,Secunderabad,71,Shatabdi Exp,12085/12086,Guwahati,Dipruaarh,66,
+Secunderabad Exp.,12749,MachiliPatnam,Bidar,30,Shatabdi Exp,12087/12088,Naharlagun,Guwahati,62,
+Secunderabad Exp.,12772,Raipur,Secunderabad,9,Shatabdi Exp,12243/12244,MGR Chennai,Coimbatore,86,
+Secunderabad Exp.,12773,Shalimar,Secunderabad,30,,,Central,,,
+Secunderabad Exp.,12792,Danapur,Secunderabad,17,Shatabdi Exp,12277/12278,Howrah,Puri,7,
+Secunderabad Exp.,12795,Vijayawada,Lingampalli,30,Sheshadri Exp,17209/17210,SMVT Bengaluru,Kakinada Town,"7,20",
+Secunderabad Exp.,17001,Sai Nagar Shirdi,Secunderabad,53,Shimla Exp,52455,Kalka,Shimla,94,
+Secunderabad Exp.,17008,Darbhanga,Secunderabad,"9,36,37,42",Shimla Exp,52457,Kalka,Shimla,94,
+Secunderabad Exp.,22717/22718,Rajkot,Secunderabad,31,Shimla Mail,52453/52454,Kalka,Shimla,94,
+Secunderabad Exp.,12745/12746,Manuguru,Secunderabad,30,ShiPra Exp,22911/22912,Indore,Howrah,65,
+Secunderabad Exp.,22738,Hisar,Secunderabad,"59,23,46",Shiv Ganga Exp,12559/12560,Banaras,New Delhi,25,
+Secunderabad Exp.,17040,Vasco-de-Gama,Secunderabad,"49, 52",Shivalik Exp,52451/52452,Kalka,Shimla,94,
+Secunderabad Exp.,17319,SSS Hubballi,Hyderabad,"10,19,A",Shivamogga Exp,16225,Mysuru,Shivamogga Town,19,
+Secunderabad Exp.,17626,Repalle,Secunderabad,71,Shivamogga Exp,16567,Tumkuru,Shivamogga Town,19A,
+Secunderabad Exp.,19713,Jaipur,Kacheguda,"3,8,53",Shivamogga Exp,16581,Yeswantpur,Shivamogga Town,19A,
+Secunderabad Exp.,22849,Shalimar,Secunderabad,30,Shivamogga Town Exp.,16227,KSR Bengaluru,Talguppa,19A,
+Seemanchal Exp,12487/12488,Jogbani,Anand Vihar (T),18,Shivamogga Town,20689,Yesvantpur,Shivamogga Town,19A,
+Seven Hills Exp,12769/12770,Tirupati,Secundrabad,52,SF Exp.,,,,,
+Sewagram Exp,12139/12140,Chhatrapati Shivaji,Nagpur,5,Shraddha Sethu,22613/22614,Rameshwaram,Ayodhya Cantt,"21,17,12",
+,,Maharaj (T),,,Shram Shakti Exp,12451/12452,Kanpur Central,New Delhi,1,
+Shabd Bhedi Exp,22323/22324,Kolkata,Ghazipur City,12,Shramik Exp,19051/19052,Valsad,Sonpur,"22,24",
+Shabd Bhedi Exp,22323/22324,Kolkata,Ghazipur City,12,Shramjeevi Exp,12391/12392,Rajgir,New Delhi,"1,25,67",
+Shahdol Exp,18756,Ambikapur,Shahdol,81A,Sri Ganganagar Exp,20471/20472,Puri,Sri Ganganagar,"28,32,72,78",
+Shahdol Exp,11201,Nagpur,Shahdol,58,Shri Mata Vaishno Devi,11449,Jabalpur,Shri Mata Vaishno,"16,56",
+Shaheed Exp,14673/1467 4,Jaynagar,Amritsar,"15,22",Katra Exp.,,,Devi Katra,,
+Shakti Punj Exp,11447/11448,Jabalpur,Howrah,73,Shri Mata Vaishno Devi,14503,Kalka,Shri Mata Vaishno,"2,16,27A",
+Shalimar Exp,12888,Puri,Shalimar,7A,Katra Exp.,,,Devi Katra,,
+Shalimar Exp,14662,Jammu Tawi,Barmar,23,Shri Mata Vaishno Devi,14611,Ghazipur City,Shri Mata Vaishno,73,
+Shalimar Exp,12896,Puri,Shalimar,7A,Katra Exp.,,,Devi Katra,,
+Shalimar Exp,12905,Porbandar,Shalimar,34,Shri Mata Vaishno Devi,15655,Kamakhya,Shri Mata Vaishno,"13,64",
+Shalimar Exp,22804,Sambalpur,Shalimar,"78,7A",Katra Exp.,,,Devi Katra,,
+Shalimar Exp,12774,Secunderabad,Shalimar,30A,Shri Mata Vaishno Devi,16787,Tirunelveli,Shri Mata Vaishno,"8,16A,69,86A",
+Shalimar Exp,15022,Gorkhapur,Shalimar,"63,32A",Katra Exp.,,,Devi Katra,,
+Shalimar Exp,18008,Bhanjpur,Shalimar,87A,Shri Mata Vaishno Devi,12475,Hapa,Shri Mata Vaishno,"3A,11,A,16",
+Shalimar Exp,18029,Lokmanya Tilak (T),Shalimar,5A,Katra Exp.,,,Devi Katra,,
+Shalimar Exp,20971,Udaipur City,Shalimar,"32A,72",Shri Mata Vaishno Devi,12477,Jamnagar,Shri Mata Vaishno,"3A,11,A,16",
+Shalimar Exp,22641,Thiruvananthapuram,Shalimar,"86A,29A",Katra Exp.,,,Devi Katra,,
+Shalimar Exp,22826,MGR Chennai,Shalimar,7,Shri Mata Vaishno Devi,19415,Ahmedabad,Shri Mata Vaishno,"23,80",
+,,Central,,,Katra Exp.,,,Devi Katra,,
+Shalimar Exp,22829,Bhuj,Shalimar,"11,4,32",Shri Mata Vaishno Devi,19803,Kota,Shri Mata Vaishno,"3A,16A",
+Shalimar Exp,22836,Puri,Shalimar,7A,Katra Exp.,,,Devi Katra,,
+Shalimar Exp,22850,Secunderabad,Shalimar,30A,Shri Mata Vaishno Devi,22941,Indore,Martyr Captain,"3A,16",
+Shalimar Exp,22854,Visakhapatnam,Shalimar,7A,Katra Exp.,,,Tushar Mahajan,,
+Shan-e-Puniab Exp.,12497/12498,New Delhi,Amritsar,15,Shri Shakti Exp,22461/22462,New Delhi,Shri Mata Vaishno,16,
+,,,,,,,,Devi Katra,,
+Shanti Exp,19309/19310,Gandhinagar,Indore,33,,,,,,
+,,,,,Siddhaqanqa Exp,12725/12726,Dharwar,KSR Bengaluru,19,
+Shantiniketan Exp.,12337/12338,Howrah,Bolpur,14,,,,,,
+,,,,,Siddheshwar Exp,12115/12116,Chhatrapati Shivaji,Solapur,10,
+Sharavati Exp,11035/11036,Dadar,Mysuru,19,,,,,,
+,,,,,,,Maharaj (T),,,
+Shatabdi Exp,12001/12002,Rani Kamalapati,New Delhi,2,,,,,,
+,,,,,Siddhabali Exp,12037/12038,Kotdwara,Delhi,75,
+Shatabdi Exp,12003/12004,Lucknow,New Delhi,25,,,,,,
+,,,,,Sikar Exp,14714,Delhi Sarai Rohilla,Sikar,59,
+Shatabdi Exp,12005/12006,New Delhi,Kalka,27,,,,,,
+,,,,,Sikkim Mahananda Exp.,15483/15484,Alipurduar,Delhi,"1,18,74",
+Shatabdi Exp,12007/12008,MGR Chennai,Mysuru,20,,,,,,
+,,,,,Silambu Exp,20681/20682,Chennai Egmore,Sengottai,21,
+,,Central,,,,,,,,
+,,,,,Silchar Exp,15612,Silchar,Rangiya,83,
+Shatabdi Exp,12009/12010,Mumbai Central,Ahmedabad,11,,,,,,
+,,,,,Silchar Exp,15642,Silchar,New Tinsukia,"66,83",
+Shatabdi Exp,12011/12012,New Delhi,Kalka,27,,,,,,
+,,,,,Silchar Exp,12515,Coimbatore,Silchar,"83,86A,29A",
+Shatabdi Exp,12013/12014,New Delhi,Amritsar,15,,,,,,
+,,,,,Simhadri Exp,17239/17240,Guntur,Visakhapatnam,30,
+Shatabdi Exp,12015/12016,New Delhi,Ajmer,23,,,,,,
+,,,,,Simhaouri Exp,12709/12710,Gudur,Secunderabad,71,
+Shatabdi Exp,12017/12018,New Delhi,Dehradun,75,,,,,,
+,,,,,Simlipal Exp,18007/18008,Shalimar,Bhanjpur,87,
+Shatabdi Exp,12019/12020,Howrah,Ranchi,73,,,,,,
+Shatabdi Exp,12025/12026,Pune,Secunderabad,10,,,,,,TAG-26
+,,,,,43,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Sindhanur Bengaluru,17391/17392,Sindhanur,KSR Bengaluru,19,Tatanagar Exp,18184,Buxar,Tatanagar,36A
+,Exp,,,,,Tatanagar Exp,18190,Ernakulam Jn,Tatanagar,40
+,Singhad Exp,11009/11010,Chhatrapati Shivaji,Pune,19,Tatanagar Exp,20816,Visakhapatnam,Tatanagar,"7A,32"
+,,,Maharaj (T),,,Tatanagar Exp,28182,Katihar,Tatanagar,37
+,Sindhanur Exp,17303,Hubbali,Sindhanur,20A,Tebhaaa Exp,13161/13162,Kolkata,Balurghat,14
+,Sitamarhi Exp,13165,Kolkata,Sitamarhi,37A,Teesta Torsha Exp.,13141/13142,Sealdah,Alipurduar,14
+,SMVT Bengaluru Exp,12889,Tatanagar,SMVT Bengaluru,"20,40",Tejas Exp,22671/22672,Chennai Egmore,Madurai,21
+,SMVT Bengaluru Exp,15228,Muzaffarpur,SMVT Bengaluru,"20,22,29",Tejas Exp,22119/22120,Chhatrapati Shivaji,Madgaon,26
+,Solapur Exp,11312,Hassan,Solapur,19,,,Maharaj (T),,
+,Somanth Exp,11464,Jabalpur,Somnath,"33A,34A,43A,76",Tejas Exp,82501,Lucknow Jn.,Anand Vihar (T),25
+,Somanth Exp,11466,Jabalpur,Somnath,"33A,34A,43A,76",Tejas Exp,22671/22672,Chennai Egmore,Madurai,21
+,Somnath Exp,19221/19222,Ahmedabad,Veraval,"11,76",Telanaana Exp,12723/12724,Hyderabad,New Delhi,9
+,Somnath Exp,19252,Okha,Somnath,76,Thawe Exp,18181,Tatanagar,Thawe,37A
+,South Bihar Exp,13287/13288,Durg,Ara,"5,36",Thirukkural Exp,12641/12642,Kanniyakumari,H. Nizamuddin,"8,21"
+,Siuri Memu Exp,13179,Sealdah,Siuri,92,Thirumala Exp,17487/17488,Tirupati,Visakhapatnam,7
+,Sri Ganga Nagar Exp,16312,Thiruvananthpuram,Sri Ganga Nagar,"23,26A,39A",Thiruvananthapuram,12623,MGR Chennai,Thiruvananthapuram,86
+,,,North,,,,,Central,,
+,Sri Ganga Nagar SF,22723,Hazur Sahib Nanded,Sri Ganga Nagar,"23A,34A,53A,39A",Thiruvananthapuram,12695,MGR Chennai,Thiruvananthapuram,86
+,Sri Ganga Nagar Exp,12485,Hazur Sahib Nanded,Sri Ganga Nagar,"9A,39,53",,,Central,,
+,Sri Ganga Nagar Exp,14601,Firozpur,Howrah,39,Thiruvananthapuram,12697,MGR Chennai,Thiruvananthapuram,86
+,Sri Ganga Nagar Exp,22981,Kota,Sri Ganga Nagar,28,,,Central,,
+,Sri Ganria Nariar Exp,14816,Rishikesh,Sri Ganga Nagar,45,Thiruvananthapuram,16331,Chhatrapati Shivaji,Thiruvananthapuram,70
+,Sri Jaaannath Exp,18409/18410,Howrah,Puri,7,,,Maharaj (T),,
+,Shimogga Exp,12691,MGR Chennai,Shivmogga Town,20,Thiruvananthapuram,16333,Veraval,Thiruvananthapuram,26
+,,,Central,,,Thiruvananthapuram,16348,Mangaluru Central,Thiruvananthapuram,85
+,Steel Exp,12813/12814,Howrah,Tatanagar,87,Thiruvananthapuram,22634,H. Nizamuddin,Thiruvananthapuram,"3,26"
+,Suhaildev Exp,22419/22420,Anand Vihar (T),Ghazipur City,22,Thiruvananthapuram,22642,Shalimar,Thiruvananthapuram,"86,29"
+,Sultanour Exp,12143,Lokmanya Tilak,Sultanour,35,Thiruvananthapuram,22654,H. Nizamuddin,Thiruvananthapuram,26
+,Sultanpur Exp,20939,Sabarmati,Sultanpur,"23A,25",Thiruvananthapuram,12644,H. Nizamuddin,Thiruvananthapuram,"8,86"
+,Suoer AC Exp,12857/12858,Howrah,Digha,87,Tungabhadra Exp,17023/17024,Kacheguda,Kurnool City,52
+,Surat Exp,12935,Bandra (T),Surat,11,Tiruchchira ppalli Exp,12663,Howrah,Tiruchchirappalli,"21,29"
+,Surat Exp,12946,Mahuva,Surat,11,Tiruchchirappalli Exp,16833,Maviladuturai,Tiruchchirappalli,69
+,Surat Exp,13425,Malda Town,Surat,"34,73",Tiruchchirappalli Exp,22675,Chennai Egmore,Tiruchchirappalli,21
+,Surat Exp,19048,Bhagalpur,Surat,24A,Tiruchendur Exp,20605,Chennai Egmore,Tiruchendur,21
+,Surat Exp,19054,Muzaffarpur,Surat,"3,33A",Tirunelveli Exp,11021,Dadar,Tirunelveli,"19,69,20"
+,Surat Exp,22827,Puri,Surat,"34,46,78",Tirunelveli Exp,22605,Purulia,Tirunelveli,"7A,87"
+,SuryaNagari Exp,12480,Jodhpur,Bandra (T),"11,23",Tirunelveli Exp,19578,Jamnagar,Tirunelveli,26
+,Sushasan Exp,22199/22200,Gwalior,Balrampur,"38,4,22",Tirunelveli Exp,22619,Bilaspur,Tirunelveli,"8,42A,86"
+,Sutlej Exp,14629/14630,Chandigarh,Firozpur,80,Tirunelveli Exp,22629,Dadar,Tirunelveli,"26,69"
+,Suvarna Rekha Exp.,13301/13302,Dhanbad,Tatanagar,87,Tirunelveli Link Exp,16788,Jammu Tawi,Tirunelveli,"8,16A,69,86"
+,Swaraj Exp,12471/12472,Mumbai Central,Shri Mata Vaishno,"3,16",Tirupati Exp,12762,Karimnagar,Tirupati,71
+,,,,Devi Katra,,Tirupati Exp,12766,Amravati,Tirupati,"52,53"
+,Swarna Jayanti Exp.,12781/12782,Mysuru,H. Nizamuddin,"9,19",Tirupati Exp,16053,MGR Chennai,Tirupati,20
+,Swarna Jayanti Exp.,12803/12804,Visakhapatnam,H. Nizamuddin,42,,,Central,,
+,Swarna Jayanti Rajdhani,12957/12958,Sabarmati,New Delhi,23,Tirupati Exp,16203,MGR Chennai,Tirupati,20
+,Swarna Shatabdi Exp.,12029/12030,New Delhi,Amritsar,15,,,Central,,
+,Swatantrata Sainani,12561/12562,JayaNagar,New Delhi,22,Tirupati Exp,16219,Chamarainagar,Tirupati,20
+,Taj Exp,12279/12280,Virangana Laxmibai,New Delhi,2,Tirupati Exp,16780,Rameshwaram,Tirupati,21A
+,Tambaram Exp,12376,Jasidih,Tambaram,40,Tirupati Exp,17402,MachiliPatnam/,Tirupati,7A
+,Tambaram Exp,16175/16176,Karaikal,Tambaram,21A,Tirupati Exp,17417,Sai Nagar Shirdi,Tirupati,"10,53A"
+,Tambaram Exp,15930,New Tinsukia,Tambaram,"29,66",Tirupati Exp,17420,Vasco-Da-gma,Tirupati,49
+,Tambaram Exp,22658,Kanniyakumari,Tambaram,21,Tirupati Exp,17479,Puri,Tirupati,7
+,Tamil Nadu Sampark,12621/12622,MGR Chennai,New Delhi,8,Tirupati Exp,17481,Bilaspur,Tirupati,"7,42"
+,,,Central,,,Tirupati Exp,22616,Coimbatore,Tirupati,70
+,Tamralipta Exp,12857/12858,Howrah,Digha,87,Tirupati Exp,22618,SMVT Bengaluru,Tirupati,20
+,Tanakpur Dehradun Exp,15019/15020,Tanakpur,Dehradun,"12,55",Tirupati Exp,22855,Santragachi,Tirupati,7
+,Taoaswini Exp,18451/18452,Hatia,Puri,78,Tirupati Exp,22871,Bhubaneswar,Tirupati,7
+,Tapovan Exp,17617/17618,Chhatrapati Shivaji,Hazur Sahib,53,Tirupati Exp,22879,Bhubaneswar,Tirupati,7
+,,,Maharaj (T),Nanded,,Tirupati Exp,17424,Chikkamagaluru,Tirupati,"70,19"
+,Tapti Ganga Exp,19045/19046,Surat,Thawe,6,Tri Shatabdi Exp,12913/12914,Indore,Nagpur,8
+,Tatanagar Exp,12890,SMVT Bengaluru,Tatanagar,"20A,40A",Trihut Exp,13157/13158,Kolkata,Muzaffarpur,37
+,Tatanagar Exp,13512,Asansol,Tatanagar,87,Tripura Sundari Exp,14619/14620,Anand Vihar (T),Agartala,"18,83"
+,Tatanagar Exp,18102,Jammu Tawi,Tatanagar,41A,Triveni Exp,15073/15074,Singrauli,Tanakpur,25
+,Tatanagar Exp,18112,Yesvantpur,Tatanagar,"40A,71",Triveni Exp,15075/15076,Shakthinagar,Tanakpur,25
+TAG-26,Tatanagar Exp,18110,NSCB Itwari,Tatanagar,5,Triveni Link Exp,15077/15078,Barwadih/Chopan,Tanakpur,"25,73"
+,Tatanagar Exp,18182,Thawe,Tatanagar,37,Tulsi Exp,22129/22130,Lokmanya Tilak (T),Ayodhya Cantt,"2,6,47"
+,,,,,44,,,,,
+Train ,Train,From,To,Table,Train ,Train,From,To,Table,
+Name,No,Station,Station,No.,Name,No,Station,Station,No.,
+Tutari Exp,11003/11004,Dadar,Sawantwadi Road,26,Vande Bharat Exp,20171/20712,Rani Kamlapati,H.Nizamuddin,2,
+Tuticorin Exp,16236,Mysuru,Tuticorin,69,Vande Bharat Exp,20643/20644,Chenni Central,Coimbatore,86,
+Udaipur City SF,20473,Delhi Sarai Rohilla,Udaipur City,"23,54",Vande Bharat Exp,20701/20702,Secunderbad,Tirupati,71,
+Udaipur City Exp,12992,Jaipur,Udaipur Ciry,54,Vande Bharat Exp,20977/20978,Ajmer,Chandigarh,23,
+Udaipur City Exp,12995,Bandra (T),Udaipur City,"3A,54A",Vande Bharat Exp,20633/20634,Thiruvanthapuram,Kasargod,26,
+Udaipur City Exp,19327,Ratlam,Udaipur City,54A,Vande Bharat Exp,22895/22896,Howrah,Puri,7,
+Udaipur City Exp,19329,Indore,Udaipur City,"3,54",Vande Bharat Exp,22229/22230,Chhatrapati Shivaji,Madgaon,26,
+Udaipur City Exp,19602,New Jalpaiauri,Udaipur City,"18A,23,54",,,Maharaj (T),,,
+Udaipur City Exp,19610,Yog Nagari,Udaipur City,"23,54,84",Vande Bharat Exp,20911/20912,Indore,Nagpur,"8,43",
+,,Rishikesh,,,Vande Bharat Exp,20173/20174,Rewa,Rani Kamlapati,43,
+Udaipur City Exp,20972,Shalimar,Udaipur City,"72,32",Vande Bharat Exp,26901/26902,Sabarmati,Veraval,11,
+Udaipur City Exp,19665,Khajuraho,Udaipur City,"23,79,54,56",Vande Bharat Exp,20176/20175,Agra Cantt.,Banaras,1,
+Uday Exp,22665/22666,Coimbatore,KSR Bengaluru,86,Vande Bharat Exp,20661/20662,Bengaluru,Dharwar,19,
+Udaipur Yog Ngari,19609,Udaipur,Yog Nagari,"23A,53A,84",Vande Bharat Exp,22349/22350,Patna,Ranchi,36,
+Rishikesh Exp,,,Rishikesh,,Vande Bharat Exp,22549/22550,Gorakhpur,Prayagraj,35,
+Uday Exp,22701/22702,Visakhapatnam,Guntur,30,Vande Bharat Exp,12461/12462,Jodhpur,Sabarmati,23,
+Udhampur Exp,22431,Prayagraj,Marytr Captain,"16,68",Vande Bharat Exp,22457/22458,Dehradun,Anand Vihar (T),75,
+,,,Tushar Mahahjan,,Vande Bharat Exp,22227/22228,New Jalpaiguri,Guwahati,29,
+Udhampur Exp,20985,Kota,Marytr Captain,"3A,16A",Vande Bharat Exp,20665/20666,Tirunelveli,Chennai Egmore,21,
+,,,Tushar Mahahjan,,Vande Bharat Exp,22347/22348,Patna,Howrah,1,
+Udyan Exp,11301/11302,Chhatrapati Shivaji,KSR Bengaluru,10,Vande Bharat Exp,20677/20678,Chennai Central,Narasapur,"7A,7,8A,8",
+,,Maharaj (T),,,Vande Bharat Exp,20101/20102,Nagpur,Secunderaba,9,
+Udhna Exp,20930,Banaras,Udhna,6A,Vande Bharat Exp,20669/20670,SSS Hubballi,Pune,19,
+Udhna Exp,19064,Danapur,Udhna,24A,Vande Bharat Exp,20703/20704,Kacheguda,Yesvantpur,9,
+Udyog Karmik Exp,12943/12944,Valsad,Kanpur Central,"24,35",Vande Bharat Exp,20835/20836,Puri,Rourkela,32,
+Udyognagri Exp,12173/12174,Lokmanya Tilak (T),Maa Belha Devi,35,Vande Bharat Exp,20627/20628,Chennai Egmore,Nagercoil,,
+,,,Dham Pratapgarh,,Vande Bharat Exp,20631/20632,Mangalore,Thiruvanthapuram,26,
+Ujjaini Exp,14309/14310,Laxmibai Nagar,Yog Nagri,"4,75",Vande Bharat Exp,22925/22926,Okha,Ahmedabad,11,
+,,,Rishikesh,,Vande Bharat Exp,20979/20980,Udaipur,Jaipur,54,
+Unchahar Exp,14217/14218,Prayagraj Sangam,Chandigarh,"1,27",Vande Bharat Exp,20897/20898,Howrah,Ranchi,87,
+Uoasana Exp,12327/12328,Howrah,Dehradun,12,Vande Bharat Exp,20891/20892,Tatanagar,Brahmapur,"7,32",
+Urjadhani Exp,22165/22166,Bhopal,Singrauli,73,Vande Bharat Exp,20871/20872,Howrah,Raurkela,5,
+Urjadhani Exp,22167/22168,Nizamuddin,Singrauli,"73,56",Vande Bharat Exp,20893/20894,Tatanagar,Patna,36,
+Utkal Exp,18477/18478,Puri,Yog Nagari,"32,75",Vande Bharat Exp,21893/21894,Tatanagar,Patna,36,
+,,,Rishikesh,,Vande Bharat Exp,21895/21896,Tatanagar,Patna,36,
+Utsara Exp,18191/18192,Chhapra,Farrukhabad,33,Vande Bharat Exp,20645/20646,Mangalore,Madgaon,26,
+Uttar Pradesh Sampark,13147/13148,Sealdah,Bamahhat,14,Vande Bharat Exp,20641/20642,Bengaluru Cantt,Coimbatore,86,
+Uttaranchal Exp,19565/19566,Okha,Dehradun,"11,23,75",Vande Bharat Exp,20663/20664,Mysuru,MGR Chennai,20,
+Uttaranchal Sampark,15035/15036,Delhi,Kathgodam,55,,,,Central,,
+Kranti Exp,,,,,Vande Bharat Exp,20669/20670,SSS Hubballi,Pune,19,
+Uzhavan Exp,16865/16866,MGR Chennai,Thanjavur,21,Vande Bharat Exp,20671/20672,Madurai,Bengaluru Cant.,86,
+,,Central,,,Vande Bharat Exp,20705/20706,Huzur Sahib,Chhatrapati Shivaji,53,
+Vadodara Exp,12927,Mumbai Central,Vadodara,11,,,Nanded,Maharaj (T),,
+Vadodara Exp,22930,Bhilad,Vadodara,11,Vande Bharat Exp,20841/20842,Bhubaneswar,Visakhapatnam,7,
+Vaigai Exp,12635/12636,Chennai Egmore,Madurai,21,Vande Bharat Exp,26501/26502,Patliputra,Gorakhpur,"37, 64",
+Vaishali Exp,15565/15566,Lalitgram,New Delhi,22,Vande Bharat Exp,26505/26506,Khajuraho,Banaras,"2,2A,24,24A,63",
+Valsad Exp,12930,Dahod,Val sad,3,Vande Bharat Exp,26503/26504,Saharanpur,Gomti Nagar,"12,38",
+Valsad Exp,19056,Jodhpur,Val sad,"23,31",Vande Bharat Exp,20707/20708,Secunderabad,Visakhapatnam,30,
+Valsad Exp,22910,Puri,Valsad,"78A,43A",Vande Bharat Exp,22231/22232,Kalaburagi,SMVT Bengaluru,9,
+Vananchal Exp,13403/13404,Ranchi,Bhagalpur,36,Vande Bharat Exp,20887/20888,Ranchi,Varanasi,41,
+Vanchinad Exp,16303/16304,Ernakulam Jn,Thiruvananthapuram,85,Vande Bharat Exp,22233/22234,New Jalpaiguri,Patna,18,
+Vande Bharat Exp,22435/22436,New Delhi,Varanasi,1,Vande Bharat Exp,22425/22426,Ayodhya Cantt,Anand Vihar (T),25,
+Vande Bharat Exp,22439/22440,New Delhi,Shri Mata Vaishno,16,Vande Bharat Exp,22345/22346,Patna,Gomtinagar,12,
+,,,Devi Katra,,Vande Bharat Exp,26751/26752,Belagavi,KSR Bengaluru,19,
+Vande Bharat Exp,22447/22448,New Delhi,Amb Andura,27,Vande Bharat Exp,22415/22416,Varanasi,New Delhi,1,
+Vande Bharat Exp,20901/20902,Mumbai Central,Gandhinagar Capital,11,Vande Bharat Exp,22545/22546,Lucknow Jn,Dehradun,12,
+Vande Bharat Exp,20607/20608,Chenni Central,Mysuru,20,Vande Bharat Exp,22477/22478,Shri Mata Vaishno,New Delhi,4,
+Vande Bharat Exp,20825/20826,Bilaspur,Nagpur,5,,,Devi Katra,,,
+Vande Bharat Exp,20829/20830,Durg,Vishakapatnam,"42,42A",Vande Bharat Exp,22487/22488,Amritsar,Delhi,4,
+Vande Bharat Exp,22301/22302,Howrah,New Jalpaiguri,14,Vande Bharat Exp,22489/22490,Varanasi,Meerut City,88,
+Vande Bharat Exp,22303/22304,Howrah,Gaya,1A,Vande Bharat Exp,20673/20674,Kolhapur,Pune,19,
+Vande Bharat Exp,22309/22310,Howrah,Jamalpur,14,Vande Bharat Exp,22500/22499,Varanasi,Deoghar,1,
+Vande Bharat Exp,20833/20834,Visakhapatnam,Secunderabad,30,Vande Bharat Exp,22961/22962,Mumbai Central,Ahmedabad,11,
+Vande Bharat Exp,22223/22224,Chhatrapati Shivaji,Sainagar Shirdi,53,,,,,,
+,,,,,Vande Bharat Exp,22469/22470,H. Nizamuddin,Khajuraho,56,
+,,Maharaj (T),,,,,,,,
+,,,,,Vande Bharat Exp,26401/,Shri Mata Vaishno,Sri Nagar,"16,16A",
+Vande Bharat Exp,22225/22226,Chhatrapati Shivaji,Solapur,10,,,,,,
+,,Maharaj (T),,,,26402,Devi Katra,,,TAG-26
+,,,,,45,,,,,
+,Train ,Train,From,To,Table,Train ,Train,From,To,Table
+,Name,No,Station,Station,No.,Name,No,Station,Station,No.
+,Vande Bharat Exp,26403/26404,Sri Nagar,Shri Mata Vaishno,"16, 16A",Vivek Exp,19027/19028,Bandra (T),Jammu Tawi,"11,46,59,80"
+,,,,Devi Katra,Vivek Exp,19568/19567,Okha,Tuticorin,"31,17,70",
+,Vande Bharat Exp,26405/26406,Amritsar,Shri Mata Vaishno,"13, 16",Vivek Exp,22851/22852,Santragachi,Mangaluru Central,"7,86"
+,,,,Devi Katra,VGLJ-Agra Exp,11901/11902,Virangana,Agra Cantt,8,
+,Vande Bharat Exp,26461/26462,Delhi,Firozpur Cantt.,"15, 15A",,Lakshmibai Jhansi,,,
+,Vande Bharat Exp,26101/26102,Ajni,Pune,5,Wainganga Exp,12251/12252,Yeshvantpur,Korba,"9,42,52"
+,Vande Bharat Exp,26301/26302,Danapur,Jogbani,90,WB Sampark Kranti Exp,12329/12330,Sealdah,Anand Vihar (T),1
+,Vande Bharat Exp,26651/26652,KSR Bengluru,Ernakulam Jn,86,West Coast Exp,22637/22638,MGR Chennai,Mangaluru Central,86
+,Vande Bharat Exp,26471/26472,Bikaner,Delhi Cantt,59,,Central,,,
+,Vande Bharat Exp,26481/26482,Jodhpur,Delhi Cantt,23,Wodeyar Exp,12613/12614,Mysuru,Bengaluru,20
+,Varanasi Exp,20963/20964,Sabarmati,Varanasi,"23A,25",Yesvantpur Exp,16582,Shivmogga Town,Yesvantpur,19
+,Varuna Exp,20402,Varanasi,Lucknow,25,Yelaairi Exp,16089/16090,MGR Chennai,Jolarpettai,20
+,Vasco-de-Gama Exp.,12742,Patna,Vasco-de-Gama,"24A,26",,Central,,,
+,Vasco-de-Gama Exp.,17039,Secundarabad,Vasco-de-Gama,"49, 52",Yercaud Exp,22649/22650,MGR Chennai,Erode,86
+,Vasco-de-Gama Exp.,17309,Yesvantpur,Vasco-de-Gama,19A,,Central,,,
+,Hubli Exp.,20679,MGR Chennai,SSS Hubballi,"19A,20",Yesvantpur Exp,12194,Jabalpur,Yesvantpur,"9,17,52"
+,,,Central,,Yesvantpur Exp,12292,MGR Chennai,Yesvantpur,20,
+,Vasco-de-Gama Exp.,17316,Velankanni,Vasco-de-Gama,"19A,69A",,Central,,,
+,Vasco-de-Gama Exp.,17321,Jasidih,Vasco-de-Gama,36,Yesvantpur Exp,12540,Lucknow,Yesvantpur,"17,25"
+,Vasco-de-Gama Exp.,17419,Tirupati,Vasco-de-Gama,49,Yesvantpur Exp,16212,Salem,Yesvantpur,20
+,Vasco-de-Gama Link,17021,Hyderabad,Vasco-de-Gama,"52,49",Yesvantpur Exp,16540,Mangaluru Jn,Yesvantpur,19
+,Exp.,,,,Yesvantpur Exp,16239,Chikkamagaluru,Yesvantpur,19,
+,Veer Bhumi Exp,19315/19316,Indore,Asarva,"3,54",Yesvantpur Exp,16584,Latur,Yesvantpur,60
+,Velankanni Exp,17315,Vasco-de-Gama,Velankanni,"19,69",Yesvantpur Exp,15023,Gorakhpur,Yesvantpur,"35,9,92,35"
+,Venad Exp,16301/16302,Shoranur,Thiruvananthapuram,85,Yesvantpur Exp,22689,Ahmedabad,Yesvantpur,31
+,Venkatadri Exp,12797/12798,Kacheguda,Chittoor,71,Yesvantpur Exp,16516,Karwar,Yesvantpur,"26,19"
+,Veraval Exp,11088,Pune,Veraval,"31A,76",Yesvantpur Exp,16528,Kannur,Yesvantpur,86A
+,Veraval Exp,16334,Thiruvananthapuram,Veraval,26A,Yesvantpur Exp,16566,Mangaluru Central,Yesvantpur,86A
+,Vibhuti Exp,12333/12334,Howrah,Prayagraj City,1,Yesvantpur Exp,16574,Puducherry,Yesvantpur,69
+,Vidarbha Exp,12105/12106,Chhatrapati Shivaji,Gondia,5,Yesvantpur Exp,16578,Bidar,Yesvantpur,19
+,,,Maharaj (T),,Yesvantpur SF Exp,20690,Shivamogga Town,Yesvantpur,19,
+,Vijayawada Exp,12796,Lingampalli,Vijayawada,30A,Yesvantpur Exp,16588,Bikaner,Yesvantpur,"19A,23"
+,Vijayawada Exp,17207,Sai Nagar Shirdi,Vijayawada,"30,53",Yesvantpur Exp,16586,Mangaluru Central,Yesvantpur,20
+,Vijayawada Exp,17216,Dharmavaram,Vijayawada,49,Yesvantpur Exp,17211,Machilipatnam,Yesvantpur,49
+,Vijayawada Exp,17244,Rayagada,Vijayawada,40,Yesvantpur Exp,17310,Vasco-de-Gama,Yesvantpur,19
+,Vijayapura Exp,17030,Hyderabad,Vijayapura,10,Yesvantpur Exp,17603,Kacheguda,Yelhanka,52
+,Vijayawada Exp,17329/17330,SSS Hubballi,Vijayawada,49,Yesvantpur Exp,19301,Indore,Yesvantpur,"8,52,53"
+,Vikramshila Exp,12367/12368,Bhagalpur,Anand Vihar (T),1,Yesvantpur Exp,20668,Jaipur,Yesvantpur,54
+,Tirunelveli Exp,22605,Purulia,Tirunelveli,"7,87A",Yesvantpur Exp,22684,Lucknow,Yesvantpur,"17,25,52"
+,Villupuram Exp,22603,Kharagpur,Villupuram,7,Yesvantpur Exp,22831,Howrah,Yesvantpur,"7, 49"
+,Vindhyachal Exp,11271/11272,Itarsi,Bhopal,72,Yesvantpur Exp,22863,Howrah,SMVT Bengaluru,21
+,Visakha Exp,17015/17016,Bhubaneswar New,Secunderabad,30,Yesvantpur Exp,22883,Puri,Yesvantpur,"7,49"
+,Visakhapatnam Exp.,18517,Korba,Visakhapatnam,42,Yesvantpur Exp,20656,SSS Hubballi,Yesvantpur,19
+,Visakhapatnam Exp.,22809,Paradeep,Visakhapatnam,30,Yesvantpur Exp,16208,Mysuru,Yesvantpur,19
+,Visakhapatnam Exp.,20812,Huzur Sahib,Visakhapatnam,30A,Yesvantpur Exp,16542,Pandharnur,Yesvantpur,19
+,,,Nanded,,Yesvantpur Exp,18111,Tatanagar,Yesvantpur,"40,71",
+,Visakhapatnam Exp.,18502,Gandhidham,Visakhapatnam,"8,34",Yoga Exp,19031/19032,Ahmedabad,Haridwar,"23,75"
+,Visakhapatnam Exp.,18504,Sai Nagar Shirdi,Visakhapatnam,"53,30A",Yog Nagari Rishikesh Exp,14317/14318,Indore,Dehradun,"4,75"
+,Visakhapatnam Exp.,18520,Lokmanya Tilak (T),Visakhapatnam,"10A,30A",Yuva Exp,12247/12248,Bandra (T),H. Nizamuddin,3
+,Visakhapatnam Exp.,18568,Kollam,Visakhapatnam,"29A,86A",Ziyarat Exp,12395/12396,Rajendra Nagar,Ajmer,"23,65"
+,Visakhapatnam Exp.,18574,Bhagat Ki Kothi,Visakhapatnam,"28,42A,72,81",,,,,
+,Visakhapatnam Exp.,22802,MGR Chennai,Visakhapatnam,7A,,,,,
+,,,Central,,,,,,,
+,Visakhapatnam Exp.,20815,Tatanagar,Visakhapatnam,"7,32A",,,,,
+,Visakhapatnam Exp.,22848,Lokmanya Tilak (T),Visakhapatnam,"5,42",,,,,
+,Visakhapatnam Exp.,22853,Shalimar,Visakhapatnam,7,,,,,
+,Visakhapatnam Exp.,22870,MGR Chennai,Visakhapatnam,7A,,,,,
+,,,Central,,,,,,,
+,Visakhapatnam Exp.,22873,Digha,Visakhapatnam,7,,,,,
+,Vishwamanava SF Exp.,20675/20676,Belagavi,Mysuru,19,,,,,
+TAG-26,Vivek Exp,22503/22504,Kanniyakumari,Dibrugarh,"29,66,7,4,86",,,,,
+,,,,,46,,,,,

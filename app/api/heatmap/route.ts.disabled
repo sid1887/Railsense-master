@@ -1,0 +1,93 @@
+/**
+ * API Route: /api/heatmap
+ * Returns aggregated train movement heatmap data
+ * Fetches historical snapshots from SQLite and groups into grid buckets
+ */
+'use server';
+
+import { NextRequest, NextResponse } from 'next/server';
+import sqlite3 from 'sqlite3';
+import { open } from 'sqlite';
+import path from 'path';
+
+export async function GET(request: NextRequest) {
+  try {
+    // Get time window from query (in minutes, default 60)
+    const mins = Number(request.nextUrl.searchParams.get('mins') || 60);
+    const trainNumber = request.nextUrl.searchParams.get('train');
+
+    const dbPath = path.join(process.cwd(), 'data', 'history.db');
+
+    // Try to open DB; if not exists, return empty array
+    let db: any;
+    try {
+      db = await open({
+        filename: dbPath,
+        driver: sqlite3.Database
+      });
+    } catch (e) {
+      // DB doesn't exist yet
+      return NextResponse.json(
+        { points: [] },
+        { headers: { 'Cache-Control': 'public, max-age=10' } }
+      );
+    }
+
+    const startTime = Date.now() - mins * 60 * 1000;
+
+    let query = `
+      SELECT
+        ROUND(lat, 3) as latg,
+        ROUND(lng, 3) as lngg,
+        COUNT(*) as cnt,
+        AVG(delay) as avg_delay
+      FROM train_snapshots
+      WHERE timestamp > ?
+        AND lat IS NOT NULL
+        AND lng IS NOT NULL
+    `;
+
+    const params: any[] = [startTime];
+
+    if (trainNumber) {
+      query += ' AND train_number = ?';
+      params.push(trainNumber);
+    }
+
+    query += ' GROUP BY latg, lngg ORDER BY cnt DESC';
+
+    const rows = await db.all(query, params);
+    await db.close();
+
+    // Convert to heatmap format [{lat, lng, intensity}, ...]
+    const points = rows.map((row: any) => ({
+      lat: row.latg,
+      lng: row.lngg,
+      intensity: Math.min(row.cnt / 10, 1.0), // Normalize to 0-1
+      count: row.cnt,
+      delayAvg: row.avg_delay?.toFixed(1) || 0
+    }));
+
+    const response = NextResponse.json(
+      {
+        points,
+        timeWindow: `${mins}m`,
+        totalPoints: points.length,
+        timestamp: new Date().toISOString()
+      },
+      { headers: { 'Cache-Control': 'public, max-age=10' } }
+    );
+
+    return response;
+  } catch (error: any) {
+    console.error('API Error - heatmap:', error);
+
+    return NextResponse.json(
+      {
+        error: error.message || 'Failed to fetch heatmap data',
+        points: []
+      },
+      { status: 500, headers: { 'Cache-Control': 'public, max-age=10' } }
+    );
+  }
+}

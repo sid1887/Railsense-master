@@ -1,0 +1,469 @@
+{
+  "timestamp": "2026-03-15T19:50:02.706974",
+  "tests": [
+    {
+      "name": "API Server",
+      "status": "PASS",
+      "details": "Server responding normally. Data stations found",
+      "data": {
+        "status_code": 200
+      },
+      "timestamp": "2026-03-15T19:50:02.750421"
+    },
+    {
+      "name": "Master Train Catalog",
+      "status": "PASS",
+      "details": "Status: 200",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.793127"
+    },
+    {
+      "name": "Railway Routes",
+      "status": "PASS",
+      "details": "Status: 200",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.826432"
+    },
+    {
+      "name": "Train Position Service",
+      "status": "PASS",
+      "details": "Status: 200",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.851125"
+    },
+    {
+      "name": "Train 12002 - API Call",
+      "status": "PASS",
+      "details": "Retrieved in 0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.882458"
+    },
+    {
+      "name": "Train 12002 - Data Completeness",
+      "status": "PASS",
+      "details": "All required fields present",
+      "data": {
+        "trainNumber": "12002",
+        "trainName": "Bhagirath Express",
+        "source": "LocalCatalog",
+        "sourceCode": "L",
+        "destination": "New Delhi (NDLS)",
+        "destinationCode": "NDLS",
+        "currentStation": "Howrah",
+        "nextStation": "Intermediate Station",
+        "delayMinutes": -13,
+        "location": {
+          "lat": 19.056849004766097,
+          "lng": 72.9978980095322
+        },
+        "route": [
+          {
+            "station": "Howrah",
+            "code": "HWH",
+            "arrival": "--",
+            "departure": "06:00"
+          },
+          {
+            "station": "Intermediate Station",
+            "code": "INT",
+            "arrival": "08:00",
+            "departure": "08:15"
+          },
+          {
+            "station": "New Delhi",
+            "code": "NDLS",
+            "arrival": "14:00",
+            "departure": "--"
+          }
+        ],
+        "status": "unknown",
+        "progress": 0,
+        "lastUpdated": "2026-03-15T14:20:02.881Z",
+        "dataSource": "database"
+      },
+      "timestamp": "2026-03-15T19:50:02.882458"
+    },
+    {
+      "name": "Train 12005 - API Call",
+      "status": "PASS",
+      "details": "Retrieved in 0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.909590"
+    },
+    {
+      "name": "Train 12005 - Data Completeness",
+      "status": "PASS",
+      "details": "All required fields present",
+      "data": {
+        "trainNumber": "12005",
+        "trainName": "Shatabdi Express",
+        "source": "LocalCatalog",
+        "sourceCode": "L",
+        "destination": "Bhopal Junction (BPL)",
+        "destinationCode": "BPL",
+        "currentStation": "New Delhi",
+        "nextStation": "Intermediate Station",
+        "delayMinutes": 6,
+        "location": {
+          "lat": 21.4127695011736,
+          "lng": 77.7097390023472
+        },
+        "route": [
+          {
+            "station": "New Delhi",
+            "code": "NDLS",
+            "arrival": "--",
+            "departure": "06:00"
+          },
+          {
+            "station": "Intermediate Station",
+            "code": "INT",
+            "arrival": "08:00",
+            "departure": "08:15"
+          },
+          {
+            "station": "Bhopal Junction",
+            "code": "BPL",
+            "arrival": "14:00",
+            "departure": "--"
+          }
+        ],
+        "status": "unknown",
+        "progress": 0,
+        "lastUpdated": "2026-03-15T14:20:02.912Z",
+        "dataSource": "database"
+      },
+      "timestamp": "2026-03-15T19:50:02.909590"
+    },
+    {
+      "name": "Train 12015 - API Call",
+      "status": "PASS",
+      "details": "Retrieved in 0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.945050"
+    },
+    {
+      "name": "Train 12015 - Data Completeness",
+      "status": "PASS",
+      "details": "All required fields present",
+      "data": {
+        "trainNumber": "12015",
+        "trainName": "Shatabdi Express (Ahmedabad)",
+        "source": "Ahmedabad Junction (ADI)",
+        "sourceCode": "ADI",
+        "destination": "New Delhi (NDLS)",
+        "destinationCode": "NDLS",
+        "currentStation": "Ahmedabad Junction (ADI)",
+        "nextStation": "Vadodara Junction",
+        "delayMinutes": -14,
+        "location": {
+          "lat": 19.00627698790222,
+          "lng": 72.89675397580444
+        },
+        "route": [
+          {
+            "station": "Ahmedabad Junction (ADI)",
+            "code": "ADI",
+            "arrivalTime": "--",
+            "departureTime": "06:00"
+          },
+          {
+            "station": "Vadodara Junction",
+            "code": "VJ",
+            "arrivalTime": "06:00",
+            "departureTime": "06:00"
+          },
+          {
+            "station": "Indore Junction",
+            "code": "IJ",
+            "arrivalTime": "06:00",
+            "departureTime": "06:00"
+          },
+          {
+            "station": "Ujjain Junction",
+            "code": "UJ",
+            "arrivalTime": "06:00",
+            "departureTime": "06:00"
+          },
+          {
+            "station": "Bina Junction",
+            "code": "BJ",
+            "arrivalTime": "06:00",
+            "departureTime": "06:00"
+          },
+          {
+            "station": "Gwalior Junction",
+            "code": "GJ",
+            "arrivalTime": "06:00",
+            "departureTime": "06:00"
+          },
+          {
+            "station": "New Delhi (NDLS)",
+            "code": "NDLS",
+            "arrivalTime": "06:00",
+            "departureTime": "--"
+          }
+        ],
+        "status": "unknown",
+        "progress": 0,
+        "eta": {
+          "nextStation": "Vadodara Junction",
+          "estimatedArrival": "2026-03-15T14:18:01.459Z",
+          "delayForecast": -15
+        },
+        "lastUpdated": "2026-03-15T14:18:01.465Z",
+        "dataSource": "database"
+      },
+      "timestamp": "2026-03-15T19:50:02.945050"
+    },
+    {
+      "name": "Train 12031 - API Call",
+      "status": "PASS",
+      "details": "Retrieved in 0.01s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.957913"
+    },
+    {
+      "name": "Train 12031 - Data Completeness",
+      "status": "PASS",
+      "details": "All required fields present",
+      "data": {
+        "trainNumber": "12031",
+        "trainName": "Rajdhani Express",
+        "source": "LocalCatalog",
+        "sourceCode": "L",
+        "destination": "Kolkata (KOAA)",
+        "destinationCode": "KOAA",
+        "currentStation": "New Delhi",
+        "nextStation": "Intermediate Station",
+        "delayMinutes": -4,
+        "location": {
+          "lat": 21.111210192455104,
+          "lng": 77.10662038491022
+        },
+        "route": [
+          {
+            "station": "New Delhi",
+            "code": "NDLS",
+            "arrival": "--",
+            "departure": "06:00"
+          },
+          {
+            "station": "Intermediate Station",
+            "code": "INT",
+            "arrival": "08:00",
+            "departure": "08:15"
+          },
+          {
+            "station": "Kolkata",
+            "code": "KOAA",
+            "arrival": "14:00",
+            "departure": "--"
+          }
+        ],
+        "status": "unknown",
+        "progress": 0,
+        "lastUpdated": "2026-03-15T14:20:02.959Z",
+        "dataSource": "database"
+      },
+      "timestamp": "2026-03-15T19:50:02.957913"
+    },
+    {
+      "name": "Train 12049 - API Call",
+      "status": "PASS",
+      "details": "Retrieved in 0.01s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.974698"
+    },
+    {
+      "name": "Train 12049 - Data Completeness",
+      "status": "PASS",
+      "details": "All required fields present",
+      "data": {
+        "trainNumber": "12049",
+        "trainName": "Shatabdi Express",
+        "source": "LocalCatalog",
+        "sourceCode": "L",
+        "destination": "Chandigarh (CDG)",
+        "destinationCode": "CDG",
+        "currentStation": "New Delhi",
+        "nextStation": "Intermediate Station",
+        "delayMinutes": 3,
+        "location": {
+          "lat": 19.514985950429836,
+          "lng": 73.91417190085967
+        },
+        "route": [
+          {
+            "station": "New Delhi",
+            "code": "NDLS",
+            "arrival": "--",
+            "departure": "06:00"
+          },
+          {
+            "station": "Intermediate Station",
+            "code": "INT",
+            "arrival": "08:00",
+            "departure": "08:15"
+          },
+          {
+            "station": "Chandigarh",
+            "code": "CDG",
+            "arrival": "14:00",
+            "departure": "--"
+          }
+        ],
+        "status": "unknown",
+        "progress": 0,
+        "lastUpdated": "2026-03-15T14:20:02.973Z",
+        "dataSource": "database"
+      },
+      "timestamp": "2026-03-15T19:50:02.974698"
+    },
+    {
+      "name": "Train 13123 - Unexpected Status",
+      "status": "WARN",
+      "details": "Got 200 instead of 404",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.987346"
+    },
+    {
+      "name": "Train 13123 - Error Response",
+      "status": "INFO",
+      "details": "Response: {'trainNumber': '13123', 'trainName': 'Shatabdi Express', 'source': 'New Delhi (NDLS)', 'sourceCode': 'NDLS', 'destination': 'Jaipur Junction (JP)', 'destinationCode': 'JP', 'currentStation': 'New Delhi (NDLS)', 'nextStation': 'Gurgaon', 'delayMinutes': 11, 'location': {'lat': 20.673197260003963, 'lng': 76.23059452000793}, 'route': [{'station': 'New Delhi (NDLS)', 'code': 'NDLS', 'arrivalTime': '--', 'departureTime': '06:15'}, {'station': 'Gurgaon', 'code': 'G', 'arrivalTime': '06:15', 'departureTime': '06:15'}, {'station': 'Mathura Junction', 'code': 'MJ', 'arrivalTime': '06:15', 'departureTime': '06:15'}, {'station': 'Agra Cantt', 'code': 'AC', 'arrivalTime': '06:15', 'departureTime': '06:15'}, {'station': 'Jaipur Junction (JP)', 'code': 'JP', 'arrivalTime': '06:15', 'departureTime': '--'}], 'status': 'unknown', 'progress': 0, 'eta': {'nextStation': 'Gurgaon', 'estimatedArrival': '2026-03-15T14:18:01.541Z', 'delayForecast': 10}, 'lastUpdated': '2026-03-15T14:18:01.541Z', 'dataSource': 'database'}",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:02.987346"
+    },
+    {
+      "name": "Train 12622 - Unexpected Status",
+      "status": "WARN",
+      "details": "Got 200 instead of 404",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.013482"
+    },
+    {
+      "name": "Train 12622 - Error Response",
+      "status": "INFO",
+      "details": "Response: {'trainNumber': '12622', 'trainName': 'Tamil Nadu Express', 'source': 'Chennai Central (MAS)', 'sourceCode': 'MAS', 'destination': 'New Delhi (NDLS)', 'destinationCode': 'NDLS', 'currentStation': 'Chennai Central (MAS)', 'nextStation': 'Tirupati', 'delayMinutes': -10, 'location': {'lat': 19.12730037530573, 'lng': 73.13880075061145}, 'route': [{'station': 'Chennai Central (MAS)', 'code': 'MAS', 'arrivalTime': '--', 'departureTime': '20:10'}, {'station': 'Tirupati', 'code': 'T', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Nellore', 'code': 'N', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Visakhapatnam Junction', 'code': 'VJ', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Rayagada', 'code': 'R', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Guwahati Junction', 'code': 'GJ', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Nagpur Junction', 'code': 'NJ', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Itarsi Junction', 'code': 'IJ', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Bhopal Junction', 'code': 'BJ', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'Gwalior Junction', 'code': 'GJ', 'arrivalTime': '20:10', 'departureTime': '20:10'}, {'station': 'New Delhi (NDLS)', 'code': 'NDLS', 'arrivalTime': '20:10', 'departureTime': '--'}], 'status': 'unknown', 'progress': 0, 'eta': {'nextStation': 'Tirupati', 'estimatedArrival': '2026-03-15T14:18:01.558Z', 'delayForecast': -11}, 'lastUpdated': '2026-03-15T14:18:01.558Z', 'dataSource': 'database'}",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.013482"
+    },
+    {
+      "name": "Train 20701 - Expected 404",
+      "status": "PASS",
+      "details": "Correctly returns 404 for unavailable train",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.043395"
+    },
+    {
+      "name": "Train 12002 - Request 1",
+      "status": "PASS",
+      "details": "Time: 0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.074904"
+    },
+    {
+      "name": "Train 12002 - Request 2",
+      "status": "PASS",
+      "details": "Time: 0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.103010"
+    },
+    {
+      "name": "Train 12002 - Request 3",
+      "status": "PASS",
+      "details": "Time: 0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.136824"
+    },
+    {
+      "name": "Performance - Average Response Time",
+      "status": "INFO",
+      "details": "0.03s",
+      "data": {
+        "avg": 0.0311431090037028,
+        "min": 0.028105735778808594,
+        "max": 0.0338139533996582
+      },
+      "timestamp": "2026-03-15T19:50:03.136824"
+    },
+    {
+      "name": "Cache - Cold Request",
+      "status": "PASS",
+      "details": "0.03s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.184037"
+    },
+    {
+      "name": "Cache - Warm Request",
+      "status": "PASS",
+      "details": "0.01s",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.184037"
+    },
+    {
+      "name": "Cache - Speedup",
+      "status": "PASS",
+      "details": "2.6x faster on cached request",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.184037"
+    },
+    {
+      "name": "Database File",
+      "status": "PASS",
+      "details": "Found 39 trains in database",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.184037"
+    },
+    {
+      "name": "Sample DB Trains",
+      "status": "INFO",
+      "details": "Trains: 12015, 12622, 12955, 13123, 14645, 16731, 18111, 20059, 12002, 12005",
+      "data": {
+        "total": 39,
+        "sample": [
+          "12015",
+          "12622",
+          "12955",
+          "13123",
+          "14645",
+          "16731",
+          "18111",
+          "20059",
+          "12002",
+          "12005"
+        ]
+      },
+      "timestamp": "2026-03-15T19:50:03.184037"
+    },
+    {
+      "name": "External Source - Indian Railways Official",
+      "status": "PASS",
+      "details": "Status: 200",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:03.877819"
+    },
+    {
+      "name": "External Source - RailYatri",
+      "status": "PASS",
+      "details": "Status: 200",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:04.122708"
+    },
+    {
+      "name": "External Source - NTES",
+      "status": "FAIL",
+      "details": "Error: HTTPSConnectionPool(host='ntes.indianrailways.gov.",
+      "data": null,
+      "timestamp": "2026-03-15T19:50:04.129285"
+    }
+  ],
+  "summary": {
+    "total_tests": 31,
+    "passed": 24,
+    "failed": 1,
+    "warnings": 2,
+    "available_trains_working": 5,
+    "available_trains_failed": 0
+  }
+}

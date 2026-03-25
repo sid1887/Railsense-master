@@ -1,0 +1,850 @@
+[
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/live-train-status",
+    "statusCode": 200,
+    "resourceType": "document",
+    "timestamp": "2026-03-09T15:34:35.525Z",
+    "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n   <title>Live Train Running Status | Spot Your Train | NTES(National Train Enquiry System) Online</title>\n    \n\n    <meta charset=\"utf-8\">\n    <meta http-equ"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/serviceworker.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:36.402Z",
+    "preview": "if (typeof window !== \"undefined\") {\n  document.addEventListener('DOMContentLoaded', function() {\n    arrhaystack = [\"/m\",\"/\",\"/m/live-train-status\",\"/live-train-status\",\"/time-table\",\"/m/time-table\"]"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyBrN4K-8EBY_tb5Qd25IbRpAF7a4oQCQ0s&v=3&libraries=geometry&language=en&region=IN",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:36.702Z",
+    "preview": "\n\nwindow.google = window.google || {};\ngoogle.maps = google.maps || {};\n(function() {\n  \n  var modules = google.maps.modules = {};\n  google.maps.__gjsload__ = function(name, text) {\n    modules[name] "
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+    "statusCode": 200,
+    "resourceType": "xhr",
+    "timestamp": "2026-03-09T15:34:37.984Z",
+    "preview": "{}\n"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.gstatic.com/charts/loader.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:39.549Z",
+    "preview": "(function(){/*\n\n Copyright The Closure Library Authors.\n SPDX-License-Identifier: Apache-2.0\n*/\n'use strict';function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://revivifypro.in/refresh/rd/dfp.min.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:39.745Z",
+    "preview": "(function () {\n            if (!document.querySelector('script[src*=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8839635217520348\"]')) {\n                const newScrip"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:40.044Z",
+    "preview": "/*! jQuery v2.1.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */\n!function(a,b){\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=a.document?b(a,!0):function(a)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/lato_font_style-c14387893856a9d2ba2845b2f692dbeb92bc5f38013faae8843ec30983606037.css.gz",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:41.685Z",
+    "preview": "@font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format(\"woff2\");unicode-range:U+0000-00FF,U+"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/drparw-1595225122.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:41.685Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u000f\u0000\u0000\u0000\b\b\u0006\u0000\u0000\u0000&ӥ�\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u000f�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000��%#\u0000\u0000\u0000WIDAT\u0018\u0019���\t� \u0010\u0004�\u0004�oJ;2;\u0004����Pn�GDDS�Z�,�0KG���\t\f2\u000b3�f&x��gn�+h�N�\t<\t�\u0007�\u0011Q��\u0006�@�-h�8"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/Group_111548.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:41.686Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000}\u0000\u0000\u00000\b\u0003\u0000\u0000\u0000\u000b���\u0000\u0000\u0002\u0013PLTE\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0019}7\u00056\u0014\u0016~4\u0017~5\bv)\bm&\b�-\u0016~5\u00184\b�0\u0017~5\n�7\u0017~5\u0017~5\u0013n.\n�9���������������������������������������������������������������������������������"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/ltsLive-1600932425.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:42.090Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001b\u0000\u0000\u0000 \b\u0006\u0000\u0000\u0000�i\u0003;\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0004�IDATxڭ�Kl\u001bU\u0014��1U��P-$�`�Y ��ٰB�]�\u0006\u0012�\r��b\u000fi����q���$\u0012R�X�U�P)%\ri\u001e��6�*E�v\u001bT�h�� ��a��&�;��ޙq<Jb\u000b�#}:\u001e����{�XM��\u0013����q2E.����\b��D\u001b�]���Ԃ�#�sJ�pI+�\u001e��>��"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/PNRicon-1594282204.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:42.091Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\"\u0000\u0000\u0000\"\b\u0006\u0000\u0000\u0000:G\u000b�\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\"�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\"\u0000\u0000\u0000\u0000!��n\u0000\u0000\u0004aIDATX\t͗݊\u001cE\u0014�O��G\b��7�7p\u001ea�F\u0002B0\b�x��\u001b%절�@\u001c\u0011E\u0010�b�Kg� \u0006Q67!\u0010/z}��7ؼA��dw����Ou���N�f�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/lts-b8ff0e09d6e588a13cf70660c9472cbc6b2da14eaeba36f3e84e44163ad3cb82.js.gz",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:42.098Z",
+    "preview": "/*! jQuery UI - v1.11.1 - 2014-08-13\n* http://jqueryui.com\n* Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, drop"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/time-table-1594282211.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:42.160Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u001c\b\u0006\u0000\u0000\u0000r\rߔ\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000Gu֘\u0000\u0000\u0003�IDATH\r�VKOSQ\u0010>��\u0016i\u0005��&%M\u0004�\u0002�$��DŘ\u0018b�?��,��Ը21�\u0000vƸНk�ƭQ$(Ơ�\u0004�\n,\nD\"\u0014\u001a\u001e�!���9s�i{��!���"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/dweb/lts_search-95b4ee10a9e98e135870036f3275930e970d06c900075f76aba9fe9ec0d468ab.css",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:42.384Z",
+    "preview": "/*! jQuery UI - v1.11.1 - 2014-08-13\n* http://jqueryui.com\n* Includes: core.css, accordion.css, autocomplete.css, button.css, datepicker.css, dialog.css, draggable.css, menu.css, progressbar.css, resi"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/font-awesome-7993d4ef768cafcc8774c5fbc2aff851f934ea5f2cf80a1ca43e7dc83fab7f1c.css",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:42.412Z",
+    "preview": "/*!\n *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */@font-face{font-family:'FontAwesome"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/RailYatri-1719298334.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:42.415Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000�\u0000\u0000\u0000,\b\u0006\u0000\u0000\u0000 ��\n\u0000\u0000\u0000\tpHYs\u0000\u0000\u000b\u0012\u0000\u0000\u000b\u0012\u0001��~�\u0000\u0000\u0007CIDATx�흿n�F\u001c�,��K�n]\n;]\n���'��i�\n\u0001\\8Dy�(O\u0010�\t�<A�\u000b\u0001\u0001򦥨�v�<\u0014B����.\u0001�,\u001d:��9_�\u0014���I:J�u\u001f�@b����w���8���p�|����P�\u0004�php\u0002q84|�:��L\u001b�:7�:��\r�6ZGDt�i�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/new_footer-538979c2a72ae91356ae318955b7281e4d0f65fbbc9950c8fc0abdf0887bb444.css",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:42.416Z",
+    "preview": ".ry-footer-blk{display:inline-block;width:100%;background:#fff;padding:25px 7px}.custom-container{max-width:1285px;margin-right:auto;margin-left:auto}.ry-footer-blk .footer_head{color:#333;padding-bot"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:42.416Z",
+    "preview": "!function(){\"use strict\";function e(e){try{if(\"undefined\"==typeof console)return;\"error\"in console?console.error(e):console.log(e)}catch(e){}}function t(e){return d.innerHTML='<a href=\"'+e.replace(/\"/"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.googletagmanager.com/gtag/js?id=UA-54004756-1",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:43.015Z",
+    "preview": "\n// Copyright 2012 Google Inc. All rights reserved.\n \n(function(){\n\nvar data = {\n\"resource\": {\n  \"version\":\"1\",\n  \n  \"macros\":[{\"function\":\"__e\"},{\"function\":\"__c\",\"vtp_value\":\"undefined\"}],\n  \"tags\":"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/tbsicon-1594282209.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.090Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000#\u0000\u0000\u0000\u001b\b\u0006\u0000\u0000\u0000��6�\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000#�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001b\u0000\u0000\u0000\u0000\n%��\u0000\u0000\u0004�IDATH\r�W�n\u001bU\u0014��\t?��'��\u0004�\u0001@r��\"\u0014G\u0002\t����\u0010R7q�\"Q(��V�\u001bTgC�@qU�)B\u000e�\"\u000b��X�<\u0001�\u001b$\u001b(��^�s�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:43.144Z",
+    "preview": "/* latin-ext */\n@font-face {\n  font-family: 'Lato';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjxAwXjeu.woff2) format('"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:43.146Z",
+    "preview": "/* cyrillic-ext */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  font-stretch: 100%;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7Cnq"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/seat--booking-1594273182.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.204Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u001c\b\u0006\u0000\u0000\u0000\u0013��\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000�Aa�\u0000\u0000\u0002�IDATH\r�U1r\u0013A\u0010�=\t�P?�\u001fX�\u0000U\u0011��\u0011!N���� \u0017\u000e��\u000f��\u001c'$@��\u000f�?8�\u00002�����{{:�*W��)kwg�{{f�\u001cl(["
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/arr-dep-1600852988.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.323Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u001c\b\u0006\u0000\u0000\u0000r\rߔ\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000Gu֘\u0000\u0000\u0003\nIDATH\r�V�j\u0014A\u0010}�3\u0011��\u0003�\t��K��!�T�;\u000b\"\u0004\u000f�\b\u0012�B\u0010r�K�\u0018\"\b�\r�(\u0004\f\u0012\t�\u0012���\u000f����\u0005���������`v,v���"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/cancel-1594273858.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.384Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u001c\b\u0006\u0000\u0000\u0000r\rߔ\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000Gu֘\u0000\u0000\u0003�IDATH\r�V���F\u0010}��%�?8���/��\u0005\u0001�HMj]�4ir)�8E`\"�m��\u000f\b��\"�\u001b)E�4��\u0003>���\u0007r\u0015�N\\��%wIJ�.\u0007d\u0000j�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/AccountDelete-1717738244.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.430Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000�\u0000\u0000\u0000�\b\u0003\u0000\u0000\u0000f\u0014B=\u0000\u0000\u0000 cHRM\u0000\u0000z&\u0000\u0000��\u0000\u0000�\u0000\u0000\u0000��\u0000\u0000u0\u0000\u0000�`\u0000\u0000:�\u0000\u0000\u0017p��Q<\u0000\u0000\u0000�PLTE�����������������������������뇾�{��n��h�����������e�������r����������������������z�l�b�uU�ʾ�������g@�M\u001b�Q\"�R&�V,��t�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/sale-offer-1594273867.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.431Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001f\u0000\u0000\u0000 \b\u0006\u0000\u0000\u0000ꂣA\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001f�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000 \u0000\u0000\u0000\u0000p>؛\u0000\u0000\u0005�IDATH\r�W�n[E\u0010���Ik�T�\u0001�\u001b�\u0011�\u000b�\u0000UI\u0000����#�+\u0010q/@��b���\u0016�. n���\u0005 �H\u0002\u0002�r��\t�>A�'�#D���,�7�="
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/mail-contact-1594273862.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.431Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0015\b\u0006\u0000\u0000\u0000U\u0002�\\\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0002\u0010IDATxڥ��m\u001aa\u0010������$\u000f�@\tt�+�� \u0010)Rނ;p*�\u0002�\u0010+\r8\u0015`*���n�����DB�~8t������ٝ]��l\u0000i�S�\u000en���Hڃ_��Nq�\n�\u0002@�U12~C�X=W\u000eL�~l%S#i\u0013g�\u000b\u0016D�^\"\u0002e���\u001c�:e9�#Sd#��0e\u0000���\u0006���"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/ry-help-1594273865.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.432Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u001c\b\u0006\u0000\u0000\u0000r\rߔ\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0002�IDATxڥ�kR\u001aQ\u0010��\u0012\\�K�%�\u0004w��D�h4��F%\u001a\u0007LD��\u000e�<\bFy�<c�c6\u0000;`v\u0000;��L\u0017\u0014�\u000b3w��:���n\u001fz��8\r\u000b��12]��n\u000f�S�Ӈ\u001eN\u001f\u0015��1.����a�Ss��&�i\u0013ҜL�\u0018*�/\u000f\f�C�r�\u00141x��g�=��e\u001c�\u0015\u000e��\u000fC%N"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/swaparrows-1601293315.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.460Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000H\u0000\u0000\u0000H\b\u0006\u0000\u0000\u0000U��G\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000H�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000H\u0000\u0000\u0000\u0000��d�\u0000\u0000\u0005\u0016IDATx\u0001�ML\u0013A\u0014�g�m\u0003E@(�\b\u001cē�\b�ċb�8i�ē�Lԓ��&���A/\u0016�����4\u0016��� \u0017�D�FOr\u0001\u0012���bZ>��oY��n;�:"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjxAwXjeu.woff2",
+    "statusCode": 200,
+    "resourceType": "font",
+    "timestamp": "2026-03-09T15:34:43.668Z",
+    "preview": "wOF2\u0000\u0001\u0000\u0000\u0000\u0000\u0015�\u0000\u0010\u0000\u0000\u0000\u00000\u001c\u0000\u0000\u0015�\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b�.\u001c(\u0006`\u0000�$\b.\t�e\u0011\f\n�p�h\u000b`\u0000\u00016\u0002$\u0003�6\u0004 \u0005�\u0018\u0007�(\fK\u001b�,\u0005�\u0018�=\u000eP��\u000b��)�\u000e��~Oa�\u001a$!��n�H\u0017�r�\u0018��L�;��-��\u0011\u0014��ٹ|�\u0005�'�v͉���$/��ń�<ZCQQtb�>�3#$����h�͟\u0015�Y\u0011Ѹi#j�P�L\"���!�\u001f�m"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://static.criteo.net/js/ld/ld.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:43.720Z",
+    "preview": "(function() { try {var handle=(n=>{function o(n){window.Criteo=window.Criteo||{},window.Criteo.oneTagConfig=n}return n.default=function(n){o(n.oneTagConfig)},n.setConfig=o,n})({});\nhandle.default({\"ur"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/chevron-1735900420.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:43.821Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u00004\u0000\u0000\u0000#\b\u0006\u0000\u0000\u0000۫)�\u0000\u0000\u0000\tpHYs\u0000\u0000,K\u0000\u0000,K\u0001�=��\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000\u0003\u0003IDATx\u0001ݙ?h\u0013a\u0018��S���]l\u0017�b݄�vk�& 8\b�\u001d�R��Eq�E(�\u0018�fUJ����\u0010E�6�\nB�.v\u000b�ঢ�.\"\b��~�ɅK���y/wi�\u000fJ��]��{��}�{��k�M�\u0016�d�\nz����."
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/booking-calendar-1594273332.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:44.707Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u001c\b\u0006\u0000\u0000\u0000r\rߔ\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000Gu֘\u0000\u0000\u0002�IDATH\r�VM�\u0013A\u0010��䲛��\t�\u0007\\�zQ�w��(\"{3\u001eTP$\u0011���a��\u000b��7/\u001e$,xp\u0005�l�\u001f�?p�8��f|��k�gI\u0013��6�TW�zU"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/cross-1577169625.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.109Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000$\u0000\u0000\u0000$\b\u0006\u0000\u0000\u0000�\u0000��\u0000\u0000\u0000\u0004sBIT\b\b\b\b|\bd�\u0000\u0000\u0000_zTXtRaw profile type APP1\u0000\u0000\b��JO�K-�LV((�O��I�R\u0000\u0003c\u0013.\u0013K\u0013K�D\u0003\u0003\u0003\u000b\u0003\b04006\u0004�F@�9T(�\u0000\u0005����\u0001��Y��)��\u0005\u0000O�\u0015h\u001b-،\u0000\u0000\u0003\u0005IDATX�՘1O�P\u0010�����\u0017�C\u0019�\u0001�FY\u0012�\u0015\u0002\u001d3Teaa$��*R"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/booktrains-1606748053.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.110Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u00008\u0000\u0000\u00008\b\u0006\u0000\u0000\u0000��;\u001e\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u00008eXIfMM\u0000*\u0000\u0000\u0000\b\u0000\u0001�i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0002�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u00008�\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u00008\u0000\u0000\u0000\u0000.�Ji\u0000\u0000\u0007_IDATh\u0005�Z�r\u001b7\u0010�\u0005�:L\u001bO��'05�f��ܥ�\\���y��O`�\t,ui\"Qe*+O�s-{D��D7��t�\u0011\u0005�[�wĝ�w8ޝ<\tf$�g�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/intcity-1606748060.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.110Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000F\u0000\u0000\u00008\b\u0003\u0000\u0000\u0000w�~\u0007\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0001GPLTE\u0000\u0000\u0000���\u0000P����\u0000P����\u0000P�\u0000M����\u0000P�\u0000M����\u0000M�\u0000N����\u0000M����\u0000N�\u0000M����\u0000N����\u0000N�\u0000N����\u0000N����\u0000O����\u0000N����\u0000O����\u0000N����\u0000O����\u0000N�\u0015\\����O��\u0000O�\u0000N�������\u0000O����\u0000O���"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/fblogo-1710322257.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.110Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0017\b\u0006\u0000\u0000\u0000;�~�\u0000\u0000\u0000\tpHYs\u0000\u0000\u000b\u0013\u0000\u0000\u000b\u0013\u0001\u0000��\u0018\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000\u0001_IDATx\u0001���m�0\u0010�yX�[� �@\tl\u0005��t\u0010�\u0004��\u001cx��\u001d$�`S����AH\u0007\\�@�A��-'�P2�e{<��xƶ�o���ض�G�hY�`s4`pLP۶\u0004\\h=��\f� ��8\t3A�R2*���ϛ"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/ytlogo-1710323548.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.111Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u0017\u0000\u0000\u0000\u0012\b\u0004\u0000\u0000\u0000\u001a\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000\u0000�IDATxڍ�Q\r� \u0014\u0005P$�`H��J��J�����޷,Y\u001dTB% �\u0012����.�+y�&��!�ᎈG����ռ:&�L��|�?�\u0005#h�,�5#\u001e�}�\u001c\u0017Fg\n#��@l\\G�\u0013�\u0007�?�p�\b�K\u0017\u00043Gϵ^1����=�q��\u0003c����N\u001f��0�\u001e�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/food-1606748057.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.111Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000*\u0000\u0000\u00008\b\u0003\u0000\u0000\u0000�\u0003��\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000NPLTE\u0000\u0000\u0000� 0� 0� 0� 0� 0� 0� 0�\"0�\"0�\"0�\"0�\"0�\"0�!0�\"0�!0�!0�!0�!0�!1�!0�!1�!0�\"1�\"1��k\u0011\u0000\u0000\u0000\u0019tRNS\u0000\u0010 0@P`op���������������\u0014tf�\u0000\u0000\u0001�IDATxڍ��n� \f�m\u0002��'U��\t�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/xlogo-1710323235.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:45.112Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u0017\u0000\u0000\u0000\u0017\b\u0004\u0000\u0000\u0000J#\u001c+\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000\u0001\u0011IDATxڅSQu� \u0010��H@�I@�I8\u0007�������p\u000er\u000e\"\u0001\tH�\u0004$вi�>\nI�\u000fx�\u0019؝�\u0001�\u0013�}�\u001fN�q��Y�\u0013e8XXN�}2\fm�,�@�\u001bE(s���p�����\u0015��d7\"\"V��R���\u001cN<�t^i�\u0019jЋ\u0013L\u0011ʬd/�ޕ\u0014v�^"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-T49HH12NSM&cx=c&gtm=4e6341",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:45.477Z",
+    "preview": "\n// Copyright 2012 Google Inc. All rights reserved.\n \n(function(){\n\nvar data = {\n\"resource\": {\n  \"version\":\"1\",\n  \n  \"macros\":[{\"function\":\"__e\"},{\"function\":\"__c\",\"vtp_value\":\"c\"},{\"function\":\"__c\",\""
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NNLQX9C",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:45.754Z",
+    "preview": "\n// Copyright 2012 Google Inc. All rights reserved.\n \n (function(w,g){w[g]=w[g]||{};\n w[g].e=function(s){return eval(s);};})(window,'google_tag_manager');\n \n(function(){\n\nvar data = {\n\"resource\": {\n  "
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+    "statusCode": 200,
+    "resourceType": "font",
+    "timestamp": "2026-03-09T15:34:46.048Z",
+    "preview": "wOF2\u0000\u0001\u0000\u0000\u0000\u0000\\\u001c\u0000\u0010\u0000\u0000\u0000\u0000�,\u0000\u0000[�\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b�z\u001cp\u0006`\u0000�D\b.\t�e\u0011\f\n��\b��]\u000b�B\u0000\u00016\u0002$\u0003�v\u0004 \u0005�\u0018\u0007�E\fK\u001b��5c[R��V\u0005Vr!�����$\u0019���@n\u0007�P�.���'%�1�\u000f��\"A\u000b��#H:�T\u00116�JLƩ7\u0016g��7��x����N\"��,h\u0013���R3��u�T��A��_O��f=Mu�e���"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+    "statusCode": 200,
+    "resourceType": "font",
+    "timestamp": "2026-03-09T15:34:46.336Z",
+    "preview": "wOF2\u0000\u0001\u0000\u0000\u0000\u0000Z\u0000\u0000\u0010\u0000\u0000\u0000\u0000�8\u0000\u0000Y�\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b�B\u001cp\u0006`\u0000�D\b.\t�e\u0011\f\n��d��\u0015\u000b�B\u0000\u00016\u0002$\u0003�v\u0004 \u0005�\u0000\u0007�E\fK\u001b��5l\\e�v�~S$}�\"�8\u0019��؛\u00155�E����s\u0012��ai`W\u0000u��8a2C��JuBj�Զ\u000f�x���\u001c�%�uԄC���\u0005\u000b�p\u001b�c�.�7\u000f�\u0003+\u00101�GS\u00193���F_\f\u0018�-��`#"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/RailYatri-1719298334.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:48.437Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000�\u0000\u0000\u0000,\b\u0006\u0000\u0000\u0000 ��\n\u0000\u0000\u0000\tpHYs\u0000\u0000\u000b\u0012\u0000\u0000\u000b\u0012\u0001��~�\u0000\u0000\u0007CIDATx�흿n�F\u001c�,��K�n]\n;]\n���'��i�\n\u0001\\8Dy�(O\u0010�\t�<A�\u000b\u0001\u0001򦥨�v�<\u0014B����.\u0001�,\u001d:��9_�\u0014���I:J�u\u001f�@b����w���8���p�|����P�\u0004�php\u0002q84|�:��L\u001b�:7�:��\r�6ZGDt�i�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://revivifypro.in/refresh/rd/dfp.min.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:48.438Z",
+    "preview": "(function () {\n            if (!document.querySelector('script[src*=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8839635217520348\"]')) {\n                const newScrip"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:48.474Z",
+    "preview": "!function(){\"use strict\";function e(e){try{if(\"undefined\"==typeof console)return;\"error\"in console?console.error(e):console.log(e)}catch(e){}}function t(e){return d.innerHTML='<a href=\"'+e.replace(/\"/"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/live-train-status/12728-godavari-sf-express-hyb-to-vskp?utm_source=lts_dweb_Check_status",
+    "statusCode": 200,
+    "resourceType": "document",
+    "timestamp": "2026-03-09T15:34:48.533Z",
+    "preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><title>Live Running Status of Train 12728(Godavari SF Express)- RailYatri</title><meta name=\"description\" content=\"Check live running status"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/recomendedicon-1709906833.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:48.929Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\u000f\u0000\u0000\u0000\u000f\b\u0006\u0000\u0000\u0000;֕J\u0000\u0000\u0000\tpHYs\u0000\u0000\u000b\u0013\u0000\u0000\u000b\u0013\u0001\u0000��\u0018\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000\u0000�IDATx\u0001��M\n�0\u0010\u0005�I�]{�Rb{�ި\u001e��f�kO�'\u0011O�\tDP\u000f�Z�8�\u000f�$�\u000f�\fa�\u0007p�xؿ���eִ�\u0017/\\JD���w\u0007d�~K��1\u000e��\u0000\u0011�\nF\u0018�%�[\u001b&�M\u001e>��A���\u0006\u0018f�"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/css/7f7bc3e49edc3faf.css",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:49.075Z",
+    "preview": "@import url(https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap);.top-arrow{left:50%;position:absolute;top:0;background-color:#fff;border-left:1px solid #c9d4e0;border-top:1px solid "
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/css/6e2a3e207fbbce7c.css",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:49.134Z",
+    "preview": "@charset \"UTF-8\";.message_temp1__JPnDx{background-color:#eee}.message_temp1__JPnDx,.message_temp2__nRBhk{padding:0 15px 10px;overflow:hidden}.message_temp1__JPnDx>div{background-image:url(https://imag"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/rylogo-1760424802.svg",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:49.410Z",
+    "preview": "<svg width=\"178\" height=\"32\" viewBox=\"0 0 178 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M159.1 24.9446V16.2455C159.1 11.1098 163.293 6.91748 168.428 6.91748H170V11.2146H168.428C165."
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/fb-1763087536.svg",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:49.414Z",
+    "preview": "<svg width=\"12\" height=\"20\" viewBox=\"0 0 12 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.83002 20H3.69493C3.02312 20 2.46329 19.4382 2.46329 18.764V12.2472H1.23164C0.559838 12.2472 "
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/insta-1763087534.svg",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:49.461Z",
+    "preview": "<svg width=\"21\" height=\"20\" viewBox=\"0 0 21 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M14.5786 20H6.18105C3.04596 20 0.470703 17.4157 0.470703 14.2697V5.73034C0.470703 2.58427 3.045"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/webpack-21393cd431bf96d2.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:49.463Z",
+    "preview": "!function(){\"use strict\";var e={},t={};function n(a){var c=t[a];if(void 0!==c)return c.exports;var f=t[a]={id:a,loaded:!1,exports:{}},r=!0;try{e[a].call(f.exports,f,f.exports,n),r=!1}finally{r&&delete"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap",
+    "statusCode": 200,
+    "resourceType": "stylesheet",
+    "timestamp": "2026-03-09T15:34:49.466Z",
+    "preview": "/* latin-ext */\n@font-face {\n  font-family: 'Lato';\n  font-style: normal;\n  font-weight: 300;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwaPGR_p.woff2) form"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:49.666Z",
+    "preview": "(function(sttc){var window=this;if(window.googletag&&googletag.evalScripts){googletag.evalScripts();}if(window.googletag&&googletag._loaded_)return;var q,aa=typeof Object.create==\"function\"?Object.cre"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/main-21e1f79e5178941a.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:49.863Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[179],{40037:function(){\"trimStart\"in String.prototype||(String.prototype.trimStart=String.prototype.trimLeft),\"trimEnd\"in String.prototype||(St"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+    "statusCode": 200,
+    "resourceType": "font",
+    "timestamp": "2026-03-09T15:34:50.256Z",
+    "preview": "wOF2\u0000\u0001\u0000\u0000\u0000\u00006�\u0000\r\u0000\u0000\u0000\u0000n�\u0000\u00006�\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b�z\u001cp\u0006`\u0000�D\u0011\f\n��h��\u001a\u000b�B\u0000\u00016\u0002$\u0003�v\u0004 \u0005�\u0018\u0007�E\u001b�^E\u0007b�8\u0000̆���\u001e�Q�H�m���d��\u0013�\u0018�\u0017�\u0000p�T�\u0011�V�|�\n�:\u0003\u0014���V�w�6Ń�v�Ci\u001b?�\u0019a�����p,��Gi1�|\t\u0017�\u0019\\`P�޹��\u0013�)̃\u0019L\u0007��0��V�:\u0003�aE�;"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+    "statusCode": 200,
+    "resourceType": "font",
+    "timestamp": "2026-03-09T15:34:50.275Z",
+    "preview": "wOF2\u0000\u0001\u0000\u0000\u0000\u00007`\u0000\r\u0000\u0000\u0000\u0000o�\u0000\u00007\b\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b�B\u001cp\u0006`\u0000�D\u0011\f\n��\u001c��\u0007\u000b�B\u0000\u00016\u0002$\u0003�v\u0004 \u0005�\u0000\u0007�E\u001b\u001d_E#b�8����/���G\u0019#\u0011��\u0001\na\f���\t\u001a����!]k�`�i��h��#kg�յ#�F*̜v��g�%�8�2�z]\u001f{�>`�\r��N��\u0019�2�Gb���H\u0004l\u0019Gh�\\����3��$��\u0013S"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/appQR-1670240411.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:50.312Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0001$\u0000\u0000\u0001\"\b\u0006\u0000\u0000\u0000P���\u0000\u0000\u0000\u0004sBIT\b\b\b\b|\bd�\u0000\u0000\u0000\u0019tEXtSoftware\u0000gnome-screenshot�\u0003�>\u0000\u0000\u001a�IDATx���N\u001c9\u0017�/�IV�>��CH�H�\u001e�&-@�3��\u0010�\u0006�\t\bAL�f\u0004�@H�%\u0012\u000f���\u0017�\u0017�M\b\u0014���Su\\}>ɛ��\u001c�\\7�n�:\u001b!�`B\b�@\b!�}�6��Z�����$L&��4"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/mobile_view/lts/train-ticket-card-67ebd8435c050acb778642c4782acb5d257e63b1d8d42dd32b59d49b15def14a.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:50.313Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0001,\u0000\u0000\u0000{\b\u0003\u0000\u0000\u0000�_M�\u0000\u0000\u0002�PLTE\u0000\u0000\u0000}�ぶ��|��z��y�с�⓲�x�����|��{��z��z�҂��x��x�΂����z��z�ρ����~�ށ��턪�w�˂������x��x��u��������x���jWx�����������x��>����_������������Չ��Z�֌�ӄ��|��g��t���bOy�̎�Ԓ��"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/assets/mobile_view/lts/food-card-74e60840c093846fc6f769c9607b39c36f7614b682d8aa8324238ef135800b11.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:50.369Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0001+\u0000\u0000\u0000{\b\u0003\u0000\u0000\u0000\u001b�V�\u0000\u0000\u0002�PLTE\u0000\u0000\u0000����z��z��z��x�zr�����{�nh��������{��y�So�����������}��z�~u�����~��z�������sk�����y��z�ke�����������y����id�����������z�������5P^�v��{�����x���������˃w�����"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPGQ.woff2",
+    "statusCode": 200,
+    "resourceType": "font",
+    "timestamp": "2026-03-09T15:34:50.379Z",
+    "preview": "wOF2\u0000\u0001\u0000\u0000\u0000\u0000W�\u0000\u0010\u0000\u0000\u0000\u0000ٌ\u0000\u0000W�\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b�z\u001cp\u0006`\u0000�D\b.\t�e\u0011\b\n��\u0000��Q\u000b�B\u0000\u00016\u0002$\u0003�v\u0004 \u0005�\u0004\u0007�E\fK\u001b��%�؋�v�H$��F\"��\u0003\u0019 �ef ��D\u0014�[g�Nr\"c\f\r���U{AA�i\u0016L�0�zkT�P\u0005�\u0015����BVԁq�\u000b���`6���̈́�>�\u0006�[�\u0017\u0015E:4\u0012�d^�7�ЋL���\u0014��v"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/c16184b3-5cc093ab82ddcf30.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:50.432Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4976],{59417:function(c,n,e){e.d(n,{acZ:function(){return i},sph:function(){return r}});var i={prefix:\"fas\",iconName:\"arrow-left\","
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/framework-51ca54b1c018b8c6.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:50.435Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9774],{64448:function(e,n,t){var r=t(67294),l=t(63840);function a(e){for(var n=\"https://reactjs.org/docs/error-decoder.html?invari"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/fcc27f93-b6edee38bbc8438a.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:50.437Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5582],{17536:function(t){t.exports=function(){function t(e,r,n){function a(s,i){if(!r[s]){if(!e[s]){if(o)return o(s,!0);var p=new Error(\"Cannot"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/pages/_app-be5fd3e0ff51d21f.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:50.995Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2888],{51825:function(e,t){\"use strict\";const n=\"function\"===typeof Symbol&&Symbol.for;t.Z=n?Symbol.for(\"mui.nested\"):\"__THEME_NESTED__\"},1698:"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/9990-f6a5f4a0acaa7114.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.395Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9990],{49990:function(e,t,n){n.d(t,{Z:function(){return $}});var r=n(87462),i=n(63366),o=n(67294),u=n(90512),s=n(58510),c=n(90948)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/370-0b66be2e8cb69316.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.396Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[370],{48711:function(e,t,r){\"use strict\";r.d(t,{Z:function(){return oe}});var n=function(){function e(e){var t=this;this._insertTag=function(e)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1181-f22c7fd8a1de3b06.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.396Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1181],{5616:function(t,e,r){\"use strict\";r.d(e,{Z:function(){return Z}});var n=r(87462),o=r(63366),a=r(67294),u=r(90512),i=r(32485),s=r(86523),"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/ea88be26-90e5bec38c20a35b.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.399Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[296],{11248:function(module,exports,__webpack_require__){var factory;\"undefined\"!==typeof document&&\"undefined\"!==typeof navigator&&(factory=fu"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/3466-8077f2c9be6b7e22.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.400Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3466],{93946:function(t,e,n){n.d(e,{Z:function(){return b}});var o=n(63366),i=n(87462),r=n(67294),a=n(90512),s=n(58510),l=n(2101),"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/5675-e570d84d43bceba1.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.401Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5675],{19749:function(e,t,n){\"use strict\";function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];retu"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1994-2327c8cd53fbd815.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.401Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1994],{93470:function(e,n,t){t.d(n,{i:function(){return u}});var o=t(67294),r=t(22760),i=t(36425),s=t(85893);const l=[\"input\",\"sel"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/8221-3f95ab58ed4cdb26.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.460Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8221],{42293:function(r,e,o){o.d(e,{Z:function(){return b}});var t=o(63366),a=o(87462),n=o(67294),i=o(90512),s=o(58510),l=o(90948)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/5554-77f28a66ef69ac84.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.484Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5554],{86886:function(n,e,t){t.d(e,{ZP:function(){return z}});var o=t(63366),r=t(87462),i=t(67294),a=t(90512),c=t(95408),s=t(39707"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/9947-42362ccaa5cbe396.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.488Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9947],{37645:function(e,t,r){\"use strict\";function n(e,t,r){return t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writ"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/9280-ef3cfc24e5c761e6.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.564Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9280],{69417:function(e,t,r){\"use strict\";r.d(t,{Z:function(){return j}});var n=r(63366),a=r(87462),i=r(67294),o=r(90512),s=r(62236),u=r(58510)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/509-72705dc8fec776d9.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.594Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[509],{67814:function(e,t,r){\"use strict\";r.d(t,{G:function(){return g}});var n=r(23636),o=r(45697),a=r.n(o),i=r(67294);function u(e,t){var r=Ob"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1707-50d24472aef68bdb.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.637Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1707],{82123:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return Fe}});var r=n(87462),o=n(63366),i=n(67294),a=n(22760),s=n(54895),f=n(36425"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/8070-6f2b7fa4ba56063d.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.649Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8070],{65582:function(e,t,n){n.d(t,{Z:function(){return S}});var o=n(63366),a=n(87462),r=n(67294),s=n(90512),i=n(8027),d=n(58510),"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/135-f3134f46c4d4268e.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.699Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[135],{6135:function(e,t,n){var o=n(63366),r=n(87462),i=n(67294),a=n(68027),l=n(58510),s=n(13970),d=n(90948),u=n(71657),c=n(24707),"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1551-2af1a3779a22e9e9.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.708Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1551],{87109:function(e,t,s){s.d(t,{Z:function(){return S}});var n=s(63366),a=s(87462),r=s(67294),i=s(90512),o=s(58510),l=s(98216)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/3911-57bdf253004682e5.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.718Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3911],{64666:function(e,o,r){var t=r(63366),a=r(87462),i=r(67294),n=r(90512),l=r(58510),s=r(89326),c=r(98216),p=r(11994),d=r(16628"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/247-8d5598f668fa6e6a.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.762Z",
+    "preview": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[247],{20247:function(e,t,o){o.d(t,{Z:function(){return ne}});var a=o(63366),n=o(87462),r=o(67294),l=o(90512),i=o(89326),s=o(81222)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/5576-43b8854aef91e9e7.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.787Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5576],{63239:function(t,e,n){t.exports={default:n(92742),__esModule:!0}},52945:function(t,e,n){t.exports={default:n(56981),__esModule:!0}},8586"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/8858-2da690cedf157f53.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.787Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8858],{88078:function(t,e,n){\"use strict\";n.d(e,{Z:function(){return R}});var r=n(63366),i=n(87462),a=n(67294),o=n(90512),s=n(70917),l=n(58510)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/4938-232aa222eaf87094.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.843Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4938],{62988:function(e,t,n){var r=n(61755),i=n(26665).each;function o(e,t){this.query=e,this.isUnconditional=t,this.handlers=[],this.mql=windo"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1176-7e382ccc6bed2035.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:51.981Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1176],{21596:function(e,t,n){\"use strict\";var a=n(64836);t.Z=void 0;var o=a(n(64938)),r=n(85893),s=(0,o.default)((0,r.jsx)(\"path\",{d:\"m10 17 5-"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1105-7ebb74c7f6b5f6d5.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.004Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1105],{90966:function(t,e,n){\"use strict\";n.d(e,{M1:function(){return c},dC:function(){return o},k2:function(){return s}});var a=n(1531),i=n(26"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8839635217520348",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.016Z",
+    "preview": "(function(sttc){'use strict';var aa=Object.defineProperty,ba=globalThis,ca=typeof Symbol===\"function\"&&typeof Symbol(\"x\")===\"symbol\",da={},ea={};function fa(a,b,c){if(!c||a!=null){c=ea[b];if(c==null)r"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/1497-b901ceaa7ae83215.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.053Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1497],{74752:function(t,e,n){\"use strict\";var i=n(67294),a=n(99685);function o(t){if(void 0===t)throw new ReferenceError(\"this hasn't been init"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/5212f37464lp63797i47m7522v372704/_ssgManifest.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.467Z",
+    "preview": "self.__SSG_MANIFEST=new Set,self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB();"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/5212f37464lp63797i47m7522v372704/_buildManifest.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.467Z",
+    "preview": "self.__BUILD_MANIFEST=function(s,t,a,c,e,i,n,r,u,f,b,d,k,h,m,j,p,o,g,l,v,_,w,y,I,N,z,B,F,A,D,E,L,M,S,T,U,C,x,P,q,G,H,J,K,O,Q,R,V,W,X,Y,Z,$,ss,ts,as,cs,es,is,ns,rs,us,fs,bs,ds){return{__rewrites:{befor"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/5212f37464lp63797i47m7522v372704/_middlewareManifest.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.468Z",
+    "preview": "self.__MIDDLEWARE_MANIFEST=[];self.__MIDDLEWARE_MANIFEST_CB&&self.__MIDDLEWARE_MANIFEST_CB()"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://www.railyatri.in/_next/static/chunks/pages/live-train-status/%5BtrainNumber%5D-722da0d491dfb2b0.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:52.471Z",
+    "preview": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6084,9725,6230,3897,9276],{66720:function(e,t,n){\"use strict\";var i=n(87462),r=n(67294),o=n(71657),a=n(90068),s=n(85893);const l=(e,t)=>(0,i.Z)"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202603050101/gpt",
+    "statusCode": 200,
+    "resourceType": "other",
+    "timestamp": "2026-03-09T15:34:52.710Z",
+    "preview": "b/%&lt;1245;05!=nehu`/!361&lt;&lt;101!9abk{a($16463496&amp;&lt;qqvb/%&lt;137360&gt;!=|vqc)!72418&lt;57&#39;9wuvbu&quot;]\">(function(){'use strict';/*  Copyright The Closure Library Authors. SPDX-Licen"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/youTube-1763087530.svg",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:52.803Z",
+    "preview": "<svg width=\"27\" height=\"20\" viewBox=\"0 0 27 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.781 20H4.92824C2.43696 20 0.23877 17.9412 0.23877 15.2941V4.70588C0.23877 2.20588 2.29041 0"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/XTwitter-1763087532.svg",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:52.803Z",
+    "preview": "<svg width=\"21\" height=\"20\" viewBox=\"0 0 21 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.2392 0H18.7836L11.3937 8.31461L5.45944 0H0.420898L8.59453 11.4607L1.0927 20H2.54828L9.26633"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/footerTrain-1762778464.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:34:53.229Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000�\u0000\u0000\u00008\b\u0006\u0000\u0000\u0000\u0001�1�\u0000\u0000\u0000\tpHYs\u0000\u0000\u000b\u0013\u0000\u0000\u000b\u0013\u0001\u0000��\u0018\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000%�IDATx\u0001�}\u0007�\u001cŕ�W��=yv6'iW\t%@� a��-\u0004\u0002�p L:\u0003�\u0011>��`��\r�E�\u0001\u001b�\u0001\u001b��`2FD#�\u0003\t�\u0010�PBi�W��<�;;y���^UϮ\u0016$|\u0004\u0001�y��Թ����ޫj�\u0001\u001b�\u0001\u001b�\u0001\u001b"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://connect.facebook.net/en_US/fbevents.js",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:34:53.892Z",
+    "preview": "/**\n* Copyright (c) 2017-present, Facebook, Inc. All rights reserved.\n*\n* You are hereby granted a non-exclusive, worldwide, royalty-free license to use,\n* copy, modify, and distribute this software i"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://images.railyatri.in/ry_images_prod/dropmenuicon-1709982536.png",
+    "statusCode": 200,
+    "resourceType": "image",
+    "timestamp": "2026-03-09T15:35:00.303Z",
+    "preview": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000\t\u0000\u0000\u0000\u0006\b\u0006\u0000\u0000\u0000\u0011Ǵ�\u0000\u0000\u0000\tpHYs\u0000\u0000\u000b\u0013\u0000\u0000\u000b\u0013\u0001\u0000��\u0018\u0000\u0000\u0000\u0001sRGB\u0000��\u001c�\u0000\u0000\u0000\u0004gAMA\u0000\u0000��\u000b�a\u0005\u0000\u0000\u0000yIDATx\u0001}��\r� \u0014��Y�\u001a\u001aF \u0010\u0006p\u0012\u001dE7�I����0�%�\u0013����\u0015�/y?��%G\b��V�\u0003�C��-!�\u0005��\u00132(��)�L�\t���ֺXk'd���5�xP�\u0004�ûSJ�f\b!l�\u000e�\u0018s;�f��"
+  },
+  {
+    "type": "RESPONSE",
+    "url": "https://track.omguk.com/e/qs/?action=Content&MID=2355118&PID=56009&ref=https%3A%2F%2Fwww.railyatri.in%2Flive-train-status%2F12728-godavari-sf-express-hyb-to-vskp%3Futm_source%3Dlts_dweb_Check_status",
+    "statusCode": 200,
+    "resourceType": "script",
+    "timestamp": "2026-03-09T15:35:04.711Z",
+    "preview": "var js = document.createElement('script'); js.type = 'text/javascript'; js.text = '(function(){ var s = document.createElement(\"script\"); s.async = true; s.src = (document.location.protocol == \"https:"
+  }
+]

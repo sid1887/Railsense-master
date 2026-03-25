@@ -1,0 +1,47 @@
+{
+  "trains": {
+    "12955": {
+      "trainNumber": "12955",
+      "trainName": "Somnath Express",
+      "source": "Mumbai Central (MMCT)",
+      "destination": "Nagpur Junction (NG)",
+      "route": []
+    },
+    "13345": {
+      "trainNumber": "13345",
+      "trainName": "Dakshin Express",
+      "source": "New Delhi (NDLS)",
+      "destination": "Bangalore City Junction (SBC)",
+      "route": []
+    }
+  },
+  "stations": [
+    "Bangalore City Junction (SBC)",
+    "Mumbai Central (MMCT)",
+    "Nagpur Junction (NG)",
+    "New Delhi (NDLS)"
+  ],
+  "sourcePages": [
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,2550",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,305",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,365",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,554",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,388",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,262",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,265",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,1260",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,2469",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,1289",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,3147",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,3067",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,2101",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,1411",
+    "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,5,373,1763"
+  ],
+  "fetchedAt": "2026-03-25T14:11:44.001Z"
+}
