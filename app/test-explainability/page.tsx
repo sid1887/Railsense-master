@@ -18,6 +18,99 @@ interface ExplainabilityData {
   userGuidance: string[];
 }
 
+function asNumber(value: unknown, fallback = 0): number {
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return value;
+  }
+
+  if (typeof value === 'string') {
+    const parsed = Number(value);
+    if (Number.isFinite(parsed)) {
+      return parsed;
+    }
+  }
+
+  return fallback;
+}
+
+function asString(value: unknown, fallback = ''): string {
+  if (typeof value === 'string' && value.trim().length > 0) {
+    return value.trim();
+  }
+
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return String(value);
+  }
+
+  return fallback;
+}
+
+function normalizeExplainabilityPayload(payload: any, trainNumber: string): ExplainabilityData | null {
+  const root = payload && typeof payload === 'object' && payload.data && typeof payload.data === 'object'
+    ? payload.data
+    : payload;
+
+  if (!root || typeof root !== 'object') {
+    return null;
+  }
+
+  const factors = Array.isArray(root.predictions?.delayForecast?.factors)
+    ? root.predictions.delayForecast.factors.map((item: any) => ({
+        name: asString(item?.name, 'Factor'),
+        weight: asNumber(item?.weight, 0),
+        value: asString(item?.value, 'N/A'),
+        impact: asString(item?.impact, 'Unknown'),
+      }))
+    : [];
+
+  return {
+    train: {
+      number: asString(root.train?.number, trainNumber),
+      name: asString(root.train?.name, `Train ${trainNumber}`),
+    },
+    predictions: {
+      delayForecast: {
+        prediction: asString(root.predictions?.delayForecast?.prediction, '0 minutes'),
+        confidence: asNumber(root.predictions?.delayForecast?.confidence, 0),
+        reasoning: Array.isArray(root.predictions?.delayForecast?.reasoning)
+          ? root.predictions.delayForecast.reasoning.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+          : [],
+        factors,
+      },
+      stationArrival: {
+        prediction: asString(root.predictions?.stationArrival?.prediction, 'Unknown'),
+        estimatedTime: asString(root.predictions?.stationArrival?.estimatedTime, 'Unknown'),
+        confidence: asNumber(root.predictions?.stationArrival?.confidence, 0),
+        reasoning: Array.isArray(root.predictions?.stationArrival?.reasoning)
+          ? root.predictions.stationArrival.reasoning.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+          : [],
+      },
+    },
+    dataQualityImpact: {
+      statement: asString(root.dataQualityImpact?.statement, 'Data quality information unavailable.'),
+      sources: Array.isArray(root.dataQualityImpact?.sources)
+        ? root.dataQualityImpact.sources.map((item: any) => ({
+            name: asString(item?.name, 'Unknown source'),
+            used: Boolean(item?.used),
+            confidence: asNumber(item?.confidence, 0),
+          }))
+        : [],
+    },
+    modelCharacteristics: {
+      type: asString(root.modelCharacteristics?.type, 'Unknown model'),
+      updateFrequency: asString(root.modelCharacteristics?.updateFrequency, 'Unknown'),
+      trainingData: asString(root.modelCharacteristics?.trainingData, 'Unknown'),
+      accuracy: asString(root.modelCharacteristics?.accuracy, 'Unknown'),
+    },
+    disclaimers: Array.isArray(root.disclaimers)
+      ? root.disclaimers.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+      : [],
+    userGuidance: Array.isArray(root.userGuidance)
+      ? root.userGuidance.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+      : [],
+  };
+}
+
 function ExplainabilityContent() {
   const searchParams = useSearchParams();
   const trainNumber = searchParams.get('trainNumber') || '01211';
@@ -32,7 +125,12 @@ function ExplainabilityContent() {
       try {
         const response = await fetch(`/api/system/explainability?trainNumber=${trainNumber}`);
         if (!response.ok) throw new Error(`API error: ${response.status}`);
-        setData(await response.json());
+        const payload = await response.json();
+        const normalized = normalizeExplainabilityPayload(payload, trainNumber);
+        if (!normalized) {
+          throw new Error('Invalid explainability response format');
+        }
+        setData(normalized);
       } catch (err: any) {
         setError(err?.message || 'Failed to fetch explainability data');
         setData(null);

@@ -63,12 +63,14 @@ function wrapProvider(provider: TrainProvider): TrainProvider {
 
         if (result) {
           stats.successCount++;
+          stats.totalLatency += latency;
           stats.lastSuccessTime = Date.now();
           console.log(
             `[${provider.name}] ✓ Success for ${trainNumber}: lat=${result.lat?.toFixed(3)}, lng=${result.lng?.toFixed(3)}, speed=${result.speed}, delay=${result.delay}, latency=${latency}ms`
           );
         } else {
           stats.failureCount++;
+          stats.totalLatency += latency;
           console.log(`[${provider.name}] ✗ No data for ${trainNumber}`);
         }
 
@@ -76,6 +78,7 @@ function wrapProvider(provider: TrainProvider): TrainProvider {
         return result;
       } catch (err: any) {
         stats.failureCount++;
+        stats.totalLatency += Date.now() - startTime;
         stats.lastError = err.message;
         providerStats.set(provider.name, stats);
         console.warn(`[${provider.name}] ✗ Error for ${trainNumber}: ${err.message}`);

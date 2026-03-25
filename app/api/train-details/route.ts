@@ -7,6 +7,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { getUnifiedTrainData } from '@/services/trainOrchestratorService';
+import snapshotDatabase from '@/services/snapshotDatabase';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -31,6 +32,40 @@ export async function GET(request: NextRequest) {
         { status: 404 }
       );
     }
+
+    // Non-blocking persistence for historical analytics and provider observability.
+    (async () => {
+      try {
+        const liveSource = unifiedData.dataQuality.sources.find((source) =>
+          source.startsWith('live-') || source.startsWith('stale-live-')
+        ) || 'none';
+        const hasVerifiedLive = unifiedData.dataQuality.liveGPS && !unifiedData.dataQuality.liveUnavailable;
+
+        await snapshotDatabase.initialize();
+        await snapshotDatabase.saveSnapshot({
+          trainNumber: unifiedData.trainNumber,
+          stationCode: unifiedData.currentLocation.stationCode || 'UNKNOWN',
+          stationName: unifiedData.currentLocation.station || 'Unknown',
+          latitude: unifiedData.currentLocation.latitude,
+          longitude: unifiedData.currentLocation.longitude,
+          speed: unifiedData.liveMetrics.speed,
+          delay: unifiedData.liveMetrics.delay,
+          status: unifiedData.liveMetrics.status === 'halted' ? 'halted' : unifiedData.liveMetrics.status === 'delayed' ? 'stopped' : 'running',
+          timestamp: new Date(unifiedData.lastUpdated).toISOString(),
+        });
+
+        await snapshotDatabase.logDataQuality({
+          trainNumber: unifiedData.trainNumber,
+          provider: liveSource,
+          isSuccessful: hasVerifiedLive,
+          dataQualityScore: hasVerifiedLive ? 90 : 55,
+          isSynthetic: !hasVerifiedLive,
+          cacheHit: false,
+        });
+      } catch (persistError) {
+        console.warn('[API] train-details persistence warning:', persistError);
+      }
+    })();
 
     const response = NextResponse.json(unifiedData);
 

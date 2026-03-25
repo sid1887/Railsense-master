@@ -53,6 +53,99 @@ interface KnowledgeBaseData {
 
 const KNOWLEDGE_BASE_FILE = path.join(process.cwd(), 'data', 'railway_knowledge_base.json');
 let cachedKB: KnowledgeBaseData | null = null;
+let cachedTrainAliasIndex: Map<string, string> | null = null;
+
+function normalizeTrainNumberToken(value: string): string | null {
+  const digitsOnly = String(value || '').trim().replace(/\D/g, '');
+  if (!digitsOnly) {
+    return null;
+  }
+
+  const numeric = parseInt(digitsOnly, 10);
+  if (Number.isNaN(numeric)) {
+    return null;
+  }
+
+  return String(numeric).padStart(5, '0');
+}
+
+function extractTrainAliases(value: string): string[] {
+  const raw = String(value || '').trim();
+  if (!raw) {
+    return [];
+  }
+
+  const aliases = new Set<string>();
+  aliases.add(raw);
+
+  const normalizedRaw = normalizeTrainNumberToken(raw);
+  if (normalizedRaw) {
+    aliases.add(normalizedRaw);
+  }
+
+  const numericTokens = raw.match(/\d{3,6}/g) || [];
+  for (const token of numericTokens) {
+    aliases.add(token);
+    const normalizedToken = normalizeTrainNumberToken(token);
+    if (normalizedToken) {
+      aliases.add(normalizedToken);
+    }
+  }
+
+  return Array.from(aliases);
+}
+
+function buildTrainAliasIndex(kb: KnowledgeBaseData): Map<string, string> {
+  const aliasIndex = new Map<string, string>();
+
+  for (const [key, train] of Object.entries(kb.trains)) {
+    const candidates = new Set<string>();
+    candidates.add(key);
+
+    if (train?.trainNumber) {
+      candidates.add(train.trainNumber);
+    }
+
+    for (const candidate of candidates) {
+      for (const alias of extractTrainAliases(candidate)) {
+        if (!aliasIndex.has(alias)) {
+          aliasIndex.set(alias, key);
+        }
+      }
+    }
+  }
+
+  return aliasIndex;
+}
+
+function resolveTrainKey(kb: KnowledgeBaseData, trainNumber: string): string | null {
+  const requested = String(trainNumber || '').trim();
+  if (!requested) {
+    return null;
+  }
+
+  if (requested in kb.trains) {
+    return requested;
+  }
+
+  const normalized = normalizeTrainNumberToken(requested);
+  if (normalized && normalized in kb.trains) {
+    return normalized;
+  }
+
+  if (!cachedTrainAliasIndex) {
+    cachedTrainAliasIndex = buildTrainAliasIndex(kb);
+  }
+
+  for (const alias of extractTrainAliases(requested)) {
+    const resolvedKey = cachedTrainAliasIndex.get(alias);
+    if (resolvedKey && resolvedKey in kb.trains) {
+      return resolvedKey;
+    }
+  }
+
+  return null;
+}
 
 /**
  * Load the knowledge base into memory (happens once per server startup)
@@ -66,6 +159,7 @@ async function loadKnowledgeBase(): Promise<KnowledgeBaseData> {
     const fileContent = await readFile(KNOWLEDGE_BASE_FILE, 'utf-8');
     const parsed = JSON.parse(fileContent) as KnowledgeBaseData;
     cachedKB = parsed;
+    cachedTrainAliasIndex = null;
     console.log(`[KB] Knowledge base loaded: ${Object.keys(parsed.trains).length} trains, ${Object.keys(parsed.stations).length} stations`);
     return parsed;
   } catch (error: any) {
@@ -79,19 +173,8 @@ async function loadKnowledgeBase(): Promise<KnowledgeBaseData> {
  */
 export async function searchTrainByNumber(trainNumber: string): Promise<KnowledgeBaseTrain | null> {
   const kb = await loadKnowledgeBase();
-
-  // Try exact match first
-  if (trainNumber in kb.trains) {
-    return kb.trains[trainNumber];
-  }
-
-  // Try normalized search (handle leading zeros, variations)
-  const normalized = String(parseInt(trainNumber, 10)).padStart(5, '0');
-  if (normalized in kb.trains) {
-    return kb.trains[normalized];
-  }
-
-  return null;
+  const resolvedKey = resolveTrainKey(kb, trainNumber);
+  return resolvedKey ? kb.trains[resolvedKey] : null;
 }
 
 /**
@@ -133,9 +216,9 @@ export async function searchStationsByName(query: string): Promise<KnowledgeBase
 export async function getTrainStops(trainNumber: string): Promise<TrainStop[] | null> {
   const kb = await loadKnowledgeBase();
 
-  // Try exact match
-  if (trainNumber in kb.train_stops) {
-    return kb.train_stops[trainNumber];
+  const resolvedKey = resolveTrainKey(kb, trainNumber);
+  if (resolvedKey && resolvedKey in kb.train_stops) {
+    return kb.train_stops[resolvedKey];
   }
 
   // Try from train object

@@ -16,6 +16,89 @@ interface CascadeAnalysisData {
   recommendations: string[];
 }
 
+function asNumber(value: unknown, fallback = 0): number {
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return value;
+  }
+
+  if (typeof value === 'string') {
+    const parsed = Number(value);
+    if (Number.isFinite(parsed)) {
+      return parsed;
+    }
+  }
+
+  return fallback;
+}
+
+function asString(value: unknown, fallback = ''): string {
+  if (typeof value === 'string' && value.trim().length > 0) {
+    return value.trim();
+  }
+
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return String(value);
+  }
+
+  return fallback;
+}
+
+function normalizeCascadePayload(payload: any, trainNumber: string): CascadeAnalysisData | null {
+  const root = payload && typeof payload === 'object' && payload.data && typeof payload.data === 'object'
+    ? payload.data
+    : payload;
+
+  if (!root || typeof root !== 'object') {
+    return null;
+  }
+
+  const propagation = Array.isArray(root.cascadeAnalysis?.estimatedPropagation)
+    ? root.cascadeAnalysis.estimatedPropagation
+        .map((item: any) => ({
+          station: asString(item?.station, 'Unknown'),
+          estimatedDelay: asNumber(item?.estimatedDelay, 0),
+          impactedTrains: asNumber(item?.impactedTrains, 0),
+        }))
+        .filter((item: { station: string }) => item.station.length > 0)
+    : [];
+
+  const recoveryProbabilityRaw = asNumber(root.recoveryPotential?.recoveryProbability, 0);
+  const recoveryProbability = recoveryProbabilityRaw > 1
+    ? Math.max(0, Math.min(1, recoveryProbabilityRaw / 100))
+    : Math.max(0, Math.min(1, recoveryProbabilityRaw));
+
+  return {
+    train: {
+      number: asString(root.train?.number, trainNumber),
+      name: asString(root.train?.name, `Train ${trainNumber}`),
+    },
+    currentDelay: asNumber(root.currentDelay, 0),
+    cascadeAnalysis: {
+      delayOrigin: asString(root.cascadeAnalysis?.delayOrigin, 'unknown'),
+      estimatedPropagation: propagation,
+      totalAffectedTrains: asNumber(root.cascadeAnalysis?.totalAffectedTrains, 0),
+    },
+    delayProgression: {
+      trend: asString(root.delayProgression?.trend, 'stable'),
+      velocityOfChange: asString(root.delayProgression?.velocityOfChange, 'stable'),
+      projectedDelay: asNumber(root.delayProgression?.projectedDelay, asNumber(root.currentDelay, 0)),
+    },
+    networkRiskFactors: {
+      upstreamCongestion: Boolean(root.networkRiskFactors?.upstreamCongestion),
+      downstreamCongestion: Boolean(root.networkRiskFactors?.downstreamCongestion),
+      platformAvailability: Boolean(root.networkRiskFactors?.platformAvailability),
+      junctionSpacing: asString(root.networkRiskFactors?.junctionSpacing, 'Normal'),
+    },
+    recoveryPotential: {
+      estimatedRecovery: asString(root.recoveryPotential?.estimatedRecovery, 'Unknown'),
+      recoveryProbability,
+    },
+    recommendations: Array.isArray(root.recommendations)
+      ? root.recommendations.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+      : [],
+  };
+}
+
 function CascadeAnalysisContent() {
   const searchParams = useSearchParams();
   const trainNumber = searchParams.get('trainNumber') || '01211';
@@ -30,7 +113,12 @@ function CascadeAnalysisContent() {
       try {
         const response = await fetch(`/api/system/cascade-analysis?trainNumber=${trainNumber}`);
         if (!response.ok) throw new Error(`API error: ${response.status}`);
-        setAnalysis(await response.json());
+        const payload = await response.json();
+        const normalized = normalizeCascadePayload(payload, trainNumber);
+        if (!normalized) {
+          throw new Error('Invalid cascade analysis response format');
+        }
+        setAnalysis(normalized);
       } catch (err: any) {
         setError(err?.message || 'Failed to fetch cascade analysis');
         setAnalysis(null);

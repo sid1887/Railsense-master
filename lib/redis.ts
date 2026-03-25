@@ -6,6 +6,33 @@
 import Redis from 'ioredis';
 
 let redis: Redis | null = null;
+let nextConnectAttemptAt = 0;
+
+const REDIS_RETRY_LIMIT = Number(process.env.REDIS_RETRY_LIMIT || 3);
+const REDIS_RETRY_COOLDOWN_MS = Number(process.env.REDIS_RETRY_COOLDOWN_MS || 60000);
+const REDIS_LOG_THROTTLE_MS = Number(process.env.REDIS_LOG_THROTTLE_MS || 20000);
+const REDIS_VERBOSE_LOGS = process.env.REDIS_VERBOSE_LOGS === 'true';
+const redisLogTimestamps = new Map<string, number>();
+
+function shouldLogRedisEvent(eventKey: string): boolean {
+  const now = Date.now();
+  const last = redisLogTimestamps.get(eventKey) || 0;
+  if (now - last < REDIS_LOG_THROTTLE_MS) {
+    return false;
+  }
+  redisLogTimestamps.set(eventKey, now);
+  return true;
+}
+
+function formatRedisError(error: unknown): string {
+  if (error instanceof Error && error.message) {
+    return error.message;
+  }
+  if (typeof error === 'string' && error.trim()) {
+    return error;
+  }
+  return 'unknown redis error';
+}
 
 const REDIS_CONFIG = {
   host: process.env.REDIS_HOST || 'localhost',
@@ -13,6 +40,9 @@ const REDIS_CONFIG = {
   password: process.env.REDIS_PASSWORD,
   db: Number(process.env.REDIS_DB || 0),
   retryStrategy: (times: number) => {
+    if (times > REDIS_RETRY_LIMIT) {
+      return null; // Stop reconnect loop after bounded retries.
+    }
     const delay = Math.min(times * 50, 2000);
     return delay;
   },
@@ -31,18 +61,33 @@ export async function getRedisClient(): Promise<Redis> {
     return redis;
   }
 
+  if (Date.now() < nextConnectAttemptAt) {
+    throw new Error('redis temporarily disabled');
+  }
+
   redis = new Redis(REDIS_CONFIG);
 
   redis.on('error', (err) => {
-    console.error('[Redis] Connection error:', err.message);
+    if (REDIS_VERBOSE_LOGS && shouldLogRedisEvent('error')) {
+      console.warn('[Redis] Connection error:', formatRedisError(err));
+    }
   });
 
   redis.on('connect', () => {
+    nextConnectAttemptAt = 0;
     console.log('[Redis] Connected successfully');
   });
 
   redis.on('reconnecting', () => {
-    console.log('[Redis] Reconnecting...');
+    if (REDIS_VERBOSE_LOGS && shouldLogRedisEvent('reconnecting')) {
+      console.warn('[Redis] Reconnecting...');
+    }
+  });
+
+  redis.on('end', () => {
+    if (REDIS_VERBOSE_LOGS && shouldLogRedisEvent('end')) {
+      console.warn('[Redis] Connection closed');
+    }
   });
 
   // Attempt initial connection
@@ -50,8 +95,18 @@ export async function getRedisClient(): Promise<Redis> {
     await redis.connect();
     console.log('[Redis] Initial connection established');
   } catch (error) {
-    console.warn('[Redis] Initial connection failed (will retry):', error instanceof Error ? error.message : String(error));
-    // Don't throw - Redis is optional for the application
+    nextConnectAttemptAt = Date.now() + REDIS_RETRY_COOLDOWN_MS;
+    if (shouldLogRedisEvent('initial-fail')) {
+      console.warn('[Redis] Initial connection failed, using in-memory fallback:', formatRedisError(error));
+    }
+
+    try {
+      redis.disconnect();
+    } catch {
+      // no-op
+    }
+    redis = null;
+    throw error;
   }
 
   return redis;
@@ -61,12 +116,19 @@ export async function getRedisClient(): Promise<Redis> {
  * Check if Redis is available
  */
 export async function isRedisAvailable(): Promise<boolean> {
+  if (Date.now() < nextConnectAttemptAt) {
+    return false;
+  }
+
   try {
     const client = await getRedisClient();
+    if (client.status === 'ready') {
+      return true;
+    }
     const pong = await client.ping();
     return pong === 'PONG';
-  } catch (error) {
-    console.warn('[Redis] Availability check failed:', error instanceof Error ? error.message : '');
+  } catch {
+    nextConnectAttemptAt = Date.now() + REDIS_RETRY_COOLDOWN_MS;
     return false;
   }
 }

@@ -6,64 +6,82 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { searchTrain } from '@/services/trainSearchOrchestrator';
+import { getIntelligenceInsight } from '@/services/ntesIntelligenceService';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export async function GET(request: NextRequest) {
   try {
-    const trainNumber = request.nextUrl.searchParams.get('trainNumber') || '01211';
+    const trainNumber = request.nextUrl.searchParams.get('trainNumber')?.trim() || '';
+    const stationCode = request.nextUrl.searchParams.get('stationCode')?.trim();
 
-    const trainData = await searchTrain(trainNumber, false);
+    if (!trainNumber) {
+      return NextResponse.json({ error: 'trainNumber is required' }, { status: 400 });
+    }
 
-    if (!trainData) {
+    const insight = await getIntelligenceInsight(trainNumber, stationCode);
+
+    if (!insight) {
       return NextResponse.json({ error: 'Train not found' }, { status: 404 });
     }
 
-    const safetyScore = trainData.mapConfidence || 0.92;
+    const safety = insight.modules.passengerSafety;
+    const network = insight.modules.networkIntelligence;
 
-    return NextResponse.json({
-      train: {
-        number: trainData.trainNumber,
-        name: trainData.trainName,
-      },
-      safetyMetrics: {
-        overallScore: Math.round(safetyScore * 100),
-        trackCondition: 'Good',
-        weatherRisk: 'Low',
-        derailmentRisk: 'Minimal',
-        collisionRisk: 'Minimal',
-      },
-      passengerWelfare: {
-        estimatedCrowding: 'Moderate',
-        ventilationStatus: 'Normal',
-        temperatureControl: 'Optimal',
-        facilities: {
-          toilets: 'Functional',
-          water: 'Available',
-          medical: 'On-board',
+    return NextResponse.json(
+      {
+        success: true,
+        data: {
+          train: {
+            number: insight.trainNumber,
+          },
+          safetyMetrics: {
+            overallScore: insight.confidence,
+            trackCondition: network.sectionLoad === 'SEVERE' ? 'Stressed' : 'Operational',
+            weatherRisk: 'Unknown',
+            derailmentRisk: safety.risk === 'HIGH' ? 'Elevated' : 'Minimal',
+            collisionRisk: network.sectionLoad === 'SEVERE' ? 'Elevated' : 'Low',
+          },
+          passengerWelfare: {
+            estimatedCrowding: insight.crowdLevel,
+            ventilationStatus: safety.risk === 'HIGH' ? 'Potentially Impacted' : 'Normal',
+            temperatureControl: 'Operational',
+            facilities: {
+              toilets: 'Unknown',
+              water: 'Unknown',
+              medical: 'Assistance via station channels',
+            },
+          },
+          delayImpact: {
+            passengerStress: safety.risk,
+            emergencyDelay: insight.delay,
+            estimatedCompensation: insight.delay > 60 ? 'Eligible' : 'Not Eligible',
+          },
+          alerts:
+            safety.risk === 'HIGH' || insight.delay >= 25
+              ? [
+                  {
+                    type: 'comfort-risk',
+                    severity: safety.risk.toLowerCase(),
+                    message: `${safety.message}. Delay ${insight.delay} minutes with congestion score ${network.congestionScore}.`,
+                  },
+                ]
+              : [],
+          recommendations: [
+            'Share revised ETA and platform guidance with passengers',
+            safety.risk === 'HIGH'
+              ? 'High discomfort risk: prioritize passenger advisories and support at next halt'
+              : 'Current risk remains manageable',
+          ],
         },
       },
-      delayImpact: {
-        passengerStress: trainData.delayMinutes > 30 ? 'HIGH' : 'LOW',
-        emergencyDelay: trainData.delayMinutes,
-        estimatedCompensation: trainData.delayMinutes > 60 ? 'Eligible' : 'Not Eligible',
-      },
-      alerts: trainData.delayMinutes > 30
-        ? [
-            {
-              type: 'delay',
-              severity: 'medium',
-              message: `Train is ${trainData.delayMinutes} minutes delayed. Passenger assistance available.`,
-            },
-          ]
-        : [],
-      recommendations: [
-        'Monitor passenger comfort continuously',
-        'Update passengers on delay status',
-        trainData.delayMinutes > 30 ? 'Provide refreshments if available' : 'Train running on schedule',
-      ],
-    });
+      {
+        headers: {
+          'Cache-Control': 'public, max-age=15',
+        },
+      }
+    );
   } catch (error: any) {
     console.error('[PassengerSafety API]', error);
     return NextResponse.json(

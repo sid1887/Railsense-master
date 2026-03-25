@@ -18,6 +18,8 @@ export interface LiveTrainData {
   timestamp: string;
   source: 'ntes' | 'railyatri' | 'estimated';
   confidence: number;
+  isStale?: boolean;
+  staleAgeSeconds?: number;
 }
 
 export interface LiveDataDiagnostics {
@@ -28,6 +30,7 @@ export interface LiveDataDiagnostics {
   liveCoordinatesAvailable: boolean;
   reason:
     | 'live_coordinates_available'
+    | 'stale_last_known_live'
     | 'fallback_estimated_from_schedule'
     | 'status_only_no_coordinates'
     | 'all_live_providers_unavailable';
@@ -60,6 +63,39 @@ export interface RailYatriResponse {
 }
 
 const ENABLE_MOCK_LIVE_DATA = process.env.ENABLE_MOCK_LIVE_DATA === 'true';
+const LAST_KNOWN_LIVE_TTL_MS = 8 * 60 * 1000;
+const lastKnownLiveByTrain = new Map<string, { data: LiveTrainData; timestamp: number }>();
+
+function rememberLive(trainNumber: string, data: LiveTrainData) {
+  if (data.source === 'estimated') return;
+  lastKnownLiveByTrain.set(trainNumber.toUpperCase(), {
+    data: {
+      ...data,
+      isStale: false,
+      staleAgeSeconds: 0,
+    },
+    timestamp: Date.now(),
+  });
+}
+
+function getLastKnownLiveFallback(trainNumber: string): LiveTrainData | null {
+  const cached = lastKnownLiveByTrain.get(trainNumber.toUpperCase());
+  if (!cached) return null;
+
+  const ageMs = Date.now() - cached.timestamp;
+  if (ageMs > LAST_KNOWN_LIVE_TTL_MS) {
+    lastKnownLiveByTrain.delete(trainNumber.toUpperCase());
+    return null;
+  }
+
+  return {
+    ...cached.data,
+    timestamp: new Date().toISOString(),
+    confidence: Math.max(0.35, Number((cached.data.confidence * 0.72).toFixed(2))),
+    isStale: true,
+    staleAgeSeconds: Math.floor(ageMs / 1000),
+  };
+}
 
 /**
  * Fetch live data from NTES (via direct provider call - no merging loop!)
@@ -77,6 +113,18 @@ async function fetchFromNTES(trainNumber: string): Promise<LiveTrainData | null>
       result.lat !== 0 &&
       result.lng !== 0
     ) {
+      const accuracyMeters = typeof result.accuracy === 'number' && Number.isFinite(result.accuracy)
+        ? result.accuracy
+        : 320;
+      const payloadFreshnessSeconds = typeof result.raw?.freshnessSeconds === 'number' && Number.isFinite(result.raw.freshnessSeconds)
+        ? result.raw.freshnessSeconds
+        : 0;
+
+      const baseConfidence = result.source === 'merged' ? 0.86 : 0.79;
+      const accuracyPenalty = accuracyMeters > 450 ? 0.16 : accuracyMeters > 300 ? 0.1 : accuracyMeters > 180 ? 0.05 : 0;
+      const freshnessPenalty = payloadFreshnessSeconds > 600 ? 0.09 : payloadFreshnessSeconds > 240 ? 0.04 : 0;
+      const confidence = Math.max(0.55, Number((baseConfidence - accuracyPenalty - freshnessPenalty).toFixed(2)));
+
       return {
         trainNumber,
         speed: result.speed ?? 0,
@@ -85,7 +133,7 @@ async function fetchFromNTES(trainNumber: string): Promise<LiveTrainData | null>
         longitude: result.lng ?? 0,
         timestamp: new Date((result.timestamp ?? Date.now())).toISOString(),
         source: 'ntes',
-        confidence: result.source === 'merged' ? 0.85 : 0.75,
+        confidence,
       };
     }
 
@@ -148,18 +196,31 @@ async function fetchFromRailYatri(trainNumber: string): Promise<LiveTrainData | 
 export async function getLiveTrainData(
   trainNumber: string
 ): Promise<LiveTrainData | null> {
-  // Try RailYatri first (has coordinates)
+  // Try NTES first to take advantage of official approximate GPS feeds.
+  const ntesData = await fetchFromNTES(trainNumber);
+  if (ntesData && ntesData.confidence >= 0.55) {
+    rememberLive(trainNumber, ntesData);
+    console.log('[LiveTrainData] Returning NTES data for', trainNumber);
+    return ntesData;
+  }
+
+  // Fallback to RailYatri for additional coordinate coverage.
   const railyatriData = await fetchFromRailYatri(trainNumber);
   if (railyatriData && (railyatriData.source === 'estimated' ? railyatriData.confidence > 0.5 : railyatriData.confidence > 0.7)) {
+    rememberLive(trainNumber, railyatriData);
     console.log('[LiveTrainData] Returning RailYatri data for', trainNumber);
     return railyatriData;
   }
 
-  // Fallback to NTES if coordinates present
-  const ntesData = await fetchFromNTES(trainNumber);
-  if (ntesData && ntesData.confidence > 0.7) {
-    console.log('[LiveTrainData] Returning NTES data for', trainNumber);
-    return ntesData;
+  const staleLiveData = getLastKnownLiveFallback(trainNumber);
+  if (staleLiveData) {
+    console.log('[LiveTrainData] Returning stale last-known live data for', trainNumber, {
+      source: staleLiveData.source,
+      staleAgeSeconds: staleLiveData.staleAgeSeconds,
+      lat: staleLiveData.latitude,
+      lng: staleLiveData.longitude,
+    });
+    return staleLiveData;
   }
 
   // Final fallback: return null instead of trying getTrainData (prevents circular dependency)
@@ -202,7 +263,11 @@ export async function getLiveTrainDataWithDiagnostics(
 
   let reason: LiveDataDiagnostics['reason'] = 'all_live_providers_unavailable';
   if (data) {
-    reason = data.source === 'estimated' ? 'fallback_estimated_from_schedule' : 'live_coordinates_available';
+    if (data.isStale) {
+      reason = 'stale_last_known_live';
+    } else {
+      reason = data.source === 'estimated' ? 'fallback_estimated_from_schedule' : 'live_coordinates_available';
+    }
   }
 
   return {
@@ -249,6 +314,18 @@ function parseTimeToMinutes(value?: string): number | null {
   if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59) return null;
 
   return hours * 60 + minutes;
+}
+
+function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
 }
 
 async function estimateLiveDataFromKnowledgeBase(trainNumber: string): Promise<LiveTrainData | null> {
@@ -309,6 +386,64 @@ async function estimateLiveDataFromKnowledgeBase(trainNumber: string): Promise<L
     const now = new Date();
     const nowMinutes = now.getHours() * 60 + now.getMinutes();
 
+    // Try dynamic interpolation between consecutive route stops based on timetable.
+    for (let i = 0; i < validStops.length - 1; i++) {
+      const currentStop = validStops[i];
+      const nextStop = validStops[i + 1];
+
+      const currentMinute = parseTimeToMinutes(currentStop.departs) ?? parseTimeToMinutes(currentStop.arrives);
+      const nextMinuteRaw = parseTimeToMinutes(nextStop.arrives) ?? parseTimeToMinutes(nextStop.departs);
+
+      if (currentMinute === null || nextMinuteRaw === null) {
+        continue;
+      }
+
+      let start = currentMinute;
+      let end = nextMinuteRaw;
+      let current = nowMinutes;
+
+      if (end < start) {
+        end += 24 * 60;
+      }
+      if (current < start) {
+        current += 24 * 60;
+      }
+
+      if (current >= start && current <= end && end > start) {
+        const ratio = (current - start) / (end - start);
+        const latitude = (currentStop.latitude as number) + ((nextStop.latitude as number) - (currentStop.latitude as number)) * ratio;
+        const longitude = (currentStop.longitude as number) + ((nextStop.longitude as number) - (currentStop.longitude as number)) * ratio;
+        const segmentDistanceKm = haversineKm(
+          currentStop.latitude as number,
+          currentStop.longitude as number,
+          nextStop.latitude as number,
+          nextStop.longitude as number
+        );
+        const segmentMinutes = Math.max(1, end - start);
+        const speed = Math.max(20, Math.min(110, (segmentDistanceKm / (segmentMinutes / 60))));
+
+        console.log('[LiveData] Returning interpolated KB fallback for', trainNumber, {
+          from: currentStop.stationCode,
+          to: nextStop.stationCode,
+          ratio: Number(ratio.toFixed(3)),
+          lat: latitude,
+          lng: longitude,
+        });
+
+        return {
+          trainNumber,
+          speed: Number(speed.toFixed(1)),
+          delayMinutes: 0,
+          latitude,
+          longitude,
+          timestamp: new Date().toISOString(),
+          source: 'estimated',
+          confidence: 0.66,
+        };
+      }
+    }
+
+    // Fallback: nearest timed stop if interpolation window is unavailable.
     let selected = validStops[0];
     let smallestDiff = Number.POSITIVE_INFINITY;
 
@@ -330,7 +465,7 @@ async function estimateLiveDataFromKnowledgeBase(trainNumber: string): Promise<L
       }
     }
 
-    console.log('[LiveData] Falling back to static station position for', trainNumber);
+    console.log('[LiveData] Falling back to nearest timed stop for', trainNumber);
     return {
       trainNumber,
       speed: 32,

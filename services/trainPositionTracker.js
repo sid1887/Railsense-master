@@ -142,8 +142,10 @@ class TrainPositionTracker {
       const timeBetween = nextStation.arrivalTime - currentStation.departureTime;
       speed = (stationDistance / timeBetween) * 60; // Convert to km/h
 
-      // Add slight variation to speed (±2 km/h)
-      const speedVariation = (Math.random() - 0.5) * 4;
+      // Add deterministic variation (±2 km/h) to avoid random jitter between requests.
+      const fiveMinuteBucket = Math.floor(now.getTime() / (5 * 60 * 1000));
+      const variationSeed = (parseInt(String(trainNumber).slice(-2), 10) + fiveMinuteBucket) % 9;
+      const speedVariation = (variationSeed - 4) * 0.5;
       speed = Math.max(0, Math.min(train.maxSpeed, speed + speedVariation));
     } else if (progress >= 1) {
       speed = 0; // Train has arrived

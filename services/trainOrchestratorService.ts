@@ -16,7 +16,7 @@
  */
 
 import { getTrainData } from './trainDataService';
-import { getLiveTrainData } from './liveTrainDataService';
+import { getLiveTrainData, LiveTrainData } from './liveTrainDataService';
 import { getNearbyTrainsData } from './trainDataService';
 import { dwellPredictionService } from './dwellPredictionService';
 import { networkIntelligenceService } from './networkIntelligenceService';
@@ -66,6 +66,93 @@ function resolveCurrentStationIndex(
   });
 
   return bestIndex;
+}
+
+function buildLiveOnlyFallbackResponse(trainNumber: string, liveData: LiveTrainData): UnifiedTrainResponse | null {
+  if (!hasValidCoord(liveData.latitude) || !hasValidCoord(liveData.longitude)) {
+    return null;
+  }
+
+  const now = Date.now();
+  const derivedStatus: 'running' | 'halted' | 'delayed' | 'on-time' =
+    liveData.delayMinutes > 15 ? 'delayed' : 'running';
+  const liveSourceTag = liveData.source === 'estimated' ? 'estimated-fallback' : `live-${liveData.source}`;
+
+  return {
+    trainNumber,
+    trainName: `Train ${trainNumber}`,
+    currentLocation: {
+      station: liveData.source === 'ntes' ? 'NTES Live Position' : 'Live Position',
+      stationCode: 'LIVE',
+      latitude: liveData.latitude,
+      longitude: liveData.longitude,
+      timestamp: now,
+    },
+    nextStation: {
+      station: 'Unknown',
+      stationCode: 'UNKNOWN',
+      scheduledArrival: '00:00',
+      estimatedArrival: '00:00',
+      latitude: 0,
+      longitude: 0,
+    },
+    liveMetrics: {
+      delay: liveData.delayMinutes || 0,
+      speed: liveData.speed || 0,
+      status: derivedStatus,
+    },
+    route: {
+      source: 'Unknown',
+      destination: 'Unknown',
+      totalStations: 0,
+      currentStationIndex: 0,
+      allStations: [],
+    },
+    networkIntelligence: {
+      nearbyTrains: [],
+      congestionLevel: 'low',
+      congestionScore: 0,
+    },
+    dwellPrediction: {
+      expectedDwellTime: 0,
+      dwellRisk: 'low',
+      reasons: ['Base route resolution unavailable; returned live-only response'],
+    },
+    crossingRisk: {
+      hasOpposingTrain: false,
+      distance: 0,
+      timeToConflict: 0,
+      riskLevel: 'low',
+    },
+    platformOccupancy: {
+      platformLoad: 0,
+      waitingProbability: 0,
+      expectedWaitTime: 0,
+    },
+    prediction: {
+      eta: new Date(now).toISOString(),
+      delayForecast: liveData.delayMinutes || 0,
+      confidence: Math.max(0.25, liveData.confidence || 0),
+      riskLevel: 'low',
+      factors: {
+        delayPropagation: 0,
+        dwellRisk: 0,
+        congestionPenalty: 0,
+        crossingDelay: 0,
+        platformWait: 0,
+      },
+    },
+    dataQuality: {
+      liveGPS: liveData.source !== 'estimated',
+      stationMapping: false,
+      networkAwareness: false,
+      predictionStrength: 'low',
+      liveUnavailable: liveData.source === 'estimated',
+      sources: [liveSourceTag, 'base-unavailable'],
+    },
+    lastUpdated: now,
+    cacheExpiry: now + 15000,
+  };
 }
 
 /**
@@ -220,40 +307,53 @@ export async function getUnifiedTrainData(
   try {
     console.log(`[Orchestrator] Starting unified data fetch for train ${trainNumber}`);
 
-    // Step 1: Get base train data (schedule + position)
-    const baseData = await getTrainData(trainNumber);
+    // Start live lookup first (NTES-first inside getLiveTrainData), then resolve base data in parallel.
+    const liveDataPromise = getLiveTrainData(trainNumber).catch((error) => {
+      console.warn(`[Orchestrator] Live data fetch failed for ${trainNumber}:`, error);
+      return null;
+    });
+    const baseDataPromise = getTrainData(trainNumber).catch((error) => {
+      console.warn(`[Orchestrator] Base data fetch failed for ${trainNumber}:`, error);
+      return null;
+    });
+
+    // Step 1: Resolve base route data and live data in parallel.
+    const [liveData, baseData] = await Promise.all([liveDataPromise, baseDataPromise]);
     if (!baseData) {
+      const liveOnlyResponse = liveData ? buildLiveOnlyFallbackResponse(trainNumber, liveData) : null;
+      if (liveOnlyResponse) {
+        console.log(`[Orchestrator] Returning live-only fallback for ${trainNumber}`);
+        return liveOnlyResponse;
+      }
       console.log(`[Orchestrator] Train not found: ${trainNumber}`);
       return null;
     }
 
-    // Step 2: Get live GPS data
-    const liveData = await getLiveTrainData(trainNumber);
-
-    const hasProviderLiveData = Boolean(liveData && liveData.source !== 'estimated');
+    const hasProviderLiveData = Boolean(liveData && liveData.source !== 'estimated' && !liveData.isStale);
+    const isStaleLiveData = Boolean(liveData && liveData.source !== 'estimated' && liveData.isStale);
     const effectiveLatitude = hasValidCoord(liveData?.latitude)
       ? liveData.latitude
       : baseData.currentLocation.latitude;
     const effectiveLongitude = hasValidCoord(liveData?.longitude)
       ? liveData.longitude
       : baseData.currentLocation.longitude;
-    const fallbackStationIndex = Math.max(0, baseData.currentStationIndex || 0);
     const currentStationIndex = resolveCurrentStationIndex(
       baseData.scheduledStations || [],
       effectiveLatitude,
       effectiveLongitude,
-      fallbackStationIndex
+      Math.max(0, baseData.currentStationIndex || 0)
     );
 
-    // Step 3: Get nearby trains (within 50km radius)
+    // Step 2: Get nearby trains (within 50km radius)
     const nearbyTrainsData = await getNearbyTrainsData(
       effectiveLatitude,
       effectiveLongitude,
-      50
+      50,
+      trainNumber
     );
 
-    // Step 4: Network intelligence
-    const networkData = await networkIntelligenceService.analyzeNearbyTrains(
+    // Step 3: Start network and platform computations in parallel.
+    const networkDataPromise = networkIntelligenceService.analyzeNearbyTrains(
       trainNumber,
       {
         ...baseData.currentLocation,
@@ -264,35 +364,38 @@ export async function getUnifiedTrainData(
       nearbyTrainsData
     );
 
-    // Step 5: Dwell prediction
-    const dwellData = await dwellPredictionService.predictDwell(
-      trainNumber,
-      baseData,
-      networkData,
-      (baseData.delay ?? 0) + (liveData?.delayMinutes ?? 0)
-    );
-
-    // Step 6: Crossing detection
-    const crossingData = await crossingDetectionService.detectCrossing(
-      trainNumber,
-      {
-        ...baseData.currentLocation,
-        latitude: effectiveLatitude,
-        longitude: effectiveLongitude,
-      },
-      networkData.nearbyTrains
-    );
-
-    // Step 7: Platform occupancy
     const stationCode = baseData.scheduledStations[currentStationIndex]?.code || 'UNKNOWN';
-    const platformData = await platformOccupancyService.analyzeOccupancy(
+
+    const platformDataPromise = platformOccupancyService.analyzeOccupancy(
       stationCode,
       currentStationIndex,
       baseData.scheduledStations,
       nearbyTrainsData
     );
 
-    // Step 8: Advanced prediction
+    const networkData = await networkDataPromise;
+
+    // Step 4: Run dependent intelligence modules in parallel.
+    const [dwellData, crossingData, platformData] = await Promise.all([
+      dwellPredictionService.predictDwell(
+        trainNumber,
+        baseData,
+        networkData,
+        (baseData.delay ?? 0) + (liveData?.delayMinutes ?? 0)
+      ),
+      crossingDetectionService.detectCrossing(
+        trainNumber,
+        {
+          ...baseData.currentLocation,
+          latitude: effectiveLatitude,
+          longitude: effectiveLongitude,
+        },
+        networkData.nearbyTrains
+      ),
+      platformDataPromise,
+    ]);
+
+    // Step 5: Advanced prediction
     const predictionData = await predictionEngineV2.predictArrival(
       trainNumber,
       baseData,
@@ -370,7 +473,15 @@ export async function getUnifiedTrainData(
         liveUnavailable: !hasProviderLiveData,
         sources: [
           baseData.source || 'schedule',
-          ...(liveData ? [liveData.source === 'estimated' ? 'estimated-fallback' : `live-${liveData.source}`] : []),
+          ...(liveData
+            ? [
+                liveData.source === 'estimated'
+                  ? 'estimated-fallback'
+                  : isStaleLiveData
+                    ? `stale-live-${liveData.source}`
+                    : `live-${liveData.source}`,
+              ]
+            : []),
         ],
       },
 

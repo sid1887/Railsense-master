@@ -16,6 +16,79 @@ interface HaltAnalysisData {
   recommendations: string[];
 }
 
+function asNumber(value: unknown, fallback = 0): number {
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return value;
+  }
+
+  if (typeof value === 'string') {
+    const parsed = Number(value);
+    if (Number.isFinite(parsed)) {
+      return parsed;
+    }
+  }
+
+  return fallback;
+}
+
+function asString(value: unknown, fallback = ''): string {
+  if (typeof value === 'string' && value.trim().length > 0) {
+    return value.trim();
+  }
+
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return String(value);
+  }
+
+  return fallback;
+}
+
+function normalizeHaltPayload(payload: any, trainNumber: string): HaltAnalysisData | null {
+  const root = payload && typeof payload === 'object' && payload.data && typeof payload.data === 'object'
+    ? payload.data
+    : payload;
+
+  if (!root || typeof root !== 'object') {
+    return null;
+  }
+
+  const probableCausesRaw = Array.isArray(root.haltAnalysis?.probableCauses)
+    ? root.haltAnalysis.probableCauses
+    : [];
+
+  const probableCauses = probableCausesRaw
+    .map((item: any) => ({
+      cause: asString(item?.cause ?? item?.reason, 'Unknown cause'),
+      probability: Math.max(0, Math.min(1, asNumber(item?.probability, 0))),
+    }))
+    .filter((item: { cause: string }) => item.cause.length > 0);
+
+  return {
+    trainNumber: asString(root.trainNumber ?? root.train?.number, trainNumber),
+    trainName: asString(root.trainName ?? root.train?.name, `Train ${trainNumber}`),
+    currentStatus: {
+      isHalted: Boolean(root.currentStatus?.isHalted),
+      haltReason: asString(root.currentStatus?.haltReason, asString(root.haltAnalysis?.status, '')),
+      haltDuration: asNumber(root.currentStatus?.haltDuration, 0),
+    },
+    haltAnalysis: {
+      probableCauses,
+      signalStrength: Math.max(
+        0,
+        Math.min(1, asNumber(root.haltAnalysis?.signalStrength, asNumber(root.haltAnalysis?.confidence, 0)))
+      ),
+    },
+    impactAnalysis: {
+      delayAccumulation: asNumber(root.impactAnalysis?.delayAccumulation, 0),
+      cascadeRisk: asString(root.impactAnalysis?.cascadeRisk, 'Low'),
+      affectedStations: asNumber(root.impactAnalysis?.affectedStations, 0),
+    },
+    recommendations: Array.isArray(root.recommendations)
+      ? root.recommendations.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+      : [],
+  };
+}
+
 function HaltAnalysisContent() {
   const searchParams = useSearchParams();
   const trainNumber = searchParams.get('trainNumber') || '01211';
@@ -30,7 +103,12 @@ function HaltAnalysisContent() {
       try {
         const response = await fetch(`/api/system/halt-analysis?trainNumber=${trainNumber}`);
         if (!response.ok) throw new Error(`API error: ${response.status}`);
-        setAnalysis(await response.json());
+        const payload = await response.json();
+        const normalized = normalizeHaltPayload(payload, trainNumber);
+        if (!normalized) {
+          throw new Error('Invalid halt analysis response format');
+        }
+        setAnalysis(normalized);
       } catch (err: any) {
         setError(err?.message || 'Failed to fetch halt analysis');
         setAnalysis(null);

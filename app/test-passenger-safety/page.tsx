@@ -33,6 +33,82 @@ interface CrowdEstimation {
   };
 }
 
+function asNumber(value: unknown, fallback = 0): number {
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return value;
+  }
+
+  if (typeof value === 'string') {
+    const parsed = Number(value);
+    if (Number.isFinite(parsed)) {
+      return parsed;
+    }
+  }
+
+  return fallback;
+}
+
+function asString(value: unknown, fallback = ''): string {
+  if (typeof value === 'string' && value.trim().length > 0) {
+    return value.trim();
+  }
+
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return String(value);
+  }
+
+  return fallback;
+}
+
+function normalizePassengerSafetyPayload(payload: any, trainNumber: string): PassengerSafetyData | null {
+  const root = payload && typeof payload === 'object' && payload.data && typeof payload.data === 'object'
+    ? payload.data
+    : payload;
+
+  if (!root || typeof root !== 'object') {
+    return null;
+  }
+
+  return {
+    train: {
+      number: asString(root.train?.number, trainNumber),
+      name: asString(root.train?.name, `Train ${trainNumber}`),
+    },
+    safetyMetrics: {
+      overallScore: asNumber(root.safetyMetrics?.overallScore, 0),
+      trackCondition: asString(root.safetyMetrics?.trackCondition, 'Unknown'),
+      weatherRisk: asString(root.safetyMetrics?.weatherRisk, 'Unknown'),
+      derailmentRisk: asString(root.safetyMetrics?.derailmentRisk, 'Unknown'),
+      collisionRisk: asString(root.safetyMetrics?.collisionRisk, 'Unknown'),
+    },
+    passengerWelfare: {
+      estimatedCrowding: asString(root.passengerWelfare?.estimatedCrowding, 'Unknown'),
+      ventilationStatus: asString(root.passengerWelfare?.ventilationStatus, 'Unknown'),
+      temperatureControl: asString(root.passengerWelfare?.temperatureControl, 'Unknown'),
+      facilities: {
+        toilets: asString(root.passengerWelfare?.facilities?.toilets, 'Unknown'),
+        water: asString(root.passengerWelfare?.facilities?.water, 'Unknown'),
+        medical: asString(root.passengerWelfare?.facilities?.medical, 'Unknown'),
+      },
+    },
+    delayImpact: {
+      passengerStress: asString(root.delayImpact?.passengerStress, 'Unknown'),
+      emergencyDelay: asNumber(root.delayImpact?.emergencyDelay, 0),
+      estimatedCompensation: asString(root.delayImpact?.estimatedCompensation, 'Unknown'),
+    },
+    alerts: Array.isArray(root.alerts)
+      ? root.alerts.map((item: any) => ({
+          type: asString(item?.type, 'notice'),
+          severity: asString(item?.severity, 'low'),
+          message: asString(item?.message, ''),
+        })).filter((item: { message: string }) => item.message.length > 0)
+      : [],
+    recommendations: Array.isArray(root.recommendations)
+      ? root.recommendations.map((item: unknown) => asString(item, '')).filter((item: string) => item.length > 0)
+      : [],
+  };
+}
+
 function PassengerSafetyContent() {
   const searchParams = useSearchParams();
   const trainNumber = searchParams.get('trainNumber') || '01211';
@@ -57,8 +133,12 @@ function PassengerSafetyContent() {
         
         if (!safetyRes.ok) throw new Error(`Safety API error: ${safetyRes.status}`);
         
-        const safetyData = await safetyRes.json();
-        setData(safetyData);
+        const safetyPayload = await safetyRes.json();
+        const normalizedSafety = normalizePassengerSafetyPayload(safetyPayload, trainNumber);
+        if (!normalizedSafety) {
+          throw new Error('Invalid passenger safety response format');
+        }
+        setData(normalizedSafety);
 
         // Crowd detection is optional - if it fails, just continue without it
         if (crowdRes.ok) {

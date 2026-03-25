@@ -237,6 +237,7 @@ export default function TrainDetailPage({ trainNumber }: TrainDetailPageProps) {
   const [data, setData] = useState<UnifiedTrainResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [nowTs, setNowTs] = useState(Date.now());
 
   // Track this train search for crowd detection analytics
   useTrainSearchTracking(trainNumber, 'exact');
@@ -265,9 +266,14 @@ export default function TrainDetailPage({ trainNumber }: TrainDetailPageProps) {
 
   useEffect(() => {
     fetchData();
-    const timer = window.setInterval(fetchData, 15000);
+    const timer = window.setInterval(fetchData, 10000);
     return () => window.clearInterval(timer);
   }, [fetchData]);
+
+  useEffect(() => {
+    const tick = window.setInterval(() => setNowTs(Date.now()), 1000);
+    return () => window.clearInterval(tick);
+  }, []);
 
   const analytics = useMemo(() => (data ? toAnalytics(data) : null), [data]);
   const timeline = useMemo(() => {
@@ -317,6 +323,28 @@ export default function TrainDetailPage({ trainNumber }: TrainDetailPageProps) {
         ? 'text-orange-300 bg-orange-500/15 border-orange-400/30'
         : 'text-cyan-300 bg-cyan-500/15 border-cyan-400/30';
   const hasVerifiedLiveFeed = data.dataQuality.liveGPS && !data.dataQuality.liveUnavailable;
+  const hasStaleLiveFeed = data.dataQuality.sources.some((source) => source.startsWith('stale-live-'));
+  const isEstimatedFeed = data.dataQuality.sources.includes('estimated-fallback');
+  const liveFeedLabel = hasVerifiedLiveFeed
+    ? 'LIVE'
+    : hasStaleLiveFeed
+      ? 'STALE LIVE'
+      : isEstimatedFeed
+        ? 'ESTIMATED'
+        : 'FALLBACK';
+  const liveFeedTone = hasVerifiedLiveFeed
+    ? 'border-emerald-400/30 bg-emerald-500/10 text-emerald-200'
+    : hasStaleLiveFeed
+      ? 'border-amber-400/30 bg-amber-500/10 text-amber-200'
+      : 'border-slate-500/30 bg-slate-500/10 text-slate-200';
+  const secondsSinceUpdate = Math.max(0, Math.round((nowTs - data.lastUpdated) / 1000));
+
+  const speedValue = Number.isFinite(data.liveMetrics.speed)
+    ? `${Math.max(0, Math.round(data.liveMetrics.speed))} km/h`
+    : 'N/A';
+  const delayValue = Number.isFinite(data.liveMetrics.delay)
+    ? `${Math.max(0, Math.round(data.liveMetrics.delay))} min`
+    : 'N/A';
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_10%_0%,#17345e_0%,#0b132a_40%,#090d1f_100%)] px-4 pb-14 pt-7 md:px-7">
@@ -335,8 +363,11 @@ export default function TrainDetailPage({ trainNumber }: TrainDetailPageProps) {
               </p>
             </div>
             <div className="flex flex-wrap gap-2 text-xs font-semibold">
+              <span className={`rounded-lg border px-3 py-1 ${liveFeedTone}`}>
+                Feed: {liveFeedLabel}
+              </span>
               <span className="rounded-lg border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-cyan-200">
-                Last update: {new Date(data.lastUpdated).toLocaleTimeString()}
+                Last update: {new Date(data.lastUpdated).toLocaleTimeString()} ({secondsSinceUpdate}s ago)
               </span>
               <span className={`rounded-lg border px-3 py-1 ${riskTone}`}>
                 Crossing Risk: {data.crossingRisk.riskLevel.toUpperCase()}
@@ -345,8 +376,8 @@ export default function TrainDetailPage({ trainNumber }: TrainDetailPageProps) {
           </div>
 
           <div className="grid grid-cols-2 gap-3 md:grid-cols-6">
-            <Metric title="Current Speed" value={hasVerifiedLiveFeed ? `${data.liveMetrics.speed} km/h` : 'N/A'} icon={<Gauge className="h-4 w-4" />} />
-            <Metric title="Live Delay" value={hasVerifiedLiveFeed ? `${data.liveMetrics.delay} min` : 'N/A'} icon={<Clock3 className="h-4 w-4" />} />
+            <Metric title="Current Speed" value={speedValue} icon={<Gauge className="h-4 w-4" />} />
+            <Metric title="Live Delay" value={delayValue} icon={<Clock3 className="h-4 w-4" />} />
             <Metric title="Congestion" value={`${data.networkIntelligence.congestionScore}%`} icon={<Radar className="h-4 w-4" />} />
             <Metric title="Dwell" value={`${data.dwellPrediction.expectedDwellTime} min`} icon={<LocateFixed className="h-4 w-4" />} />
             <Metric title="ETA Confidence" value={`${data.prediction.confidence}%`} icon={<ShieldCheck className="h-4 w-4" />} />

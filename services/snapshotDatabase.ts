@@ -64,9 +64,7 @@ class SnapshotDatabase {
     if (!this.db) throw new Error('Database not initialized');
 
     return new Promise((resolve, reject) => {
-      // Train snapshots table
-      this.db!.run(
-        `
+      const schemaSql = `
         CREATE TABLE IF NOT EXISTS train_snapshots (
           id INTEGER PRIMARY KEY AUTOINCREMENT,
           trainNumber TEXT NOT NULL,
@@ -78,126 +76,87 @@ class SnapshotDatabase {
           delay REAL DEFAULT 0,
           status TEXT DEFAULT 'running',
           timestamp TEXT NOT NULL,
-          createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-          INDEX (trainNumber, timestamp),
-          INDEX (stationCode),
-          INDEX (createdAt)
-        )
-      `,
-        (err) => {
-          if (err && !err.message.includes('already exists')) {
-            reject(err);
-            return;
-          }
+          createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
 
-          // Delay statistics table (aggregated by hour)
-          this.db!.run(
-            `
-            CREATE TABLE IF NOT EXISTS delay_statistics (
-              id INTEGER PRIMARY KEY AUTOINCREMENT,
-              stationCode TEXT NOT NULL,
-              hour INTEGER,
-              avgDelay REAL,
-              maxDelay REAL,
-              minDelay REAL,
-              trainCount INTEGER,
-              date TEXT NOT NULL,
-              INDEX (stationCode, date, hour)
-            )
-          `,
-            (err) => {
-              if (err && !err.message.includes('already exists')) {
-                reject(err);
-                return;
-              }
+        CREATE TABLE IF NOT EXISTS delay_statistics (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          stationCode TEXT NOT NULL,
+          hour INTEGER,
+          avgDelay REAL,
+          maxDelay REAL,
+          minDelay REAL,
+          trainCount INTEGER,
+          date TEXT NOT NULL
+        );
 
-              // Data quality log table - tracks provider health
-              this.db!.run(
-                `
-                CREATE TABLE IF NOT EXISTS data_quality_log (
-                  id INTEGER PRIMARY KEY AUTOINCREMENT,
-                  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-                  trainNumber TEXT,
-                  provider TEXT NOT NULL,
-                  isSuccessful BOOLEAN DEFAULT 1,
-                  dataQualityScore INTEGER DEFAULT 50,
-                  isSynthetic BOOLEAN DEFAULT 0,
-                  responseTime INTEGER,
-                  errorMessage TEXT,
-                  cacheHit BOOLEAN DEFAULT 0,
-                  INDEX (timestamp, provider),
-                  INDEX (trainNumber, timestamp)
-                )
-              `,
-                (err) => {
-                  if (err && !err.message.includes('already exists')) {
-                    reject(err);
-                    return;
-                  }
+        CREATE TABLE IF NOT EXISTS data_quality_log (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+          trainNumber TEXT,
+          provider TEXT NOT NULL,
+          isSuccessful BOOLEAN DEFAULT 1,
+          dataQualityScore INTEGER DEFAULT 50,
+          isSynthetic BOOLEAN DEFAULT 0,
+          responseTime INTEGER,
+          errorMessage TEXT,
+          cacheHit BOOLEAN DEFAULT 0
+        );
 
-                  // Halt statistics table - tracks halt events
-                  this.db!.run(
-                    `
-                    CREATE TABLE IF NOT EXISTS halt_statistics (
-                      id INTEGER PRIMARY KEY AUTOINCREMENT,
-                      trainNumber TEXT NOT NULL,
-                      sectionCode TEXT,
-                      sectionName TEXT,
-                      haltStartTime DATETIME,
-                      haltEndTime DATETIME,
-                      haltDurationSeconds INTEGER,
-                      haltReason TEXT,
-                      estimatedCause TEXT,
-                      haltConfidence REAL DEFAULT 0.5,
-                      isScheduledStop BOOLEAN DEFAULT 0,
-                      recordedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-                      INDEX (trainNumber, recordedAt),
-                      INDEX (sectionCode, recordedAt)
-                    )
-                  `,
-                    (err) => {
-                      if (err && !err.message.includes('already exists')) {
-                        reject(err);
-                        return;
-                      }
+        CREATE TABLE IF NOT EXISTS halt_statistics (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          trainNumber TEXT NOT NULL,
+          sectionCode TEXT,
+          sectionName TEXT,
+          haltStartTime DATETIME,
+          haltEndTime DATETIME,
+          haltDurationSeconds INTEGER,
+          haltReason TEXT,
+          estimatedCause TEXT,
+          haltConfidence REAL DEFAULT 0.5,
+          isScheduledStop BOOLEAN DEFAULT 0,
+          recordedAt DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
 
-                      // Congestion metrics table - tracks traffic patterns
-                      this.db!.run(
-                        `
-                        CREATE TABLE IF NOT EXISTS congestion_metrics (
-                          id INTEGER PRIMARY KEY AUTOINCREMENT,
-                          sectionCode TEXT NOT NULL,
-                          sectionName TEXT,
-                          recordedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-                          hour INTEGER,
-                          date TEXT NOT NULL,
-                          nearbyTrainsCount INTEGER DEFAULT 0,
-                          avgNearbyTrainsPerTrain REAL DEFAULT 0,
-                          trafficDensity REAL DEFAULT 0,
-                          congestionLevel TEXT DEFAULT 'low',
-                          avgDelayInSection REAL,
-                          throughput INTEGER,
-                          INDEX (sectionCode, date, hour)
-                        )
-                      `,
-                        (err) => {
-                          if (err && !err.message.includes('already exists')) {
-                            reject(err);
-                            return;
-                          }
+        CREATE TABLE IF NOT EXISTS congestion_metrics (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          sectionCode TEXT NOT NULL,
+          sectionName TEXT,
+          recordedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+          hour INTEGER,
+          date TEXT NOT NULL,
+          nearbyTrainsCount INTEGER DEFAULT 0,
+          avgNearbyTrainsPerTrain REAL DEFAULT 0,
+          trafficDensity REAL DEFAULT 0,
+          congestionLevel TEXT DEFAULT 'low',
+          avgDelayInSection REAL,
+          throughput INTEGER
+        );
 
-                          console.log('[SnapshotDB] All tables created/verified');
-                          resolve();
-                        }
-                      );
-                    }
-                  );
-                }
-              );
-            }
-          );
+        CREATE INDEX IF NOT EXISTS idx_snapshots_train_ts ON train_snapshots(trainNumber, timestamp);
+        CREATE INDEX IF NOT EXISTS idx_snapshots_station ON train_snapshots(stationCode);
+        CREATE INDEX IF NOT EXISTS idx_snapshots_created ON train_snapshots(createdAt);
+
+        CREATE INDEX IF NOT EXISTS idx_delay_station_date_hour ON delay_statistics(stationCode, date, hour);
+
+        CREATE INDEX IF NOT EXISTS idx_quality_ts_provider ON data_quality_log(timestamp, provider);
+        CREATE INDEX IF NOT EXISTS idx_quality_train_ts ON data_quality_log(trainNumber, timestamp);
+
+        CREATE INDEX IF NOT EXISTS idx_halt_train_recorded ON halt_statistics(trainNumber, recordedAt);
+        CREATE INDEX IF NOT EXISTS idx_halt_section_recorded ON halt_statistics(sectionCode, recordedAt);
+
+        CREATE INDEX IF NOT EXISTS idx_congestion_section_date_hour ON congestion_metrics(sectionCode, date, hour);
+      `;
+
+      this.db!.exec(schemaSql, (err) => {
+        if (err) {
+          reject(err);
+          return;
         }
-      );
+
+        console.log('[SnapshotDB] All tables created/verified');
+        resolve();
+      });
     });
   }
 

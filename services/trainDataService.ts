@@ -6,6 +6,8 @@
 
 import { TrainData, TrainDataSource } from '@/types/train';
 import * as trainKB from '@/services/knowledgeBaseService';
+import { readFile } from 'fs/promises';
+import path from 'path';
 
 // Real data providers
 let trainTracker: any = null;
@@ -27,6 +29,166 @@ if (typeof window === 'undefined') {
 // Real data cache (short TTL to allow live updates)
 const dataCache = new Map<string, { data: TrainData | null; timestamp: number }>();
 const CACHE_TTL = 30 * 1000; // 30 seconds
+const TRAIN_NAME_INDEX_FILE = path.join(process.cwd(), 'railway_data', 'Train_Name_Index.csv');
+let csvIndexCache: Map<string, { trainName: string; source: string; destination: string }> | null = null;
+
+function normalizeTrainNumber(trainNumber: string): string {
+  const digits = String(trainNumber || '').replace(/\D/g, '');
+  if (!digits) {
+    return '';
+  }
+
+  const numeric = parseInt(digits, 10);
+  if (Number.isNaN(numeric)) {
+    return '';
+  }
+
+  return String(numeric).padStart(5, '0');
+}
+
+function splitCsvLine(line: string): string[] {
+  const result: string[] = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (ch === ',' && !inQuotes) {
+      result.push(current.trim());
+      current = '';
+      continue;
+    }
+
+    current += ch;
+  }
+
+  result.push(current.trim());
+  return result;
+}
+
+async function loadCsvIndexCache(): Promise<Map<string, { trainName: string; source: string; destination: string }>> {
+  if (csvIndexCache) {
+    return csvIndexCache;
+  }
+
+  const indexMap = new Map<string, { trainName: string; source: string; destination: string }>();
+
+  try {
+    const raw = await readFile(TRAIN_NAME_INDEX_FILE, 'utf-8');
+    const lines = raw.split(/\r?\n/).filter((line) => line.trim().length > 0);
+
+    for (let rowIndex = 2; rowIndex < lines.length; rowIndex++) {
+      const cols = splitCsvLine(lines[rowIndex]);
+      if (!cols.length) {
+        continue;
+      }
+
+      // This index stores two records per row (0-4 and 5-9).
+      for (let i = 0; i + 4 < cols.length; i += 5) {
+        const trainName = cols[i];
+        const trainNumberCell = cols[i + 1];
+        const source = cols[i + 2];
+        const destination = cols[i + 3];
+
+        if (!trainNumberCell || !trainName) {
+          continue;
+        }
+
+        const tokens = trainNumberCell.match(/\d{3,6}/g) || [];
+        for (const token of tokens) {
+          const normalized = normalizeTrainNumber(token);
+          if (!normalized || indexMap.has(normalized)) {
+            continue;
+          }
+
+          indexMap.set(normalized, {
+            trainName,
+            source: source || 'Unknown',
+            destination: destination || 'Unknown',
+          });
+        }
+      }
+    }
+  } catch (error) {
+    console.warn(`[DataService] Could not load Train_Name_Index CSV fallback: ${error}`);
+  }
+
+  csvIndexCache = indexMap;
+  return indexMap;
+}
+
+async function buildTrainDataFromCsvIndex(trainNumber: string): Promise<TrainData | null> {
+  const normalized = normalizeTrainNumber(trainNumber);
+  if (!normalized) {
+    return null;
+  }
+
+  const indexMap = await loadCsvIndexCache();
+  const record = indexMap.get(normalized);
+  if (!record) {
+    return null;
+  }
+
+  const now = Date.now();
+  const syntheticData: TrainData = {
+    trainNumber: normalized,
+    trainName: record.trainName,
+    source: 'schedule',
+    destination: record.destination,
+    dataQuality: 32,
+    isSynthetic: true,
+    currentLocation: {
+      latitude: 0,
+      longitude: 0,
+      timestamp: now,
+    },
+    currentStationIndex: 0,
+    currentStationCode: 'UNKNOWN',
+    scheduledStations: [
+      {
+        name: record.source,
+        code: 'SRC',
+        scheduledArrival: '00:00',
+        estimatedArrival: '00:00',
+        scheduledDeparture: '00:00',
+        estimatedDeparture: '00:00',
+        latitude: 0,
+        longitude: 0,
+        isHalted: false,
+      },
+      {
+        name: record.destination,
+        code: 'DST',
+        scheduledArrival: '00:00',
+        estimatedArrival: '00:00',
+        scheduledDeparture: '00:00',
+        estimatedDeparture: '00:00',
+        latitude: 0,
+        longitude: 0,
+        isHalted: false,
+      },
+    ],
+    delay: 0,
+    speed: 0,
+    status: 'Scheduled',
+    lastUpdated: now,
+  };
+
+  setCachedData(normalized, syntheticData);
+  console.log(`[DataService] ✓ CSV index fallback resolved ${normalized}: ${record.trainName}`);
+  return syntheticData;
+}
 
 function computeDataQuality(
   source: TrainDataSource,
@@ -61,6 +223,11 @@ function getCachedData(trainNumber: string): TrainData | null | undefined {
   const key = trainNumber.toUpperCase();
   const cached = dataCache.get(key);
   if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+    if (cached.data === null) {
+      // Never treat miss markers as positive cache hits.
+      dataCache.delete(key);
+      return undefined;
+    }
     console.log(`[Cache] Hit for train ${trainNumber}`);
     return cached.data;
   }
@@ -69,6 +236,10 @@ function getCachedData(trainNumber: string): TrainData | null | undefined {
 
 function setCachedData(trainNumber: string, data: TrainData | null) {
   const key = trainNumber.toUpperCase();
+  if (data === null) {
+    dataCache.delete(key);
+    return;
+  }
   dataCache.set(key, { data, timestamp: Date.now() });
 }
 
@@ -83,6 +254,11 @@ async function buildTrainDataFromKnowledgeBase(trainNumber: string): Promise<Tra
     const enriched = await trainKB.getEnrichedTrain(trainNumber);
     const kbTrain = enriched?.train || await trainKB.searchTrainByNumber(trainNumber);
     if (!kbTrain) {
+      const csvFallback = await buildTrainDataFromCsvIndex(trainNumber);
+      if (csvFallback) {
+        return csvFallback;
+      }
+
       console.log(`[DataService] Train ${trainNumber} not found in knowledge base either`);
       return null;
     }
@@ -174,7 +350,10 @@ export async function getTrainData(trainNumber: string): Promise<TrainData | nul
     // Ensure schedule data is available for route metadata
     if (!trainTracker) {
       console.error('[DataService] ✗ Real train tracker not initialized');
-      setCachedData(normalized, null);
+      const kbData = await buildTrainDataFromKnowledgeBase(normalized);
+      if (kbData) {
+        return kbData;
+      }
       return null;
     }
 
@@ -202,7 +381,10 @@ export async function getTrainData(trainNumber: string): Promise<TrainData | nul
     const trainInfo = trainTracker.getTrainInfo(normalized);
     if (!trainInfo) {
       console.error(`[DataService] ✗ Train info not found: ${normalized}`);
-      setCachedData(normalized, null);
+      const kbData = await buildTrainDataFromKnowledgeBase(normalized);
+      if (kbData) {
+        return kbData;
+      }
       return null;
     }
 
@@ -357,7 +539,10 @@ export async function getTrainData(trainNumber: string): Promise<TrainData | nul
     return trainData;
   } catch (err) {
     console.error('[DataService] Error during real data fetch:', err);
-    setCachedData(normalized, null);
+    const kbData = await buildTrainDataFromKnowledgeBase(normalized);
+    if (kbData) {
+      return kbData;
+    }
     throw err;
   }
 }
@@ -366,7 +551,12 @@ export async function getTrainData(trainNumber: string): Promise<TrainData | nul
  * Get nearby trains data (for heatmap and traffic analysis)
  * Uses real train tracker to find trains near a location
  */
-export async function getNearbyTrainsData(latitude?: number, longitude?: number, radius: number = 50): Promise<TrainData[]> {
+export async function getNearbyTrainsData(
+  latitude?: number,
+  longitude?: number,
+  radius: number = 50,
+  excludeTrainNumber?: string
+): Promise<TrainData[]> {
   try {
     if (!trainTracker) {
       console.warn('[DataService] Real train tracker not initialized');
@@ -379,8 +569,24 @@ export async function getNearbyTrainsData(latitude?: number, longitude?: number,
       const nearbyTrains = trainTracker.getTrainsNearLocation(latitude, longitude, radius);
 
       const trainDataArray: TrainData[] = [];
-      for (const trainNumber of nearbyTrains) {
-        const trainData = await getTrainData(trainNumber);
+      const seen = new Set<string>();
+
+      for (const nearbyTrain of nearbyTrains) {
+        const candidateTrainNumber = String(nearbyTrain?.trainNumber || '').toUpperCase();
+        if (!candidateTrainNumber) {
+          continue;
+        }
+
+        if (excludeTrainNumber && candidateTrainNumber === excludeTrainNumber.toUpperCase()) {
+          continue;
+        }
+
+        if (seen.has(candidateTrainNumber)) {
+          continue;
+        }
+        seen.add(candidateTrainNumber);
+
+        const trainData = await getTrainData(candidateTrainNumber);
         if (trainData) {
           trainDataArray.push(trainData);
         }

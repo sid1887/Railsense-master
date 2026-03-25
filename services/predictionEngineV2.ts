@@ -39,6 +39,14 @@ class PredictionEngineV2 {
     networkData: any
   ): Promise<PredictionResult> {
     try {
+      const sourceType = liveData?.source || 'estimated';
+      const liveTimestampMs = liveData?.timestamp ? new Date(liveData.timestamp).getTime() : Number.NaN;
+      const liveAgeMinutes = Number.isFinite(liveTimestampMs)
+        ? Math.max(0, (Date.now() - liveTimestampMs) / 60000)
+        : null;
+      const hasLiveCoordinates = typeof liveData?.latitude === 'number' && typeof liveData?.longitude === 'number' && liveData.latitude !== 0 && liveData.longitude !== 0;
+      const isStaleFeed = Boolean(liveData?.isStale);
+
       const factors = {
         delayPropagation: 0,
         dwellRisk: 0,
@@ -49,13 +57,29 @@ class PredictionEngineV2 {
 
       // Factor 1: Current delay propagation
       const currentDelay = (liveData?.delayMinutes ?? 0) + (baseData.delay ?? 0);
-      factors.delayPropagation = currentDelay * 0.8; // 80% propagates forward
+      const propagationWeight =
+        sourceType === 'estimated'
+          ? 0.64
+          : isStaleFeed
+            ? 0.88
+            : sourceType === 'ntes'
+              ? 0.83
+              : 0.78;
+      factors.delayPropagation = currentDelay * propagationWeight;
+      if (isStaleFeed) {
+        factors.delayPropagation += liveAgeMinutes ? Math.min(4, Math.max(1, liveAgeMinutes / 8)) : 1.5;
+      }
 
       // Factor 2: Dwell risk penalty
       if (dwellPrediction.dwellRisk === 'high') {
         factors.dwellRisk = 3;
       } else if (dwellPrediction.dwellRisk === 'medium') {
         factors.dwellRisk = 1.5;
+      }
+      if (sourceType === 'estimated') {
+        factors.dwellRisk += 1.2;
+      } else if (isStaleFeed) {
+        factors.dwellRisk += 0.8;
       }
 
       // Factor 3: Congestion penalty
@@ -66,6 +90,9 @@ class PredictionEngineV2 {
         low: 0,
       };
       factors.congestionPenalty = congestionPenalty[networkData.congestionLevel as string] || 0;
+      if (isStaleFeed && factors.congestionPenalty > 0) {
+        factors.congestionPenalty += 0.5;
+      }
 
       // Factor 4: Crossing delay
       if (crossingRisk.riskLevel === 'critical') {
@@ -77,7 +104,10 @@ class PredictionEngineV2 {
       }
 
       // Factor 5: Platform wait
-      factors.platformWait = platformOccupancy.expectedWaitTime || 0;
+      factors.platformWait = Math.max(0, platformOccupancy.expectedWaitTime || 0);
+      if (liveAgeMinutes !== null && liveAgeMinutes > 15) {
+        factors.platformWait += 1;
+      }
 
       // Calculate total delay forecast
       const totalDelayForecast =
@@ -101,16 +131,65 @@ class PredictionEngineV2 {
       const estimatedTime = new Date(scheduledTime.getTime() + totalDelayForecast * 60000);
 
       // Calculate confidence
-      let confidence = 0.7; // Base 70%
-      if (liveData?.latitude) confidence += 0.15; // +15% if we have live GPS
-      if (dwellPrediction.expectedDwellTime < 5) confidence += 0.1; // +10% if short dwell
-      if (networkData.congestionLevel === 'low') confidence += 0.05; // +5% if low congestion
-      confidence = Math.min(1.0, confidence); // Cap at 100%
+      let confidence = 0.48;
+
+      if (hasLiveCoordinates) {
+        confidence += 0.16;
+      }
+
+      const sourceBoost: Record<string, number> = {
+        ntes: 0.14,
+        railyatri: 0.12,
+        estimated: -0.1,
+      };
+      confidence += sourceBoost[sourceType] ?? 0;
+
+      if (liveAgeMinutes !== null) {
+        if (liveAgeMinutes <= 2) {
+          confidence += 0.09;
+        } else if (liveAgeMinutes <= 5) {
+          confidence += 0.05;
+        } else if (liveAgeMinutes > 12) {
+          confidence -= 0.1;
+        } else if (liveAgeMinutes > 7) {
+          confidence -= 0.04;
+        }
+      }
+
+      if (isStaleFeed) {
+        confidence -= 0.17;
+      }
+
+      if (dwellPrediction.expectedDwellTime < 5) {
+        confidence += 0.06;
+      } else if (dwellPrediction.expectedDwellTime > 15) {
+        confidence -= 0.05;
+      }
+
+      if (networkData.congestionLevel === 'low') {
+        confidence += 0.05;
+      } else if (networkData.congestionLevel === 'severe') {
+        confidence -= 0.08;
+      }
+
+      if (crossingRisk.riskLevel === 'critical') {
+        confidence -= 0.12;
+      } else if (crossingRisk.riskLevel === 'high') {
+        confidence -= 0.06;
+      } else if (crossingRisk.riskLevel === 'medium') {
+        confidence -= 0.03;
+      }
+
+      if (totalDelayForecast > 25) {
+        confidence -= 0.07;
+      }
+
+      confidence = Math.max(0.2, Math.min(0.96, confidence));
 
       // Determine risk level
-      const totalDelay = currentDelay + totalDelayForecast;
+      const totalDelay = currentDelay + totalDelayForecast + (isStaleFeed ? 2 : 0);
       let riskLevel: 'low' | 'medium' | 'high' | 'critical' = 'low';
-      if (totalDelay > 30) {
+      if (totalDelay > 32 || (crossingRisk.riskLevel === 'critical' && totalDelay > 18)) {
         riskLevel = 'critical';
       } else if (totalDelay > 20) {
         riskLevel = 'high';
