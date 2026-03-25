@@ -479,13 +479,20 @@ export default function HarmonicMandala() {
         }
       };
 
-      globalP5Instance = new p5(sketch);
+      globalP5Instance = new p5(sketch, containerElement);
     };
 
     initAnimation();
 
     return () => {
       mounted = false;
+
+      if (globalP5Instance && instanceId === 1) {
+        globalP5Instance.remove();
+        globalP5Instance = null;
+        containerElement = null;
+        instanceCount = 0;
+      }
     };
   }, []);
 

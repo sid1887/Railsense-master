@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Train, Clock3 } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './design-system.css';
@@ -22,9 +22,12 @@ const defaultStations: RouteStation[] = [];
 
 export default function RouteTimeline({ stations = defaultStations }: RouteTimelineProps) {
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
+  const hasAutoScrolledRef = useRef(false);
 
-  // Scroll to current station when component loads or stations change
+  // Scroll to current station only once on initial render to avoid jump-back on polling refreshes.
   useEffect(() => {
+    if (hasAutoScrolledRef.current) return;
+
     const currentStation = stations.find(s => s.status === 'current');
     if (currentStation) {
       // Delay slightly to ensure DOM is ready
@@ -32,6 +35,7 @@ export default function RouteTimeline({ stations = defaultStations }: RouteTimel
         const element = document.getElementById(`station-${currentStation.code}`);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          hasAutoScrolledRef.current = true;
           console.log(`[RouteTimeline] Scrolled to current station: ${currentStation.code}`);
         }
       }, 100);
